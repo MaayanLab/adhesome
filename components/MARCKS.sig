@@ -1,2 +1,0 @@
-CAPN1 P07384 NA CysProtease FACA MARCKS P29966 NA ActinBundling FACA _ Inhibition 15239673
-PRKCA P17252 NA SerThrKinase FAC MARCKS P29966 NA ActinBundling FACA + Activation 15239673

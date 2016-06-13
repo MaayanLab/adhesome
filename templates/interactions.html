@@ -1,0 +1,8 @@
+{% extends "_base.html" %}
+{% block title%}Interactions{% endblock %}
+{% block body %}
+<h1>Focal Adhesion Network Interactions</h1>
+{% with table=interactions %}
+	{% include "_table.html" %}
+{% endwith %}
+{% endblock %}

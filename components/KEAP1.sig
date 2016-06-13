@@ -1,1 +1,0 @@
-KEAP1 Q14145 NA ActinBundling FAC ACTB P60709 NA Cytoskeletal FAC 0 Binding 14764898

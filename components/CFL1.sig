@@ -1,4 +1,0 @@
-CFL1 P23528 NA ActinBinding FACA ACTB P60709 NA Cytoskeletal FAC 0 Binding 8913641
-LIMK1 P53667 NA SerThrKinase FACA CFL1 P23528 NA ActinBinding FACA + Activation 9655398
-PPP2CA P67775 NA SerThrPhosphatase FAC CFL1 P23528 NA ActinBinding FACA _ Inhibition 8864841
-TESK1 Q15569 NA DualKinase FACA CFL1 P23528 NA ActinBinding FACA + Activation 11294912

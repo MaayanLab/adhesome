@@ -1,1 +1,0 @@
-PTPRO Q16827 NA TyrPhosphatase FACA PXN P49023 NA Adapter FAC _ Inhibition 11238916

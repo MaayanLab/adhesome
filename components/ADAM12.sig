@@ -1,6 +1,0 @@
-ADAM12 O43184 NA Metalloproteinase FACA GRB2 P62993 NA Adapter FAC 0 Binding 11127814
-ADAM12 O43184 NA Metalloproteinase FACA ITGA5 P56199 NA Adhesion FAC 0 Binding 15242759
-ADAM12 O43184 NA Metalloproteinase FACA ITGB1 P05556 NA Adhesion FAC 0 Binding 15242759
-ADAM12 O43184 NA Metalloproteinase FACA PIK3CA P42336 NA PtdInsKinase FACA + Activation 11313349
-ADAM12 O43184 NA Metalloproteinase FACA SDC4 P31431 NA Adhesion FAC 0 Binding 12509413
-SRC P12931 NA TyrKinase FAC ADAM12 O43184 NA Metalloproteinase FACA + Activation 11127814

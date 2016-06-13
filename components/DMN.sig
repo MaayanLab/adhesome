@@ -1,2 +1,0 @@
-DMN Q8TE62 NA Adapter FAC VIM P08670 NA Cytoskeletal FACA 0 Binding 6751558
-DMN Q8TE62 NA Adapter FAC VCL P18206 NA Cytoskeletal FAC 0 Binding 11418616

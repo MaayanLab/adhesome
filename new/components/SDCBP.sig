@@ -1,3 +1,0 @@
-NF2 P35240 NA Cytoskeletal FAC SDCBP O00560 NA Cytoskeletal FAC 0 Binding 11432873
-PIP2 NA NA Lipid FACA SDCBP O00560 NA Cytoskeletal FAC + Activation 12086619
-SDC4 P31431 NA Adhesion FAC SDCBP O00560 NA Cytoskeletal FAC 0 Binding 9391086

@@ -1,4 +1,0 @@
-AuthName "Section Name"
-AuthType Basic
-AuthUserFile /vhost/vhost5/a/d/h/adhesome.org/www/new/.htpasswd
-Require valid-user

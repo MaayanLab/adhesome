@@ -1,3 +1,0 @@
-ACTB P60709 NA Cytoskeletal FAC CSRP1 P21291 NA Cytoskeletal FACA 0 Binding 16336664
-ACTN1 P12814 NA Actinbundling FAC CSRP1 P21291 NA Cytoskeletal FACA 0 Binding 9314536
-CSRP1 P21291 NA Cytoskeletal FACA ZYX Q15942 NA Cytoskeletal FAC 0 Binding 9560318

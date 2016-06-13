@@ -1,0 +1,9 @@
+{% extends "_base.html" %}
+{% block title%}Components{% endblock %}
+{% block body %}
+<h1>Focal Adhesion Network Components</h1>
+<p>The network contain 156 biomolecular components, including 25 adaptors, 24 cytoskeletal,10 serine/threonine kinases, 3 serine/threonine phosphatases, 9 actin binding proteins, 9 tyrosine phosphatases, 8 GAPs, 8 GEFs, 8 tyrosine kinases, 7 receptors, 6 adhesion proteins, 5 GTPase and 32 other types of components. 91 components are bona-fide focal adhesion components while 65 are considered focal adhesion associated.</p>
+{% with table=components %}
+	{% include "_table.html" %}
+{% endwith %}
+{% endblock %}

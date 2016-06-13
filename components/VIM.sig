@@ -1,5 +1,0 @@
-PAK1 Q13153 NA SerThrKinase FAC VIM P08670 NA Cytoskeletal FACA + Activation 11895474
-PRKCA P17252 NA SerThrKinase FAC VIM P08670 NA Cytoskeletal FACA + Activation 2500966
-PLEC1 Q15149 NA Cytoskeletal FACA VIM P08670 NA Cytoskeletal FACA 0 Binding 6955088
-ROCK1 Q13464 NA SerThrKinase FACA VIM P08670 NA Cytoskeletal FACA + Activation 9565595
-DMN Q8TE62 NA Adapter FAC VIM P08670 NA Cytoskeletal FACA 0 Binding 6751558

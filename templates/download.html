@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+{% block title%}Download{% endblock %}
+{% block body %}
+<h1>Focal Adhesion Network Download</h1>
+<p class=alpha>The focal adhesion network is freely available for download in several formats:
+<table>
+	<tr><td><b>File format</b></td><td><b>Software needed to process file</b></td><td><b>Link</b></td></tr>
+	<tr><td>SIF</td><td>SIF files can be loaded for analysis and visualization with <a href="http://www.cytoscape.org/">Cytoscape</a></td><td><a href="fa.sif">fa.sif</a></td></tr>
+	<tr><td>SIG</td><td>SIG files can be loaded for analysis and visualization with <a href="http://www.mssm.edu/labs/iyengar/resources/software/SAVI/">SAVI</a>, a software system developed by the <a href="http://www.mssm.edu/labs/iyengar">Iyengar laboratory</a>.</td><td><a href="fa.sig">fa.sig</a></td></tr>
+	<tr><td>mfinder</td><td>Text file ready to be processed by <a href="http://www.weizmann.ac.il/mcb/UriAlon/groupNetworkMotifSW.html">mfinder</a></td><td><a href="fa.txt">fa.txt</a></td></tr>
+	<tr><td>net</td><td>Text file ready for analysis and visualization with <a href="http://vlado.fmf.uni-lj.si/pub/networks/pajek/">Pajek</a></td><td><a href="fa.net">fa.net</a></td></tr>
+</table>
+{% endblock %}
