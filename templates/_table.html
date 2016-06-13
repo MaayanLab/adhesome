@@ -1,14 +1,18 @@
-<table>
-	<tr>
-		{% for h in table.columns %}
-		<th>{{ h }}</th>
+<table class="data-table">
+	<thead>
+		<tr>
+			{% for h in table.columns %}
+			<th>{{ h }}</th>
+			{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for row in table.data %}
+		<tr>
+			{% for data in row %}
+			<td>{{ data }}</td>
+			{% endfor %}
+		</tr>
 		{% endfor %}
-	</tr>
-	{% for row in table.data %}
-	<tr>
-		{% for data in row %}
-		<td>{{ data }}</td>
-		{% endfor %}
-	</tr>
-	{% endfor %}
+	</tbody>
 </table>
