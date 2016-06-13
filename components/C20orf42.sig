@@ -1,0 +1,1 @@
+ITGB1 P05556 NA Adhesion FAC C20orf42 Q9BQL6 NA Cytoskeletal FAC 0 Binding 14634021

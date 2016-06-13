@@ -1,0 +1,1 @@
+ILK Q13418 NA SerThrKinase FAC ILKAP Q9H0C8 NA SerThrPhosphatase FACA 0 Binding 11331582

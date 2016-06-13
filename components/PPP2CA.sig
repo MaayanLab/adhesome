@@ -1,0 +1,9 @@
+CAV1 Q03135 NA Cytoskeletal FAC PPP2CA P67775 NA SerThrPhosphatase FAC _ Inhibition 14645548
+ITGB1 P05556 NA Adhesion FAC PPP2CA P67775 NA SerThrPhosphatase FAC 0 Binding 15521075
+PPP2CA P67775 NA SerThrPhosphatase FAC AKT1 P31749 NA SerThrKinase FACA _ Inhibition 12637511
+PPP2CA P67775 NA SerThrPhosphatase FAC CFL1 P23528 NA ActinBinding FACA _ Inhibition 8864841
+PPP2CA P67775 NA SerThrPhosphatase FAC NEDD9 Q14511 NA Cytoskeletal FAC _ Inhibition 16352661
+PPP2CA P67775 NA SerThrPhosphatase FAC PXN P49023 NA Adapter FAC _ Inhibition 12198769
+PPP2CA P67775 NA SerThrPhosphatase FAC PRKCA P17252 NA SerThrKinase FAC _ Inhibition 9675027
+PPP2CA P67775 NA SerThrPhosphatase FAC VASP P50552 NA ActinBinding FAC _ Inhibition 7656973
+PPP2CA P67775 NA SerThrPhosphatase FAC BCAR1 P56945 NA Cytoskeletal FAC _ Inhibition 11593413

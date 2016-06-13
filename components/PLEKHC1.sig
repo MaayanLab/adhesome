@@ -1,0 +1,1 @@
+PLEKHC1 Q96AC1 NA Cytoskeletal FAC FBLIM1 Q8WUP2 NA Cytoskeletal FAC 0 Binding 12679033

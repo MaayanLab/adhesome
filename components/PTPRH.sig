@@ -1,0 +1,3 @@
+PTPRH Q15426 NA TyrPhosphatase FACA BCAR1 P56945 NA Cytoskeletal FAC _ Inhibition 11278335
+PTPRH Q15426 NA TyrPhosphatase FACA PTK2 Q05397 NA TyrKinase FAC _ Inhibition 11278335
+PTPRH Q15426 NA TyrPhosphatase FACA SRC P12931 NA TyrKinase FAC _ Inhibition 15850787

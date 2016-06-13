@@ -1,0 +1,2 @@
+DAG NA NA Lipid FACA PRKCA P17252 NA SerThrKinase FAC + Activation 10579907
+PLCG1 P19174 NA PtdInsKinase FAC DAG NA NA Lipid FACA + Activation 10579907

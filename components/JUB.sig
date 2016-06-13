@@ -1,0 +1,2 @@
+JUB Q96IF1 NA Cytoskeletal FAC BCAR1 P56945 NA Cytoskeletal FAC 0 Binding 15728191
+JUB Q96IF1 NA Cytoskeletal FAC GRB2 P62993 NA Adapter FAC 0 Binding 10330178
