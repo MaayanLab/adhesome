@@ -2,10 +2,9 @@
 {% block title%}Components{% endblock %}
 {% block body %}
 <main class="container">
-	<h1>Focal Adhesion Network Components</h1>
+	<h1>Components</h1>
 	<p>The network contain {{ components|length }} biomolecular components. Of which {{ components|pd_select("FA", "Intrinsic Proteins")|length }} are Intrinsic Proteins and {{ components|pd_select("FA", "Associated Proteins")|length }} are Associated Proteins.</p>
-	{% with table=components|to_dict %}
-		{% include "_table.html" %}
-	{% endwith %}
+	{% set table = components|pd_apply_format("Official Symbol", "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/{0}'>{0}</a>")|pd_to_table %}
+	{% include "_table.html" %}
 </main>
 {% endblock %}

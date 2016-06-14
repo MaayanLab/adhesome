@@ -2,9 +2,10 @@
 {% block title%}Interactions{% endblock %}
 {% block body %}
 <main class="container">
-	<h1>Focal Adhesion Network Interactions</h1>
-	{% with table=interactions %}
-		{% include "_table.html" %}
-	{% endwith %}
+	<h1>Interactions</h1>
+	{#
+	{% set table = interactions|pd_to_table %}
+	{% include "_table.html" %}
+	#}
 </main>
 {% endblock %}

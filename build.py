@@ -12,12 +12,17 @@ def register(func):
 	filters[func.__name__] = func
 
 @register
-def to_dict(df):
+def pd_to_table(df):
 	return df.to_dict(orient='split')
 
 @register
 def pd_select(df, attr, val):
 	return df[df[attr] == val]
+
+@register
+def pd_apply_format(df, attr, fmt):
+	df[attr] = df[attr].apply(fmt.format)
+	return df
 
 def components():
 	return pd.read_csv(data_root+'nrm3769-s1.csv')
@@ -35,7 +40,6 @@ def base_context(template):
 site = make_site(
 	contexts=[('.*', base_context)],
 	filters=filters,
-	extensions=['jinja2.ext.with_'],
 	outpath='build')
 site.render()
 copy_tree('static/', 'build/')
