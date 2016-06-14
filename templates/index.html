@@ -1,4 +1,4 @@
-{% macro card(title, image, link) -%}
+{% macro button(title, image, link) -%}
 <div class="card-panel hoverable">
 	<a href="{{ link }}">
 			<div class="card-image">
@@ -14,14 +14,11 @@
 {% block body %}
 <main class="section valign-wrapper">
 	<div class="row valign">
-		<div class="col s4">
-			{{ card('Components', 'small_net.jpg', 'components.html') }}
-			</div>
-		<div class="col s4">
-			{{ card('Functional associations', 'small_net.jpg', 'associations.html') }}
+		<div class="col s6">
+			{{ button('Components', 'small_net.jpg', 'components.html') }}
 		</div>
-		<div class="col s4">
-			{{ card('Protein-Protein Interactions', 'small_net.jpg', 'interactions.html') }}
+		<div class="col s6">
+			{{ button('Protein-Protein Interactions', 'small_net.jpg', 'interactions.html') }}
 		</div>
 	</div>
 </main>
