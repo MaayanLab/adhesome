@@ -1,11 +1,28 @@
+{% macro card(title, image, link) -%}
+<div class="card-panel hoverable">
+	<a href="{{ link }}">
+			<div class="card-image">
+				<img src="{{ image }}" style="width:100%">
+				<span class="card-title">{{ title }}</span>
+			</div>
+	</a>
+</div>
+{%- endmacro %}
+
 {% extends "_base.html" %}
 {% block title%}Project Description{% endblock %}
 {% block body %}
-<div class="section">
-	<div class="row">
-		<div class="col s4"><a class="waves-effect waves-light btn-large" href="components.html">Components</a></div>
-		<div class="col s4"><a class="waves-effect waves-light btn-large" href="associations.html">Functional associations</a></div>
-		<div class="col s4"><a class="waves-effect waves-light btn-large" href="interactions.html">Protein-Protein Interactions</a></div>
+<main class="section valign-wrapper">
+	<div class="row valign">
+		<div class="col s4">
+			{{ card('Components', 'small_net.jpg', 'components.html') }}
+			</div>
+		<div class="col s4">
+			{{ card('Functional associations', 'small_net.jpg', 'associations.html') }}
+		</div>
+		<div class="col s4">
+			{{ card('Protein-Protein Interactions', 'small_net.jpg', 'interactions.html') }}
+		</div>
 	</div>
-</div>
+</main>
 {% endblock %}

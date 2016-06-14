@@ -1,7 +1,7 @@
 body {
-	FONT-WEIGHT: normal;
-	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-	BACKGROUND-COLOR: #ffffff;
+	font-weight: normal;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;

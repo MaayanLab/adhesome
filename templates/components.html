@@ -1,9 +1,11 @@
 {% extends "_base.html" %}
 {% block title%}Components{% endblock %}
 {% block body %}
-<h1>Focal Adhesion Network Components</h1>
-<p>The network contain {{ components|length }} biomolecular components. Of which {{ components|pd_select("FA", "Intrinsic Proteins")|length }} are Intrinsic Proteins and {{ components|pd_select("FA", "Associated Proteins")|length }} are Associated Proteins.</p>
-{% with table=components|to_dict %}
-	{% include "_table.html" %}
-{% endwith %}
+<main class="container">
+	<h1>Focal Adhesion Network Components</h1>
+	<p>The network contain {{ components|length }} biomolecular components. Of which {{ components|pd_select("FA", "Intrinsic Proteins")|length }} are Intrinsic Proteins and {{ components|pd_select("FA", "Associated Proteins")|length }} are Associated Proteins.</p>
+	{% with table=components|to_dict %}
+		{% include "_table.html" %}
+	{% endwith %}
+</main>
 {% endblock %}

@@ -5,6 +5,8 @@ import pandas as pd
 from distutils.dir_util import copy_tree
 from staticjinja import make_site
 
+data_root = 'data/'
+
 filters={}
 def register(func):
 	filters[func.__name__] = func
@@ -18,7 +20,7 @@ def pd_select(df, attr, val):
 	return df[df[attr] == val]
 
 def components():
-	return pd.read_csv('nrm3769-s1.csv')
+	return pd.read_csv(data_root+'nrm3769-s1.csv')
 
 def interactions():
 	return None
@@ -37,4 +39,3 @@ site = make_site(
 	outpath='build')
 site.render()
 copy_tree('static/', 'build/')
-copy_tree('data/', 'build/')
