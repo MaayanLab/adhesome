@@ -32,7 +32,6 @@ def interactions():
 
 def base_context(template):
 	return {
-		'page': os.path.splitext(os.path.split(template.filename)[-1])[0],
 		'components': components(),
 		'interactions': interactions(),
 	}
