@@ -193,7 +193,7 @@ if __name__ == '__main__':
         # ('Wikipathways Pathways', 'wikipathways')
     ], [
         'gene_attribute_matrix.txt.gz',
-        # 'gene_attribute_edges.txt.gz',
+        'gene_attribute_edges.txt.gz',
         # 'gene_set_library_crisp.txt.gz',
         # 'gene_set_library_up_crisp.txt.gz',
         # 'gene_set_library_dn_crisp.txt.gz',
