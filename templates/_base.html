@@ -15,9 +15,10 @@
 	<link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-	{% set logo %}ADHESOMEFAnetwork{% endset %}
+	{% set logo %}ADHESOME<em>FA</em>network{% endset %}
 	{% set menu %}
-		{% for p in ["index", "components", "interactions", "download", "contact"] %}
+		<li{% if page == "index" %} class="active"{% endif %}><a href="index.html">Home</a></li>
+		{% for p in ["components", "interactions", "download", "contact"] %}
 			<li{% if page == p %} class="active"{% endif %}><a href="{{ p }}.html">{{ p|capitalize }}</a></li>
 		{% endfor %}
 	{% endset %}
