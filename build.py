@@ -41,9 +41,10 @@ def context(template):
 	target_components = interaction_components.rename(columns={col: '%s_target' % (col) for col in components.columns})
 	# merge components into interactions
 	interactions_joined = pd.merge(
-		pd.merge(interactions, source_components, left_on='Source', right_on='Official Symbol_source', how='inner'),
-		target_components, left_on='Target', right_on='Official Symbol_target', how='inner', suffixes=('_','')).drop(
-			['Official Symbol_source', 'Official Symbol_target'], axis=1)
+		pd.merge(interactions, source_components,
+			left_on='Source', right_on='Official Symbol_source', how='inner'), target_components,
+			left_on='Target', right_on='Official Symbol_target', how='inner', suffixes=('_','')).drop(
+				['Official Symbol_source', 'Official Symbol_target'], axis=1)
 	# rearrange columns
 	source_cols = [col for col in interactions_joined.columns if col.endswith('_source')]
 	target_cols = [col for col in interactions_joined.columns if col.endswith('_target')]

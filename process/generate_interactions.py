@@ -11,7 +11,7 @@ adhesome = pd.read_csv(data_root + 'components.csv')
 old_interactions = pd.read_csv(data_root + 'interactions.csv')
 
 # Load edges
-edges = [edge for edge in map(str.split,open(data_root + 'PPIN_low_content_edge_list.csv', 'r'))]
+edges = [s.split(',') for s in map(str.strip, open(data_root + 'PPIN_low_content_edge_list.csv', 'r'))]
 
 # Prepare new interactions
 interactions = pd.concat([
