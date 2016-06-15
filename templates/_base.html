@@ -19,7 +19,7 @@
 	{% set logo = "ADHESOME<em>FA</em>network" %}
 	{% set menu %}
 		<li{% if page == "home" %} class="active"{% endif %}><a href="index.html">Home</a></li>
-		{% for p in ["components", "interactions", "download", "contact"] %}
+		{% for p in ["components", "associations", "interactions", "download", "contact"] %}
 			<li{% if page == p %} class="active"{% endif %}><a href="{{ p }}.html">{{ p|capitalize }}</a></li>
 		{% endfor %}
 	{% endset %}

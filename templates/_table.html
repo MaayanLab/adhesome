@@ -1,13 +1,13 @@
 <table class="data-table">
 	<thead>
 		<tr>
-			{% for h in table.columns %}
-			<th>{{ h|trim_ }}</th>
+			{% for h in table|header %}
+			<th>{{ h }}</th>
 			{% endfor %}
 		</tr>
 	</thead>
 	<tbody>
-		{% for row in table.data %}
+		{% for row in table %}
 		<tr>
 			{% for data in row %}
 			<td>{{ data }}</td>

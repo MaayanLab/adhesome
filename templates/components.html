@@ -3,8 +3,7 @@
 {% block body %}
 <main class="container">
 	<h1>Components</h1>
-	<p>The network contain {{ components|length }} biomolecular components. Of which {{ components|pd_select("FA", "Intrinsic Proteins")|length }} are Intrinsic Proteins and {{ components|pd_select("FA", "Associated Proteins")|length }} are Associated Proteins.</p>
-	{% set table = components|pd_apply_format("Official Symbol", "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/{0}'>{0}</a>")|pd_to_table %}
+	{% set table = components %}
 	{% include "_table.html" %}
 </main>
 {% endblock %}
