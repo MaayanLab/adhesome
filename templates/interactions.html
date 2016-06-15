@@ -3,9 +3,7 @@
 {% block body %}
 <main class="container">
 	<h1>Interactions</h1>
-	{#
-	{% set table = interactions|pd_to_table %}
+	{% set table = interactions|pd_apply_format("Source", "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/{0}'>{0}</a>")|pd_apply_format("Target", "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/{0}'>{0}</a>")|pd_apply_format("PMID", "<a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids={0}'>{0}</a>")|pd_to_table %}
 	{% include "_table.html" %}
-	#}
 </main>
 {% endblock %}

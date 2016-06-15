@@ -2,7 +2,7 @@
 	<thead>
 		<tr>
 			{% for h in table.columns %}
-			<th>{{ h }}</th>
+			<th>{{ h|trim_ }}</th>
 			{% endfor %}
 		</tr>
 	</thead>
