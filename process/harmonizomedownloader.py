@@ -62,7 +62,7 @@ def download_datasets(selected_datasets, selected_downloads, decompress=False):
 if __name__ == '__main__':
     # Uncomment a dataset to download it.
     download_datasets([
-        # ('Achilles Cell Line Gene Essentiality Profiles', 'achilles'),
+        ('Achilles Cell Line Gene Essentiality Profiles', 'achilles'),
         # ('Allen Brain Atlas Adult Human Brain Tissue Gene Expression Profiles', 'brainatlasadulthuman'),
         # ('Allen Brain Atlas Adult Mouse Brain Tissue Gene Expression Profiles', 'brainatlasadultmouse'),
         # ('Allen Brain Atlas Developing Human Brain Tissue Gene Expression Profiles by Microarray', 'brainatlasdevelopmentalhumanmicroarray'),
@@ -193,7 +193,7 @@ if __name__ == '__main__':
         # ('Wikipathways Pathways', 'wikipathways')
     ], [
         'gene_attribute_matrix.txt.gz',
-        'gene_attribute_edges.txt.gz',
+        # 'gene_attribute_edges.txt.gz',
         # 'gene_set_library_crisp.txt.gz',
         # 'gene_set_library_up_crisp.txt.gz',
         # 'gene_set_library_dn_crisp.txt.gz',

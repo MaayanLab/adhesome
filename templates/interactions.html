@@ -3,7 +3,7 @@
 {% block body %}
 <main class="container">
 	<h1>Interactions</h1>
-	{% set table = interactions %}
+	{% set table = query("select * from interactions_out") %}
 	{% include "_table.html" %}
 </main>
 {% endblock %}

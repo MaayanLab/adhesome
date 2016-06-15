@@ -3,7 +3,7 @@
 {% block body %}
 <main class="container">
 	<h1>Functional Associations</h1>
-	{% set table = query("select `Dataset` from datasets_out") %}
-	{% include "_table.html" %}
+	{% set table = query("select `Name`, `Clustergrammer` from `datasets` where `ID`=?", ID) %}
+	{# Display clustergrammer #}
 </main>
 {% endblock %}
