@@ -1,7 +1,5 @@
+/* Sticky footer */
 body {
-	font-weight: normal;
-	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-	background-color: #ffffff;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -9,4 +7,30 @@ body {
 
 main {
 	flex: 1 0 auto;
+}
+
+/* Duplicate materialize to override bootstrap's font size */
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
 }

@@ -16,9 +16,10 @@ create table `edges` (
 	`PMID` integer);
 
 create table `datasets` (
-	`ID` integer primary key autoincrement,
-	`Name` text,
-	`Clustergrammer` longtext);
+	`Name` text primary key,
+	`viz` longtext,
+	`sim_col` longtext,
+	`sim_row` longetext);
 
 -- Combinational Query of Edges and Components
 create view `interactions` as
@@ -71,5 +72,5 @@ create view `interactions_out` as
 
 create view `datasets_out` as
 	select
-		printf("<a href='associations/%s.html'>%s</a>", `ID`, `Name`) as `Dataset`
+		printf("<a href='associations/%s.html'>%s</a>", replace(lower(`Name`), " ", "_"), `Name`) as `Dataset`
 	from datasets;

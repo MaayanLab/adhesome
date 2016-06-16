@@ -1,9 +1,29 @@
+{% set viz, sim_row, sim_col = query("select `viz`, `sim_row`, `sim_col` from `datasets` where `Name`=?", name)|first %}
+{% set title = "Associations %s"|format(name) %}
 {% set page = "associations" %}
+{% set path = "../" %}
 {% extends "_base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ path }}static/css/bootstrap.css">
+<link rel="stylesheet" href="{{ path }}static/css/jquery-ui.css">
+<link rel="stylesheet" href="{{ path }}static/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ path }}static/css/custom_new.css">
+{% endblock %}
 {% block body %}
-<main class="container">
-	<h1>Functional Associations</h1>
-	{% set table = query("select `Name`, `Clustergrammer` from `datasets` where `ID`=?", ID) %}
-	{# Display clustergrammer #}
+<main class="container" style="display: flex; min-height: 100%; flex-direction: column;">
+	<h1>{{ name }}</h1>
+	<div id="clustergrammer" style="flex: 1 0 auto;"></div>
 </main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ path }}static/js/d3.js"></script>
+<script src="{{ path }}static/js/jquery-ui.js"></script>
+<script src="{{ path }}static/js/bootstrap.min.js"></script>
+<script src="{{ path }}static/js/underscore-min.js"></script>
+<script src="{{ path }}static/js/clustergrammer.v1.3.1.js"></script>
+<script src="{{ path }}static/js/load_viz_new.js"></script>
+<script>
+	viz_name = '{{ name }}';
+	load_viz_new({{ viz }});
+</script>
 {% endblock %}
