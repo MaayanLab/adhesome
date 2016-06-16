@@ -49,6 +49,7 @@ try_ignore(r"os.rmdir('build/')")
 
 # Create build directory tree
 try_ignore(r"os.makedirs('build/associations/')")
+try_ignore(r"os.makedirs('build/components/')")
 
 # Copy static files to build
 copy_tree('static/', 'build/')
@@ -68,3 +69,8 @@ for name, in funcs['query']('select `Name` from `datasets`'):
 	for typ in ['viz', 'sim_row', 'sim_col']:
 		site.get_template('_association_clustergram.html').stream(name=name, typ=typ, **funcs).dump('build/associations/%s_%s.html' % (uri, typ))
 	print('Rendering %s' % (uri))
+
+for name, in funcs['query']('select `Official Symbol` from `components`'):
+	site.get_template('_component.html').stream(name=name, **funcs).dump('build/components/%s.html' % (name))
+	print('Rendering %s' % (name))
+

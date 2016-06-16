@@ -1,0 +1,48 @@
+{% set title = "Component: %s"|format(name) %}
+{% set page = "components" %}
+{% set path = "../" %}
+
+{% extends "_base.html" %}
+
+{% block body %}
+<main class="container wrap">
+	<h1>{{ name }}</h1>
+	<div id="graph" class="expand"></div>
+</main>
+{% endblock %}
+
+{% block scripts %}
+{% set node_query %} 
+	select
+		`Official Symbol`,
+		`FA`
+	from
+		`components`
+	where
+		`Official Symbol`=?
+	or	`Official Symbol` in (
+			select `Target`
+			from `edges`
+			where `Source`=?)
+	or	`Official Symbol` in (
+			select `Source`
+			from `edges`
+			where `Target`=?);
+{% endset %}
+{% set nodes = query(node_query, name, name, name) %}
+
+{% set edge_query %}
+	select
+		`Source`,
+		`Target`,
+		`PMID`
+	from
+		`edges`
+	where
+		`Source`=?
+	or	`Target`=?;
+{% endset %}
+{% set edges = query(edge_query, name, name) %}
+
+{% include "_graph.html" %}
+{% endblock %}
