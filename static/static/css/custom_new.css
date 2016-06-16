@@ -6,6 +6,19 @@
   margin-bottom: 20px;
 }*/
 
+html{
+  overflow: hidden;
+}
+
+/*stylize footer */
+footer {
+  text-align: center;
+  background-color: #f5f5f5;
+  font-size: 13px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
 /* default svg size for fixed svg option*/
 #svg_div{
   width:1000px;

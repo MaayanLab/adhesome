@@ -33,7 +33,7 @@ def header(table):
 
 @register_filter
 def first(table):
-	return table.fetchone()
+	return next(iter(table))
 
 # Jinja Functions
 funcs={}
@@ -63,6 +63,8 @@ site.render()
 
 # Build subpages from database
 for name, in funcs['query']('select `Name` from `datasets`'):
-	page = 'build/associations/%s.html' % (name.lower().replace(' ', '_'))
-	site.get_template('_association.html').stream(name=name, **funcs).dump(page)
-	print('Rendering %s' % (page))
+	uri = name.lower().replace(' ', '_')
+	site.get_template('_association.html').stream(name=name, uri=uri, **funcs).dump('build/associations/%s.html' % (uri))
+	for typ in ['viz', 'sim_row', 'sim_col']:
+		site.get_template('_association_clustergram.html').stream(name=name, typ=typ, **funcs).dump('build/associations/%s_%s.html' % (uri, typ))
+	print('Rendering %s' % (uri))

@@ -1,29 +1,22 @@
-{% set viz, sim_row, sim_col = query("select `viz`, `sim_row`, `sim_col` from `datasets` where `Name`=?", name)|first %}
 {% set title = "Associations %s"|format(name) %}
 {% set page = "associations" %}
 {% set path = "../" %}
 {% extends "_base.html" %}
-{% block head %}
-<link rel="stylesheet" href="{{ path }}static/css/bootstrap.css">
-<link rel="stylesheet" href="{{ path }}static/css/jquery-ui.css">
-<link rel="stylesheet" href="{{ path }}static/css/font-awesome.min.css">
-<link rel="stylesheet" href="{{ path }}static/css/custom_new.css">
-{% endblock %}
 {% block body %}
-<main class="container" style="display: flex; min-height: 100%; flex-direction: column;">
+<main class="container wrap">
 	<h1>{{ name }}</h1>
-	<div id="clustergrammer" style="flex: 1 0 auto;"></div>
+	<div class="row wrap expand">
+		{% set cluster_types = ["viz", "sim_row", "sim_col"] %}
+		<div class="col s12">
+			<ul class="tabs">
+				{% for typ in cluster_types %}
+					<li class="tab col s4"><a href="#{{ typ }}">{{ type|capitalize }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		{% for typ in cluster_types %}
+			<iframe id="{{ typ }}" class="col s12 expand" frameborder="0" border="0" cellspacing="0" src="{{ uri }}_{{ typ }}.html"></iframe>
+		{% endfor %}
+	</div>
 </main>
-{% endblock %}
-{% block scripts %}
-<script src="{{ path }}static/js/d3.js"></script>
-<script src="{{ path }}static/js/jquery-ui.js"></script>
-<script src="{{ path }}static/js/bootstrap.min.js"></script>
-<script src="{{ path }}static/js/underscore-min.js"></script>
-<script src="{{ path }}static/js/clustergrammer.v1.3.1.js"></script>
-<script src="{{ path }}static/js/load_viz_new.js"></script>
-<script>
-	viz_name = '{{ name }}';
-	load_viz_new({{ viz }});
-</script>
 {% endblock %}

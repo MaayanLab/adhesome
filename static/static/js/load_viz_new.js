@@ -18,7 +18,7 @@ function load_viz_new(network_data){
 
   // define arguments object
   var args = {
-    root: '#clustergrammer',
+    root: '#clustergram',
     'network_data': network_data,
     // 'row_label':'Input Genes',
     // 'col_label':'Enriched Terms',
@@ -58,8 +58,8 @@ function load_viz_new(network_data){
 
   function resize_container(){
 
-    var screen_width = $('main').width();
-    var screen_height = $('#clustergrammer').height();
+    var screen_width = $('#clustergram').width();
+    var screen_height = $('#clustergram').height();
 
     d3.select(args.root)
       .style('width', screen_width+'px')

@@ -1,0 +1,25 @@
+{% set clustergram = query("select `%s` from `datasets` where `Name`=?"|format(typ), name)|first|first %}
+{% set path = "../" %}
+{% extends "_base_bare.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ path }}static/css/bootstrap.css">
+<link rel="stylesheet" href="{{ path }}static/css/jquery-ui.css">
+<link rel="stylesheet" href="{{ path }}static/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ path }}static/css/custom_new.css">
+{% endblock %}
+{% block body %}
+<main id="clustergram"></div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ path }}static/js/d3.js"></script>
+<script src="{{ path }}static/js/jquery-1.11.2.min.js"></script>
+<script src="{{ path }}static/js/jquery-ui.js"></script>
+<script src="{{ path }}static/js/bootstrap.min.js"></script>
+<script src="{{ path }}static/js/underscore-min.js"></script>
+<script src="{{ path }}static/js/clustergrammer.v1.3.1.js"></script>
+<script src="{{ path }}static/js/load_viz_new.js"></script>
+<script>
+	viz_name = '{{ name }}';
+	load_viz_new({{ clustergram }});
+</script>
+{% endblock %}

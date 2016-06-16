@@ -1,36 +1,17 @@
-/* Sticky footer */
-body {
+body, .wrap {
 	display: flex;
-	min-height: 100vh;
+  min-height: 100%;
 	flex-direction: column;
 }
 
-main {
+body {
+  min-height: 100vh;
+}
+
+main, .expand {
 	flex: 1 0 auto;
 }
 
-/* Duplicate materialize to override bootstrap's font size */
-html {
-  line-height: 1.5;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-@media only screen and (min-width: 0) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  html {
-    font-size: 14.5px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 15px;
-  }
+iframe {
+  border-style: none;
 }
