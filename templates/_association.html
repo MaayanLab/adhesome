@@ -1,4 +1,4 @@
-{% set title = "Associations %s"|format(name) %}
+{% set title = "Functional Associations: %s"|format(name) %}
 {% set page = "associations" %}
 {% set path = "../" %}
 {% extends "_base.html" %}
@@ -10,7 +10,7 @@
 		<div class="col s12">
 			<ul class="tabs">
 				{% for typ in cluster_types %}
-					<li class="tab col s4"><a href="#{{ typ }}">{{ type|capitalize }}</a></li>
+					<li class="tab col s4"><a href="#{{ typ }}">{{ typ }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
