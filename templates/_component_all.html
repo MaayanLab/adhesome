@@ -1,0 +1,23 @@
+{% extends "_component.html" %}
+
+{% block scripts %}
+{% set path = "../" %}
+{% set nodes = query('select `Official Symbol`, `FA` from `components`').data %}
+{% set edges_query %}
+	select
+		`Source`,
+		`Target`,
+		`PMID`
+	from
+		`edges`
+	where
+		`Source` in (
+			select `Official Symbol` from `components`
+		)
+	and `Target` in (
+			select `Official Symbol` from `components`
+		);
+{% endset %}
+{% set edges = query(edges_query).data %}
+{% include "_graph.html" %}
+{% endblock %}

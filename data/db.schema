@@ -13,7 +13,8 @@ create table `edges` (
 	`Target` text,
 	`Effect` varchar(1),
 	`Type` text,
-	`PMID` integer);
+	`PMID` text,
+	`data_source` text);
 
 create table `datasets` (
 	`Name` text primary key,
@@ -42,35 +43,3 @@ create view `interactions` as
 	where
 		edges.`Source` = source.`Official Symbol`
 	and edges.`Target` = target.`Official Symbol`;
-
--- Output views (on webpage), Create links
-create view `components_out` as
-	select
-		printf("<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/%s'>%s</a>", `Official Symbol`, `Official Symbol`) as `Official Symbol`,
-		`Gene ID`,
-		`Protein name`,
-		`Swiss-Prot ID`,
-		`Synonyms`,
-		`Functional Category`,
-		`FA`
-	from components;
-
-create view `interactions_out` as
-	select
-		printf("<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/%s'>%s</a>", `Source`, `Source`) as `Source`,
-		`Swiss-Prot ID_source`,
-		`Functional Category_source`,
-		`FA_source`,
-		printf("<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/%s'>%s</a>", `Target`, `Target`) as `Target`,
-		`Swiss-Prot ID_target`,
-		`Functional Category_target`,
-		`FA_target`,
-		`Effect`,
-		`Type`,
-		printf("<a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=%s'>%s</a>", `PMID`, `PMID`) as `PMID`
-	from interactions;
-
-create view `datasets_out` as
-	select
-		printf("<a href='associations/%s.html'>%s</a>", replace(lower(`Name`), " ", "_"), `Name`) as `Dataset`
-	from datasets;

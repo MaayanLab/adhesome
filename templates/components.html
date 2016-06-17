@@ -3,7 +3,13 @@
 {% block body %}
 <main class="container">
 	<h1>Components</h1>
-	{% set table = query("select * from components_out") %}
+	<div id="graph" class="expand"></div>
+	{% set substitutions %} {
+		"official_symbol": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ official_symbol ]]'>[[ official_symbol ]]</a>",
+		"gene_id": "<a href='components/[[ official_symbol ]].html'>[[ gene_id ]]</a>"
+	} {% endset %}
+	{% set table = query("select * from components")|apply(substitutions)  %}
 	{% include "_table.html" %}
 </main>
 {% endblock %}
+

@@ -12,6 +12,8 @@
 {% endblock %}
 
 {% block scripts %}
+{% set path = "../" %}
+
 {% set node_query %} 
 	select
 		`Official Symbol`,
@@ -29,7 +31,7 @@
 			from `edges`
 			where `Target`=?);
 {% endset %}
-{% set nodes = query(node_query, name, name, name) %}
+{% set nodes = query(node_query, name, name, name).data %}
 
 {% set edge_query %}
 	select
@@ -42,7 +44,7 @@
 		`Source`=?
 	or	`Target`=?;
 {% endset %}
-{% set edges = query(edge_query, name, name) %}
+{% set edges = query(edge_query, name, name).data %}
 
 {% include "_graph.html" %}
 {% endblock %}

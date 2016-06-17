@@ -4,7 +4,10 @@
 {% block body %}
 <main class="container">
 	<h1>Functional Associations</h1>
-	{% set table = query("select `Dataset` from datasets_out") %}
+	{% set substitutions %} {
+		"dataset": "<a href='associations/[[ urlize(dataset) ]].html'>[[ dataset ]]</a>"
+	} {% endset %}
+	{% set table = query("select `Name` as `Dataset` from datasets")|apply(substitutions) %}
 	{% include "_table.html" %}
 </main>
 {% endblock %}
