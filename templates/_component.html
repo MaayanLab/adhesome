@@ -56,8 +56,10 @@
 	from
 		`edges`
 	where
-		`Source`=?
-	or	`Target`=?;
+		(`Source`=?
+		and `Target` in (select `Official Symbol` from `components`))
+	or (`Target`=?
+		and `Source` in (select `Official Symbol` from `components`));
 {% endset %}
 {% set edges = query(edge_query, name, name).data %}
 
