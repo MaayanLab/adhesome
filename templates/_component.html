@@ -1,4 +1,8 @@
-{% set title = "Component: %s"|format(name) %}
+{% if name %}
+	{% set title = "Component: %s"|format(name) %}
+{% else %}
+	{% set title = "Components" %}
+{% endif %}
 {% set page = "components" %}
 {% set path = "../" %}
 
@@ -6,7 +10,18 @@
 
 {% block body %}
 <main class="container wrap">
-	<h1>{{ name }}</h1>
+	<br />
+	<div class="nav-wrapper white black-text">
+		<div class="col s12">
+			<a href="{{ path }}components.html" class="black-text">Components</a>
+			<a href="#!" class="black-text">&gt;</a>
+			<a href="all.html" class="black-text">All Components</a>
+			{% if name %}
+				<a href="#!" class="black-text">&gt;</a>
+				<a href="{{ urlize(name) }}.html" class="black-text">{{ name }}</a>
+			{% endif %}
+		</div>
+	</div>
 	<div id="graph" class="expand"></div>
 </main>
 {% endblock %}

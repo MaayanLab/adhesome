@@ -3,12 +3,13 @@
 {% block body %}
 <main class="container">
 	<h1>Components</h1>
+	<p>View a network of all components <a href="components/all.html">here</a>.
 	<div id="graph" class="expand"></div>
 	{% set substitutions %} {
 		"official_symbol": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ official_symbol ]]'>[[ official_symbol ]]</a>",
-		"gene_id": "<a href='components/[[ official_symbol ]].html'>[[ gene_id ]]</a>"
+		"network": "<a href='components/[[ network ]].html'>View</a>"
 	} {% endset %}
-	{% set table = query("select * from components")|apply(substitutions)  %}
+	{% set table = query("select *, `Official Symbol` as Network from components")|apply(substitutions)  %}
 	{% include "_table.html" %}
 </main>
 {% endblock %}
