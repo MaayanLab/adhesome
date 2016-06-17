@@ -3,6 +3,7 @@
 import os
 import sqlite3
 import json
+from itertools import count
 from collections import OrderedDict
 from distutils.dir_util import copy_tree
 from staticjinja import make_site
@@ -67,6 +68,9 @@ def apply(table, subst):
 		new_data.append(row_dict.values())
 	table['data'] = new_data
 	return table
+
+register_func(count)
+register_filter(next)
 
 # Remove old build directory
 try_ignore(r"os.rmdir('build/')")

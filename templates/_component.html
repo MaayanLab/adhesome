@@ -23,6 +23,14 @@
 		</div>
 	</div>
 	<div id="graph" class="expand"></div>
+	<div class="row center-align">
+		<div class="col offset-s8 s2">
+			<span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins
+		</div>
+		<div class="col s2">
+			<span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens
+		</div>
+	</div>
 </main>
 {% endblock %}
 
@@ -51,8 +59,7 @@
 {% set edge_query %}
 	select
 		`Source`,
-		`Target`,
-		`PMID`
+		`Target`
 	from
 		`edges`
 	where

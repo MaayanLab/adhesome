@@ -1,4 +1,3 @@
-{# todo clean this up and create style #}
 <script src="{{ path }}js/cytoscape.min.js"></script>
 <script src="{{ path }}js/cola.v3.min.js"></script>
 <script src="{{ path }}js/cytoscape-cola.js"></script>
@@ -97,10 +96,11 @@ var cy = cytoscape({
 				}
 			},
 		{% endfor %}
-		{% for source, target, pmid in edges %}
+		{% set i = count() %}
+		{% for source, target in edges %}
 			{
 				data: {
-					id: '{{ pmid }}',
+					id: {{ i|next }},
 					source: '{{ source }}',
 					target: '{{ target }}',
 					color: '#222'
