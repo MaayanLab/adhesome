@@ -87,6 +87,7 @@ site = make_site(
 	searchpath='templates/',
 	filters=filters,
 	contexts=[('.*', funcs)],
+	env_kwargs=dict(trim_blocks=True, lstrip_blocks=True),
 	outpath='build')
 site.render()
 

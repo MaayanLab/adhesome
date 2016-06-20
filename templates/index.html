@@ -2,14 +2,13 @@
 {% macro button(title, image, link) -%}
 <div class="card-panel hoverable">
 	<a href="{{ link }}">
-			<div class="card-image">
-				<img src="{{ image }}" style="width:100%">
-				<span class="card-title">{{ title }}</span>
-			</div>
+		<div class="card-image">
+			<img src="{{ image }}" style="width:100%">
+			<span class="card-title">{{ title }}</span>
+		</div>
 	</a>
 </div>
 {%- endmacro %}
-
 {% extends "_base.html" %}
 {% block body %}
 <main class="section valign-wrapper">

@@ -5,9 +5,7 @@
 {% endif %}
 {% set page = "components" %}
 {% set path = "../" %}
-
 {% extends "_base.html" %}
-
 {% block body %}
 <main class="container wrap">
 	<br />
@@ -33,10 +31,8 @@
 	</div>
 </main>
 {% endblock %}
-
 {% block scripts %}
 {% set path = "../" %}
-
 {% set node_query %} 
 	select
 		`Official Symbol`,
@@ -55,7 +51,6 @@
 			where `Target`=?);
 {% endset %}
 {% set nodes = query(node_query, name, name, name).data %}
-
 {% set edge_query %}
 	select
 		`Source`,
@@ -69,6 +64,5 @@
 		and `Source` in (select `Official Symbol` from `components`));
 {% endset %}
 {% set edges = query(edge_query, name, name).data %}
-
 {% include "_graph.html" %}
 {% endblock %}

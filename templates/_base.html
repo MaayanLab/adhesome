@@ -1,6 +1,5 @@
 {% set title = title|default(page|capitalize) %}
 {% set path = path|default("") %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,22 +16,26 @@
 </head>
 <body>
 	{% set logo = "ADHESOME<em>FA</em>network" %}
-	{% set menu %}
+	{% set menu -%}
 		<li{% if page == "home" %} class="active"{% endif %}><a href="{{ path }}index.html">Home</a></li>
 		<li{% if page == "components" %} class="active"{% endif %}><a href="{{ path }}components.html">Components</a></li>
 		<li{% if page == "associations" %} class="active"{% endif %}><a href="{{ path }}associations.html">Functional Associations</a></li>
 		<li{% if page == "interactions" %} class="active"{% endif %}><a href="{{ path }}interactions.html">Protein Interactions</a></li>
 		<li{% if page == "download" %} class="active"{% endif %}><a href="{{ path }}download.html">Download</a></li>
 		<li{% if page == "contact" %} class="active"{% endif %}><a href="{{ path }}contact.html">Contact Us</a></li>
-	{% endset %}
+	{%- endset %}
 	<header>
 		<nav class="green">
 			<div class="nav-wrapper">
 				<div id="logo-container" href="#" class="brand-logo center hide-on-large-only">{{ logo }}</div>
 				<div id="logo-container" href="#" class="brand-logo right hide-on-med-and-down">{{ logo }}</div>
 				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul class="left hide-on-med-and-down">{{ menu }}</ul>
-				<ul class="side-nav" id="nav-mobile">{{ menu }}</ul>
+				<ul class="left hide-on-med-and-down">
+					{{ menu }}
+				</ul>
+				<ul class="side-nav" id="nav-mobile">
+					{{ menu }}
+				</ul>
 			</div>
 		</nav>
 	</header>

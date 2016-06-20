@@ -108,14 +108,17 @@ var cy = cytoscape({
 			},
 		{% endfor %}
 	],
-  layout: {
-    name: 'cola',
-    random: true
-  }
+	layout: {
+		name: 'cola',
+		maxSimulationTime: 1000
+	}
 });
 
-cy.on('select', 'node', function(e){
-  window.location.href = this.data('name')+'.html';
+cy.on('tap', 'node', function(e){
+	window.location.href = this.data('name')+'.html';
 });
+
+$(window).resize(function() { cy.resize(); });
 
 </script>
+
