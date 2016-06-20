@@ -2,13 +2,17 @@
 {% set path = "../" %}
 {% extends "_base_bare.html" %}
 {% block head %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{{ path }}static/css/bootstrap.css">
 <link rel="stylesheet" href="{{ path }}static/css/jquery-ui.css">
 <link rel="stylesheet" href="{{ path }}static/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{ path }}static/css/custom_new.css">
+<link rel="stylesheet" href="{{ path }}css/main.css">
 {% endblock %}
 {% block body %}
-<main id="clustergram"></div>
+<main class="wrap">
+	<div id="clustergram" class="expand"></div>
+</main>
 {% endblock %}
 {% block scripts %}
 <script src="{{ path }}static/js/d3.js"></script>

@@ -11,14 +11,16 @@
 {%- endmacro %}
 
 {% extends "_base.html" %}
-{% block title%}Project Description{% endblock %}
 {% block body %}
 <main class="section valign-wrapper">
 	<div class="row valign">
-		<div class="col s6">
+		<div class="col s4">
 			{{ button('Components', 'small_net.jpg', 'components.html') }}
 		</div>
-		<div class="col s6">
+		<div class="col s4">
+			{{ button('Functional Associations', 'small_net.jpg', 'associations.html') }}
+		</div>
+		<div class="col s4">
 			{{ button('Protein-Protein Interactions', 'small_net.jpg', 'interactions.html') }}
 		</div>
 	</div>
