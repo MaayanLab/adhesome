@@ -76,7 +76,7 @@ var cy = cytoscape({
 			},
 		{% endfor %}
 		{% set i = count() %}
-		{% for source, target, pmid in edges %}
+		{% for source, target, pmid in edges|unique_edges %}
 			{
 				data: {
 					id: {{ i|next }},

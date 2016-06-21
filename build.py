@@ -78,6 +78,20 @@ def apply(table, subst):
 	table['data'] = new_data
 	return table
 
+@register_filter
+def unique_edges(array):
+	''' This filter removes duplicated edges and assumes:
+	 - [0] == source, [1] == target, [2:] == the rest are concatable '''
+	pairs = {}
+	for entry in array:
+		key = tuple(sorted(entry[:2]))		
+		if pairs.get(key):
+			for a, b in zip(pairs[key], entry[2:]):
+				a += b
+		else:
+			pairs[key] = entry[2:]
+	return [k+tuple(v) for k,v in pairs.items()]
+
 register_func(count)
 register_filter(next)
 
