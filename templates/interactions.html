@@ -9,7 +9,8 @@
 		"target": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ target ]]'>[[ target ]]</a>",
 		"pmid": "[% for i in pmid.split(' ') %]<a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=[[ i ]]'>[[ i ]]</a><br />[% endfor %]"
 	} {% endset %}
-	{% set table = query("select * from interactions")|apply(substitutions) %}
+	{% set cur = get_cursor() %}
+	{% set table = cur|query("select * from interactions")|apply(substitutions) %}
 	{% include "_table.html" %}
 </main>
 {% endblock %}

@@ -55,6 +55,5 @@ for arg in sys.argv[1:]:
 		 net.export_net_json('viz', indent='no-indent'),
 		 net.export_net_json('sim_row', indent='no-indent'),
 		 net.export_net_json('sim_col', indent='no-indent')))
-
-con.commit()
+	con.commit()
 con.close()

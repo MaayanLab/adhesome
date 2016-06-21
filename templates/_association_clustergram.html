@@ -1,4 +1,5 @@
-{% set clustergram = query("select `%s` from `datasets` where `Name`=?"|format(typ), name).data.0.0 %}
+{% set cur = get_cursor() %}
+{% set clustergram = (cur|query("select `{0}` from `datasets` where `Name`=?".format(typ), name)).data.0.0 %}
 {% set path = "../" %}
 {% extends "_base_bare.html" %}
 {% block head %}

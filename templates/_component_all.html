@@ -1,12 +1,12 @@
 {% extends "_component.html" %}
-
-{% block scripts %}
-{% set path = "../" %}
-{% set nodes = query('select `Official Symbol`, `FA` from `components`').data %}
+{% block cytoscape %}
+{% set cur = get_cursor() %}
+{% set nodes = (cur|query('select `Official Symbol`, `FA` from `components`')).data %}
 {% set edges_query %}
 	select
 		`Source`,
-		`Target`
+		`Target`,
+		`PMID`
 	from
 		`edges`
 	where
@@ -17,6 +17,8 @@
 			select `Official Symbol` from `components`
 		);
 {% endset %}
-{% set edges = query(edges_query).data %}
+{% set edges = (cur|query(edges_query)).data %}
+<script>
 {% include "_graph.html" %}
+</script>
 {% endblock %}

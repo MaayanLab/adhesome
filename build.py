@@ -32,13 +32,8 @@ def urlize(name):
 	return name.replace(' ', '_').lower()
 
 @register_func
-def query(stmt, *kargs):
-	''' Query the database retreiving both the header and all the rows '''
-	table = con.cursor().execute(stmt, kargs)
-	return {
-		'header': [desc[0] for desc in table.description],
-		'data': table.fetchall()
-	}
+def get_cursor():
+	return con.cursor()
 
 # Jinja Filters
 filters={}
@@ -55,6 +50,20 @@ def trim_(s):
 		return s[:i]
 	else:
 		return s
+
+@register_filter
+def query_exec(cur, stmt, *kargs):
+	''' Query the database '''
+	return cur.execute(stmt, kargs)
+
+@register_filter
+def query(cur, stmt, *kargs):
+	''' Query the database retreiving both the header and all the rows '''
+	table = query_exec(cur, stmt, *kargs)
+	return {
+		'header': [desc[0] for desc in table.description],
+		'data': table.fetchall()
+	}
 
 @register_filter
 def apply(table, subst):
@@ -91,8 +100,10 @@ site = make_site(
 	outpath='build')
 site.render()
 
+cur = get_cursor()
+
 # Build subpages from database
-for name, in query('select `Name` from `datasets`')['data']:
+for name, in query(cur, 'select `Name` from `datasets`')['data']:
 	uri = name.lower().replace(' ', '_')
 	site.get_template('_association.html').stream(name=name, uri=uri, **funcs).dump('build/associations/%s.html' % (uri))
 	for typ in ['viz', 'sim_row', 'sim_col']:
@@ -102,6 +113,6 @@ for name, in query('select `Name` from `datasets`')['data']:
 site.get_template('_component_all.html').stream(**funcs).dump('build/components/all.html')
 print('Rendering all components')
 
-for name, in query('select `Official Symbol` from `components`')['data']:
+for name, in query(cur, 'select `Official Symbol` from `components`')['data']:
 	site.get_template('_component.html').stream(name=name, **funcs).dump('build/components/%s.html' % (name))
 	print('Rendering %s' % (name))

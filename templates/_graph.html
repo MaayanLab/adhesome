@@ -1,7 +1,3 @@
-<script src="{{ path }}js/cytoscape.min.js"></script>
-<script src="{{ path }}js/cola.v3.min.js"></script>
-<script src="{{ path }}js/cytoscape-cola.js"></script>
-<script>
 var cy = cytoscape({
 	container: $('#graph'),
 	style: [
@@ -10,19 +6,16 @@ var cy = cytoscape({
 			"style": {
 				"selection-box-color": "#AAD8FF",
 				"selection-box-border-color": "#8BB0D0",
-				"selection-box-opacity": "0.5"
+				"selection-box-opacity": "0.2"
 			}
 		},
 		{
 			"selector": "node",
 			"style": {
-				"width": "data(size)",
-				"height": "data(size)",
 				"content": "data(name)",
 				"font-size": "12px",
 				"text-valign": "center",
 				"text-halign": "center",
-				"background-color": "data(color)",
 				"text-outline-color": "#555",
 				"text-outline-width": "2px",
 				"color": "#fff",
@@ -31,34 +24,33 @@ var cy = cytoscape({
 			}
 		},
 		{
-			"selector": "node:selected",
+			"selector": ".intrinsic",
 			"style": {
-				"border-width": "6px",
-				"border-color": "#AAD8FF",
-				"border-opacity": "0.5",
-				"background-color": "#77828C",
-				"text-outline-color": "#77828C"
+				"background-color": "#555",
+				"width": "50",
+				"height": "50"
 			}
 		},
 		{
-			"selector": "node.highlighted",
+			"selector": ".associated",
 			"style": {
-				"border-width": "6px",
-				"border-color": "#AAD8FF",
-				"border-opacity": "0.5",
-				"background-color": "#394855",
-				"text-outline-color": "#394855",
-				"shadow-blur": "12px",
-				"shadow-color": "#000",
-				"shadow-opacity": "0.8",
-				"shadow-offset-x": "0px",
-				"shadow-offset-y": "4px"
+				"background-color": "#aaa",
+				"width": "40",
+				"height": "40"
 			}
 		},
 		{
-			"selector": "node.unhighlighted",
+			"selector": ".central",
 			"style": {
-				"opacity": "0.2"
+				"background-color": "#500",
+				"width": "60",
+				"height": "60"
+			}
+		},
+		{
+			"selector": ".hidden",
+			"style": {
+				"display": "none"
 			}
 		},
 		{
@@ -67,21 +59,9 @@ var cy = cytoscape({
 				"curve-style": "haystack",
 				"haystack-radius": "0.5",
 				"opacity": "0.4",
-				"line-color": "data(color)",
+				"line-color": "#222",
 				"width": "mapData(weight, 0, 1, 1, 8)",
 				"overlay-padding": "3px"
-			}
-		},
-		{
-			"selector": "edge.highlighted",
-			"style": {
-				"z-index": "999999"
-			}
-		},
-		{
-			"selector": "edge.unhighlighted",
-			"style": {
-				"opacity": "0.05"
 			}
 		}
 	],
@@ -90,20 +70,18 @@ var cy = cytoscape({
 			{
 				data: {
 					id: '{{ sym }}',
-					name: '{{ sym }}',
-					color: {% if fa=="Intrinsic Proteins" %}'#555'{% else %}'#aaa'{% endif %},
-					size: 50
-				}
+					name: '{{ sym }}'
+				},
+				classes: '{% if fa=="Intrinsic Proteins" %}intrinsic{% else %}associated{% endif %}'
 			},
 		{% endfor %}
 		{% set i = count() %}
-		{% for source, target in edges %}
+		{% for source, target, pmid in edges %}
 			{
 				data: {
 					id: {{ i|next }},
 					source: '{{ source }}',
 					target: '{{ target }}',
-					color: '#222'
 				}
 			},
 		{% endfor %}
@@ -118,7 +96,16 @@ cy.on('tap', 'node', function(e){
 	window.location.href = this.data('name')+'.html';
 });
 
-$(window).resize(function() { cy.resize(); });
+$('#intrinsic').change(function() {
+	if(!$(this).is(':checked'))
+		cy.$('.intrinsic').addClass('hidden');
+	else
+		cy.$('.intrinsic').removeClass('hidden');
+});
 
-</script>
-
+$('#associated').change(function() {
+	if(!$(this).is(':checked'))
+		cy.$('.associated').addClass('hidden');
+	else
+		cy.$('.associated').removeClass('hidden');
+});

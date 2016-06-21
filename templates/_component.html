@@ -22,47 +22,56 @@
 	</div>
 	<div id="graph" class="expand"></div>
 	<div class="row center-align">
-		<div class="col offset-s8 s2">
-			<span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins
+		<div class="col offset-s8 s2 input-field">
+			<input type="checkbox" id="intrinsic" checked="checked" />
+			<label for="intrinsic">Intrinsic Proteins <span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
 		</div>
-		<div class="col s2">
-			<span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens
+		<div class="col s2 input-field">
+			<input type="checkbox" id="associated" checked="checked" />
+			<label for="associated">Associated Protiens <span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
 		</div>
 	</div>
 </main>
 {% endblock %}
 {% block scripts %}
-{% set path = "../" %}
-{% set node_query %} 
-	select
-		`Official Symbol`,
-		`FA`
-	from
-		`components`
-	where
-		`Official Symbol`=?
-	or	`Official Symbol` in (
-			select `Target`
-			from `edges`
-			where `Source`=?)
-	or	`Official Symbol` in (
-			select `Source`
-			from `edges`
-			where `Target`=?);
+<script src="{{ path }}js/cytoscape.min.js"></script>
+<script src="{{ path }}js/cola.v3.min.js"></script>
+<script src="{{ path }}js/cytoscape-cola.js"></script>
+{% block cytoscape %}
+{% set cur = get_cursor() %}
+{% set node_view %}
+create temp view `nodes_{0}` as
+select `Official Symbol`, `FA`
+from `components`
+where `Official Symbol`="{0}"
+or `Official Symbol` in (
+	select `Target`
+	from `edges`
+	where `Source`="{0}")
+or `Official Symbol` in (
+	select `Source`
+	from `edges`
+	where `Target`="{0}");
 {% endset %}
-{% set nodes = query(node_query, name, name, name).data %}
-{% set edge_query %}
-	select
-		`Source`,
-		`Target`
-	from
-		`edges`
-	where
-		(`Source`=?
-		and `Target` in (select `Official Symbol` from `components`))
-	or (`Target`=?
-		and `Source` in (select `Official Symbol` from `components`));
+{% set edge_view %}
+create temp view `edges_{0}` as
+select
+	`Source`,
+	`Target`,
+	`PMID`
+from
+	`edges`
+where
+	`Source` in (select `Official Symbol` from `nodes_{0}`)
+and `Target` in (select `Official Symbol` from `nodes_{0}`);
 {% endset %}
-{% set edges = query(edge_query, name, name).data %}
+{% set res = cur|query_exec(node_view.format(name)), cur|query_exec(edge_view.format(name)) %}
+{% set nodes = (cur|query('select * from nodes_{0}'.format(name))).data %}
+{% set edges = (cur|query('select * from edges_{0}'.format(name))).data %}
+{% set res = cur|query_exec('drop view `nodes_{0}`'.format(name)), cur|query_exec('drop view `edges_{0}`'.format(name)) %}
+<script>
 {% include "_graph.html" %}
+cy.$('#{{ name }}').addClass('central')
+</script>
+{% endblock %}
 {% endblock %}
