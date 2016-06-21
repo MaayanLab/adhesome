@@ -11,7 +11,7 @@
 {%- endmacro %}
 {% extends "_base.html" %}
 {% block body %}
-<main class="section valign-wrapper">
+<div id="content">
 	<div class="row valign">
 		<div class="col s4">
 			{{ button('Components', 'small_net.jpg', 'components.html') }}
@@ -23,5 +23,5 @@
 			{{ button('Protein-Protein Interactions', 'small_net.jpg', 'interactions.html') }}
 		</div>
 	</div>
-</main>
+</div>
 {% endblock %}

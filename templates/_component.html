@@ -7,7 +7,7 @@
 {% set path = "../" %}
 {% extends "_base.html" %}
 {% block body %}
-<main class="container wrap">
+<div id="content">
 	<br />
 	<div class="nav-wrapper white black-text">
 		<div class="col s12">
@@ -31,7 +31,7 @@
 			<label for="associated">Associated Protiens <span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
 		</div>
 	</div>
-</main>
+</div>
 {% endblock %}
 {% block scripts %}
 <script src="{{ path }}js/cytoscape.min.js"></script>

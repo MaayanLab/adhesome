@@ -4,7 +4,7 @@
 {% extends "_base.html" %}
 
 {% block body %}
-<main class="container wrap">
+<div id="content">
 	<h1>{{ name }}</h1>
 	<div class="row wrap expand">
 		{% set cluster_types = ["viz", "sim_row", "sim_col"] %}
@@ -19,5 +19,5 @@
 			<iframe id="{{ typ }}" class="col s12 expand" frameborder="0" border="0" cellspacing="0" src="{{ uri }}_{{ typ }}.html"></iframe>
 		{% endfor %}
 	</div>
-</main>
+</div>
 {% endblock %}

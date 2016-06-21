@@ -1,7 +1,7 @@
 {% set page = "components" %}
 {% extends "_base.html" %}
 {% block body %}
-<main class="container">
+<div id="content">
 	<h1>Components</h1>
 	<p>View a network of all components <a href="components/all.html">here</a>.</p>
 	<div id="graph" class="expand"></div>
@@ -12,6 +12,6 @@
 	{% set cur = get_cursor() %}
 	{% set table = cur|query("select *, `Official Symbol` as Network from components")|apply(substitutions)  %}
 	{% include "_table.html" %}
-</main>
+</div>
 {% endblock %}
 

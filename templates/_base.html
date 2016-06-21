@@ -1,69 +1,226 @@
 {% set title = title|default(page|capitalize) %}
 {% set path = path|default("") %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Adhesome - {{ title }}</title>
-	<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-	<meta content="Iyengar Laboratory, The Weizmann Institute of Science, Adhesome, Focal Adhesion Complex, Benny Geiger, Weizzman, Ravi Iyengar, Mount Sinai School of Medicine, Mount Sinai, New York, medical school, NYC, New York City, cancer, pharmacology, biological chemistry, psychiatry, signal transduction, G protein and effectors, protein-protein interactions, drug design, cellular signaling networks, cellular signaling systems, signaling pathways, computational models, systems biology, computational biology, graph theory analysis, spatiotemporal organization, g-protein mediated signaling, g-protein, effectors, protein-protein interactions,proteomics and genomics to identify signal transduction pathways, analysis and visualization of large-scale signaling networks in mammalian cells, SAVI, PathwayGenerator, bioinformatics" name="keywords">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="{{ path }}css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="{{ path }}css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="{{ path }}css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	{% block head %}{% endblock %}
-</head>
-<body>
-	{% set logo = "ADHESOME<em>FA</em>network" %}
-	{% set menu -%}
-		<li{% if page == "home" %} class="active"{% endif %}><a href="{{ path }}index.html">Home</a></li>
-		<li{% if page == "components" %} class="active"{% endif %}><a href="{{ path }}components.html">Components</a></li>
-		<li{% if page == "associations" %} class="active"{% endif %}><a href="{{ path }}associations.html">Functional Associations</a></li>
-		<li{% if page == "interactions" %} class="active"{% endif %}><a href="{{ path }}interactions.html">Protein Interactions</a></li>
-		<li{% if page == "download" %} class="active"{% endif %}><a href="{{ path }}download.html">Download</a></li>
-		<li{% if page == "contact" %} class="active"{% endif %}><a href="{{ path }}contact.html">Contact Us</a></li>
-	{%- endset %}
-	<header>
-		<nav class="green">
-			<div class="nav-wrapper">
-				<div id="logo-container" href="#" class="brand-logo center hide-on-large-only">{{ logo }}</div>
-				<div id="logo-container" href="#" class="brand-logo right hide-on-med-and-down">{{ logo }}</div>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul class="left hide-on-med-and-down">
-					{{ menu }}
-				</ul>
-				<ul class="side-nav" id="nav-mobile">
-					{{ menu }}
-				</ul>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<!--
+	## Site Configuration
+			## @siteName	CMG
+					## @scope		Site
+			## @adaption	JDG@NPG 2007
+	-->
+	<!-- used in ${common}/npg_includes/separator.shtml -->
+	<!-- used in ${common}/npg_includes/clearfloats.shtml -->
+	<!-- used in ${common}/npg_includes/global.backtotop.shtml -->
+	<!-- SET THE BASE FOLDERS FOR THE SITE -->
+	<head>
+		<title>{{ title }}</title>
+		<!-- metadata and links -->
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="home" href="{{path}}cmg_update/index.shtml" title="home" />
+		<!-- provide correct meta robots information - all pages except TOC pages (AOP, Issue, Focus (web and other), Supplements) use default "noarchive" type -->
+		<meta name="robots" content="noarchive" />
+		<!-- This doesn't really belong here, but I need it somewhere that's included everywhere -->
+		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+		<script type="text/javascript">
+		google.load("jquery", "1");
+		</script>
+		<script type="text/javascript">
+		jQuery.noConflict();
+		var $jq = jQuery;
+		</script>
+		<!-- end metadata and links -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<!-- local style overrides -->
+		<style type="text/css">
+		#content .featurebox .featurebox { margin: 0; }
+		#content .featurebox .featurebox p { margin-bottom: 0; }
+		#content .featurebox .padder a.button { margin: 0; }
+		</style>
+		<style type="text/css" media="screen, projection"><!--/*--><![CDATA[/*><!--*/
+		@import "{{path}}cmg_update/npg_style/layout.css";
+		@import "{{path}}cmg_update/npg_style/site.css";
+		@import "{{path}}cmg_update/npg_style/google.css";
+		@import "{{path}}cmg_update/npg_style/header_footer_smallfonts.css";
+		@import "{{path}}cmg_update/npg_style/restrict_width/930px.css";/* do not edit this stylesheet */
+		/*]]>*/--></style>
+		<!-- IE specific scripts - min/max fix -->
+		<!--[if lte IE 6]>
+		<script type="text/javascript" src="{{path}}cmg_update/npg_scripts/lte-ie-6.js"></script>
+		<![endif]-->
+		<!-- end IE specific scripts -->
+	</head>
+	<body class="" id="home">
+		{% block header %}
+			<div id="head-er">
+				<div class="header-nonad-wrapper" id="top">
+					<div class="accessibility-login-wrap">
+						<div class="accessibility-login">
+							<ul class="jumplinks">
+								<li class="first"><a href="#content">Jump&nbsp;to&nbsp;main&nbsp;content</a></li>
+								<li><a href="#main-journal-nav">Jump&nbsp;to&nbsp;navigation</a></li>
+							</ul>
+							
+							<span class="cleardiv"><!-- --></span>
+						</div>
+					</div>
+					
+					<span class="cleardiv"><!-- --></span>
+					
+					<hr />
+					<div class="image-user-services-wrap">
+						<div class="image-user-services">
+							<a href="{{path}}index.shtml" title="Homepage"><img src="{{path}}cmg_update/npg_images/journal_header.gif" class="journal-header" alt="Cell Migration Gateway Logo" /></a>
+							
+							<span class="cleardiv"><!-- --></span>
+						</div>
+						
+						<span class="cleardiv"><!-- --></span>
+					</div>
+					
+					<span class="cleardiv"><!-- --></span>
+					
+					<hr />
+					<div class="publications-search-wrap clearfix">
+						<div class="publications-search">
+							<div id="cse">Loading</div>
+							
+							<span class="cleardiv"><!-- --></span>
+						</div>
+					</div>
+				</div>
 			</div>
-		</nav>
-	</header>
-
-	{% block body %}{% endblock %}
-
-	<footer class="page-footer white">
-		<div class="footer-copyright center">
-			<div class="container grey-text">Copyright &copy; 2006. All Rights Reserved.</div>
-		</div>
-	</footer>
-
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="{{ path }}js/materialize.js"></script>
-	<script src="{{ path }}js/jquery.dataTables.min.js"></script>
-	<script src="{{ path }}js/iframeResizer.min.js"></script>
-	<script src="{{ path }}js/main.js"></script>
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-6277639-8']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
-	{% block scripts %}{% endblock %}
-</body>
+		{% endblock %}
+		<!-- opening divs for fixed width layout -->
+		<div id="constrain">
+			<div class="constrain">
+				<div id="content-journalnav">
+					{% block body %}{% endblock %}
+					
+					<!-- START JOURNALNAV DIV -->
+					
+					<div id="journalnav"><!-- journalnav class must match class on naivgation list item to highlight that item -->
+					<h1 class="hidden">Site Navigation</h1>
+					<map title="main journal navigation" id="main-journal-nav" class="journal-nav">
+					<ul class="xoxo">
+						<li class="site-nav-title">
+							<h1>Adhesome Site Navigation</h1>
+							<ul>
+								<li><a href="{{path}}index.shtml" title="The main Cell Migration Gateway homepage">Home</a></li>
+								<li class="selected"><a href="{{path}}cmg_update/index.shtml" title="The one-stop resource for news, highlights and research about cell migration">Cell Migration Update</a>
+								<ul class="subnav">
+									<li><a href="{{path}}cmg_update/archive/fa_current.shtml" title="Featured articles index">Featured articles</a></li>
+									<li><a href="{{path}}cmg_update/archive/rhighlts_current.shtml" title="Research highlights index">Research highlights</a></li>
+									<li><a href="{{path}}cmg_update/archive/library_current.shtml" title="Research library index">Research library</a></li>
+									<li><a href="{{path}}cmg_update/archive/news_current.shtml" title="News index">Consortium news</a></li>
+									<li><a href="{{path}}cmg_update/conferences.shtml" title="Conference Calendar index">Conference calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="{{path}}resource/" title="Cell Migration Consortium Activity Center">CMC Activity Center</a></li>
+							<li><a href="http://cmckb.cellmigration.org/" title="Cell Migration Knowledgebase">CM Knowledgebase</a></li>
+							<li><a href="{{path}}science/index.shtml" title="An introduction to cell migration">Migration 101</a></li>
+							<li><a href="{{path}}aboutus/about.shtml" title="A description of the gateway, the CMC, and contact details">About Us</a></li>
+							<li><a href="{{path}}sitemap.shtml" title="A guide to the Cell Migration Gateway site">Site Map</a></li>
+						</ul>
+					</li>
+					<li class="spacing"><h2 class="toolbox">Toolbox</h2></li>
+					<li class="nav-ealert"><a href="{{path}}cmg_update/ealert/signup.shtml" class="reg-rec" title="E-alert signup">E-alert sign up</a></li>
+					<li class="nav-ealert nav-facebook"><a href="http://www.facebook.com/pages/Charlottesville-VA/Cell-Migration-Gateway/267912484187" class="reg-rec" title="Facebook">Facebook</a></li>
+					<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
+					<li class="nav-rss"><a href="{{path}}cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
+				</ul>
+				</map>
+				<!-- jdg -->
+			<h2 class="npg-resources"><abbr title="Cell Migration Gateway">CMG</abbr> resources</h2>
+			<ul class="npg-resources">
+				<li><a href="http://www.jbc.org/">J. Biol. Chem.</a></li>
+				<li><a href="http://www.pnas.org/">PNAS</a></li>
+				<li><a href="http://www.nature.com/onc/index.html">Oncogene</a></li>
+				<li><a href="http://www.sciencemag.org/magazine">Science</a></li>
+				<li><a href="http://www.nature.com/nature/">Nature</a></li>
+				<li><a href="http://dev.biologists.org/">Development</a></li>
+				<li><a href="http://www.jimmunol.org/">J. Immunol.</a></li>
+				<li><a href="http://www.nature.com/msb/index.html">Molecular Systems Biology</a></li>
+				<li><a href="http://www.signaling-gateway.org/">Signaling Gateway</a></li>
+				<li><a href="http://www.functionalglycomics.org/static/index.shtml">Functional Glycomics Gateway</a></li>
+				<li><a href="http://www.lipidmaps.org/">Lipidomics Gateway</a></li>
+				<li><a href="http://kb.psi-structuralgenomics.org/index.html">Structural Genomics Knowledgebase</a></li>
+				<li><a href="http://pid.nci.nih.gov/">Pathway Interaction Database</a></li>
+				<li><a href="http://www.nature.com/omics/index.html">Omics Gateway</a></li>
+				<li><a href="http://flybase.org/">FlyBase</a></li>
+				<li><a href="http://www.wormbase.org/">WormBase</a></li>
+			</ul>
+			</div><!-- CLOSEs JOURNALNAV DIV -->
+			</div><!-- CLOSEs CONTENT-JOURNALNAV DIV -->
+		</div></div>
+		{% block footer %}
+			<p class="back-to-top hidden"><a href="#top">Top<span class="hidden"> of page</span></a></p>
+			<div id="foot-er" class="footer">
+				<div id="footer-journal">
+					<div class="footer-constrain clearfix">
+						<p class="journal-name">Cell Migration Gateway</p>
+						<p class="eissn"><abbr title="Electronic International Standard Serial Number">EISSN</abbr><span class="hidden">:</span> 1747-7883</p>
+						
+						<span class="cleardiv"><!-- --></span>
+					</div>
+					<span class="cleardiv"><!-- --></span>
+				</div>
+				<div id="footer-copyright">
+					<div class="footer-constrain">
+						<p class="norm">&#169; 2014 Cell Migration Consortium - All Rights Reserved | <a href="{{path}}cmg_update/privacy.shtml">Privacy policy &amp; Terms of Use</a></p>
+					</div>
+				</div>
+			</div>
+		{% endblock %}
+		{% block scripts %}
+			<!-- Piwik -->
+			<script type="text/javascript">
+			var _paq = _paq || [];
+			_paq.push(["trackPageView"]);
+			_paq.push(["enableLinkTracking"]);
+			(function() {
+			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://wwstats.weizmann.ac.il/";
+			_paq.push(["setTrackerUrl", u+"piwik.php"]);
+			_paq.push(["setSiteId", "25"]);
+			var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+			g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+			})();
+			</script>
+			<!-- End Piwik Code -->
+			<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+			try {
+			var pageTracker = _gat._getTracker("UA-8294145-1");
+			pageTracker._trackPageview();
+			} catch(err) {}
+			</script>
+			<script type="text/javascript">
+			google.load('search', '1', {language : 'en', });
+			var customSearchControl;
+			var gcscPostSearch = {};
+			gcscPostSearch.uiAddOn = function() {
+			var closeX = document.createElement('div');
+			closeX.className = 'gsc-clear-button gsc-cursor-close';
+			closeX.onclick = function(){ customSearchControl.clearAllResults(); return false;};
+			closeX.appendChild(document.createTextNode('close'));
+			var divs = document.getElementsByTagName('div');
+			for (var i = 0; i < divs.length; i++) {
+			if (divs[i].className == 'gsc-cursor-box') {
+			divs[i].appendChild(closeX);
+			}
+			}
+			}
+			google.setOnLoadCallback(function() {
+			customSearchControl = new google.search.CustomSearchControl('008980979909212325489:usicab459yw');
+			customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+			customSearchControl.draw('cse');
+			customSearchControl.setSearchCompleteCallback(gcscPostSearch, gcscPostSearch.uiAddOn);
+			}, true);
+			</script>
+		{% endblock %}
+	</body>
 </html>

@@ -2,7 +2,7 @@
 {% set page = "interactions" %}
 {% extends "_base.html" %}
 {% block body %}
-<main class="container">
+<div id="content">
 	<h1>Interactions</h1>
 	{% set substitutions %} {
 		"source": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ source ]]'>[[ source ]]</a>",
@@ -12,5 +12,5 @@
 	{% set cur = get_cursor() %}
 	{% set table = cur|query("select * from interactions")|apply(substitutions) %}
 	{% include "_table.html" %}
-</main>
+</div>
 {% endblock %}

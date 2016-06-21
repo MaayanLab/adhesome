@@ -1,0 +1,29 @@
+#head-er .accessibility-login a.nature-link {
+	font:bold 110% Garamond, serif;
+	line-height:80%;
+	width:5em;
+}
+
+#global-subject-areas h2,
+#global-subject-areas h3,
+#global-subject-areas h4,
+#global-subject-areas h5 {font-size:80%;}
+
+div.ab-ad,
+#global-subject-areas h3.view,
+#global-subject-areas h4.view,
+#global-subject-areas h5.view,
+#global-subject-areas ul,
+#head-er .accessibility-login .jumplinks,
+#head-er div.logon,
+#head-er .user-services,
+#head-er .publications,
+#head-er .search form a,
+#head-er .publications-search label,
+#head-er input,
+#head-er select, #foot-er {font-size:70%;}
+
+/* naturejobs/products includes */
+#natjob.box h2.natjob, #natprod.box h2.natprod {font-size:90%;}
+#natjob.box ul.natjob li h3, #natjob.box div.natjobmore, #natprod.box div.natprodmore input {font-size:80%;}
+ul.natjob ul {font-size:70%;}

@@ -1,0 +1,2572 @@
+/* following element uses the "Modified SBMH (Simplified Box Model Hack)" to provide IE with similar sized text to other browsers -details at: http://www.info.com.ph/~etan/w3pantheon/style/modifiedsbmh.html */
+/* also uses the "commented comment" hack to give mac ie a similar size to other browsers - details at: http://www.premonition.co.uk/cssd/ie51-only.html*/
+* html body {font-size:90%;/* all IE */}
+/* hide from mac ie5.x \*/
+* html body {font-size:89%;}
+/* end hide from mac ie5 */
+body {
+	font-size:90%;/* all other browsers */
+	margin:0;
+	padding:0 0 20px 0;
+	color:#000;
+	background:#fff;
+	font-family:Verdana, arial, Helvetica, sans-serif;
+}
+
+/* generic print header style - displays only when printed */
+.print-header {display:none;}
+/* end generic print header style */
+
+/* following class is to hide elements that give extra information for users of assistive technology such as screenreaders - for more info see: http://www.webaim.org/techniques/articles/hiddentext */
+.hidden {
+	position:absolute;
+ 	left:0px;
+ 	top:-500px;
+ 	width:1px;
+ 	height:1px;
+ 	overflow:hidden;
+}
+
+/* following declarations clears elements without a clearing element such as <br clear> being needed. For more info see: http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {
+    content:url(/cmg_update/npg_images/clear.gif);
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+/* a div with this class is sometimes required for correct display in Mac IE5.x */
+div.cleardiv {
+	clear:both;
+	padding:0 !important;
+}
+
+span.cleardiv {
+	display:block !important;
+	clear:both !important;
+	padding:0 !important;
+	margin:0 !important;
+}
+/* end clearing declarations */
+
+
+.button {
+	font-weight:bold;
+	font-size:80%;
+	color:#fff;
+	background-color:#000;
+	
+}
+
+.loading {
+    background: url(/cmg_update/npg_images/spinner.gif) no-repeat center center;
+}
+
+
+.clear {clear:both;}
+.clearleft {clear:left;}
+
+/* global list type styles */
+ol.decimal {list-style-type:decimal;}/*(1, 2, 3, etc.)*/
+ol.decimal-leading-zero {list-style-type:decimal-leading-zero;}/*(01, 02, 03, etc.)*/
+ol.lower-alpha {list-style-type:lower-alpha;}/*(a, b, c, d, e, etc.)*/
+ol.upper-alpha {list-style-type:upper-alpha;}/*(A, B, C, D, E, etc.) */
+ol.lower-roman {list-style-type:lower-roman;}/*(i, ii, iii, iv, v, etc.)*/
+ol.upper-roman {list-style-type:upper-roman;}/*(I, II, III, IV, V, etc.)*/
+ol.lower-greek {list-style-type:lower-greek;}/*(alpha, beta, gamma, etc.)*/
+/* end global list type styles */
+
+/* text align styles */
+.align-left {text-align:left;}
+.align-center {text-align:center;}
+.align-right {text-align:right;}
+/* end text align styles */
+
+/* styles used for aligning glyph characters */
+.align-baseline {vertical-align:baseline;}
+.align-sub {vertical-align:sub;}
+.align-super {vertical-align:super;}
+.align-text-top {vertical-align:text-top;}
+.align-middle {vertical-align:middle;}
+.align-bottom {vertical-align:bottom;}
+.align-text-bottom {vertical-align:text-bottom;}
+/* end styles used for aligning glyph characters */
+
+
+/* generic link styles */
+a.seealso {
+	font-size:70%;
+	text-decoration:none;
+	margin-top:1em;
+	display:block;
+}
+a.seealso span.see {
+	font-weight:bold;
+	color:#c03;
+}
+a.seealso span.link {text-decoration:underline;}
+
+a.rss {
+	background:url(/cmg_update/npg_images/rss.gif) no-repeat left center;
+	padding-left:34px;
+}
+
+#extranav a.rss {
+	background:url(/cmg_update/npg_images/rss.gif) no-repeat left center;
+	padding-left:25px;
+}
+/* end generic link styles */
+
+
+#content span.free {
+	color:#c03;
+	text-decoration:none;
+}
+
+/* generic bold/italic style - use *only* in content where it would be nonsensical to use a specific class, such as class="nav-header" or something */
+.b {font-weight:bold;}
+.i {font-style:italic;}
+.latin {font-style:italic;}
+
+/* cite-doi within featurebox */
+
+cite-doi {margin-bottom:1ex; margin:0 5px;}
+span.journalname {font-style:italic;}
+span.journalnumber {font-weight:bold;}
+span.doi {display:block;}
+.featurebox.news span.doi {margin:0;}
+span.author {display:block;	color:#666;}
+span.date {}
+
+p.cite-doi.protocol {
+	padding:10px 0;
+	border-bottom:1px dotted #efefef;
+}
+
+p.cite-doi.protocol span.author {color:#333;}
+
+
+/* Header */
+#head-er hr {display:none;}
+
+
+#head-er .header-nonad-wrapper {
+	padding-bottom:15px;
+	border-bottom:1px solid #fff;
+}
+
+/* Accessibility bar and login */
+#head-er .accessibility-login-wrap {
+	float:left;
+	width:100%;
+	background-color:#fec672;
+	border-bottom:1px solid #fff;
+
+}
+
+#head-er .accessibility-login {
+	/*background:url(/cmg_update/npg_images/nature.com.gif) no-repeat 0 5px #eaeaea;*/
+	padding:4px 0 5px 0/*90px*/;
+	text-align:right;
+}
+
+#head-er .accessibility-login a.nature-link {
+	/*font:bold 110% Garamond, serif;*/
+	font:bold 160% Garamond, serif;
+	color:#b1062e;
+	text-decoration:none;
+	float:left;
+	margin-right:20px;
+	width:4.9em;
+	text-align:left;
+	line-height:80%;
+}
+* html #head-er .accessibility-login a.nature-link:hover {background:none;}
+#head-er .accessibility-login a.nature-link:hover {background:url(/cmg_update/npg_images/nature.com.underline.gif) no-repeat left bottom;}
+
+#head-er .accessibility-login img.nature-logo {
+	height:11px;
+	width:82px !important;
+	width /**/:102px;
+	margin:1px 20px 0 0;
+	border:0;
+	float:left;
+}
+
+#head-er .accessibility-login .jumplinks {
+	float:left;
+	width:45%;/* required for Mac IE */
+	text-align:left;
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	/*font-size:70%;*/
+}
+
+#head-er .accessibility-login .jumplinks li {
+	display:inline;
+	padding-left:15px;
+}
+
+#head-er .accessibility-login .jumplinks li.first {
+	padding-left:0;
+}
+
+#head-er .accessibility-login .jumplinks a {
+	color:#000;
+	text-decoration:none;
+	padding-left:10px;
+	background:url(/cmg_update/npg_images/arrow_down.gif) no-repeat left center;
+}
+#head-er .accessibility-login .jumplinks a:hover {text-decoration:underline;}
+
+#head-er div.logon {
+	/*font-size:70%; font size declared for all children to simply fix Mac IE/NS display issues */
+}
+
+/* Mac IE bugfixes */
+#head-er .logon .onlyformacie {font-size:3px;}
+/* hide from Mac IE \*/
+#head-er .logon .onlyformacie {display:none;}
+/* end Mac IE bugfixes */
+
+#head-er .logon a.login {
+	font-weight:bold;
+	color:#b1062e;
+	text-decoration:none;
+	padding:0 15px 0 0;
+	text-transform:uppercase;
+	letter-spacing:-0.1em;
+	background:url(/cmg_update/npg_images/logon.gif) no-repeat right center;
+}
+#head-er .logon a.login:hover {
+	background:url(/cmg_update/npg_images/logon_over.gif) no-repeat right center;
+	text-decoration:underline;
+}
+#head-er .logon a.login:active {background:url(/cmg_update/npg_images/logon.gif) no-repeat right center;}
+
+#head-er .logon a.logoff {
+	font-weight:bold;
+	color:#b1062e;
+	text-decoration:none;
+	padding:0 15px 0 15px;
+	text-transform:uppercase;
+	letter-spacing:-0.1em;
+	background:url(/cmg_update/npg_images/logoff.gif) no-repeat right center;
+}
+
+#head-er .logon p {margin:0;}
+
+#head-er .logon .user, #head-er .logon .inst {
+	font-weight:bold;
+}
+/* end accessibility bar and logon */
+
+/* Journal header image and user services (register/subscribe/account details) */
+
+#head-er .image-user-services-wrap {
+	float:left;
+	width:100%;
+	background-color:#081838;
+	border-bottom:3px solid #fff;
+}
+
+#head-er .image-user-services {border-bottom:1px solid transparent;}/* for bg image display in Gecko */
+* html #head-er .image-user-services {border-bottom:0;}/* reset to 0 for IE */
+
+/* sets the logo in the header */
+#head-er .image-user-services img.journal-header {
+	float:left;
+	width:403px;
+	height:80px;
+	margin:0;
+	border:0;
+}
+/* sets the background in the header */
+#head-er .image-user-services {
+	background:url(/cmg_update/npg_images/journal_header_bg.gif) no-repeat right top; 
+	height:80px;
+}
+
+#head-er .user-services {float:right;}
+#head-er .user-services.div1 {width:12.35em !important;}/* !important is for IE inheritance bug */
+#head-er .user-services.div2 {width:8.7em !important;}/* !important is for IE inheritance bug */
+
+#head-er .user-services ul {
+	list-style-type:none;
+	border:1px solid #fff;
+	border-width:1px 0 0 1px;
+	text-align:right;
+	margin:22px 0 21px 0;
+	padding:0;
+}
+
+#head-er .user-services ul.list1 {border-right:1px solid #fff;}
+#head-er .user-services li {border-bottom:1px solid #fff;}
+
+#head-er .user-services a {
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	/*font-size:70%;*/
+	text-transform:uppercase;
+	padding:1px 13px 1px 0;
+	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat #767474;
+}
+#head-er .user-services a:hover {
+	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat #000;
+}
+/* end Journal header image and user services (register/subscribe/account details) */
+
+/* Publications links and journal search */
+#head-er .publications-search-wrap {
+	background:#fef1dd;
+}
+
+/* Hide from mac IE - use "padding-top/-bottom" instead of shorthand "padding" \*/
+* html #head-er .publications-search {
+	padding-top:3px;
+	padding-bottom:3px;
+}
+/* end hide from Mac IE */
+#head-er .publications-search {padding:4px 0;}
+
+* html #head-er .publications {/* IE only */
+	margin:6px 0 0 0;
+}
+#head-er .publications {
+	/*font-size:70%;*/
+	float:left;
+	list-style-type:none;
+	padding:0;
+	margin:4px 0 0 0;
+}
+
+#head-er .publications li {
+	display:inline;
+	margin-left:10px;
+}
+
+#head-er .publications li.first {margin-left:0;}
+
+#head-er .publications a {
+	color:#000;
+	text-decoration:none;
+	padding-right:15px;
+	text-transform:uppercase;
+	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat;
+	
+}
+#head-er .publications a:hover {text-decoration:underline;}
+
+#head-er .search {
+	text-align:right;
+}
+
+#head-er .search form {
+	display:inline;
+	margin:0;/* Necessary for NS7 */
+}
+
+#head-er .search form a {
+	/*font-size:70%;*/
+	color:#000;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding-right:14px;
+	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat;
+}
+#head-er .search form a:hover {text-decoration:underline;}
+
+#head-er #searchtext {
+	width:10em; border:1px solid #004e6f;
+}
+
+#head-er .publications-search label {
+	/*font-size:70%;*/
+	color:#000;
+	text-transform:uppercase;
+}
+
+#head-er input, #head-er select {
+	/*font-size:70%;*/
+	font-size:100%;
+}
+
+#head-er .publications-search input.button {
+	color:#fff;
+	background:#081838;
+	border:1px solid #000;
+	padding:0 1px 1px 1px;
+	font-size:9px;
+	font-weight:normal;
+}
+/* end publications links and journal search */
+
+/* constrain width */
+#head-er .accessibility-login,
+#head-er .image-user-services,
+#head-er .publications-search {
+	padding-left:1%;
+	padding-right:1%;
+}
+/* end constrain width */
+
+/* end header */
+
+
+/* journal nav styles */
+
+
+
+
+
+
+map.journal-nav {
+	display:block;
+	margin-bottom:20px;
+	
+}
+
+map.journal-nav ul {
+	list-style-type:none;
+	text-align:left;
+	margin:0;
+	padding:0;
+	
+}
+
+map.journal-nav ul li {
+	margin:0;
+	border-top:1px solid #fff;
+
+	
+}
+map.journal-nav ul li.site-nav-title {
+	background-color:#081838;
+}
+
+map.journal-nav ul li.site-nav-title h1 {
+	color:#fff;
+	font-size:80%;
+	font-weight:normal;
+	margin:3px 5px;
+}
+
+map.journal-nav ul li.grouped {border-bottom:1px solid #eaeaea;}
+
+* html map.journal-nav ul li a, * html map.journal-nav ul li a:visited {/*IE 5/6 only*/
+	padding:2px 5px 3px 5px;
+}
+map.journal-nav ul li a, map.journal-nav ul li a:visited {
+	display:block;
+	margin:0;
+	font-weight:normal;
+	font-size:70%;
+	color:#000;
+	text-decoration:none;
+	padding:4px 5px 4px 5px;
+}
+
+
+map.journal-nav ul li a.submission {
+	background:url(/cmg_update/npg_images/online_submissions.gif) left center no-repeat;
+	padding-left:20px !important;
+}
+/* end journal nav styles */
+
+
+/* journal nav subnav styles */
+map.journal-nav ul li ul.subnav {
+	list-style-type:none;
+	text-align:left;
+	margin:0;
+	padding:0;
+	border-top:0;
+}
+
+map.journal-nav ul li ul.subnav li {
+	margin:0;
+	border-bottom:0;
+	background:url(/cmg_update/npg_images/nav_dots2.gif) 11px 5px no-repeat #fafafa;
+	background-position:11px 5px;
+}
+
+
+* html map.journal-nav ul li ul.subnav a {/* IE only */
+	padding:2px 10px 2px 20px !important;/* Mac IE */
+	padding:0 10px 0 20px;/* Other IE */
+}
+map.journal-nav ul li ul.subnav a:link, map.journal-nav ul li ul.subnav a:visited {
+	display:block;
+	margin:0;
+	font-weight:normal;
+	font-size:70%;
+	color:#000;
+	text-decoration:none;
+	padding:2px 10px 2px 20px;
+}
+
+map.journal-nav ul li ul.subnav a:hover {
+	color:#fff;
+	text-decoration:none;
+	background:url(/cmg_update/npg_images/nav_dots1.gif) 11px 5px no-repeat #fab934;
+}
+
+map.journal-nav ul li ul.subnav a.on, map.journal-nav ul li ul.subnav a.on:visited {
+	color:#fff;
+	background:inherit;
+}
+/* end journal nav subnav styles */
+
+
+
+
+/* leftnav toolbox */
+
+#main-journal-nav ul.xoxo li.spacing {background:#fff;}
+
+#main-journal-nav ul.xoxo li h2.toolbox {
+	font-size:80%;
+	font-weight:normal;
+	padding:4px 5px;
+	margin:20px 0 0 0;
+    background-color: #081838;
+	color:#fff;
+}
+
+
+#main-journal-nav li.nav-rss a.rss:link,
+#main-journal-nav li.nav-rss a.rss:active,
+#main-journal-nav li.nav-rss a.rss:visited {
+	background:url(/cmg_update/npg_images/rss.gif) no-repeat 2px 50%;
+	padding-left:20px;
+
+}
+
+#main-journal-nav li.nav-rss a.rss:hover {
+	background:url(/cmg_update/npg_images/rss_rollover.gif) no-repeat 2px 50% #840800;
+}
+
+#main-journal-nav li.nav-ealert {
+}
+
+#main-journal-nav li.nav-ealert a.reg-rec:link,
+#main-journal-nav li.nav-ealert a.reg-rec:active,
+#main-journal-nav li.nav-ealert a.reg-rec:visited {
+	background:url(/cmg_update/npg_images/e-alert.gif) no-repeat 2px 50%;
+	padding-left:20px;
+}
+
+#main-journal-nav li.nav-ealert a.reg-rec:hover {
+	background:url(/cmg_update/npg_images/e-alertrollover.gif) no-repeat 2px 50% #840800;
+}
+
+
+#main-journal-nav li.nav-twitter a.reg-rec:link,
+#main-journal-nav li.nav-twitter a.reg-rec:active,
+#main-journal-nav li.nav-twitter a.reg-rec:visited {
+    background-image: url(/cmg_update/npg_images/twitter.gif);
+}
+#main-journal-nav li.nav-twitter a.reg-rec:hover {
+    background:url(/cmg_update/npg_images/twitterrollover.gif) no-repeat 2px 50% #840800;
+}
+
+#main-journal-nav li.nav-facebook a.reg-rec:link,
+#main-journal-nav li.nav-facebook a.reg-rec:active,
+#main-journal-nav li.nav-facebook a.reg-rec:visited {
+    background-image: url(/cmg_update/npg_images/facebook.gif);
+}
+#main-journal-nav li.nav-facebook a.reg-rec:hover {
+    background:url(/cmg_update/npg_images/facebookrollover.gif) no-repeat 2px 50% #840800;
+}
+
+
+/* leftnav highlighting */
+map.journal-nav ul li {background-color: #ffc773;}
+
+map.journal-nav li.selected a:link,
+map.journal-nav li.selected a:visited
+{color:#fff;}
+
+map.journal-nav .selected,
+map.journal-nav ul li a:hover
+{
+	color: #fff;
+    background-color: #840800;
+}
+/* end leftnav highlighting */
+
+/* subnav visibility and highlighting */
+map.journal-nav .subnav .selected {background-color:#eaeaea;}
+map.journal-nav .subnav a:hover {
+	background:url(/cmg_update/npg_images/nav_dots2.gif) 11px 5px no-repeat #eaeaea!important;
+	color:#000!important;
+}
+
+/* end leftnav */
+
+/* styles for supplementary journal nav - used in conjunction with "journal-nav" styles (ie: class="journal-nav supplementary") */
+#journalnav map.supplementary ul a, #journalnav map.supplementary ul a:visited {
+	font-size:70%;
+	font-weight:normal;
+}
+
+
+a.backtotop:link, a.backtotop:visited {
+	float:right;
+	margin-top:5px;
+	margin-right:10px;
+	margin-left:7px;
+	padding-left:10px;
+	font-size:70%;
+	color:#fff;
+	background:url(/cmg_update/npg_images/arrow_white_up.gif) 0 0.6em no-repeat;
+}
+a.backtotop:hover {color:#fff;}
+
+h1.page {
+	font-weight:bold;
+	font-size:100%;
+	color:#fff;
+	background:#fab934;
+	padding:3px 0 3px 10px;
+	margin:0;
+	margin-bottom:10px;
+}
+
+img.arrow {margin-right:5px;}
+
+a.arrow-blue {
+	padding-left:10px;
+	background:url(/cmg_update/npg_images/arrow_blue.gif) 0 0.5em no-repeat;
+}
+
+a.arrow-grey {
+	padding-left:10px;
+	background:url(/cmg_update/npg_images/arrow_grey.gif) 0 0.5em no-repeat;
+}
+
+a.arrow-red {
+	padding-left:10px;
+	background:url(/cmg_update/npg_images/arrow_red.gif) 0 0.5em no-repeat;
+}
+
+
+/* topten link (home and about the cover) */
+#extranav a.topten:link, #extranav a.topten:visited {
+	border-top:1px solid #eaeaea;
+	padding:0.8em 0 0 10px;
+	margin-top:0.6em;
+	background:url(/cmg_update/npg_images/arrow_blue.gif) 0 1.2em no-repeat;
+	display:block;
+	font-size:70%;
+}
+#extranav a.topten:hover {
+	text-decoration:underline;
+	background:url(/cmg_update/npg_images/arrow_red.gif) 0 1.2em no-repeat;
+}
+/* end topten link */
+
+
+
+/* --------------- FOOTER -----------------*/
+
+#foot-er {
+    clear:both;
+	float:left;
+	width:100%;
+	margin: 20px 0;
+    padding: 0;
+    border-top: 0;
+}
+
+#foot-er #footer-journal {
+    padding: 2px 1%;
+	background: #081838;
+	color:#fff;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+#foot-er #footer-journal:after {
+    content: url(/cmg_update/npg_images/clear.gif);
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Hide from IE Mac \*/
+* html #foot-er #footer-journal {height: 1%;}
+/* End hide from IE Mac */
+
+#foot-er #footer-journal p {
+    margin: 0 1em 0 0;
+    padding: 0 1em 0 0;
+    float: left;
+}
+
+#foot-er #footer-journal p.journal-name {
+    font-size: 110%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#foot-er #footer-journal p.issn,
+#foot-er #footer-journal p.eissn,
+#foot-er #footer-journal p.extra {font-size: 100%;}
+
+#foot-er #footer-links {
+    padding: 5px 1%;
+    background: #000;
+}
+
+#foot-er #footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#foot-er #footer-links ul li {display: inline;}
+
+#foot-er #footer-links ul li a:link,
+#foot-er #footer-links ul li a:visited {
+    display: block;
+    float: left;
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    border-left: 1px solid #fff;
+    margin: 0 0 0 1em;
+    padding: 0 0 0 1em;
+}
+
+* html #foot-er #footer-links ul li a:link,
+* html #foot-er #footer-links ul li a:visited {display: inline;}
+
+#foot-er #footer-links ul li a:hover {text-decoration: underline;}
+
+#foot-er #footer-links ul li a.about-npg:link,
+#foot-er #footer-links ul li a.about-npg:visited {
+    font-weight: bold;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+}
+
+#foot-er #footer-copyright {
+	text-align:left!important;
+    padding: 0 1%;
+    border-top: 0;
+}
+
+* html #foot-er #footer-copyright .footer-constrain {text-align:left;} /* fix IE centering footer text */
+
+#foot-er #footer-copyright a {
+    color:#000;
+}
+
+#foot-er #footer-copyright p {
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+#foot-er #footer-copyright p.logo {
+    background: url(/cmg_update/npg_images/npg_logo.gif) no-repeat 0 50%;
+    margin: 5px 0 0 0;
+    padding: 7px 36px;
+}
+
+#foot-er #footer-copyright p a:link,
+#foot-er #footer-copyright p a:visited {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#foot-er #footer-copyright p a.footer-copyright:link,
+#foot-er #footer-copyright p a.footer-copyright:visited {
+    color: #000;
+    font-weight: normal;
+}
+
+#foot-er #footer-copyright p a:hover {text-decoration: underline;}
+
+/* --------------- FOOTER END -----------------*/
+
+
+/* overwrite layout.css */
+* html #content-journalnav {width:100%;}
+/* overwrite layout.css */
+
+/* hide login bar */
+.accessibility-login-wrap {}
+
+/* provide shadow below header */
+#head-er .header-nonad-wrapper {
+	padding-bottom:16px;
+	background: #fff url(/cmg_update/npg_images/shadow.jpg) repeat-x left bottom;
+}
+
+/* provide light blue above header */
+#head-er div.blue-top {
+	height:8px;
+	background:#1086a5;
+	border-bottom:1px solid #fff;
+}
+
+
+/** 
+ * Site-wide link colours
+ */
+a:link
+{
+	color: #840800;
+}
+
+a:visited
+{
+	color: #840800;
+}
+
+a:hover
+{
+	color: #000;
+}
+
+a.whatisrss
+{
+    padding-left: 30px;
+}
+
+
+
+
+a.more:link,
+a.more:visited
+{
+    background: url(/cmg_update/npg_images/arrow-more.gif) no-repeat left center;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+a.browse-all:link,
+a.browse-all:visited
+{
+    color: #044c7c;
+}
+
+
+
+/* e-alert link */
+div.e-alert {
+	margin-bottom:20px;
+	background:url(/cmg_update/npg_images/004e6f_vfade.gif) repeat-x 0 -2px;
+}
+
+div.e-alert a:link, div.e-alert a:visited {
+	background:url(/cmg_update/npg_images/envelope.gif) no-repeat 10px 55%;
+	padding:8px 0 8px 30px;
+	font-size:70%;
+	font-weight:bold;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+div.e-alert a:hover {
+	background:url(/cmg_update/npg_images/envelope_004e6f.gif) no-repeat 10px 55%;
+	text-decoration:underline;
+}
+/* end e-alert link */
+
+a.rss,
+a.rss:visited
+{
+	background: url(/cmg_update/npg_images/rss.gif) no-repeat left center;
+	padding: 3px 0 3px 20px;
+	
+}
+
+a.rss:hover {background: url(/cmg_update/npg_images/rss.gif) no-repeat left center;}
+
+
+a.pubmed,
+a.pubmed:visited
+{
+    background: url(/cmg_update/npg_images/arrow01-left.gif) no-repeat left center;
+    padding-left: 30px;
+}
+
+p.norm a:link {font-weight:bold;}
+
+/* END: Site-wide link colours */
+
+/** 
+ * XHTML Elements
+ *
+ * The following overwrites some default browser behaviours for rendering
+ * particular XHTML elements
+ */
+
+abbr:hover,
+acronym:hover
+{
+    cursor: help;
+}
+/* END: XHTML Elements */
+
+
+/* rightnav spacer boxes */
+div.spacer-box {
+	height:100px;
+	background-position:right top;
+	background-repeat:no-repeat;
+	width:99.9%;
+}
+
+
+/** 
+ * .e-alert.register
+ */
+div.e-alert.register
+{
+	float: right;
+	margin-top: 0.5em;
+	font-size: 70%;
+}
+/* END: .e-alert.register */
+
+
+/* vertical ad */
+div.ad-rh {
+	text-align:center;
+	margin:20px 0;
+	padding:10px 0;
+}
+
+div.ad-rh p {
+	font-size:80%;
+	color:#999;
+	margin:0;
+}
+
+/* skyscraper */
+div.skyscraper img, div.skyscraper embed, div.skyscraper iframe {
+	width:100%;
+	height:600px;
+	margin-right:35px;
+}
+
+div.skyscraper.wide img, div.skyscraper.wide embed, div.skyscraper.wide iframe {max-width:160px;}
+
+* html div.skyscraper {/* IE only - "shrinks" flash ads by hiding overflow */
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* end skyscraper */
+/* end vertical ad */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*conferences and jobs*/
+
+div.con-job {
+background-color: #fff8ed;
+padding: 5px;
+}
+
+ h2.con-job {
+background: #ffc773;
+color: #000;
+font-weight: bold;
+padding: 2px 0 2px 5px;
+font-size: 80%;
+margin: 20px 0 0 0
+
+}
+div.con-job a.standard:link, div.con-job a.standard:visited {
+color: #000;
+font-size: 70%;
+background: #fff8ed;
+}
+
+div.con-job a.standard:hover {
+color: #c03
+}
+
+div.con-job p {
+color: #686868;
+font-size: 70%;
+padding: 0;
+margin: 0 0 5px 0;
+}
+
+div.con-job a.callforpapers:link, div.con-job a.callforpapers:visited {
+	color: #24A0F0;
+	text-decoration: none;
+	padding-left: 11px;
+	background:url(/cmg_update/npg_images/arrow_home.gif) 0 0.5em no-repeat;
+}
+
+div.con-job span {
+	background: #fff8ed;
+}
+
+/** 
+ * .page-headline
+ *
+ * the following declarations set styles for the page-headline class
+ * which is used for the primary h1 tag at the top of the content area.
+ * This headline is often set to be hidden, but should always be present.
+ */
+.page-headline
+{
+    margin: 0 0 20px 0;
+}
+
+.page-headline h1
+{
+    color: #000;
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+.page-headline.spiel h1
+{
+	color: #000;
+    background:#ffc773;
+    margin: 0;
+    padding: 3px 5px;
+	 text-transform: uppercase;
+	 }
+
+.page-headline.spiel p
+{
+    font-size: 80%;
+	color: #000;
+    line-height: 150%;
+    margin: 0.5em 0 1em 0;
+}
+
+.page-headline.spiel ul.more
+{
+    margin: 0.5em 0 1em 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 80%;
+}
+
+.page-headline.spiel ul.more li
+{
+    line-height: 150%;
+}
+/* END: .page-headline */
+
+/** 
+ * .column-group
+ *
+ * .column-group provides a style class for a div frame which sets out two columns
+ */
+.column-group:after
+{
+    content:url(/cmg_update/npg_images/clear.gif);
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .column-group
+{
+    height: 1%;
+}
+/* End hide from IE-mac */
+
+div.column-group div.column-left
+{
+    float: left;
+    width: 48%;
+}
+
+div.column-group div.column-right
+{
+    float: right;
+    width: 48%;
+}
+
+div.column-group#research-article div.column-left
+{
+    float: left;
+    width: 51%;
+}
+
+div.column-group#research-article div.column-right
+{
+    float: right;
+    width: 45%;
+}
+
+
+div.column-group.ratio6040 div.column-left
+{
+    float: left;
+    width: 58%;
+}
+
+div.column-group.ratio6040 div.column-left p
+{ margin: 20px 0 0 0;
+}
+
+div.column-group.ratio6040 div.column-right
+{
+    float: right;
+    width: 32%;
+}
+
+
+div.column-group.ratio7030 div.column-left
+{
+    float: left;
+    width: 74%;
+}
+
+div.column-group.ratio7030 div.column-right
+{
+    float: right;
+    width: 22%;
+}
+/* END: .column-group */
+
+/** 
+ * .box-group
+ *
+ * .box-group sets out a frame with a 1px border and a bottom margin into which
+ * any number of boxes can be placed.
+ * Boxes of the default .box class should always be held in a box-group, even
+ * if there is only one box. This is because the default box style does not have
+ * its own border and bottom margin.
+ */
+.box-group
+{
+    border: 1px solid#ffc773;
+    margin-bottom: 20px;
+}
+
+.box-group:after
+{
+    content:url(/cmg_update/npg_images/clear.gif);
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .box-group
+{
+    height: 1%;
+}
+/* End hide from IE-mac */
+/* END: .box-group */
+
+/** 
+ * .box
+ *
+ * the following sets out styles for the default content box and a number of
+ * variant subclasses of this.
+ */
+.box
+{
+    background-color: #ffc773;
+}
+
+.box.resources
+{
+    background-color: #ffe8c5;
+}
+
+.box h2
+{
+    font-size: 80%;
+    color: #000;
+    background-color:#ffc773;
+    margin: 0;
+    padding: 3px 5px;
+}
+
+.box h3
+{
+    color: #c03;
+    font-size: 80%;
+    background-color: #ffe8c5;
+    margin: 0 0 0.5em 0;
+    padding: 3px 5px;
+}
+
+.box .box-item
+{
+    padding: 5px;
+}
+
+.box div.box-item.highlit
+{
+    background: url(/cmg_update/npg_images/bg-dots-matte-fff.gif) repeat-x left bottom #fff;
+}
+
+.box .box-item h3
+{
+    background-color: transparent;
+    padding: 0;
+}
+
+.box .box-item h4
+{
+    font-size: 80%;
+    margin: 0 0 0.5em 0;
+}
+
+.box .box-item p
+{
+	color: #000;
+    font-size: 80%;
+    line-height: 150%;
+    margin: 0;
+}
+
+.box .box-item p.date
+{
+    font-size: 70%;
+}
+
+.box div.box-item.illustrated60
+{
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 75px;
+    min-height: 60px;
+}
+/* END: .box */
+
+/** 
+ * .calendar
+ *
+ * the following sets out styles for date-oriented lists of events, articles etc
+ */
+.calendar ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.calendar ul li
+{
+    border-bottom: 10px solid #fff;
+}
+
+.calendar ul li.first
+{
+    border-top: 10px solid #fff;
+}
+
+* html .calendar ul li ul li.ie-background-fix
+{
+    background-position: 5px 15px;
+}
+
+.calendar ul li.last
+{
+    border-bottom: 0;
+}
+
+.calendar ul li ul li
+{
+    padding: 5px;
+}
+
+.calendar ul li h2
+{
+    font-size: 80%;
+    color: #000;
+    background: #ffc773;
+    margin: 0;
+    padding: 3px 5px;
+}
+
+.calendar ul li h3
+{
+    font-size: 80%;
+    margin: 0;
+    font-weight: normal;
+    color: #c03
+}
+
+.calendar p.atl {
+	font-weight: bold
+}
+
+.calendar ul li p
+{
+	color: #000;
+    font-size: 80%;
+    line-height: 150%;
+    margin: 0;
+}
+
+.calendar ul li p.date,
+.calendar ul li p.more,
+.calendar ul li p.location
+{
+    font-size: 70%;
+}
+
+.calendar.conferences ul li p.date
+{
+    font-style: italic;
+    font-size: 80%;
+}
+
+.calendar ul li.illustrated70
+{
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 85px;
+    min-height: 70px;
+}
+
+/* SUB-CLASS: .month-list */
+.calendar.month-list
+{
+    border: 1px solid#ffc773;
+    margin: 0 0 20px 0;
+}
+
+.calendar.month-list h2
+{
+    font-size: 80%;
+    background:#ffc773;
+    margin: 0;
+    padding: 3px 5px;
+}
+
+.calendar.month-list ul
+{
+    font-size: 70%;
+    padding: 5px;
+}
+
+.calendar.month-list ul li
+{
+    border-bottom: 0;
+    line-height: 150%;
+}
+/* END-SUB: .month-list */
+/* END: .calendar */
+
+/** 
+ * .subjects
+ *
+ * establishes styles for a left/right floated, two-column list for the research
+ * library subjects
+ */
+ 
+
+.subjects h2
+{
+    font-size: 80%;
+    color: #000;
+    background: #ffc773;
+    margin: 0 0 1em 0;
+    padding: 3px 5px;
+    text-transform: uppercase
+}
+
+.subjects ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 80%;
+    
+   
+}
+
+.subjects ul li
+{
+    float: left;
+    width: 50%;
+    line-height: 150%;
+    
+}
+
+* html .subjects ul li
+{
+    width: 49%;
+}
+
+.subjects ul li.right
+{
+    float: right;
+}
+
+.subjects ul li.right:after
+{
+    content:url(/cmg_update/npg_images/clear.gif);
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .subjects ul li.right
+{
+    height: 1%;
+}
+/* End hide from IE-mac */
+/* END: .subjects */
+
+
+/** 
+ * .archive
+ *
+ * establishes styles for the archive box
+ */
+
+div.archive {
+	
+	font-weight: normal;
+
+	
+	}
+div.archive .bx {
+	border: 1px solid #ffc773;
+	margin: 0;
+	padding: 5px 5px 10px 5px;
+
+}
+
+.archive h2
+{
+	font-size: 80%;
+    color: #000;
+    background: #ffc773;
+    margin: 20px 0 0 0;
+    padding: 3px 5px;
+    text-transform: uppercase
+}
+
+.archive h3 {
+	font-size: 80%;
+	margin-bottom: 0;
+	margin-top: 5px
+
+}
+
+.archive a:link, .archive a:visited {
+	font-size: 80%;
+	font-weight: normal
+}
+
+/** 
+ * .article
+ * 
+ * the following sets out required styles for featured articles
+ * and research highlights articles
+ */
+#article
+{
+	border-top: 1px solid#ffc773;
+}
+
+.article.research
+{
+	border-top: 0;
+}
+
+#article #content h1.page-header {
+	border-bottom:none;
+	padding-bottom:0;
+	}
+
+
+
+h2#atl
+{
+	font-size: 90%;
+	color: #c03;
+	margin: 1em 0;
+}
+
+.cite-doi {
+	margin:0.5em 0 1.5em 0;
+	color: #333;
+	font-size:80%;
+
+}
+
+
+
+#article .cite-doi {
+	margin:0.5em 0 1.5em 0;
+	padding:0 0 1em 0;
+	display:block;
+	border-bottom:1px solid #efefef;
+	color: #333;
+	font-size:80%;
+
+}
+
+#article .cite-doi span.doi {
+	display:inline;
+}
+
+#article p,
+#article #references ol.norm
+{
+	font-size: 80%;
+	color: #000;
+	margin: 0 0 1em 0;
+	line-height: 150%;
+}
+
+#article #references ol.norm li
+{
+	margin: 0 0 1em 0;
+}
+
+#article p.author,
+#article #references span.journal
+{
+	font-style: italic;
+}
+
+#article #references h3
+{
+	font-size: 80%;
+	margin: 1em 0 0 0;
+}
+
+#article .abstract,
+#article #references span.jnumber
+{
+	font-weight: bold;
+}
+
+#article img
+{
+	border: 1px solid #ccc;
+}
+
+#article img.right
+{
+	float: right;
+	margin: 10px 0 10px 10px;
+}
+
+#article img.left
+{
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#article div.article-source
+{
+	margin-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+}
+
+#article div.article-source h3
+{
+	font-size: 70%;
+	margin: 0 0 0.5em 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ccc;
+}
+
+#article div.article-source p.source,
+#article div.article-source p.source a:link,
+#article div.article-source p.source a:visited
+{
+	display: block;
+	width: 160px;
+	height: 37px;
+	margin: 0;
+	padding: 0;
+}
+
+
+#article div.article-source p.source cite
+{
+	position: absolute;
+ 	left: 0px;
+ 	top: -500px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+
+#article div.article-source ul.options
+{
+	margin: 0;
+	padding: 0.5em 0;
+	list-style-type: none;
+	font-size: 70%;
+}
+
+#article div.article-source ul.options:after
+{
+    content:url(/cmg_update/npg_images/clear.gif);
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+/* Hides from IE-mac \*/
+* html #article div.article-source ul.options
+{
+    height: 1%;
+}
+/* End hide from IE-mac */
+
+#article div.article-source ul.options li
+{
+	float: left;
+	margin: 0 1em 0 0;
+	padding: 0 1em 0 0;
+	border-right: 1px solid #000;
+	text-transform: lowercase;
+}
+
+#article div.article-source ul.options li.last
+{
+	border-right: 0;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+#article div.article-source ul.options li a:link,
+#article div.article-source ul.options li a:visited
+{
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#article div.article-source ul.options li a:hover
+{
+	color: #c03;
+}
+
+#article div.column-group div.push
+{
+	clear: both;
+	padding: 0 !important;
+	border-top: 1px solid#ffc773;
+	margin-bottom: 1em;
+}
+/* END: .article */
+
+/** 
+ * .article-navigation
+ *
+ * establishes styles for the article navigation menu
+ */
+ 
+
+ 
+ 
+ 
+.article-navigation
+{
+	margin-top: 1em;
+	background: #fff;
+}
+
+.article.research .article-navigation
+{
+	margin-top: 0;
+}
+
+.article-navigation h3
+{
+	font-size: 80%;
+    background:#ffc773;
+    margin: 0;
+    padding: 3px 5px;
+    text-transform: uppercase;
+}
+
+.article-navigation ul
+{
+	margin: 0;
+	padding: 0.5em;
+	list-style-type: none;
+	font-size: 80%;
+}
+
+.article-navigation ul li
+{
+	margin-bottom: 1em;
+}
+
+.article-navigation ul li a:link,
+.article-navigation ul li a:visited
+{
+	padding-left: 15px;
+	min-height: 9px;
+	background: url(/cmg_update/npg_images/arrow.gif) no-repeat 0 50%;
+}
+
+/* new article-navigation featuring XOXO */
+
+ ul.article-navigation {
+ 	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ ul.article-navigation h2 {	
+	font-size: 80%;
+    background:#ffc773;
+    margin: 0;
+    padding: 3px 5px;
+    text-transform: uppercase;
+
+}
+
+/* END: .article-navigation */
+
+/** 
+ * .ealert
+ * 
+ * styles for the ealert subscribe form
+ */
+div.ealert form label
+{
+	font-size:80%;
+	font-weight:bold;
+}
+
+div.ealert #cmg-submit
+{
+	font-size:80%;
+	font-weight:bold;
+	color: #000;
+	background-color: #ffc773;
+	width: 5em;
+	height: 1.75em;
+	margin-top: 2em;
+}
+/* END: .ealert */
+
+/** 
+ * .advert
+ *
+ * the following declarations sets styles for advertisements
+ */
+.advert
+{
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+
+.advert img
+{
+	vertical-align: bottom;
+}
+/* END: .advert */
+
+/** 
+ * .info-box
+ *
+ * this class establishes styles for information boxes with coloured backgrounds,
+ * dotted top and bottom borders, and a list style with the standard arrow icon
+ */
+.info-box
+{
+	color: #000;
+    margin: 0 0 20px 0;
+	padding: 1em 1em 0 1em;
+	background-color: #ffc773;
+	border-top: 1px dashed#ffc773;
+	border-bottom: 1px dashed#ffc773;
+}
+
+.info-box p
+{
+    font-size: 80%;
+	color: #000;
+    line-height: 150%;
+    margin: 0.5em 0 1em 0;
+}
+
+.info-box ul
+{
+	font-size: 80%;
+	list-style-image: url(/cmg_update/npg_images/arrow-more.gif);
+	margin: 0;
+	padding: 0 0 1em 20px;
+}
+
+.info-box ul li
+{
+	margin-bottom: 1em;
+}
+/* END: .info-box */
+
+/** 
+ * Generic Classes
+ */
+.issue
+{
+    font-weight: bold;
+}
+
+.em-upper
+{
+    text-transform: uppercase;
+}
+/* END: Generic Classes */
+
+
+
+a.button {
+	float:right;
+	color:#840800;
+	background-color:#fff;
+	border: 1px solid #ffc773;
+	text-decoration: none;
+	padding: 2px;
+	margin: 10px 0 5px 0;}
+
+a.button:hover {
+	background:#840800;
+	color:#fff;
+}
+
+a.button.shrink {margin-top:0;}
+
+
+
+
+/*
+-----------------------------------------------------------------------
+front page
+-----------------------------------------------------------------------
+*/
+
+
+
+#content .featurebox p.norm,
+#content .featurebox p
+ {
+	font-size:80%;
+	margin: 0 0 10px 0;
+}
+
+
+#content h1 {
+	margin:0 0 2em 0;
+	padding:0;
+	color:#000;
+	font-size:100%;
+	font-weight:bold;
+}
+
+#content h1.page-header {
+	border-bottom:1px solid #efefef;
+	padding-bottom:0.3em;
+	}
+
+#content h2.page {
+	margin:0;
+	color:#000;
+	font-size:80%;
+	font-weight:bold;
+	background: #ffc773;
+	padding: 3px 0 3px 5px;
+	clear:both;
+}
+
+#content h5 {
+ color: #081838;
+ margin: 5px 0 5px 10px;
+ 
+}
+
+#content .norm {
+	font-size:80%;
+	font-weight: normal !important;}
+
+
+#content h2.norm {
+	font-size:80%;
+	font-weight: bold !important;}
+
+/* top of page "issue" styles */
+#content div.issue h1 span.description {
+	display:block;
+	color:#000;
+	font-size:80%;
+}
+
+#content div.issue h1 span.description span.issue {
+	font-size:80%;
+	font-weight:normal;
+}
+
+/* global hr styles */
+hr {display:none}
+
+div.hr {
+	margin:0;
+	padding:4px 0 4px 0;
+	background:url(/cmg_update/npg_images/line.gif) center center repeat-x;
+}
+/* end global hr styles */
+#content div.issue {margin-bottom:1em;}
+
+#content div.issue div.cover {
+	float:left;
+	
+	margin-right:10px;
+	width:240px !important;
+	width /**/:233px;
+}
+
+#content div.issue img {
+	border:1px solid #ccc;
+	padding: 5px;
+	width:233px !important;
+	width /**/:232px;
+}
+
+#content div.issue a.about-the-cover:link, #content div.issue a.about-the-cover:visited {
+	padding-left:7px;
+	background:url(/cmg_update/npg_images/arrow_blue.gif) center left no-repeat;
+	font-size:80%;
+	display:block;
+	margin:4px 0 9px 0;
+}
+#content div.issue a.about-the-cover:hover {background:url(/cmg_update/npg_images/arrow_red.gif) center left no-repeat;}
+
+#content div.issue div.issue-links {
+	margin-left:172px;
+	margin-top: 10px
+}
+
+#content div.issue ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#content div.issue-links ul.content-links {
+	margin: 0;
+	padding:0;
+	list-style-type:none;
+}
+
+#content div.issue-links ul.content-links li {
+	padding:0.25em 0;
+	font-weight:bold;
+	font-size:80%;
+}
+
+#content div.issue-links ul.issue-links {
+	margin:0 0 0 20px;
+	padding:0;
+	list-style-type:none;
+}
+
+#content div.issue-links ul.issue-links li {padding:0.2em 0;}
+
+#content div.issue-links ul.issue-links li a:link, 
+#content div.issue-links ul.issue-links li a:visited {
+	margin:0;
+	background:url(/cmg_update/npg_images/arrow_home.gif) no-repeat 0 50%;
+	font-size:80%;
+	padding-left:10px;
+}
+
+/* end top of page "issue" styles */
+
+
+/* featureboxes */
+#content .container {float:left;}
+* html #content .featurebox {height:1%;}/* peekaboo bugfix */
+#content .featurebox {margin:10px 0 20px 0; width:100%;}
+#content .column-left .featurebox {float:left;}
+
+#content .featurebox .padder .heading {margin-top:-5px;}/* when heading contains no image */
+#content .featurebox .padder {margin:5px;}
+#content .featurebox.news .padder {margin:0 0 0 50px;}
+
+#content .featurebox.colour {
+	background-color:#fff;
+	border:1px solid #ffc773;
+}
+
+#content div.left {
+	float:left;
+	width:48%;
+}
+
+#content div.right {
+	float:right;
+	width:48%;
+}
+
+div.test {
+	border:1px solid #f00;
+	width:48%; 
+	float:right;}
+
+
+#content .featurebox h2
+ {
+	font-size:80%;
+	background:#ffc773;
+	color:#000;
+	padding:3px 5px;
+	margin:0;
+	border-bottom:1px solid #fff;
+}
+#content .featurebox .padder h3,
+#content .featurebox .abstract h3
+ {
+	font-size:80%;
+	color:#000;
+	margin:0;
+}
+
+#content .featurebox h3 span,
+#content .featurebox h2 span {
+	display:block;
+	font-weight:normal;
+}
+/* featurebox new content span */
+#content .featurebox h2 span.new-content {
+	display:inline;
+	padding:1px 3px;
+	margin:0 5px 0 0;
+	background:#b1062e;
+	color:#fff;
+	font-family:"Century Gothic", Arial;
+	font-weight:bold;
+}
+
+ #content .featurebox h3 a {text-decoration: none;} 
+
+/* header styles */
+#content .featurebox .atl-or-category {
+	font-size:80%;
+	margin: 0;
+	font-weight: bold;
+	border-top:5px solid #fff;/* border used instead of margin to fix Gecko bug */
+}
+#content .featurebox.colour .atl-or-category {border-color:#fff;}
+
+#content span.locref {
+	font-size:80%;
+	margin:0 0.5em;
+	padding:0 0.2em;
+	background-color:#840800;
+	color:#ffc773;
+	
+}
+
+#content .featurebox .homesubject {
+	font-size:90%;
+	margin:0;
+	border-top:5px solid #fff;/* border used instead of margin to fix Gecko bug */
+}
+* html #content .featurebox .homesubject {margin:0;}/* IE doesn't like negative margin */
+#content .featurebox.colour .homesubject {border-color:#fff;}
+
+#content .featurebox .seealso {
+	font-size:90%;
+	display:inline;
+	color:#000;
+}
+/* end header styles */
+#content .featurebox .sub-head {
+	background-color: #fff8ed;
+	color: #081838;
+	padding: 5px;
+	font-size: 80%;
+	font-weight:normal;
+	margin:0;
+}
+
+#content .featurebox .padder .sub-head {
+	background-color: transparent;
+	color: #1888c8;
+	padding:0;
+	font-size: 90%;
+	font-weight:bold;
+	margin:10px 0;
+}
+
+#content .featurebox .sub-head.line {
+	border-top:1px dotted #ccc;
+	padding-top:10px;
+	margin-top:0;
+	color:#081838;
+}
+
+#content .featurebox div.heading-image img {
+ 	float:left;
+	padding: 3px;
+	margin: 8px 0 5px 0;
+}
+
+#content .featurebox div.heading-image .text {
+ 	margin-left:80px;
+}
+
+#content .featurebox a.arrow {
+	font-size:90%;
+	font-weight:bold;
+	margin-top:5px;
+}
+#content .featurebox div.see-also a {
+	font-size:90%;
+	font-weight:bold;
+}
+
+#content .featurebox .abstract p {margin:0; padding:0;}
+
+#content .cmc_bg { color: #1B4171; }
+#content .cmc_bg a { text-decoration: none; }
+#content .cmc_bg h2 { color: #1B4171; border: none; }
+#content .cmc_bg h3.sub-head { margin-top: 1em; color: #fc6; font-size: 80%;  }
+#content .cmc_bg ul { margin: 0 0 0 2em; padding: 0 5px 2.5em 0; }
+#content .cmc_bg ul li { margin: 2px 0 0 0; padding: 0; font-size: 70%; }
+#content .cmc_bg ul li { text-decoration: none; color: #fc6;}
+#content .cmc_bg ul li:hover { color: #fff; }
+
+#content div.cmc_bg.odd_month {
+    background: #000 url(/images/cmc_ssp_sidebar2.jpg) no-repeat bottom center;
+}
+
+#content div.cmc_bg.even_month {
+    background: #0c173e;
+}
+
+
+
+
+#content div.aop {background-color:#dae6ff}
+/* end featurebox styles */
+
+
+/* misc cmc styles */
+#content div.address { margin: 1em; }
+#content div.address p { margin: 0; padding: 0; }
+
+.pfam_domain {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    padding: 2px;
+    border: thin gray outset;
+}
+
+
+
+/* end misc cmc styles */
+
+
+
+/* prelaunch */
+#content div.cover a.subscribe:link, #content div.cover a.subscribe:visited {
+	color:#fff;
+	font-size:90%;
+	font-weight:bold;
+	background:#ffc773;
+	padding:1px 0;
+	text-decoration:none;
+	border:1px solid #fff;
+	border-top-color:#ddd;
+	border-right-color:#555;
+	border-bottom-color:#555;
+	border-left-color:#ddd;
+	display:block;
+
+	text-align:center;
+	text-transform:uppercase;
+}
+
+#content div.cover a.subscribe:hover {background-color:#c03;}
+
+* html #content a.register {background:url(/cmg_update/npg_images/envelope.gif) 0 0.5em no-repeat;}
+#content a.register {
+	display:block;
+	background:url(/cmg_update/npg_images/envelope.gif) 0 0.3em no-repeat;
+	padding-left:20px;
+	font-size:80%;
+}
+
+* html #content a.recommend {background:url(/cmg_update/npg_images/tick.gif) 0 0.3em no-repeat;}
+#content a.recommend {
+	display:block;
+	background:url(/cmg_update/npg_images/tick.gif) 0 0.2em no-repeat;
+	padding:1px 0 1px 20px;
+	font-size:80%;
+}
+
+#content div.callpapers {
+	background-color:#f3f7fb;
+	border:1px solid #e7e7e7;
+	padding:5px;
+	margin:20px 0 10px 0;
+	text-decoration:none;
+}
+
+#content div.callpapers h2 {
+	margin:0;
+	font-size:90%;
+}
+
+#content div.callpapers p {
+	margin:0;
+	font-size:80%;
+}
+/* end call for papers "box link" */
+
+
+#content .pl-list {
+	padding:10px;
+	border:1px solid #dae6ff;
+}
+
+#content .pl-list .atl {
+	font-size:90%;
+	font-weight:normal;
+	margin:0;
+}
+
+#content .pl-list ul {
+	list-style-type:none;
+	margin:10px 0 20px 0;
+	padding:0;
+}
+
+#content .pl-list li {
+	margin:15px 0;
+}
+
+#content .pl-list p {
+	margin:0;
+	font-size:90%;
+}
+/* end prelaunch */
+
+
+/*research library box styles*/
+
+#content div.issue-links .left {
+	float: left;
+	margin: 0;
+	padding-left: 10px;
+}
+
+
+
+
+/* ---------------------------------------------
+Additional and extra styles added and adapted January 2006
+By JDG @ NPG UK
+For CMG
+----------------------------------------------*/  
+
+/* generic styles */
+
+.featurebox img.spacer {
+	height:50px;
+	float:left;
+	border:none;
+	margin:0 5px 5px 0;
+	background-repeat:no-repeat;
+}
+
+.no-background {background:transparent!important;}
+
+#content-journalnav #content a.block:link,
+#content-journalnav #content a.block:active,
+#content-journalnav #content a.block:visited {
+	display:block;
+	margin:0.5em 0;	
+	font-size:80%;
+	font-weight:bold;
+} 
+
+/* image box */
+#content div.image-legend {
+	float:right;
+	border:1px solid #ccc;
+	margin:1.8em 0 10px 10px;
+	padding:4px;
+	width:180px;
+}
+
+#content div.image-legend p {
+	margin:0;
+	padding:0;
+	font-size:70%;
+}
+
+#content div.image-legend img {
+	border:0;
+	margin:0;
+	padding:0;
+	display:block;
+	width:180px;
+}
+
+#content div.image-legend span {font-style:italic;}
+/* end image box */
+
+/* featurebox styles start */
+
+#content-journalnav #content div.featurebox h5 {
+ 	Margin:0.5em 0;
+	padding:0;
+	font-size:80%;
+}	
+
+#content-journalnav #content p.author {
+	font-size:80%; 
+	color:#666;
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#content-journalnav #content div.column-right div.featurebox {
+	border:0;
+	text-decoration:none;	
+}
+
+/* featurebox styles end */
+
+/* ----------------
+XOXO styles
+------------------*/
+
+/* featurebox styles */
+
+#content-journalnav #content div.featurebox .xoxo {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#content-journalnav #content div.featurebox .xoxo li {
+	margin:0.5em 0;
+	padding:0;
+}
+
+#content-journalnav #content div.featurebox .xoxo li ul {
+	margin:0;
+	padding:0 1em;
+	list-style:none;
+}
+
+#content-journalnav #content div.featurebox .xoxo li ul li.doi {
+	font-size:80%;
+}
+
+/* calendar styles */
+
+#content div.calendar li.even {
+	background-color:#fff9ef;
+}
+
+#content-journalnav #content div.featurebox .xoxo li a.onpagenav:link,
+#content-journalnav #content div.featurebox .xoxo li a.onpagenav:active,
+#content-journalnav #content div.featurebox .xoxo li a.onpagenav:visited {
+	margin:0;
+	padding:0 0 0 7px;
+	font-size:80%;
+	background: url(/cmg_update/npg_images/arrow_blue.gif) no-repeat left center;
+}
+
+#content-journalnav #content div.featurebox .xoxo li a.onpagenav:hover {
+	background: url(/cmg_update/npg_images/arrow_red.gif) no-repeat left center;
+}
+
+.xoxo li ul.twocol {margin: 0; padding:0;}
+#content-journalnav #content div.featurebox .xoxo li ul.twocol li.right {float:right; display:block; clear:right; width:49%;}
+#content-journalnav #content div.featurebox .xoxo li ul.twocol li.left {float:left; display:block; clear:left; width:49%;}
+
+/* 3 col - may not be needed
+
+div.column-group.ratio6040x div.column-left
+{
+    float: left;
+    width: 73.5%;
+}
+
+div.column-group.ratio6040x div.column-left p
+{ margin: 20px 0 0 0;
+}
+
+div.column-group.ratio6040x div.column-right
+{
+    float: right;
+    width: 24%;
+} 
+
+*/
+
+/* toolbox menu styles */
+
+.toolbox
+{
+    margin: 0 0 20px 0;
+    background: #ece6da;
+    padding: 0 0 10px 0;
+	list-style:none;
+}
+
+.toolbox h2
+{
+	font-size: 70%;
+	color: #fff;
+	background: #004e6f;
+	margin: 0;
+	padding: 3px 5px;
+	font-weight:normal;
+}
+
+.toolbox ul
+{
+    margin: 0;
+    padding: 0 5px;
+    list-style: none;
+}
+
+.toolbox #toolbox ul li {padding: 2px 10px;}
+
+.toolbox a:link,
+.toolbox a:visited {
+	font-size:70%;
+	color:#000;
+	display:block;
+}
+
+.toolbox a:hover {color: #c03;}
+
+.toolbox li.nav-e-alert a:link,
+.toolbox li.nav-e-alert a:visited {
+	background:url(/cmg_update/npg_images/envelope.gif) no-repeat left center;
+	padding:0 0 0 20px;
+	margin-top:3px;
+}
+/* toolbox menu styles end */
+
+/*  new HEADER styles start */
+
+div.email-alert {float:left;}
+
+/*  ie6 fix to make the link sit correctly */
+*html div.email-alert a {line-height:2em;}
+
+div.email-alert a:link, 
+div.email-alert a:active, 
+div.email-alert a:visited {
+	font-size:80%; 
+	color:#fff;
+}
+
+div.email-alert a:hover {color:#000;}
+
+/* new HEADER styles end */
+
+/* NPG resources styles */
+h2.npg-resources {
+	font-weight:bold;
+	font-size:80%;
+	background-color:#b1062e;
+	color:#fff;
+	margin:0;
+	padding:2px 5px 2px 5px;
+}
+
+ul.npg-resources {
+	list-style-type:none;
+	text-align:left;
+	margin:0;
+	padding:0;
+	margin-bottom:20px;
+}
+
+ul.npg-resources li {
+	margin:0;
+	background-color:#eaeaea;
+	border-bottom:solid 1px #fff;
+}
+
+ul.npg-resources a, ul.npg-resources a:visited {
+	display:block;
+	margin:0;
+	font-size:70%;
+	color:#000;
+	text-decoration:none;
+	padding:3px 5px 3px 5px !important;
+	padding /**/:0 5px 2px 5px;/*IE5.x PC only*/
+}
+
+ul.npg-resources a:hover {
+	color:#fff;
+	text-decoration:none;
+	background-color:#b1062e;
+}
+/* end NPG resources styles */
+
+/* hope page logo box - added 24/11/2006 */
+
+#home div.logo {
+	background:url(/cmg_update/npg_images/logo_nigms.gif) no-repeat 50% 50%; 
+	border:1px solid #efefef;
+}
+
+#home div.logo img.spacer {
+	height:75px;
+}
+
+#home div.logo h3 {
+	font-size:70%;
+	color:#999;
+	text-align:center;
+	font-weight:normal;
+	margin:5px 000;
+	padding:0;
+}
