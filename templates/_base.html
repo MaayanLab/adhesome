@@ -50,6 +50,7 @@
 		<script type="text/javascript" src="{{path}}cmg_update/npg_scripts/lte-ie-6.js"></script>
 		<![endif]-->
 		<!-- end IE specific scripts -->
+		<link rel="stylesheet" type="text/css" href="{{path}}main.css">
 	</head>
 	<body class="" id="home">
 		{% block header %}
@@ -61,31 +62,23 @@
 								<li class="first"><a href="#content">Jump&nbsp;to&nbsp;main&nbsp;content</a></li>
 								<li><a href="#main-journal-nav">Jump&nbsp;to&nbsp;navigation</a></li>
 							</ul>
-							
 							<span class="cleardiv"><!-- --></span>
 						</div>
 					</div>
-					
 					<span class="cleardiv"><!-- --></span>
-					
 					<hr />
 					<div class="image-user-services-wrap">
 						<div class="image-user-services">
 							<a href="{{path}}index.shtml" title="Homepage"><img src="{{path}}cmg_update/npg_images/journal_header.gif" class="journal-header" alt="Cell Migration Gateway Logo" /></a>
-							
 							<span class="cleardiv"><!-- --></span>
 						</div>
-						
 						<span class="cleardiv"><!-- --></span>
 					</div>
-					
 					<span class="cleardiv"><!-- --></span>
-					
 					<hr />
 					<div class="publications-search-wrap clearfix">
 						<div class="publications-search">
 							<div id="cse">Loading</div>
-							
 							<span class="cleardiv"><!-- --></span>
 						</div>
 					</div>
@@ -107,51 +100,36 @@
 						<li class="site-nav-title">
 							<h1>Adhesome Site Navigation</h1>
 							<ul>
-								<li><a href="{{path}}index.shtml" title="The main Cell Migration Gateway homepage">Home</a></li>
-								<li class="selected"><a href="{{path}}cmg_update/index.shtml" title="The one-stop resource for news, highlights and research about cell migration">Cell Migration Update</a>
-								<ul class="subnav">
-									<li><a href="{{path}}cmg_update/archive/fa_current.shtml" title="Featured articles index">Featured articles</a></li>
-									<li><a href="{{path}}cmg_update/archive/rhighlts_current.shtml" title="Research highlights index">Research highlights</a></li>
-									<li><a href="{{path}}cmg_update/archive/library_current.shtml" title="Research library index">Research library</a></li>
-									<li><a href="{{path}}cmg_update/archive/news_current.shtml" title="News index">Consortium news</a></li>
-									<li><a href="{{path}}cmg_update/conferences.shtml" title="Conference Calendar index">Conference calendar</a></li>
-								</ul>
-							</li>
-							<li><a href="{{path}}resource/" title="Cell Migration Consortium Activity Center">CMC Activity Center</a></li>
-							<li><a href="http://cmckb.cellmigration.org/" title="Cell Migration Knowledgebase">CM Knowledgebase</a></li>
-							<li><a href="{{path}}science/index.shtml" title="An introduction to cell migration">Migration 101</a></li>
-							<li><a href="{{path}}aboutus/about.shtml" title="A description of the gateway, the CMC, and contact details">About Us</a></li>
-							<li><a href="{{path}}sitemap.shtml" title="A guide to the Cell Migration Gateway site">Site Map</a></li>
-						</ul>
-					</li>
-					<li class="spacing"><h2 class="toolbox">Toolbox</h2></li>
-					<li class="nav-ealert"><a href="{{path}}cmg_update/ealert/signup.shtml" class="reg-rec" title="E-alert signup">E-alert sign up</a></li>
-					<li class="nav-ealert nav-facebook"><a href="http://www.facebook.com/pages/Charlottesville-VA/Cell-Migration-Gateway/267912484187" class="reg-rec" title="Facebook">Facebook</a></li>
-					<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
-					<li class="nav-rss"><a href="{{path}}cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
-				</ul>
-				</map>
-				<!-- jdg -->
-			<h2 class="npg-resources"><abbr title="Cell Migration Gateway">CMG</abbr> resources</h2>
-			<ul class="npg-resources">
-				<li><a href="http://www.jbc.org/">J. Biol. Chem.</a></li>
-				<li><a href="http://www.pnas.org/">PNAS</a></li>
-				<li><a href="http://www.nature.com/onc/index.html">Oncogene</a></li>
-				<li><a href="http://www.sciencemag.org/magazine">Science</a></li>
-				<li><a href="http://www.nature.com/nature/">Nature</a></li>
-				<li><a href="http://dev.biologists.org/">Development</a></li>
-				<li><a href="http://www.jimmunol.org/">J. Immunol.</a></li>
-				<li><a href="http://www.nature.com/msb/index.html">Molecular Systems Biology</a></li>
-				<li><a href="http://www.signaling-gateway.org/">Signaling Gateway</a></li>
-				<li><a href="http://www.functionalglycomics.org/static/index.shtml">Functional Glycomics Gateway</a></li>
-				<li><a href="http://www.lipidmaps.org/">Lipidomics Gateway</a></li>
-				<li><a href="http://kb.psi-structuralgenomics.org/index.html">Structural Genomics Knowledgebase</a></li>
-				<li><a href="http://pid.nci.nih.gov/">Pathway Interaction Database</a></li>
-				<li><a href="http://www.nature.com/omics/index.html">Omics Gateway</a></li>
-				<li><a href="http://flybase.org/">FlyBase</a></li>
-				<li><a href="http://www.wormbase.org/">WormBase</a></li>
-			</ul>
-			</div><!-- CLOSEs JOURNALNAV DIV -->
+								<li{% if page == "home" %} class="selected"{% endif %}><a href="{{path}}index.html" title="The main Adhesome homepage">Home</a></li>
+								{% if page == "components" %}
+									<li class="selected"><a href="{{path}}components.html" title="Genetic components that make up the adhesome">Components</a>
+										<ul class="subnav">
+											<li><a href="{{path}}components/all.html" title="All components">Network Graph</a></li>
+										</ul>
+									</li>
+								{% else %}
+									<li><a href="{{path}}components.html" title="Genetic components that make up the adhesome">Components</a></li>
+								{% endif %}
+								<li{% if page == "interactions" %} class="selected"{% endif %}><a href="{{path}}interactions.html" title="Functional interactions involved in the adhesome">Functional Interactions</a></li>
+								<li{% if page == "associations" %} class="selected"{% endif %}><a href="{{path}}associations.html" title="Associations of proteins in the adhesome">Protein Associations</a></li>
+								<li{% if page == "contact" %} class="selected"{% endif %}><a href="{{path}}contact.html" title="Contact details">Contact Us</a></li>
+							</ul>
+						</li>
+						<li class="spacing"><h2 class="toolbox">Toolbox</h2></li>
+						<li class="nav-ealert"><a href="{{path}}cmg_update/ealert/signup.shtml" class="reg-rec" title="E-alert signup">E-alert sign up</a></li>
+						<li class="nav-ealert nav-facebook"><a href="http://www.facebook.com/pages/Charlottesville-VA/Cell-Migration-Gateway/267912484187" class="reg-rec" title="Facebook">Facebook</a></li>
+						<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
+						<li class="nav-rss"><a href="{{path}}cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
+					</ul>
+					</map>
+
+					<h2 class="npg-resources">Adhesome resources</h2>
+					<ul class="npg-resources">
+						{% for rc in resources %}
+							<li><a href="{{ rc.url }}">{{ rc.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</div><!-- CLOSEs JOURNALNAV DIV -->
 			</div><!-- CLOSEs CONTENT-JOURNALNAV DIV -->
 		</div></div>
 		{% block footer %}
@@ -159,16 +137,15 @@
 			<div id="foot-er" class="footer">
 				<div id="footer-journal">
 					<div class="footer-constrain clearfix">
-						<p class="journal-name">Cell Migration Gateway</p>
-						<p class="eissn"><abbr title="Electronic International Standard Serial Number">EISSN</abbr><span class="hidden">:</span> 1747-7883</p>
-						
+						<p class="journal-name">Adhesome</p>
+						<p class="eissn"><abbr title="Electronic International Standard Serial Number">EISSN</abbr><span class="hidden">:</span> ????-????</p>
 						<span class="cleardiv"><!-- --></span>
 					</div>
 					<span class="cleardiv"><!-- --></span>
 				</div>
 				<div id="footer-copyright">
 					<div class="footer-constrain">
-						<p class="norm">&#169; 2014 Cell Migration Consortium - All Rights Reserved | <a href="{{path}}cmg_update/privacy.shtml">Privacy policy &amp; Terms of Use</a></p>
+						<p class="norm">&#169; 2016 Adhesome - All Rights Reserved | <a href="{{path}}privacy.shtml">Privacy policy &amp; Terms of Use</a></p>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,55 @@
+.wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.expand {
+	flex: 1 0 auto;
+}
+
+#constrain {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#constrain .constrain {
+	margin-left: 0;
+	margin-right: 0;
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#content-journalnav {
+	flex: 1 0 auto;
+	display: flex;
+	max-width:980px;
+	flex-direction: row-reverse;
+}
+
+#content {
+	padding-left: 10px;
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#journalnav {
+	min-width: 150px;
+}
+
+iframe {
+	border-style: none;
+}
+
+.data-table {
+	display: none;
+}
