@@ -4,14 +4,13 @@
 	{% set title = "Components" %}
 {% endif %}
 {% set page = "components" %}
-{% set path = "../" %}
 {% extends "_base.html" %}
 {% block body %}
 <div id="content">
 	<br />
 	<div class="nav-wrapper white black-text">
 		<div class="col s12">
-			<a href="{{ path }}components.html" class="black-text">Components</a>
+			<a href="/components.html" class="black-text">Components</a>
 			<a href="#!" class="black-text">&gt;</a>
 			<a href="all.html" class="black-text">All Components</a>
 			{% if name %}
@@ -34,9 +33,9 @@
 </div>
 {% endblock %}
 {% block scripts %}
-<script src="{{ path }}js/cytoscape.min.js"></script>
-<script src="{{ path }}js/cola.v3.min.js"></script>
-<script src="{{ path }}js/cytoscape-cola.js"></script>
+<script src="/js/cytoscape.min.js"></script>
+<script src="/js/cola.v3.min.js"></script>
+<script src="/js/cytoscape-cola.js"></script>
 {% block cytoscape %}
 {% set cur = get_cursor() %}
 {% set node_view %}

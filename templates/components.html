@@ -3,10 +3,10 @@
 {% block body %}
 <div id="content">
 	<h1>Components</h1>
-	<p>View a network of all components <a href="components/all.html">here</a>.</p>
+	<p>View a network of all components <a href="/components/all.html">here</a>.</p>
 	{% set substitutions %} {
 		"official_symbol": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ official_symbol ]]'>[[ official_symbol ]]</a>",
-		"network": "<a href='components/[[ network ]].html'>View</a>"
+		"network": "<a href='/components/[[ network ]].html'>View</a>"
 	} {% endset %}
 	{% set cur = get_cursor() %}
 	{% set table = cur|query("select *, `Official Symbol` as Network from components")|apply(substitutions)  %}

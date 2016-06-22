@@ -1,27 +1,17 @@
 {% set page = "home" %}
 {% macro button(title, image, link) -%}
-<div class="card-panel hoverable">
-	<a href="{{ link }}">
-		<div class="card-image">
-			<img src="{{ image }}" style="width:100%">
-			<span class="card-title">{{ title }}</span>
-		</div>
+<div style="display: flex; flex-direction: row;">
+	<a href="{{ link }}" style="display: flex; flex-direction: column; justify-content: center; color: #000; font-size:100%; text-decoration:none;">
+		<img src="{{ image }}" alt="{{ title }}" />
+		<span style="text-align: center;">{{ title }}</span>
 	</a>
 </div>
 {%- endmacro %}
 {% extends "_base.html" %}
 {% block body %}
 <div id="content">
-	<div class="row valign">
-		<div class="col s4">
-			{{ button('Components', 'small_net.jpg', 'components.html') }}
-		</div>
-		<div class="col s4">
-			{{ button('Functional Associations', 'small_net.jpg', 'associations.html') }}
-		</div>
-		<div class="col s4">
-			{{ button('Protein-Protein Interactions', 'small_net.jpg', 'interactions.html') }}
-		</div>
-	</div>
+	{{ button('Components', 'images/small_net.jpg', 'components.html') }}
+	{{ button('Functional Associations', 'images/small_net.jpg', 'associations.html') }}
+	{{ button('Protein-Protein Interactions', 'images/small_net.jpg', 'interactions.html') }}
 </div>
 {% endblock %}
