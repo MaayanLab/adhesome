@@ -18,7 +18,7 @@ function load_viz_new(network_data){
 
   // define arguments object
   var args = {
-    root: '#clustergram',
+    root: '#container-id-1',
     'network_data': network_data,
     // 'row_label':'Input Genes',
     // 'col_label':'Enriched Terms',
@@ -58,8 +58,8 @@ function load_viz_new(network_data){
 
   function resize_container(){
 
-    var screen_width = $('#clustergram').width();
-    var screen_height = $('#clustergram').height();
+    var screen_width = window.innerWidth;
+    var screen_height = window.innerHeight - 30;
 
     d3.select(args.root)
       .style('width', screen_width+'px')
@@ -68,21 +68,22 @@ function load_viz_new(network_data){
 
   resize_container();
 
-  cgm = Clustergrammer(args);
-  
   d3.select(window).on('resize',function(){
     resize_container();
     cgm.resize_viz();
   });  
 
+  cgm = Clustergrammer(args);
+
+
   d3.select(cgm.params.root + ' .wait_message').remove();
 
   d3.select(cgm.params.root+ ' .title_section')
     .append('a')
-    .attr('href', '/clustergrammer/')
+    .attr('href', 'http://amp.pharm.mssm.edu/clustergrammer/')
     .append('img')
     .classed('title_image',true)
-    .attr('src','../static/img/clustergrammer_logo.png')
+    .attr('src','/static/img/clustergrammer_logo.png')
     .attr('alt','clustergrammer')
     .style('width','163px')
     .style('margin-left','2px')

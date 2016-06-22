@@ -4,7 +4,7 @@
 
 {% block body %}
 <div id="content">
-	<h1>{{ name }}</h1>
-	<p>TODO: Information about this dataset.</p>
+	<h1>{{ name }}: {{ typ }}</h1>
+	<iframe class="expand" src="{{ uri }}_{{ typ }}_.html"></iframe>
 </div>
 {% endblock %}

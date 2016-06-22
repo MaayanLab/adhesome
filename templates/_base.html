@@ -1,178 +1,183 @@
 {% set title = title|default(page|capitalize) %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<!--
-	## Site Configuration
+<!--
+## Site Configuration
 			## @siteName	CMG
-					## @scope		Site
+						## @scope		Site
 			## @adaption	JDG@NPG 2007
-	-->
-	<!-- used in ${common}/npg_includes/separator.shtml -->
-	<!-- used in ${common}/npg_includes/clearfloats.shtml -->
-	<!-- used in ${common}/npg_includes/global.backtotop.shtml -->
-	<!-- SET THE BASE FOLDERS FOR THE SITE -->
-	<head>
-		<title>{{ title }}</title>
-		<!-- metadata and links -->
-		<meta http-equiv="Content-Style-Type" content="text/css" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="home" href="/index.html" title="home" />
-		<!-- provide correct meta robots information - all pages except TOC pages (AOP, Issue, Focus (web and other), Supplements) use default "noarchive" type -->
-		<meta name="robots" content="noarchive" />
-		<!-- This doesn't really belong here, but I need it somewhere that's included everywhere -->
-		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-		<script type="text/javascript">
-		google.load("jquery", "1");
-		</script>
-		<script type="text/javascript">
-		jQuery.noConflict();
-		var $jq = $ = jQuery;
-		</script>
-		<!-- end metadata and links -->
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<!-- local style overrides -->
-		<style type="text/css">
-		#content .featurebox .featurebox { margin: 0; }
-		#content .featurebox .featurebox p { margin-bottom: 0; }
-		#content .featurebox .padder a.button { margin: 0; }
-		</style>
-		<style type="text/css" media="screen, projection"><!--/*--><![CDATA[/*><!--*/
-		@import "/cmg_update/npg_style/layout.css";
-		@import "/cmg_update/npg_style/site.css";
-		@import "/cmg_update/npg_style/google.css";
-		@import "/cmg_update/npg_style/header_footer_smallfonts.css";
-		@import "/cmg_update/npg_style/restrict_width/930px.css";/* do not edit this stylesheet */
-		/*]]>*/--></style>
-		<!-- IE specific scripts - min/max fix -->
-		<!--[if lte IE 6]>
-		<script type="text/javascript" src="/cmg_update/npg_scripts/lte-ie-6.js"></script>
-		<![endif]-->
-		<!-- end IE specific scripts -->
-		<link rel="stylesheet" type="text/css" href="/jquery.dataTables.min.css">
-		<link rel="stylesheet" type="text/css" href="/main.css">
-	</head>
-	<body class="" id="home">
-		{% block header %}
-			<div id="head-er">
-				<div class="header-nonad-wrapper" id="top">
-					<div class="accessibility-login-wrap">
-						<div class="accessibility-login">
-							<ul class="jumplinks">
-								<li class="first"><a href="#content">Jump&nbsp;to&nbsp;main&nbsp;content</a></li>
-								<li><a href="#main-journal-nav">Jump&nbsp;to&nbsp;navigation</a></li>
-							</ul>
-							<span class="cleardiv"><!-- --></span>
-						</div>
-					</div>
+-->
+<!-- used in ${common}/npg_includes/separator.shtml -->
+<!-- used in ${common}/npg_includes/clearfloats.shtml -->
+<!-- used in ${common}/npg_includes/global.backtotop.shtml -->
+<!-- SET THE BASE FOLDERS FOR THE SITE -->
+<head>
+	<title>{{ title }}</title>
+	<!-- metadata and links -->
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="home" href="/index.html" title="home" />
+	<!-- provide correct meta robots information - all pages except TOC pages (AOP, Issue, Focus (web and other), Supplements) use default "noarchive" type -->
+	<meta name="robots" content="noarchive" />
+	<!-- This doesn't really belong here, but I need it somewhere that's included everywhere -->
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">
+	google.load("jquery", "1");
+	</script>
+	<script type="text/javascript">
+	jQuery.noConflict();
+	var $jq = $ = jQuery;
+	</script>
+	<!-- end metadata and links -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!-- local style overrides -->
+	<style type="text/css">
+	#content .featurebox .featurebox { margin: 0; }
+	#content .featurebox .featurebox p { margin-bottom: 0; }
+	#content .featurebox .padder a.button { margin: 0; }
+	</style>
+	<style type="text/css" media="screen, projection"><!--/*--><![CDATA[/*><!--*/
+	@import "/cmg_update/npg_style/layout.css";
+	@import "/cmg_update/npg_style/site.css";
+	@import "/cmg_update/npg_style/google.css";
+	@import "/cmg_update/npg_style/header_footer_smallfonts.css";
+	@import "/cmg_update/npg_style/restrict_width/930px.css";/* do not edit this stylesheet */
+	/*]]>*/--></style>
+	<!-- IE specific scripts - min/max fix -->
+	<!--[if lte IE 6]>
+	<script type="text/javascript" src="/cmg_update/npg_scripts/lte-ie-6.js"></script>
+	<![endif]-->
+	<!-- end IE specific scripts -->
+	<link rel="stylesheet" type="text/css" href="/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+<body class="" id="home">
+	{% block header %}
+	<div id="head-er">
+		<div class="header-nonad-wrapper" id="top">
+			<div class="accessibility-login-wrap">
+				<div class="accessibility-login">
+					<ul class="jumplinks">
+						<li class="first"><a href="#content">Jump&nbsp;to&nbsp;main&nbsp;content</a></li>
+						<li><a href="#main-journal-nav">Jump&nbsp;to&nbsp;navigation</a></li>
+					</ul>
 					<span class="cleardiv"><!-- --></span>
-					<hr />
-					<div class="image-user-services-wrap">
-						<div class="image-user-services">
-							<a href="/index.html">Adhesome<em>FA</em>network</a>
-						</div>
-						<span class="cleardiv"><!-- --></span>
-					</div>
-					<span class="cleardiv"><!-- --></span>
-					<hr />
-					<div class="publications-search-wrap clearfix">
-						<div class="publications-search">
-							<div id="cse">Loading</div>
-							<span class="cleardiv"><!-- --></span>
-						</div>
-					</div>
 				</div>
 			</div>
-		{% endblock %}
-		<!-- opening divs for fixed width layout -->
-		<div id="constrain">
-			<div class="constrain">
-				<div id="content-journalnav">
-					{% block body %}{% endblock %}
-					
-					<!-- START JOURNALNAV DIV -->
-					
-					<div id="journalnav"><!-- journalnav class must match class on naivgation list item to highlight that item -->
+			<span class="cleardiv"><!-- --></span>
+			<hr />
+			<div class="image-user-services-wrap">
+				<div class="image-user-services">
+					<a href="/index.html">Adhesome<em>FA</em>network</a>
+				</div>
+				<span class="cleardiv"><!-- --></span>
+			</div>
+			<span class="cleardiv"><!-- --></span>
+			<hr />
+			<div class="publications-search-wrap clearfix">
+				<div class="publications-search">
+					<div id="cse">Loading</div>
+					<span class="cleardiv"><!-- --></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+	<div id="constrain">
+		<div class="constrain">
+			<div id="content-journalnav">
+				{% block body %}{% endblock %}
+				
+				{% block sidebar %}
+				<div id="journalnav">
 					<h1 class="hidden">Site Navigation</h1>
 					<map title="main journal navigation" id="main-journal-nav" class="journal-nav">
-					<ul class="xoxo">
-						<li class="site-nav-title">
-							<h1>Site Navigation</h1>
-							<ul>
-								<li{% if page == "home" %} class="selected"{% endif %}><a href="/index.html" title="The main Adhesome homepage">Home</a></li>
-								{% if page == "components" %}
-									<li class="selected"><a href="/components.html" title="Genetic components that make up the adhesome">Components</a>
-										<ul class="subnav">
-											<li><a href="/components/all.html" title="All components">Network Graph</a></li>
-										</ul>
-									</li>
-								{% else %}
-									<li><a href="/components.html" title="Genetic components that make up the adhesome">Components</a></li>
-								{% endif %}
-								<li{% if page == "interactions" %} class="selected"{% endif %}><a href="/interactions.html" title="Functional interactions involved in the adhesome">Functional Interactions</a></li>
-								<li{% if page == "associations" %} class="selected"{% endif %}><a href="/associations.html" title="Associations of proteins in the adhesome">Protein Associations</a></li>
-								<li{% if page == "contact" %} class="selected"{% endif %}><a href="/contact.html" title="Contact details">Contact Us</a></li>
-							</ul>
-						</li>
-						<li class="spacing"><h2 class="toolbox">Toolbox</h2></li>
-						<li class="nav-ealert"><a href="/cmg_update/ealert/signup.shtml" class="reg-rec" title="E-alert signup">E-alert sign up</a></li>
-						<li class="nav-ealert nav-facebook"><a href="http://www.facebook.com/pages/Charlottesville-VA/Cell-Migration-Gateway/267912484187" class="reg-rec" title="Facebook">Facebook</a></li>
-						<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
-						<li class="nav-rss"><a href="/cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
-					</ul>
+						<ul class="xoxo">
+							<li class="site-nav-title">
+								<h1>Site Navigation</h1>
+								<ul>
+									<li{% if page == "home" %} class="selected"{% endif %}><a href="/index.html" title="The main Adhesome homepage">Home</a></li>
+									{% if page == "components" %}
+										<li class="selected"><a href="/components.html" title="Genetic components that make up the adhesome">Components</a>
+											<ul class="subnav">
+												<li><a href="/components/all.html" title="All components">Network Graph</a></li>
+											</ul>
+										</li>
+									{% else %}
+										<li><a href="/components.html" title="Genetic components that make up the adhesome">Components</a></li>
+									{% endif %}
+									<li{% if page == "interactions" %} class="selected"{% endif %}><a href="/interactions.html" title="Functional interactions involved in the adhesome">Functional Interactions</a></li>
+									{% if page == "associations" %}
+										<li class="selected"><a href="/associations.html" title="Associations of proteins in the adhesome">Protein Associations</a>
+											{% if name %}
+												<ul class="subnav">
+													<li><a href="/associations/{{ uri }}_viz.html" title="Viz">Viz</a></li>
+													<li><a href="/associations/{{ uri }}_sim_row.html" title="Sim Row">Sim Row</a></li>
+													<li><a href="/associations/{{ uri }}_sim_col.html" title="Sim Col">Sim Col</a></li>
+												</ul>
+											{% endif %}
+										</li>
+									{% else %}
+										<li><a href="/associations.html" title="Associations of proteins in the adhesome">Protein Associations</a></li>
+									{% endif %}
+									<li{% if page == "contact" %} class="selected"{% endif %}><a href="/contact.html" title="Contact details">Contact Us</a></li>
+								</ul>
+							</li>
+
+							<li class="spacing"><h2 class="toolbox">Toolbox</h2></li>
+							<li class="nav-ealert"><a href="/cmg_update/ealert/signup.shtml" class="reg-rec" title="E-alert signup">E-alert sign up</a></li>
+							<li class="nav-ealert nav-facebook"><a href="http://www.facebook.com/pages/Charlottesville-VA/Cell-Migration-Gateway/267912484187" class="reg-rec" title="Facebook">Facebook</a></li>
+							<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
+							<li class="nav-rss"><a href="/cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
+						</ul>
 					</map>
-
-					<h2 class="npg-resources">Adhesome resources</h2>
-					<ul class="npg-resources">
-						{% for rc in resources %}
-							<li><a href="{{ rc.url }}">{{ rc.title }}</a></li>
-						{% endfor %}
-					</ul>
-				</div><!-- CLOSEs JOURNALNAV DIV -->
-			</div><!-- CLOSEs CONTENT-JOURNALNAV DIV -->
-		</div></div>
-		{% block footer %}
-			<p class="back-to-top hidden"><a href="#top">Top<span class="hidden"> of page</span></a></p>
-			<div id="foot-er" class="footer">
-				<div id="footer-journal">
-					<div class="footer-constrain clearfix">
-						<p class="journal-name">Adhesome</p>
-						<p class="eissn"><abbr title="Electronic International Standard Serial Number">EISSN</abbr><span class="hidden">:</span> ????-????</p>
-						<span class="cleardiv"><!-- --></span>
-					</div>
-					<span class="cleardiv"><!-- --></span>
 				</div>
-				<div id="footer-copyright">
-					<div class="footer-constrain">
-						<p class="norm">&#169; 2016 Adhesome - All Rights Reserved | <a href="/privacy.html">Privacy policy &amp; Terms of Use</a></p>
-					</div>
-				</div>
+				{% endblock %}
 			</div>
-		{% endblock %}
-
-		<script type="text/javascript">
-		google.load('search', '1', {language : 'en', });
-		var customSearchControl;
-		var gcscPostSearch = {};
-		gcscPostSearch.uiAddOn = function() {
-			var closeX = document.createElement('div');
-			closeX.className = 'gsc-clear-button gsc-cursor-close';
-			closeX.onclick = function(){customSearchControl.clearAllResults(); return false;};
-			closeX.appendChild(document.createTextNode('close'));
-			var divs = document.getElementsByTagName('div');
-			for (var i = 0; i < divs.length; i++) {
-				if (divs[i].className == 'gsc-cursor-box') {
-					divs[i].appendChild(closeX);
-				}
+		</div>
+	</div>
+	{% block footer %}
+	<p class="back-to-top hidden"><a href="#top">Top<span class="hidden"> of page</span></a></p>
+	<div id="foot-er" class="footer">
+		<div id="footer-journal">
+			<div class="footer-constrain clearfix">
+				<p class="journal-name">Adhesome</p>
+				<p class="eissn"><abbr title="Electronic International Standard Serial Number">EISSN</abbr><span class="hidden">:</span> ????-????</p>
+				<span class="cleardiv"><!-- --></span>
+			</div>
+			<span class="cleardiv"><!-- --></span>
+		</div>
+		<div id="footer-copyright">
+			<div class="footer-constrain">
+				<p class="norm">&#169; 2016 Adhesome - All Rights Reserved | <a href="/privacy.html">Privacy policy &amp; Terms of Use</a></p>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+	<script type="text/javascript">
+	google.load('search', '1', {language : 'en', });
+	var customSearchControl;
+	var gcscPostSearch = {};
+	gcscPostSearch.uiAddOn = function() {
+		var closeX = document.createElement('div');
+		closeX.className = 'gsc-clear-button gsc-cursor-close';
+		closeX.onclick = function(){customSearchControl.clearAllResults(); return false;};
+		closeX.appendChild(document.createTextNode('close'));
+		var divs = document.getElementsByTagName('div');
+		for (var i = 0; i < divs.length; i++) {
+			if (divs[i].className == 'gsc-cursor-box') {
+				divs[i].appendChild(closeX);
 			}
 		}
-		google.setOnLoadCallback(function() {
-			customSearchControl = new google.search.CustomSearchControl('008980979909212325489:usicab459yw');
-			customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-			customSearchControl.draw('cse');
-			customSearchControl.setSearchCompleteCallback(gcscPostSearch, gcscPostSearch.uiAddOn);
-		}, true);
-		</script>
-		{% block scripts %}{% endblock %}
-	</body>
+	}
+	google.setOnLoadCallback(function() {
+		customSearchControl = new google.search.CustomSearchControl('008980979909212325489:usicab459yw');
+		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+		customSearchControl.draw('cse');
+		customSearchControl.setSearchCompleteCallback(gcscPostSearch, gcscPostSearch.uiAddOn);
+	}, true);
+	</script>
+	{% block scripts %}{% endblock %}
+</body>
 </html>

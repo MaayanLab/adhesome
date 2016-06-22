@@ -121,7 +121,8 @@ for name, in query(cur, 'select `Name` from `datasets`')['data']:
 	uri = name.lower().replace(' ', '_')
 	site.get_template('_association.html').stream(name=name, uri=uri, **funcs).dump('build/associations/%s.html' % (uri))
 	for typ in ['viz', 'sim_row', 'sim_col']:
-		site.get_template('_association_clustergram.html').stream(name=name, typ=typ, **funcs).dump('build/associations/%s_%s.html' % (uri, typ))
+		site.get_template('_association_container.html').stream(name=name, typ=typ, uri=uri, **funcs).dump('build/associations/%s_%s.html' % (uri, typ))
+		site.get_template('_association_clustergram.html').stream(name=name, typ=typ, uri=uri, **funcs).dump('build/associations/%s_%s_.html' % (uri, typ))
 	print('Rendering %s' % (uri))
 
 site.get_template('_component_all.html').stream(**funcs).dump('build/components/all.html')
