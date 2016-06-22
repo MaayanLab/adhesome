@@ -1,21 +1,18 @@
 {% set cur = get_cursor() %}
 {% set clustergram = (cur|query("select `{0}` from `datasets` where `Name`=?".format(typ), name)).data.0.0 %}
-{% extends "_base_bare.html" %}
+{% set page = "associations" %}
+{% extends "_base.html" %}
 {% block head %}
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="shortcut icon" href="/static/icons/graham_cracker.ico"  type="image/x-icon">
-<link rel="stylesheet" href="/static/lib/css/bootstrap.css">
+<!-- <link rel="stylesheet" href="/static/lib/css/bootstrap.css"> -->
 <link rel="stylesheet" href="/static/css/jquery-ui.css">
 <link rel="stylesheet" href="/static/css/font-awesome.min.css">
 <link rel="stylesheet" href="/static/css/custom_new.css">
 {% endblock %}
 {% block body %}
-<div id="container-id-1">
-	<h1 class='wait_message'>Please wait ...</h1>
+<div id="content">
+	<div id="clustergrammer" class="expand" style="max-height: 100vh;">
+		<h1 class='wait_message'>Please wait ...</h1>
+	</div>
 </div>
 {% endblock %}
 {% block scripts %}

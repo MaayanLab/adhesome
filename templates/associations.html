@@ -5,7 +5,7 @@
 <div id="content">
 	<h1>Functional Associations</h1>
 	{% set substitutions %} {
-		"dataset": "<a href='/associations/[[ urlize(dataset) ]].html'>[[ dataset ]]</a>"
+		"dataset": "<a href='/associations/[[ urlize(dataset) ]]_viz.html'>[[ dataset ]]</a>"
 	} {% endset %}
 	{% set cur = get_cursor() %}
 	{% set table = cur|query("select `Name` as `Dataset` from datasets")|apply(substitutions) %}

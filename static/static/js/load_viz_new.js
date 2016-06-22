@@ -18,7 +18,7 @@ function load_viz_new(network_data){
 
   // define arguments object
   var args = {
-    root: '#container-id-1',
+    root: '#clustergrammer',
     'network_data': network_data,
     // 'row_label':'Input Genes',
     // 'col_label':'Enriched Terms',
@@ -57,24 +57,19 @@ function load_viz_new(network_data){
   };
 
   function resize_container(){
-
-    var screen_width = window.innerWidth;
-    var screen_height = window.innerHeight - 30;
-
     d3.select(args.root)
-      .style('width', screen_width+'px')
-      .style('height', screen_height+'px');
+      .style('width', $('#clustergrammer').width())
+      .style('height', $('#clustergrammer').height());
   }
 
   resize_container();
 
-  d3.select(window).on('resize',function(){
+  d3.select(window).on('resize', function() {
     resize_container();
     cgm.resize_viz();
   });  
 
   cgm = Clustergrammer(args);
-
 
   d3.select(cgm.params.root + ' .wait_message').remove();
 

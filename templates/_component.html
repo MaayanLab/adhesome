@@ -21,7 +21,15 @@
 	</div>
 	<div id="graph" class="expand"></div>
 	<div class="row center-align">
-		<div class="col offset-s8 s2 input-field">
+		<div class="col s6">
+			<div class="row">
+				<a href="http://amp.pharm.mssm.edu/Harmonizome/gene/{{ name }}">View on Harminizome</a>
+			</div>
+			<div class="row">
+				<a href="http://www.genecards.org/cgi-bin/carddisp.pl?gene={{ name }}">View on GeneCard</a>
+			</div>
+		</div>
+		<div class="col offset-s2 s2 input-field">
 			<input type="checkbox" id="intrinsic" checked="checked" />
 			<label for="intrinsic"><span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
 		</div>
