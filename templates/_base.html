@@ -101,7 +101,7 @@
 									{% if page == "components" %}
 										<li class="selected"><a href="/components.html" title="Genetic components that make up the adhesome">Components</a>
 											<ul class="subnav">
-												<li><a href="/components/all.html" title="All components">Network Graph</a></li>
+												<li{% if name %} class="selected"{% endif %}><a href="/components/all.html" title="All components">Network Graph</a></li>
 											</ul>
 										</li>
 									{% else %}
@@ -112,9 +112,9 @@
 										<li class="selected"><a href="/associations.html" title="Associations of proteins in the adhesome">Protein Associations</a>
 											{% if name %}
 												<ul class="subnav">
-													<li><a href="/associations/{{ uri }}_viz.html" title="Viz">Viz</a></li>
-													<li><a href="/associations/{{ uri }}_sim_row.html" title="Sim Row">Sim Row</a></li>
-													<li><a href="/associations/{{ uri }}_sim_col.html" title="Sim Col">Sim Col</a></li>
+													<li{% if typ and typ == "viz" %} class="selected"{% endif %}><a href="/associations/{{ uri }}_viz.html" title="Viz">Viz</a></li>
+													<li{% if typ and typ == "sim_row" %} class="selected"{% endif %}><a href="/associations/{{ uri }}_sim_row.html" title="Sim Row">Sim Row</a></li>
+													<li{% if typ and typ == "sim_col" %} class="selected"{% endif %}><a href="/associations/{{ uri }}_sim_col.html" title="Sim Col">Sim Col</a></li>
 												</ul>
 											{% endif %}
 										</li>

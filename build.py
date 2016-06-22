@@ -125,7 +125,7 @@ for name, in query(cur, 'select `Name` from `datasets`')['data']:
 		site.get_template('_association_clustergram.html').stream(name=name, typ=typ, uri=uri, **funcs).dump('build/associations/%s_%s_.html' % (uri, typ))
 	print('Rendering %s' % (uri))
 
-site.get_template('_component_all.html').stream(**funcs).dump('build/components/all.html')
+site.get_template('_component_all.html').stream(name='all', **funcs).dump('build/components/all.html')
 print('Rendering all components')
 
 for name, in query(cur, 'select `Official Symbol` from `components`')['data']:
