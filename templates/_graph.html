@@ -83,6 +83,7 @@ var cy = cytoscape({
 					id: {{ i|next }},
 					source: '{{ source }}',
 					target: '{{ target }}',
+					pmid: '{{ pmid }}'
 				}
 			},
 		{% endfor %}
@@ -93,8 +94,61 @@ var cy = cytoscape({
 	}
 });
 
-cy.on('tap', 'node', function(e){
-	window.location.href = this.data('name')+'.html';
+cy.nodes().forEach(function(node) {
+	var name = node.data('name');
+	node.qtip({
+		content: [
+			{
+				name: 'View node graph',
+				url: '/components/'+name+'.html'
+			},
+			{
+				name: 'View on Harminizome',
+				url: 'http://amp.pharm.mssm.edu/Harmonizome/gene/'+name
+			},
+			{
+				name: 'View on GeneCard',
+				url: 'http://www.genecards.org/cgi-bin/carddisp.pl?gene='+name
+			}
+		].map(function(link) {
+				return '<a href="'+link.url+'">'+link.name+'</a>';
+			}).join('<br />\n'),
+		position: {
+			my: 'top center',
+			at: 'bottom center'
+		},
+		style: {
+			classes: 'qtip',
+			tip: {
+				width: 16,
+				height: 8
+			}
+		}
+	});
+});
+
+cy.edges().forEach(function(edge) {
+	edge.qtip({
+		content: edge.data('pmid').split(' ').map(function(pmid) {
+				return {
+						name: 'View PubMed Article ('+pmid+')',
+						url: 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids='+pmid
+					}
+			}).map(function(link) {
+				return '<a href="'+link.url+'">'+link.name+'</a>';
+			}).join('<br />\n'),
+		position: {
+			my: 'top center',
+			at: 'bottom center'
+		},
+		style: {
+			classes: 'qtip',
+			tip: {
+				width: 16,
+				height: 8
+			}
+		}
+	});
 });
 
 $('#intrinsic').change(function() {

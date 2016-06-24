@@ -5,43 +5,34 @@
 {% endif %}
 {% set page = "components" %}
 {% extends "_base.html" %}
+{% block head %}
+<link rel="stylesheet" href="/jquery.qtip.min.css">
+{% endblock %}
 {% block body %}
 <div id="content">
-	<br />
-	<div class="nav-wrapper white black-text">
-		<div class="col s12">
-			<a href="/components.html" class="black-text">Components</a>
-			<a href="#!" class="black-text">&gt;</a>
-			<a href="all.html" class="black-text">All Components</a>
-			{% if name %}
-				<a href="#!" class="black-text">&gt;</a>
-				<a href="{{ urlize(name) }}.html" class="black-text">{{ name }}</a>
-			{% endif %}
-		</div>
-	</div>
+	<h1 class="page-header">
+		<a href="/components.html">Components</a>
+		<a href="#!">&gt;</a>
+		<a href="all.html">All Components</a>
+		{% if name != "all" %}
+			<a href="#!">&gt;</a>
+			<a href="{{ urlize(name) }}.html">{{ name }}</a>
+		{% endif %}
+	</h1>
 	<div id="graph" class="expand"></div>
-	<div class="row center-align">
-		<div class="col s6">
-			<div class="row">
-				<a href="http://amp.pharm.mssm.edu/Harmonizome/gene/{{ name }}">View on Harminizome</a>
-			</div>
-			<div class="row">
-				<a href="http://www.genecards.org/cgi-bin/carddisp.pl?gene={{ name }}">View on GeneCard</a>
-			</div>
-		</div>
-		<div class="col offset-s2 s2 input-field">
-			<input type="checkbox" id="intrinsic" checked="checked" />
-			<label for="intrinsic"><span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
-		</div>
-		<div class="col s2 input-field">
-			<input type="checkbox" id="associated" checked="checked" />
-			<label for="associated"><span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
-		</div>
+	<div>
+		<input type="checkbox" id="intrinsic" checked="checked" />
+		<label for="intrinsic"><span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
+		<br />
+		<input type="checkbox" id="associated" checked="checked" />
+		<label for="associated"><span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
 	</div>
 </div>
 {% endblock %}
 {% block scripts %}
 <script src="/js/cytoscape.min.js"></script>
+<script src="/js/jquery.qtip.min.js"></script>
+<script src="/js/cytoscape-qtip.js"></script>
 <script src="/js/cola.v3.min.js"></script>
 <script src="/js/cytoscape-cola.js"></script>
 {% block cytoscape %}

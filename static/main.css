@@ -61,10 +61,16 @@ iframe {
 
 .image-user-services {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: center;
 }
 .image-user-services a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 250%;
+}
+
+.page-header a, .page-header a:hover, .page-header a:visited {
+	text-decoration: none;
+	color: inherit;
 }

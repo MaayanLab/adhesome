@@ -1,17 +1,19 @@
 {% set page = "home" %}
-{% macro button(title, image, link) -%}
-<div style="display: flex; flex-direction: row;">
-	<a href="{{ link }}" style="display: flex; flex-direction: column; justify-content: center; color: #000; font-size:100%; text-decoration:none;">
-		<img src="{{ image }}" alt="{{ title }}" />
-		<span style="text-align: center;">{{ title }}</span>
+{% macro button(title, image, link) %}
+<div class="align-center">
+	<a href="{{ link }}">
+		<img src="{{ image }}" alt="{{ title }}" /><br />
+		<span style="color:#000; text-decoration:none;">{{ title }}</span>
 	</a>
 </div>
-{%- endmacro %}
+{% endmacro %}
 {% extends "_base.html" %}
 {% block body %}
 <div id="content">
-	{{ button('Components', 'images/small_net.jpg', 'components.html') }}
-	{{ button('Functional Associations', 'images/small_net.jpg', 'associations.html') }}
-	{{ button('Protein-Protein Interactions', 'images/small_net.jpg', 'interactions.html') }}
+	<div class="clearfix">
+		{{ button('Components', 'images/small_net.jpg', 'components.html') }}
+		{{ button('Functional Associations', 'images/small_net.jpg', 'associations.html') }}
+		{{ button('Protein-Protein Interactions', 'images/small_net.jpg', 'interactions.html') }}
+	</div>
 </div>
 {% endblock %}
