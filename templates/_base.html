@@ -50,108 +50,20 @@
 	<![endif]-->
 	<!-- end IE specific scripts -->
 	<link rel="stylesheet" type="text/css" href="/jquery.dataTables.min.css">
-	<link rel="stylesheet" type="text/css" href="/main.css">
 	{% block head %}{% endblock %}
+	<link rel="stylesheet" type="text/css" href="/main.css">
 </head>
 <body class="" id="home">
-	{% block header %}
-	<div id="head-er">
-		<div class="header-nonad-wrapper" id="top">
-			<div class="accessibility-login-wrap">
-				<div class="accessibility-login">
-					<ul class="jumplinks">
-						<li class="first"><a href="#content">Jump&nbsp;to&nbsp;main&nbsp;content</a></li>
-						<li><a href="#main-journal-nav">Jump&nbsp;to&nbsp;navigation</a></li>
-					</ul>
-					<span class="cleardiv"><!-- --></span>
-				</div>
-			</div>
-			<span class="cleardiv"><!-- --></span>
-			<hr />
-			<div class="image-user-services-wrap">
-				<div class="image-user-services">
-					<a href="/index.html">Adhesome<em>FA</em>network</a>
-				</div>
-				<span class="cleardiv"><!-- --></span>
-			</div>
-			<span class="cleardiv"><!-- --></span>
-			<hr />
-			<div class="publications-search-wrap clearfix">
-				<div class="publications-search">
-					<div id="cse">Loading</div>
-					<span class="cleardiv"><!-- --></span>
-				</div>
-			</div>
-		</div>
-	</div>
-	{% endblock %}
+	{% include "_header.html" %}
 	<div id="constrain">
 		<div class="constrain">
 			<div id="content-journalnav">
+				{% include "_nav.html" %}
 				{% block body %}{% endblock %}
-				
-				{% block sidebar %}
-				<div id="journalnav">
-					<h1 class="hidden">Site Navigation</h1>
-					<map title="main journal navigation" id="main-journal-nav" class="journal-nav">
-						<ul class="xoxo">
-							<li class="site-nav-title">
-								<h1>Site Navigation</h1>
-								<ul>
-									<li{% if page == "home" %} class="selected"{% endif %}><a href="/index.html" title="The main Adhesome homepage">Home</a></li>
-									{% if page == "components" %}
-										<li class="selected"><a href="/components.html" title="Genetic components that make up the adhesome">Components</a>
-											<ul class="subnav">
-												<li{% if name %} class="selected"{% endif %}><a href="/components/all.html" title="All components">Network Graph</a></li>
-											</ul>
-										</li>
-									{% else %}
-										<li><a href="/components.html" title="Genetic components that make up the adhesome">Components</a></li>
-									{% endif %}
-									<li{% if page == "interactions" %} class="selected"{% endif %}><a href="/interactions.html" title="Interactions between proteins in the adhesome"> Protein Interactions</a></li>
-									{% if page == "associations" %}
-										<li class="selected"><a href="/associations.html" title="Functional associations in the adhesome">Functional Associations</a>
-											{% if name %}
-												<ul class="subnav">
-													<li{% if typ and typ == "viz" %} class="selected"{% endif %}><a href="/associations/{{ uri }}_viz.html" title="Viz">Viz</a></li>
-													<li{% if typ and typ == "sim_row" %} class="selected"{% endif %}><a href="/associations/{{ uri }}_sim_row.html" title="Sim Row">Sim Row</a></li>
-													<li{% if typ and typ == "sim_col" %} class="selected"{% endif %}><a href="/associations/{{ uri }}_sim_col.html" title="Sim Col">Sim Col</a></li>
-												</ul>
-											{% endif %}
-										</li>
-									{% else %}
-										<li><a href="/associations.html" title="Functional associations in the adhesome">Functional Associations</a></li>
-									{% endif %}
-									<li{% if page == "contact" %} class="selected"{% endif %}><a href="/contact.html" title="Contact details">Contact Us</a></li>
-								</ul>
-							</li>
-
-							<li class="spacing"><h2 class="toolbox">Toolbox</h2></li>
-							<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
-							<li class="nav-rss"><a href="/cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
-						</ul>
-					</map>
-				</div>
-				{% endblock %}
 			</div>
 		</div>
 	</div>
-	{% block footer %}
-	<p class="back-to-top hidden"><a href="#top">Top<span class="hidden"> of page</span></a></p>
-	<div id="foot-er" class="footer">
-		<div id="footer-journal">
-			<div class="footer-constrain clearfix">
-				<p class="journal-name">Adhesome</p>
-			</div>
-			<span class="cleardiv"><!-- --></span>
-		</div>
-		<div id="footer-copyright">
-			<div class="footer-constrain">
-				<p class="norm">&#169; 2016 Adhesome - All Rights Reserved | <a href="/privacy.html">Privacy policy &amp; Terms of Use</a></p>
-			</div>
-		</div>
-	</div>
-	{% endblock %}
+	{% include "_footer.html" %}
 	<script type="text/javascript">
 	google.load('search', '1', {language : 'en', });
 	var customSearchControl;
