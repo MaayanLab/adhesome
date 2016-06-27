@@ -6,12 +6,12 @@
 {% set page = "components" %}
 {% extends "_base.html" %}
 {% block head %}
-<link rel="stylesheet" href="/jquery.qtip.min.css">
+<link rel="stylesheet" href="{{ base }}/jquery.qtip.min.css">
 {% endblock %}
 {% block body %}
 <div id="content">
 	<h1 class="page-header">
-		<a href="/components.html">Components</a>
+		<a href="{{ base }}/components.html">Components</a>
 		<a href="#!">&gt;</a>
 		<a href="all.html">All Components</a>
 		{% if name != "all" %}
@@ -30,11 +30,11 @@
 </div>
 {% endblock %}
 {% block scripts %}
-<script src="/js/cytoscape.min.js"></script>
-<script src="/js/jquery.qtip.min.js"></script>
-<script src="/js/cytoscape-qtip.js"></script>
-<script src="/js/cola.v3.min.js"></script>
-<script src="/js/cytoscape-cola.js"></script>
+<script src="{{ base }}/js/cytoscape.min.js"></script>
+<script src="{{ base }}/js/jquery.qtip.min.js"></script>
+<script src="{{ base }}/js/cytoscape-qtip.js"></script>
+<script src="{{ base }}/js/cola.v3.min.js"></script>
+<script src="{{ base }}/js/cytoscape-cola.js"></script>
 {% block cytoscape %}
 {% set cur = get_cursor() %}
 {% set node_view %}

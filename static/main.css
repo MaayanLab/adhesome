@@ -26,8 +26,8 @@ body {
 }
 
 #constrain .constrain {
-	margin-left: 50;
-	margin-right: 50;
+	margin: 0;
+	max-width: 80vw;
 	flex: 1 0 auto;
 	display: flex;
 	flex-direction: row;
@@ -36,7 +36,6 @@ body {
 #content-journalnav {
 	flex: 1 0 auto;
 	display: flex;
-	max-width:980px;
 	flex-direction: row;
 }
 
@@ -73,4 +72,9 @@ iframe {
 .page-header a, .page-header a:hover, .page-header a:visited {
 	text-decoration: none;
 	color: inherit;
+}
+
+/* Override bootstrap */
+.row {
+	margin: 0;
 }

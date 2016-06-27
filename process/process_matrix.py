@@ -29,6 +29,8 @@ for arg in sys.argv[1:]:
 		# Select Genes in Adhesome
 		gene_attribute_matrix = gene_attribute_matrix[gene_attribute_matrix.index.isin(adhesome)]
 
+		# TODO: Category: Title (see clustergrammer.js/txt)
+
 		# Create Clustergrammer Vector
 		vector_json = {
 			'title': name,
