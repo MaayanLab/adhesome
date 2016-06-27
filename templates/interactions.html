@@ -12,6 +12,7 @@
 		} {% endset %}
 		{% set cur = get_cursor() %}
 		{% set table = cur|query("select * from interactions")|apply(substitutions) %}
+		{% set base = base %}
 		{% include "_table.html" %}
 	</div>
 </div>

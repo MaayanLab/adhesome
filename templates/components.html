@@ -11,6 +11,7 @@
 		} {% endset %}
 		{% set cur = get_cursor() %}
 		{% set table = cur|query("select *, `Official Symbol` as Network from components")|apply(substitutions)  %}
+		{% set base = base %}
 		{% include "_table.html" %}
 	</div>
 </div>

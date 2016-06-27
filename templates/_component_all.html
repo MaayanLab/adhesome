@@ -19,6 +19,7 @@
 {% endset %}
 {% set edges = (cur|query(edges_query)).data %}
 <script>
+{% set base = base %}
 {% include "_graph.html" %}
 </script>
 {% endblock %}

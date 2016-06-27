@@ -68,6 +68,7 @@ and `Target` in (select `Official Symbol` from `nodes_{0}`);
 {% set edges = (cur|query('select * from edges_{0}'.format(name))).data %}
 {% set res = cur|query_exec('drop view `nodes_{0}`'.format(name)), cur|query_exec('drop view `edges_{0}`'.format(name)) %}
 <script>
+{% set base = base %}
 {% include "_graph.html" %}
 cy.$('#{{ name }}').addClass('central')
 </script>

@@ -10,6 +10,7 @@
 		} {% endset %}
 		{% set cur = get_cursor() %}
 		{% set table = cur|query("select `Name` as `Dataset` from datasets")|apply(substitutions) %}
+		{% set base = base %}
 		{% include "_table.html" %}
 	</div>
 </div>
