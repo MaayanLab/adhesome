@@ -3,16 +3,17 @@
 {% extends "_base.html" %}
 {% block body %}
 <div id="content">
-	<h1 class="page-header">Interactions</h1>
+	<h1 class="page-header">Protein Interactions</h1>
 	<div class="clearfix">
 		{% set substitutions %} {
-			"source": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ source ]]'>[[ source ]]</a>",
-			"target": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ target ]]'>[[ target ]]</a>",
-			"pmid": "[% for i in pmid.split(' ') %]<a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=[[ i ]]'>[[ i ]]</a><br />[% endfor %]"
+			"source": "<a href='{{ base }}/components/[[ source ]].html'>[[ source ]]</a>",
+			"target": "<a href='{{ base }}/components/[[ target ]].html'>[[ target ]]</a>",
+			"swiss_prot_id_source": "<a href='http://www.uniprot.org/uniprot/[[ swiss_prot_id_source ]]'>[[ swiss_prot_id_source ]]</a>",
+			"swiss_prot_id_target": "<a href='http://www.uniprot.org/uniprot/[[ swiss_prot_id_target ]]'>[[ swiss_prot_id_target ]]</a>",
+			"pmid": "[% for i in pmid.split(' ') %] <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=[[ i ]]'>[[ i ]]</a><br />[% endfor %]"
 		} {% endset %}
 		{% set cur = get_cursor() %}
 		{% set table = cur|query("select * from interactions")|apply(substitutions) %}
-		{% set base = base %}
 		{% include "_table.html" %}
 	</div>
 </div>

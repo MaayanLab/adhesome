@@ -3,15 +3,15 @@
 {% block body %}
 <div id="content">
 	<h1 class="page-header">Components</h1>
-	<p class="norm">View a network of all components <a href="{{ base }}/components/all.html">here</a>.</p>
 	<div class="clearfix">
 		{% set substitutions %} {
-			"official_symbol": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ official_symbol ]]'>[[ official_symbol ]]</a>",
-			"network": "<a href='/components/[[ network ]].html'>View</a>"
+			"official_symbol": "<a href='{{ base }}/components/[[ official_symbol ]].html'>[[ official_symbol ]]</a>",
+			"swiss_prot_id": "<a href='http://www.uniprot.org/uniprot/[[ swiss_prot_id ]]'>[[ swiss_prot_id ]]</a>",
+			"harmonizome": "<a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ harmonizome ]]'>View Gene Page on the Harmonizome</a>",
+			"genecard": "<a href='http://www.genecards.org/cgi-bin/carddisp.pl?gene=[[ genecard ]]'>View on GeneCard</a>"
 		} {% endset %}
 		{% set cur = get_cursor() %}
-		{% set table = cur|query("select *, `Official Symbol` as Network from components")|apply(substitutions)  %}
-		{% set base = base %}
+		{% set table = cur|query("select *, `Official Symbol` as Harmonizome, `Official Symbol` as GeneCard from `components`")|apply(substitutions)  %}
 		{% include "_table.html" %}
 	</div>
 </div>

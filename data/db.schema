@@ -18,9 +18,9 @@ create table `edges` (
 
 create table `datasets` (
 	`Name` text primary key,
-	`viz` longtext,
-	`sim_col` longtext,
-	`sim_row` longetext);
+	`prot_att` longtext,
+	`prot_prot` longtext,
+	`att_att` longetext);
 
 -- Combinational Query of Edges and Components
 create view `interactions` as

@@ -65,28 +65,11 @@
 		</div>
 	</div>
 	{% include "_footer.html" %}
-	<script type="text/javascript">
-	google.load('search', '1', {language : 'en', });
-	var customSearchControl;
-	var gcscPostSearch = {};
-	gcscPostSearch.uiAddOn = function() {
-		var closeX = document.createElement('div');
-		closeX.className = 'gsc-clear-button gsc-cursor-close';
-		closeX.onclick = function(){customSearchControl.clearAllResults(); return false;};
-		closeX.appendChild(document.createTextNode('close'));
-		var divs = document.getElementsByTagName('div');
-		for (var i = 0; i < divs.length; i++) {
-			if (divs[i].className == 'gsc-cursor-box') {
-				divs[i].appendChild(closeX);
-			}
-		}
-	}
-	google.setOnLoadCallback(function() {
-		customSearchControl = new google.search.CustomSearchControl('008980979909212325489:usicab459yw');
-		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-		customSearchControl.draw('cse');
-		customSearchControl.setSearchCompleteCallback(gcscPostSearch, gcscPostSearch.uiAddOn);
-	}, true);
+	<script type="text/javascript" src="{{ base }}/js/jquery.dataTables.min.js"></script>
+	<script>
+		$('.data-table').DataTable({
+		    paging: false
+		});
 	</script>
 	{% block scripts %}{% endblock %}
 </body>

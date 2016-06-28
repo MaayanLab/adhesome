@@ -1,19 +1,43 @@
 {% set page = "home" %}
-{% macro button(title, image, link) %}
-<div class="align-center">
-	<a href="{{ link }}">
-		<img src="{{ image }}" alt="{{ title }}" /><br />
-		<span style="color:#000; text-decoration:none;">{{ title }}</span>
-	</a>
-</div>
-{% endmacro %}
 {% extends "_base.html" %}
 {% block body %}
 <div id="content">
-	<div class="clearfix">
-		{{ button('Components', 'images/small_net.jpg', 'components.html') }}
-		{{ button('Functional Associations', 'images/small_net.jpg', 'associations.html') }}
-		{{ button('Protein-Protein Interactions', 'images/small_net.jpg', 'interactions.html') }}
-	</div>
+	<h1 class="page-header">Home</h1>
+	<p>Welcome to Adhesome</p>
+	<div id="graph" style="width: 400px; height:400px;"></div>
 </div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ base }}/js/cytoscape.min.js"></script>
+<script src="{{ base }}/js/jquery.qtip.min.js"></script>
+<script src="{{ base }}/js/cytoscape-qtip.js"></script>
+<script src="{{ base }}/js/cola.v3.min.js"></script>
+<script src="{{ base }}/js/cytoscape-cola.js"></script>
+{% set cur = get_cursor() %}
+{% set node_view %}
+	create temp view `intrinsic_nodes` as
+	select `Official Symbol`, `FA`
+	from `components`
+	where `FA`="Intrinsic Proteins";
+{% endset %}
+{% set edge_view %}
+	create temp view `intrinsic_edges` as
+	select
+		`Source`,
+		`Target`,
+		`PMID`
+	from
+		`edges`
+	where
+		`Source` in (select `Official Symbol` from `intrinsic_nodes`)
+	and `Target` in (select `Official Symbol` from `intrinsic_nodes`);
+{% endset %}
+{% set res = cur|query_exec(node_view.format(name)), cur|query_exec(edge_view.format(name)) %}
+{% set nodes = (cur|query('select * from intrinsic_nodes')).data %}
+{% set edges = (cur|query('select * from intrinsic_edges')).data %}
+{% set res = cur|query_exec('drop view `intrinsic_nodes`'), cur|query_exec('drop view `intrinsic_edges`') %}
+<script>
+{% set base = base %}
+{% include "_graph.html" %}
+</script>
 {% endblock %}

@@ -1,9 +1,5 @@
-{% if name %}
-	{% set title = "Component: %s"|format(name) %}
-{% else %}
-	{% set title = "Components" %}
-{% endif %}
-{% set page = "components" %}
+{% set title = title|default("Component: %s"|format(name)) %}
+{% set page = page|default("components") %}
 {% extends "_base.html" %}
 {% block head %}
 <link rel="stylesheet" href="{{ base }}/jquery.qtip.min.css">
@@ -14,9 +10,9 @@
 		<a href="{{ base }}/components.html">Components</a>
 		<a href="#!">&gt;</a>
 		<a href="all.html">All Components</a>
-		{% if name != "all" %}
+		{% if name %}
 			<a href="#!">&gt;</a>
-			<a href="{{ urlize(name) }}.html">{{ name }}</a>
+			<a href="{{ base }}/{{ urlize(name) }}.html">{{ name }}</a>
 		{% endif %}
 	</h1>
 	<div id="graph" class="expand"></div>
@@ -27,6 +23,21 @@
 		<input type="checkbox" id="associated" checked="checked" />
 		<label for="associated"><span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
 	</div>
+	{% block interactions %}
+	<div class="clearfix">
+		{% set substitutions %} {
+			"source": "<a href='{{ base }}/components/[[ source ]].html'>[[ source ]]</a>",
+			"target": "<a href='{{ base }}/components/[[ target ]].html'>[[ target ]]</a>",
+			"swiss_prot_id_source": "<a href='http://www.uniprot.org/uniprot/[[ swiss_prot_id_source ]]'>[[ swiss_prot_id_source ]]</a>",
+			"swiss_prot_id_target": "<a href='http://www.uniprot.org/uniprot/[[ swiss_prot_id_target ]]'>[[ swiss_prot_id_target ]]</a>",
+			"pmid": "[% for i in pmid.split(' ') %] <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=[[ i ]]'>[[ i ]]</a><br />[% endfor %]"
+		} {% endset %}
+		{% set cur = get_cursor() %}
+		{% set table = cur|query("select * from interactions where `Source`=? or `Target`=?", name, name)|apply(substitutions) %}
+		{% set base = base %}
+		{% include "_table.html" %}
+	</div>
+	{% endblock %}
 </div>
 {% endblock %}
 {% block scripts %}
@@ -35,33 +46,34 @@
 <script src="{{ base }}/js/cytoscape-qtip.js"></script>
 <script src="{{ base }}/js/cola.v3.min.js"></script>
 <script src="{{ base }}/js/cytoscape-cola.js"></script>
+
 {% block cytoscape %}
 {% set cur = get_cursor() %}
 {% set node_view %}
-create temp view `nodes_{0}` as
-select `Official Symbol`, `FA`
-from `components`
-where `Official Symbol`="{0}"
-or `Official Symbol` in (
-	select `Target`
-	from `edges`
-	where `Source`="{0}")
-or `Official Symbol` in (
-	select `Source`
-	from `edges`
-	where `Target`="{0}");
+	create temp view `nodes_{0}` as
+	select `Official Symbol`, `FA`
+	from `components`
+	where `Official Symbol`="{0}"
+	or `Official Symbol` in (
+		select `Target`
+		from `edges`
+		where `Source`="{0}")
+	or `Official Symbol` in (
+		select `Source`
+		from `edges`
+		where `Target`="{0}");
 {% endset %}
 {% set edge_view %}
-create temp view `edges_{0}` as
-select
-	`Source`,
-	`Target`,
-	`PMID`
-from
-	`edges`
-where
-	`Source` in (select `Official Symbol` from `nodes_{0}`)
-and `Target` in (select `Official Symbol` from `nodes_{0}`);
+	create temp view `edges_{0}` as
+	select
+		`Source`,
+		`Target`,
+		`PMID`
+	from
+		`edges`
+	where
+		`Source` in (select `Official Symbol` from `nodes_{0}`)
+	and `Target` in (select `Official Symbol` from `nodes_{0}`);
 {% endset %}
 {% set res = cur|query_exec(node_view.format(name)), cur|query_exec(edge_view.format(name)) %}
 {% set nodes = (cur|query('select * from nodes_{0}'.format(name))).data %}

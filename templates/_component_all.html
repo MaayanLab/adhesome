@@ -1,4 +1,5 @@
 {% extends "_component.html" %}
+{% block interactions %}{% endblock %}
 {% block cytoscape %}
 {% set cur = get_cursor() %}
 {% set nodes = (cur|query('select `Official Symbol`, `FA` from `components`')).data %}
@@ -10,12 +11,8 @@
 	from
 		`edges`
 	where
-		`Source` in (
-			select `Official Symbol` from `components`
-		)
-	and `Target` in (
-			select `Official Symbol` from `components`
-		);
+		`Source` in (select `Official Symbol` from `components`)
+	and `Target` in (select `Official Symbol` from `components`);
 {% endset %}
 {% set edges = (cur|query(edges_query)).data %}
 <script>

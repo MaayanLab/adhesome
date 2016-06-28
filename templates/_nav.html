@@ -15,25 +15,25 @@
 					{% else %}
 						<li><a href="{{ base }}/components.html" title="Genetic components that make up the adhesome">Components</a></li>
 					{% endif %}
-					<li{% if page == "interactions" %} class="selected"{% endif %}><a href="{{ base }}/interactions.html" title="Interactions between proteins in the adhesome"> Protein Interactions</a></li>
-					{% if page == "associations" %}
-						<li class="selected"><a href="{{ base }}/associations.html" title="Functional associations in the adhesome">Functional Associations</a>
-							{% if name %}
-								<ul class="subnav">
-									<li{% if typ and typ == "viz" %} class="selected"{% endif %}><a href="{{ base }}/associations/{{ uri }}_viz.html" title="Viz">Viz</a></li>
-									<li{% if typ and typ == "sim_row" %} class="selected"{% endif %}><a href="{{ base }}/associations/{{ uri }}_sim_row.html" title="Sim Row">Sim Row</a></li>
-									<li{% if typ and typ == "sim_col" %} class="selected"{% endif %}><a href="{{ base }}/associations/{{ uri }}_sim_col.html" title="Sim Col">Sim Col</a></li>
-								</ul>
-							{% endif %}
-						</li>
-					{% else %}
-						<li><a href="{{ base }}/associations.html" title="Functional associations in the adhesome">Functional Associations</a></li>
-					{% endif %}
+					<li{% if page == "interactions" %} class="selected"{% endif %}><a href="{{ base }}/interactions.html" title="Protein interactions in the adhesome">Protein Interactions</a></li>
+					<li{% if page == "associations" %} class="selected"{% endif %}><a href="{{ base }}/associations.html" title="Functional associations in the adhesome">Functional Associations</a>
+						{% if page == "associations" and name %}
+							<ul class="subnav">
+								{% for typ_ in ["prot_att", "prot_prot", "att_att"] %}
+									<li{% if typ and typ == typ_ %} class="selected"{% endif %}>
+										<a href="{{ base }}/associations/{{ uri }}_{{ typ_ }}.html" title="{{ typ_|typ_lookup }}">{{ typ_|typ_lookup }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</li>
+					<li{% if page == "predictions" %} class="selected"{% endif %}><a href="{{ base }}/predictions.html" title="Predictions">Predictions</a></li>
 					<li{% if page == "contact" %} class="selected"{% endif %}><a href="{{ base }}/contact.html" title="Contact details">Contact Us</a></li>
 				</ul>
-			</li>
+			</li><br />
+			<li class="spacing"><h2 class="npg-resources">External links</h2></li>
+			<li><a href="https://www.cellmigration.org/">cellmigration.org</a></li>
 			{#
-			<li class="spacing"><h2 class="toolbox">Toolbox</h2></li>
 			<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
 			<li class="nav-rss"><a href="{{ base }}/cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
 			#}
