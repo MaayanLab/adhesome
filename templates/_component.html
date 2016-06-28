@@ -4,6 +4,7 @@
 {% block head %}
 <link rel="stylesheet" href="{{ base }}/jquery.qtip.min.css">
 {% endblock %}
+
 {% block body %}
 <div id="content">
 	<h1 class="page-header">
@@ -16,14 +17,19 @@
 		{% endif %}
 	</h1>
 	<div id="graph" class="expand"></div>
-	<div>
-		<input type="checkbox" id="intrinsic" checked="checked" />
-		<label for="intrinsic"><span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
-		<br />
-		<input type="checkbox" id="associated" checked="checked" />
-		<label for="associated"><span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
+	<div class="wrap-row">
+		<div>
+			<input type="checkbox" id="intrinsic" checked="checked" />
+			<label for="intrinsic"><span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
+			<br />
+			<input type="checkbox" id="associated" checked="checked" />
+			<label for="associated"><span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
+		</div>
+		<div class="expand">&nbsp;</div>
+		<span><span class="b">Network Stats</span><br /><span id="graph-stats"></span></span>
 	</div>
 	{% block interactions %}
+	<br />
 	<div class="clearfix">
 		{% set substitutions %} {
 			"source": "<a href='{{ base }}/components/[[ source ]].html'>[[ source ]]</a>",
@@ -40,6 +46,7 @@
 	{% endblock %}
 </div>
 {% endblock %}
+
 {% block scripts %}
 <script src="{{ base }}/js/cytoscape.min.js"></script>
 <script src="{{ base }}/js/jquery.qtip.min.js"></script>

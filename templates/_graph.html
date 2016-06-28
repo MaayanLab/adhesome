@@ -17,8 +17,6 @@ var cy = cytoscape({
 				"font-size": "12px",
 				"text-valign": "center",
 				"text-halign": "center",
-				"text-outline-color": "#555",
-				"text-outline-width": "2px",
 				"color": "#fff",
 				"overlay-padding": "6px",
 				"z-index": "10"
@@ -151,11 +149,21 @@ cy.edges().forEach(function(edge) {
 	});
 });
 
+function update_stats() {
+	$('#graph-stats')
+		.empty()
+		.html(cy.$('node:visible').size()+' nodes<br />'+
+			  cy.$('edge:visible').size()+' edges');
+}
+
+update_stats();
+
 $('#intrinsic').change(function() {
 	if(!$(this).is(':checked'))
 		cy.$('.intrinsic').addClass('hidden');
 	else
 		cy.$('.intrinsic').removeClass('hidden');
+	update_stats();
 });
 
 $('#associated').change(function() {
@@ -163,5 +171,6 @@ $('#associated').change(function() {
 		cy.$('.associated').addClass('hidden');
 	else
 		cy.$('.associated').removeClass('hidden');
+	update_stats();
 });
 

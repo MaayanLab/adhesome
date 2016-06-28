@@ -1,4 +1,8 @@
 /* Layout */
+html {
+	font-size: 14pt;
+}
+
 body {
 	display: flex;
 	min-height: 100vh;
@@ -86,5 +90,6 @@ iframe {
 
 /* Modules */
 #graph {
-	min-height: 500px;
+	min-width: 400px;
+	min-height: 400px;
 }

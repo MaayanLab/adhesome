@@ -32,6 +32,7 @@
 	<!-- end metadata and links -->
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	{% block head %}{% endblock %}
 	<!-- local style overrides -->
 	<style type="text/css">
 	#content .featurebox .featurebox { margin: 0; }
@@ -51,7 +52,6 @@
 	<![endif]-->
 	<!-- end IE specific scripts -->
 	<link rel="stylesheet" type="text/css" href="{{ base }}/jquery.dataTables.min.css">
-	{% block head %}{% endblock %}
 	<link rel="stylesheet" type="text/css" href="{{ base }}/main.css">
 </head>
 <body class="" id="home">

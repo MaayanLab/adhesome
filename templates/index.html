@@ -1,10 +1,17 @@
 {% set page = "home" %}
 {% extends "_base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ base }}/jquery.qtip.min.css">
+{% endblock %}
 {% block body %}
 <div id="content">
 	<h1 class="page-header">Home</h1>
 	<p>Welcome to Adhesome</p>
 	<div id="graph" style="width: 400px; height:400px;"></div>
+	<div>
+		<p><span class="b">Stats</span></p>
+		<p id="graph-stats"></p>
+	</div>
 </div>
 {% endblock %}
 {% block scripts %}

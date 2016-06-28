@@ -29,7 +29,7 @@ body {
 
 /* following declarations clears elements without a clearing element such as <br clear> being needed. For more info see: http://www.positioniseverything.net/easyclearing.html */
 .clearfix:after {
-    content:url(/cmg_update/npg_images/clear.gif);
+    content:url(../npg_images/clear.gif);
     display:block;
     height:0;
     clear:both;
@@ -63,7 +63,7 @@ span.cleardiv {
 }
 
 .loading {
-    background: url(/cmg_update/npg_images/spinner.gif) no-repeat center center;
+    background: url(../npg_images/spinner.gif) no-repeat center center;
 }
 
 
@@ -111,12 +111,12 @@ a.seealso span.see {
 a.seealso span.link {text-decoration:underline;}
 
 a.rss {
-	background:url(/cmg_update/npg_images/rss.gif) no-repeat left center;
+	background:url(../npg_images/rss.gif) no-repeat left center;
 	padding-left:34px;
 }
 
 #extranav a.rss {
-	background:url(/cmg_update/npg_images/rss.gif) no-repeat left center;
+	background:url(../npg_images/rss.gif) no-repeat left center;
 	padding-left:25px;
 }
 /* end generic link styles */
@@ -169,7 +169,7 @@ p.cite-doi.protocol span.author {color:#333;}
 }
 
 #head-er .accessibility-login {
-	/*background:url(/cmg_update/npg_images/nature.com.gif) no-repeat 0 5px #eaeaea;*/
+	/*background:url(../npg_images/nature.com.gif) no-repeat 0 5px #eaeaea;*/
 	padding:4px 0 5px 0/*90px*/;
 	text-align:right;
 }
@@ -186,7 +186,7 @@ p.cite-doi.protocol span.author {color:#333;}
 	line-height:80%;
 }
 * html #head-er .accessibility-login a.nature-link:hover {background:none;}
-#head-er .accessibility-login a.nature-link:hover {background:url(/cmg_update/npg_images/nature.com.underline.gif) no-repeat left bottom;}
+#head-er .accessibility-login a.nature-link:hover {background:url(../npg_images/nature.com.underline.gif) no-repeat left bottom;}
 
 #head-er .accessibility-login img.nature-logo {
 	height:11px;
@@ -220,7 +220,7 @@ p.cite-doi.protocol span.author {color:#333;}
 	color:#000;
 	text-decoration:none;
 	padding-left:10px;
-	background:url(/cmg_update/npg_images/arrow_down.gif) no-repeat left center;
+	background:url(../npg_images/arrow_down.gif) no-repeat left center;
 }
 #head-er .accessibility-login .jumplinks a:hover {text-decoration:underline;}
 
@@ -241,13 +241,13 @@ p.cite-doi.protocol span.author {color:#333;}
 	padding:0 15px 0 0;
 	text-transform:uppercase;
 	letter-spacing:-0.1em;
-	background:url(/cmg_update/npg_images/logon.gif) no-repeat right center;
+	background:url(../npg_images/logon.gif) no-repeat right center;
 }
 #head-er .logon a.login:hover {
-	background:url(/cmg_update/npg_images/logon_over.gif) no-repeat right center;
+	background:url(../npg_images/logon_over.gif) no-repeat right center;
 	text-decoration:underline;
 }
-#head-er .logon a.login:active {background:url(/cmg_update/npg_images/logon.gif) no-repeat right center;}
+#head-er .logon a.login:active {background:url(../npg_images/logon.gif) no-repeat right center;}
 
 #head-er .logon a.logoff {
 	font-weight:bold;
@@ -256,7 +256,7 @@ p.cite-doi.protocol span.author {color:#333;}
 	padding:0 15px 0 15px;
 	text-transform:uppercase;
 	letter-spacing:-0.1em;
-	background:url(/cmg_update/npg_images/logoff.gif) no-repeat right center;
+	background:url(../npg_images/logoff.gif) no-repeat right center;
 }
 
 #head-er .logon p {margin:0;}
@@ -288,7 +288,7 @@ p.cite-doi.protocol span.author {color:#333;}
 }
 /* sets the background in the header */
 #head-er .image-user-services {
-	background:url(/cmg_update/npg_images/journal_header_bg.gif) no-repeat right top; 
+	background:url(../npg_images/journal_header_bg.gif) no-repeat right top; 
 	height:80px;
 }
 
@@ -315,10 +315,10 @@ p.cite-doi.protocol span.author {color:#333;}
 	/*font-size:70%;*/
 	text-transform:uppercase;
 	padding:1px 13px 1px 0;
-	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat #767474;
+	background:url(../npg_images/arrow_s.gif) right center no-repeat #767474;
 }
 #head-er .user-services a:hover {
-	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat #000;
+	background:url(../npg_images/arrow_s.gif) right center no-repeat #000;
 }
 /* end Journal header image and user services (register/subscribe/account details) */
 
@@ -358,7 +358,7 @@ p.cite-doi.protocol span.author {color:#333;}
 	text-decoration:none;
 	padding-right:15px;
 	text-transform:uppercase;
-	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat;
+	background:url(../npg_images/arrow_s.gif) right center no-repeat;
 	
 }
 #head-er .publications a:hover {text-decoration:underline;}
@@ -378,7 +378,7 @@ p.cite-doi.protocol span.author {color:#333;}
 	text-decoration:none;
 	text-transform:uppercase;
 	padding-right:14px;
-	background:url(/cmg_update/npg_images/arrow_s.gif) right center no-repeat;
+	background:url(../npg_images/arrow_s.gif) right center no-repeat;
 }
 #head-er .search form a:hover {text-decoration:underline;}
 
@@ -474,7 +474,7 @@ map.journal-nav ul li a, map.journal-nav ul li a:visited {
 
 
 map.journal-nav ul li a.submission {
-	background:url(/cmg_update/npg_images/online_submissions.gif) left center no-repeat;
+	background:url(../npg_images/online_submissions.gif) left center no-repeat;
 	padding-left:20px !important;
 }
 /* end journal nav styles */
@@ -492,7 +492,7 @@ map.journal-nav ul li ul.subnav {
 map.journal-nav ul li ul.subnav li {
 	margin:0;
 	border-bottom:0;
-	background:url(/cmg_update/npg_images/nav_dots2.gif) 11px 5px no-repeat #fafafa;
+	background:url(../npg_images/nav_dots2.gif) 11px 5px no-repeat #fafafa;
 	background-position:11px 5px;
 }
 
@@ -514,7 +514,7 @@ map.journal-nav ul li ul.subnav a:link, map.journal-nav ul li ul.subnav a:visite
 map.journal-nav ul li ul.subnav a:hover {
 	color:#fff;
 	text-decoration:none;
-	background:url(/cmg_update/npg_images/nav_dots1.gif) 11px 5px no-repeat #fab934;
+	background:url(../npg_images/nav_dots1.gif) 11px 5px no-repeat #fab934;
 }
 
 map.journal-nav ul li ul.subnav a.on, map.journal-nav ul li ul.subnav a.on:visited {
@@ -543,13 +543,13 @@ map.journal-nav ul li ul.subnav a.on, map.journal-nav ul li ul.subnav a.on:visit
 #main-journal-nav li.nav-rss a.rss:link,
 #main-journal-nav li.nav-rss a.rss:active,
 #main-journal-nav li.nav-rss a.rss:visited {
-	background:url(/cmg_update/npg_images/rss.gif) no-repeat 2px 50%;
+	background:url(../npg_images/rss.gif) no-repeat 2px 50%;
 	padding-left:20px;
 
 }
 
 #main-journal-nav li.nav-rss a.rss:hover {
-	background:url(/cmg_update/npg_images/rss_rollover.gif) no-repeat 2px 50% #840800;
+	background:url(../npg_images/rss_rollover.gif) no-repeat 2px 50% #840800;
 }
 
 #main-journal-nav li.nav-ealert {
@@ -558,31 +558,31 @@ map.journal-nav ul li ul.subnav a.on, map.journal-nav ul li ul.subnav a.on:visit
 #main-journal-nav li.nav-ealert a.reg-rec:link,
 #main-journal-nav li.nav-ealert a.reg-rec:active,
 #main-journal-nav li.nav-ealert a.reg-rec:visited {
-	background:url(/cmg_update/npg_images/e-alert.gif) no-repeat 2px 50%;
+	background:url(../npg_images/e-alert.gif) no-repeat 2px 50%;
 	padding-left:20px;
 }
 
 #main-journal-nav li.nav-ealert a.reg-rec:hover {
-	background:url(/cmg_update/npg_images/e-alertrollover.gif) no-repeat 2px 50% #840800;
+	background:url(../npg_images/e-alertrollover.gif) no-repeat 2px 50% #840800;
 }
 
 
 #main-journal-nav li.nav-twitter a.reg-rec:link,
 #main-journal-nav li.nav-twitter a.reg-rec:active,
 #main-journal-nav li.nav-twitter a.reg-rec:visited {
-    background-image: url(/cmg_update/npg_images/twitter.gif);
+    background-image: url(../npg_images/twitter.gif);
 }
 #main-journal-nav li.nav-twitter a.reg-rec:hover {
-    background:url(/cmg_update/npg_images/twitterrollover.gif) no-repeat 2px 50% #840800;
+    background:url(../npg_images/twitterrollover.gif) no-repeat 2px 50% #840800;
 }
 
 #main-journal-nav li.nav-facebook a.reg-rec:link,
 #main-journal-nav li.nav-facebook a.reg-rec:active,
 #main-journal-nav li.nav-facebook a.reg-rec:visited {
-    background-image: url(/cmg_update/npg_images/facebook.gif);
+    background-image: url(../npg_images/facebook.gif);
 }
 #main-journal-nav li.nav-facebook a.reg-rec:hover {
-    background:url(/cmg_update/npg_images/facebookrollover.gif) no-repeat 2px 50% #840800;
+    background:url(../npg_images/facebookrollover.gif) no-repeat 2px 50% #840800;
 }
 
 
@@ -604,7 +604,7 @@ map.journal-nav ul li a:hover
 /* subnav visibility and highlighting */
 map.journal-nav .subnav .selected {background-color:#eaeaea;}
 map.journal-nav .subnav a:hover {
-	background:url(/cmg_update/npg_images/nav_dots2.gif) 11px 5px no-repeat #eaeaea!important;
+	background:url(../npg_images/nav_dots2.gif) 11px 5px no-repeat #eaeaea!important;
 	color:#000!important;
 }
 
@@ -625,7 +625,7 @@ a.backtotop:link, a.backtotop:visited {
 	padding-left:10px;
 	font-size:70%;
 	color:#fff;
-	background:url(/cmg_update/npg_images/arrow_white_up.gif) 0 0.6em no-repeat;
+	background:url(../npg_images/arrow_white_up.gif) 0 0.6em no-repeat;
 }
 a.backtotop:hover {color:#fff;}
 
@@ -643,17 +643,17 @@ img.arrow {margin-right:5px;}
 
 a.arrow-blue {
 	padding-left:10px;
-	background:url(/cmg_update/npg_images/arrow_blue.gif) 0 0.5em no-repeat;
+	background:url(../npg_images/arrow_blue.gif) 0 0.5em no-repeat;
 }
 
 a.arrow-grey {
 	padding-left:10px;
-	background:url(/cmg_update/npg_images/arrow_grey.gif) 0 0.5em no-repeat;
+	background:url(../npg_images/arrow_grey.gif) 0 0.5em no-repeat;
 }
 
 a.arrow-red {
 	padding-left:10px;
-	background:url(/cmg_update/npg_images/arrow_red.gif) 0 0.5em no-repeat;
+	background:url(../npg_images/arrow_red.gif) 0 0.5em no-repeat;
 }
 
 
@@ -662,13 +662,13 @@ a.arrow-red {
 	border-top:1px solid #eaeaea;
 	padding:0.8em 0 0 10px;
 	margin-top:0.6em;
-	background:url(/cmg_update/npg_images/arrow_blue.gif) 0 1.2em no-repeat;
+	background:url(../npg_images/arrow_blue.gif) 0 1.2em no-repeat;
 	display:block;
 	font-size:70%;
 }
 #extranav a.topten:hover {
 	text-decoration:underline;
-	background:url(/cmg_update/npg_images/arrow_red.gif) 0 1.2em no-repeat;
+	background:url(../npg_images/arrow_red.gif) 0 1.2em no-repeat;
 }
 /* end topten link */
 
@@ -694,7 +694,7 @@ a.arrow-red {
 }
 
 #foot-er #footer-journal:after {
-    content: url(/cmg_update/npg_images/clear.gif);
+    content: url(../npg_images/clear.gif);
     display: block;
     height: 0;
     clear: both;
@@ -777,7 +777,7 @@ a.arrow-red {
 }
 
 #foot-er #footer-copyright p.logo {
-    background: url(/cmg_update/npg_images/npg_logo.gif) no-repeat 0 50%;
+    background: url(../npg_images/npg_logo.gif) no-repeat 0 50%;
     margin: 5px 0 0 0;
     padding: 7px 36px;
 }
@@ -809,7 +809,7 @@ a.arrow-red {
 /* provide shadow below header */
 #head-er .header-nonad-wrapper {
 	padding-bottom:16px;
-	background: #fff url(/cmg_update/npg_images/shadow.jpg) repeat-x left bottom;
+	background: #fff url(../npg_images/shadow.jpg) repeat-x left bottom;
 }
 
 /* provide light blue above header */
@@ -849,7 +849,7 @@ a.whatisrss
 a.more:link,
 a.more:visited
 {
-    background: url(/cmg_update/npg_images/arrow-more.gif) no-repeat left center;
+    background: url(../npg_images/arrow-more.gif) no-repeat left center;
     padding-left: 10px;
     font-weight: bold;
 }
@@ -865,11 +865,11 @@ a.browse-all:visited
 /* e-alert link */
 div.e-alert {
 	margin-bottom:20px;
-	background:url(/cmg_update/npg_images/004e6f_vfade.gif) repeat-x 0 -2px;
+	background:url(../npg_images/004e6f_vfade.gif) repeat-x 0 -2px;
 }
 
 div.e-alert a:link, div.e-alert a:visited {
-	background:url(/cmg_update/npg_images/envelope.gif) no-repeat 10px 55%;
+	background:url(../npg_images/envelope.gif) no-repeat 10px 55%;
 	padding:8px 0 8px 30px;
 	font-size:70%;
 	font-weight:bold;
@@ -878,7 +878,7 @@ div.e-alert a:link, div.e-alert a:visited {
 	text-decoration:none;
 }
 div.e-alert a:hover {
-	background:url(/cmg_update/npg_images/envelope_004e6f.gif) no-repeat 10px 55%;
+	background:url(../npg_images/envelope_004e6f.gif) no-repeat 10px 55%;
 	text-decoration:underline;
 }
 /* end e-alert link */
@@ -886,18 +886,18 @@ div.e-alert a:hover {
 a.rss,
 a.rss:visited
 {
-	background: url(/cmg_update/npg_images/rss.gif) no-repeat left center;
+	background: url(../npg_images/rss.gif) no-repeat left center;
 	padding: 3px 0 3px 20px;
 	
 }
 
-a.rss:hover {background: url(/cmg_update/npg_images/rss.gif) no-repeat left center;}
+a.rss:hover {background: url(../npg_images/rss.gif) no-repeat left center;}
 
 
 a.pubmed,
 a.pubmed:visited
 {
-    background: url(/cmg_update/npg_images/arrow01-left.gif) no-repeat left center;
+    background: url(../npg_images/arrow01-left.gif) no-repeat left center;
     padding-left: 30px;
 }
 
@@ -1028,7 +1028,7 @@ div.con-job a.callforpapers:link, div.con-job a.callforpapers:visited {
 	color: #24A0F0;
 	text-decoration: none;
 	padding-left: 11px;
-	background:url(/cmg_update/npg_images/arrow_home.gif) 0 0.5em no-repeat;
+	background:url(../npg_images/arrow_home.gif) 0 0.5em no-repeat;
 }
 
 div.con-job span {
@@ -1092,7 +1092,7 @@ div.con-job span {
  */
 .column-group:after
 {
-    content:url(/cmg_update/npg_images/clear.gif);
+    content:url(../npg_images/clear.gif);
     display:block;
     height:0;
     clear:both;
@@ -1178,7 +1178,7 @@ div.column-group.ratio7030 div.column-right
 
 .box-group:after
 {
-    content:url(/cmg_update/npg_images/clear.gif);
+    content:url(../npg_images/clear.gif);
     display:block;
     height:0;
     clear:both;
@@ -1234,7 +1234,7 @@ div.column-group.ratio7030 div.column-right
 
 .box div.box-item.highlit
 {
-    background: url(/cmg_update/npg_images/bg-dots-matte-fff.gif) repeat-x left bottom #fff;
+    background: url(../npg_images/bg-dots-matte-fff.gif) repeat-x left bottom #fff;
 }
 
 .box .box-item h3
@@ -1435,7 +1435,7 @@ div.column-group.ratio7030 div.column-right
 
 .subjects ul li.right:after
 {
-    content:url(/cmg_update/npg_images/clear.gif);
+    content:url(../npg_images/clear.gif);
     display:block;
     height:0;
     clear:both;
@@ -1640,7 +1640,7 @@ h2#atl
 
 #article div.article-source ul.options:after
 {
-    content:url(/cmg_update/npg_images/clear.gif);
+    content:url(../npg_images/clear.gif);
     display:block;
     height:0;
     clear:both;
@@ -1740,7 +1740,7 @@ h2#atl
 {
 	padding-left: 15px;
 	min-height: 9px;
-	background: url(/cmg_update/npg_images/arrow.gif) no-repeat 0 50%;
+	background: url(../npg_images/arrow.gif) no-repeat 0 50%;
 }
 
 /* new article-navigation featuring XOXO */
@@ -1829,7 +1829,7 @@ div.ealert #cmg-submit
 .info-box ul
 {
 	font-size: 80%;
-	list-style-image: url(/cmg_update/npg_images/arrow-more.gif);
+	list-style-image: url(../npg_images/arrow-more.gif);
 	margin: 0;
 	padding: 0 0 1em 20px;
 }
@@ -1947,7 +1947,7 @@ hr {display:none}
 div.hr {
 	margin:0;
 	padding:4px 0 4px 0;
-	background:url(/cmg_update/npg_images/line.gif) center center repeat-x;
+	background:url(../npg_images/line.gif) center center repeat-x;
 }
 /* end global hr styles */
 #content div.issue {margin-bottom:1em;}
@@ -1969,12 +1969,12 @@ div.hr {
 
 #content div.issue a.about-the-cover:link, #content div.issue a.about-the-cover:visited {
 	padding-left:7px;
-	background:url(/cmg_update/npg_images/arrow_blue.gif) center left no-repeat;
+	background:url(../npg_images/arrow_blue.gif) center left no-repeat;
 	font-size:80%;
 	display:block;
 	margin:4px 0 9px 0;
 }
-#content div.issue a.about-the-cover:hover {background:url(/cmg_update/npg_images/arrow_red.gif) center left no-repeat;}
+#content div.issue a.about-the-cover:hover {background:url(../npg_images/arrow_red.gif) center left no-repeat;}
 
 #content div.issue div.issue-links {
 	margin-left:172px;
@@ -2010,7 +2010,7 @@ div.hr {
 #content div.issue-links ul.issue-links li a:link, 
 #content div.issue-links ul.issue-links li a:visited {
 	margin:0;
-	background:url(/cmg_update/npg_images/arrow_home.gif) no-repeat 0 50%;
+	background:url(../npg_images/arrow_home.gif) no-repeat 0 50%;
 	font-size:80%;
 	padding-left:10px;
 }
@@ -2226,18 +2226,18 @@ div.test {
 
 #content div.cover a.subscribe:hover {background-color:#c03;}
 
-* html #content a.register {background:url(/cmg_update/npg_images/envelope.gif) 0 0.5em no-repeat;}
+* html #content a.register {background:url(../npg_images/envelope.gif) 0 0.5em no-repeat;}
 #content a.register {
 	display:block;
-	background:url(/cmg_update/npg_images/envelope.gif) 0 0.3em no-repeat;
+	background:url(../npg_images/envelope.gif) 0 0.3em no-repeat;
 	padding-left:20px;
 	font-size:80%;
 }
 
-* html #content a.recommend {background:url(/cmg_update/npg_images/tick.gif) 0 0.3em no-repeat;}
+* html #content a.recommend {background:url(../npg_images/tick.gif) 0 0.3em no-repeat;}
 #content a.recommend {
 	display:block;
-	background:url(/cmg_update/npg_images/tick.gif) 0 0.2em no-repeat;
+	background:url(../npg_images/tick.gif) 0 0.2em no-repeat;
 	padding:1px 0 1px 20px;
 	font-size:80%;
 }
@@ -2415,11 +2415,11 @@ XOXO styles
 	margin:0;
 	padding:0 0 0 7px;
 	font-size:80%;
-	background: url(/cmg_update/npg_images/arrow_blue.gif) no-repeat left center;
+	background: url(../npg_images/arrow_blue.gif) no-repeat left center;
 }
 
 #content-journalnav #content div.featurebox .xoxo li a.onpagenav:hover {
-	background: url(/cmg_update/npg_images/arrow_red.gif) no-repeat left center;
+	background: url(../npg_images/arrow_red.gif) no-repeat left center;
 }
 
 .xoxo li ul.twocol {margin: 0; padding:0;}
@@ -2486,7 +2486,7 @@ div.column-group.ratio6040x div.column-right
 
 .toolbox li.nav-e-alert a:link,
 .toolbox li.nav-e-alert a:visited {
-	background:url(/cmg_update/npg_images/envelope.gif) no-repeat left center;
+	background:url(../npg_images/envelope.gif) no-repeat left center;
 	padding:0 0 0 20px;
 	margin-top:3px;
 }
@@ -2554,7 +2554,7 @@ ul.npg-resources a:hover {
 /* hope page logo box - added 24/11/2006 */
 
 #home div.logo {
-	background:url(/cmg_update/npg_images/logo_nigms.gif) no-repeat 50% 50%; 
+	background:url(../npg_images/logo_nigms.gif) no-repeat 50% 50%; 
 	border:1px solid #efefef;
 }
 
