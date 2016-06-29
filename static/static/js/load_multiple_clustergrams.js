@@ -34,10 +34,9 @@ d3.select(window).on('resize',function(){
 });
 
 function resize_container(){
+  var rect = d3.select('#wrap').node().getBoundingClientRect();
 
-  var container_width = d3.select('#wrap').node().getBoundingClientRect().width;
-
-  var container_width = Number(container_width) - 30;
+  var container_width = rect.width - 30;
 
   d3.selectAll('.clustergrammer_container')
     .style('width', container_width+'px');

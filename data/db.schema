@@ -43,3 +43,31 @@ create view `interactions` as
 	where
 		edges.`Source` = source.`Official Symbol`
 	and edges.`Target` = target.`Official Symbol`;
+
+-- Neighbor counts
+create view `neighbors` as
+	select
+		c1.`Official Symbol` as `Official Symbol`,
+		c1.count+c2.count as `Neighbors`
+	from
+		(select distinct
+			`edges`.`Source` as `Official Symbol`,
+			count(*) as count
+		from
+			`edges`
+		where
+			`edges`.`Source` != `edges`.`Target`
+		group by
+			`edges`.`Source`) as c1,
+		(select distinct
+			`edges`.`Target` as `Official Symbol`,
+			count(*) as count
+		from
+			`edges`
+		where
+			`edges`.`Target` != `edges`.`Source`
+		group by
+			`edges`.`Target`) as c2
+	where
+		c1.`Official Symbol`=c2.`Official Symbol`;
+

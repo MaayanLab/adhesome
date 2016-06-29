@@ -14,36 +14,38 @@ var cy = cytoscape({
 			"selector": "node",
 			"style": {
 				"content": "data(name)",
-				"font-size": "12px",
 				"text-valign": "center",
 				"text-halign": "center",
 				"color": "#fff",
-				"overlay-padding": "6px",
-				"z-index": "10"
+				"overlay-padding": "3px",
+				"z-index": "10",
 			}
 		},
 		{
 			"selector": ".intrinsic",
 			"style": {
-				"background-color": "#555",
-				"width": "50",
-				"height": "50"
+				"background-color": "#081838",
+				"width": "mapData(weight, 0, 1, 100, 150)",
+				"height": "mapData(weight, 0, 1, 100, 150)",
+				"font-size": "mapData(weight, 0, 1, 14, 16)"
 			}
 		},
 		{
 			"selector": ".associated",
 			"style": {
-				"background-color": "#aaa",
-				"width": "40",
-				"height": "40"
+				"background-color": "#fec672",
+				"width": "mapData(weight, 0, 1, 50, 100)",
+				"height": "mapData(weight, 0, 1, 50, 100)",
+				"font-size": "mapData(weight, 0, 1, 10, 12)"
 			}
 		},
 		{
 			"selector": ".central",
 			"style": {
-				"background-color": "#500",
-				"width": "60",
-				"height": "60"
+				"background-color": "#840800",
+				"width": "mapData(weight, 0, 1, 100, 200)",
+				"height": "mapData(weight, 0, 1, 100, 200)",
+				"font-size": "mapData(weight, 0, 1, 16, 18)"
 			}
 		},
 		{
@@ -57,19 +59,20 @@ var cy = cytoscape({
 			"style": {
 				"curve-style": "haystack",
 				"haystack-radius": "0.5",
-				"opacity": "0.4",
+				"opacity": "0.6",
 				"line-color": "#222",
-				"width": "mapData(weight, 0, 1, 1, 8)",
+				"width": "1",
 				"overlay-padding": "3px"
 			}
 		}
 	],
 	elements: [
-		{% for sym, fa in nodes %}
+		{% for sym, fa, weight in nodes %}
 			{
 				data: {
 					id: '{{ sym }}',
-					name: '{{ sym }}'
+					name: '{{ sym }}',
+					weight: {{ weight }}
 				},
 				classes: '{% if fa=="Intrinsic Proteins" %}intrinsic{% else %}associated{% endif %}'
 			},
@@ -152,8 +155,8 @@ cy.edges().forEach(function(edge) {
 function update_stats() {
 	$('#graph-stats')
 		.empty()
-		.html(cy.$('node:visible').size()+' nodes<br />'+
-			  cy.$('edge:visible').size()+' edges');
+		.html(cy.$('node:visible').size()+' Components<br />'+
+			  cy.$('edge:visible').size()+' Protein Interactions');
 }
 
 update_stats();

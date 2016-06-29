@@ -20,10 +20,10 @@
 	<div class="wrap-row">
 		<div>
 			<input type="checkbox" id="intrinsic" checked="checked" />
-			<label for="intrinsic"><span style="background-color: #555;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
+			<label for="intrinsic"><span style="background-color: #081838;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
 			<br />
 			<input type="checkbox" id="associated" checked="checked" />
-			<label for="associated"><span style="background-color: #aaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
+			<label for="associated"><span style="background-color: #fec672;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
 		</div>
 		<div class="expand">&nbsp;</div>
 		<span><span class="b">Network Stats</span><br /><span id="graph-stats"></span></span>
@@ -58,17 +58,23 @@
 {% set cur = get_cursor() %}
 {% set node_view %}
 	create temp view `nodes_{0}` as
-	select `Official Symbol`, `FA`
+	select
+		`components`.`Official Symbol`,
+		`components`.`FA`,
+		`neighbors`.`Neighbors`/(select max(`neighbors`.`Neighbors`) from `neighbors`)
 	from `components`
-	where `Official Symbol`="{0}"
-	or `Official Symbol` in (
+	left join `neighbors`
+	on `components`.`Official Symbol`=`neighbors`.`Official Symbol`
+	where `neighbors`.`Neighbors` not null
+	and (`components`.`Official Symbol`="{0}"
+	or `components`.`Official Symbol` in (
 		select `Target`
 		from `edges`
 		where `Source`="{0}")
-	or `Official Symbol` in (
+	or `components`.`Official Symbol` in (
 		select `Source`
 		from `edges`
-		where `Target`="{0}");
+		where `Target`="{0}"));
 {% endset %}
 {% set edge_view %}
 	create temp view `edges_{0}` as
@@ -76,8 +82,7 @@
 		`Source`,
 		`Target`,
 		`PMID`
-	from
-		`edges`
+	from `edges`
 	where
 		`Source` in (select `Official Symbol` from `nodes_{0}`)
 	and `Target` in (select `Official Symbol` from `nodes_{0}`);

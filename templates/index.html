@@ -23,9 +23,16 @@
 {% set cur = get_cursor() %}
 {% set node_view %}
 	create temp view `intrinsic_nodes` as
-	select `Official Symbol`, `FA`
+	select
+		`components`.`Official Symbol`,
+		`components`.`FA`,
+		`neighbors`.`Neighbors`/(select max(`neighbors`.`Neighbors`) from `neighbors`)
 	from `components`
-	where `FA`="Intrinsic Proteins";
+	left join `neighbors`
+	on `components`.`Official Symbol` = `neighbors`.`Official Symbol`
+	where `components`.`FA`="Intrinsic Proteins"
+	and `neighbors`.`Neighbors` not null
+	order by `neighbors`.`Neighbors` desc;
 {% endset %}
 {% set edge_view %}
 	create temp view `intrinsic_edges` as
@@ -33,8 +40,7 @@
 		`Source`,
 		`Target`,
 		`PMID`
-	from
-		`edges`
+	from `edges`
 	where
 		`Source` in (select `Official Symbol` from `intrinsic_nodes`)
 	and `Target` in (select `Official Symbol` from `intrinsic_nodes`);

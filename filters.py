@@ -53,11 +53,12 @@ def unique_edges(array):
 	pairs = {}
 	for entry in array:
 		key = tuple(sorted(entry[:2]))
-		if pairs.get(key):
-			for a, b in zip(pairs[key], entry[2:]):
-				a += b
-		else:
-			pairs[key] = entry[2:]
+		if key[0] != key[1]:
+			if pairs.get(key):
+				for a, b in zip(pairs[key], entry[2:]):
+					a += b
+			else:
+				pairs[key] = entry[2:]
 	return [k+tuple(v) for k,v in pairs.items()]
 
 @register_filter
