@@ -1,5 +1,4 @@
 import re
-from math import log
 from itertools import count
 from config import config
 

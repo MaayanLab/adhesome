@@ -3,6 +3,7 @@ from collections import OrderedDict
 from jinja2 import Template
 from config import config
 from funcs import funcs, urlize
+from copy import copy
 
 filters={}
 def register_filter(func):
@@ -37,14 +38,29 @@ def query(cur, stmt, *kargs):
 def apply(table, subst):
 	''' This filter lets us substitute column entries in our tables via template substitution
 	 just use [ ] instead of { } so it doesn't conflict with the existing template. '''
+	subst = json.loads(subst)
+
+	header = table['header']
+	new_header = [h for h in header
+				  if subst.get(urlize(h), None) is not ""]
+
+	header_row = list(map(urlize, header))
+	new_header_row = list(map(urlize, new_header))
+
+	# Substitute Data
 	new_data = []
-	header_row = list(map(urlize, table['header']))
 	for row in table['data']:
 		row_dict = OrderedDict(zip(header_row, row))
-		for k, sub in json.loads(subst).items():
-			row_dict[k] = Template(sub.replace('[', '{').replace(']', '}')).render(**dict(row_dict, **funcs))
-		new_data.append(row_dict.values())
-	return dict(table, data=new_data)
+		context = dict(row_dict, **funcs)
+		for k, sub in subst.items():
+			row_dict[k] = Template(sub.replace('[', '{').replace(']', '}')).render(**context)
+		new_data.append([v for k,v in row_dict.items()
+						   if k in new_header_row])
+
+	return {
+		'header': new_header,
+		'data': new_data
+	}
 
 @register_filter
 def unique_edges(array):
