@@ -9,7 +9,7 @@
 			"dataset": "<a href='{{ base }}/associations/[[ urlize(dataset) ]]_prot_att.html'>[[ dataset ]]</a>"
 		} {% endset %}
 		{% set cur = get_cursor() %}
-		{% set table = cur|query("select `Name` as `Dataset` from datasets")|apply(substitutions) %}
+		{% set table = cur|query("select `Name` as `Dataset` from `datasets`")|apply(substitutions) %}
 		{% include "_table.html" %}
 	</div>
 </div>

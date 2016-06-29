@@ -1,17 +1,23 @@
 {% set page = "home" %}
 {% extends "_base.html" %}
+{% macro PUBMED(pmid, image=False) %}<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids={{ pmid }}">{% if image %}<img src="{{ base }}/images/ncbi.png" />{% else %}{{ pmid }}{% endif %}</a>{% endmacro %}
 {% block head %}
 <link rel="stylesheet" href="{{ base }}/jquery.qtip.min.css">
 {% endblock %}
 {% block body %}
 <div id="content">
 	<h1 class="page-header">Home</h1>
-	<p>Welcome to Adhesome</p>
-	<div id="graph" style="width: 400px; height:400px;"></div>
-	<div>
-		<p><span class="b">Stats</span></p>
-		<p id="graph-stats"></p>
-	</div>
+	<p>Welcome to the updated Adhesome web-site.</p>
+	<p>The Adhesome network is literature based protein-protein interaction network that was developed from the biomedical literature. The network is made of known interactions and cellular components composing the focal adhesion complex in mammalian cells. This site provides a reference and supporting materials to the analysis articles:
+		<ol>
+			<li>“Functional atlas of the integrin adhesome” by Zaidel-Bar R, Itzkovitz S, Ma'ayan A, Iyengar R, Geiger B. Nat Cell Biol. 2007 Aug;9(8):858-67 PubMed ID: {{ PUBMED(17671451) }}.</li>
+			<li>“The integrin adhesome: from genes and proteins to human disease” by Winograd-Katz SE, Fässler R, Geiger B, Legate KR. Nat Rev Mol Cell Biol. 2014 Apr;15(4):273-88. PubMed ID: {{ PUBMED(24651544) }}.</li>
+		</ol>
+	</p>
+	<p>Our intent is to provide the research community with a resource for exploring interactions and components found in focal adhesion complexes for their further analysis towards enhanced understanding of focal adhesion complex formation, regulation and dynamics.</p>
+	<p>Currently, the network includes <span id="graph-stat-components"></span> and <span id="graph-stat-interactions"></span> interactions. This web-site provides dynamically linked web-pages for browsing and exploring focal adhesion network components as well as their known physical and functional interactions.</p>
+	<p>The update to this web site is a collaborative project between the <a href="http://www.geigerlab.com/">Geiger Laboratory</a> from the <a href="https://www.weizmann.ac.il/pages/">Weizmann Institute of Science</a> and the <a href="http://icahn.mssm.edu/research/labs/maayan-laboratory">Ma’ayan Laboratory</a> at the <a href="http://icahn.mssm.edu/">Icahn School of Medicine at Mount Sinai</a>. This project is part of the outreach activities of the <a href="http://lincs-dcic.org/">BD2K-LINCS</a> data coordination and integration center (DCIC).</p>
+	<div id="graph" class="expand" style="height:500px;"></div>
 </div>
 {% endblock %}
 {% block scripts %}
@@ -26,7 +32,7 @@
 	select
 		`components`.`Official Symbol`,
 		`components`.`FA`,
-		`neighbors`.`Neighbors`/(select max(`neighbors`.`Neighbors`) from `neighbors`)
+		`neighbors`.`Neighbors`*1.0/(select max(`neighbors`.`Neighbors`) from `neighbors`)
 	from `components`
 	left join `neighbors`
 	on `components`.`Official Symbol` = `neighbors`.`Official Symbol`
@@ -46,9 +52,9 @@
 	and `Target` in (select `Official Symbol` from `intrinsic_nodes`);
 {% endset %}
 {% set res = cur|query_exec(node_view.format(name)), cur|query_exec(edge_view.format(name)) %}
-{% set nodes = (cur|query('select * from intrinsic_nodes')).data %}
-{% set edges = (cur|query('select * from intrinsic_edges')).data %}
-{% set res = cur|query_exec('drop view `intrinsic_nodes`'), cur|query_exec('drop view `intrinsic_edges`') %}
+{% set nodes = (cur|query("select * from intrinsic_nodes")).data %}
+{% set edges = (cur|query("select * from intrinsic_edges")).data %}
+{% set res = cur|query_exec("drop view `intrinsic_nodes`"), cur|query_exec("drop view `intrinsic_edges`") %}
 <script>
 {% set base = base %}
 {% include "_graph.html" %}

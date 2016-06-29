@@ -1,0 +1,31 @@
+{% set title = "Downloads" %}
+{% set page = "downloads" %}
+{% extends "_base.html" %}
+{% block body %}
+<div id="content">
+	<h1 class="page-header">Downloads</h1>
+	<div class="clearfix">
+		<table class="data-table">
+			<thead>
+				<tr>
+					<th>File</th>
+					<th>Description</th>
+					<th>Size</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="components.csv">components.csv</a></td>
+					<td>All the individual components in the adhesome.</td>
+					<td>22 KB</td>
+				</tr>
+				<tr>
+					<td><a href="interactions.csv">interactions.csv</a></td>
+					<td>Protein-protein interactions and their related sources.</td>
+					<td>209 KB</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

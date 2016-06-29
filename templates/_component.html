@@ -26,7 +26,11 @@
 			<label for="associated"><span style="background-color: #fec672;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
 		</div>
 		<div class="expand">&nbsp;</div>
-		<span><span class="b">Network Stats</span><br /><span id="graph-stats"></span></span>
+		<span>
+			<span class="b">Network Stats</span><br />
+			<span id="graph-stat-components"></span> Components<br />
+			<span id="graph-stat-interactions"></span> Interactions
+		</span>
 	</div>
 	{% block interactions %}
 	<br />
@@ -34,12 +38,10 @@
 		{% set substitutions %} {
 			"source": "<a href='{{ base }}/components/[[ source ]].html'>[[ source ]]</a>",
 			"target": "<a href='{{ base }}/components/[[ target ]].html'>[[ target ]]</a>",
-			"swiss_prot_id_source": "<a href='http://www.uniprot.org/uniprot/[[ swiss_prot_id_source ]]'>[[ swiss_prot_id_source ]]</a>",
-			"swiss_prot_id_target": "<a href='http://www.uniprot.org/uniprot/[[ swiss_prot_id_target ]]'>[[ swiss_prot_id_target ]]</a>",
-			"pmid": "[% for i in pmid.split(' ') %] <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=[[ i ]]'>[[ i ]]</a><br />[% endfor %]"
+			"pmid": "<span style='white-space: nowrap'>[% for i in pmid.split(' ') %] <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=[[ i ]]'><img src='{{ base }}/images/ncbi.png' /></a>&nbsp;[% endfor %]</span>"
 		} {% endset %}
 		{% set cur = get_cursor() %}
-		{% set table = cur|query("select * from interactions where `Source`=? or `Target`=?", name, name)|apply(substitutions) %}
+		{% set table = cur|query("select * from `interactions` where `Source`=? or `Target`=?", name, name)|apply(substitutions) %}
 		{% set base = base %}
 		{% include "_table.html" %}
 	</div>
@@ -61,7 +63,7 @@
 	select
 		`components`.`Official Symbol`,
 		`components`.`FA`,
-		`neighbors`.`Neighbors`/(select max(`neighbors`.`Neighbors`) from `neighbors`)
+		`neighbors`.`Neighbors`*1.0/(select max(`neighbors`.`Neighbors`) from `neighbors`)
 	from `components`
 	left join `neighbors`
 	on `components`.`Official Symbol`=`neighbors`.`Official Symbol`
@@ -88,9 +90,9 @@
 	and `Target` in (select `Official Symbol` from `nodes_{0}`);
 {% endset %}
 {% set res = cur|query_exec(node_view.format(name)), cur|query_exec(edge_view.format(name)) %}
-{% set nodes = (cur|query('select * from nodes_{0}'.format(name))).data %}
-{% set edges = (cur|query('select * from edges_{0}'.format(name))).data %}
-{% set res = cur|query_exec('drop view `nodes_{0}`'.format(name)), cur|query_exec('drop view `edges_{0}`'.format(name)) %}
+{% set nodes = (cur|query("select * from nodes_{0}".format(name))).data %}
+{% set edges = (cur|query("select * from edges_{0}".format(name))).data %}
+{% set res = cur|query_exec("drop view `nodes_{0}`".format(name)), cur|query_exec("drop view `edges_{0}`".format(name)) %}
 <script>
 {% set base = base %}
 {% include "_graph.html" %}

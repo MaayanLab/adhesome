@@ -26,13 +26,9 @@ create table `datasets` (
 create view `interactions` as
 	select
 		edges.`Source` as `Source`,
-		source.`Gene ID` as `Gene ID_source`,
-		source.`Swiss-Prot ID` as `Swiss-Prot ID_source`,
 		source.`Functional Category` as `Functional Category_source`,
 		source.`FA` as `FA_source`,
 		edges.`Target` as `Target`,
-		target.`Gene ID` as `Gene ID_target`,
-		target.`Swiss-Prot ID` as `Swiss-Prot ID_target`,
 		target.`Functional Category` as `Functional Category_target`,
 		target.`FA` as `FA_target`,
 		edges.`Effect` as `Effect`,
