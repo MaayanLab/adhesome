@@ -1,0 +1,11 @@
+<script type="text/javascript" src="{{ base }}/js/jquery.dataTables.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.data-table').DataTable({
+			ajax: '{{ base }}/{{ table }}_table.json',
+		    paging: false,
+        	deferRender: true
+		});
+	});
+</script>
+

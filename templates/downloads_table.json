@@ -1,0 +1,2 @@
+{% set table = evaluate("__downloads.sql") %}
+{% include "_table/_json.json" %}

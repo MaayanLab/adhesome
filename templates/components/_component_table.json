@@ -1,0 +1,2 @@
+{% set table = evaluate("__interactions.sql", name=name) %}
+{% include "_table/_json.json" %}

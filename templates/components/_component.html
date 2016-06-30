@@ -1,0 +1,52 @@
+{% set title = title|default("Component: %s"|format(name)) %}
+{% set page = page|default("components") %}
+{% extends "_base/_base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ base }}/jquery.qtip.min.css">
+{% endblock %}
+{% block body %}
+<div id="content">
+	<h1 class="page-header">
+		<a href="{{ base }}/components.html">Components</a>
+		<a href="#!">&gt;</a>
+		<a href="all.html">All Components</a>
+		{% if name %}
+			<a href="#!">&gt;</a>
+			<a href="{{ base }}/{{ urlize(name) }}.html">{{ name }}</a>
+		{% endif %}
+	</h1>
+	<div id="graph" class="expand"></div>
+	<div class="wrap-row">
+		<div>
+			<input type="checkbox" id="intrinsic" checked="checked" />
+			<label for="intrinsic"><span style="background-color: #081838;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
+			<br />
+			<input type="checkbox" id="associated" checked="checked" />
+			<label for="associated"><span style="background-color: #fec672;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
+		</div>
+		<div class="expand">&nbsp;</div>
+		<span>
+			<span class="b">Network Stats</span><br />
+			<span id="graph-stat-components">0</span> Components<br />
+			<span id="graph-stat-interactions">0</span> Interactions
+		</span>
+	</div>
+	{% block interactions %}
+	<br />
+	<div class="clearfix">
+		{% set table = evaluate("__interactions.sql", name=name) %}
+		{% include "_table/_body.html" %}
+	</div>
+	{% endblock %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+	{% set table = "components/%s"|format(name) %}
+	{% include "_table/_scripts.html" %}
+	{% block cytoscape %}
+		{% set central = name %}
+		{% set graph = "components/%s"|format(name) %}
+		{% include "_graph/_scripts.html" %}
+	{% endblock %}
+{% endblock %}

@@ -3,48 +3,65 @@
 import os
 import re
 import shutil
-from distutils.dir_util import copy_tree
+import itertools
 from staticjinja import make_site
+from distutils.dir_util import copy_tree
+from config import config
 from filters import *
 from funcs import *
-from config import config
+
+build = 'build'
+templates = 'templates'
 
 def try_ignore(stmt):
-	''' For statements we expect to throw exceptions and move on '''
+	''' For statements we expect might throw exceptions and move on '''
 	try:
 		exec(stmt)
 	except:
 		pass
 
 # Re-create build directory
-try_ignore(r"shutil.rmdir('build/')")
-try_ignore(r"os.makedirs('build/associations/')")
-try_ignore(r"os.makedirs('build/components/')")
-copy_tree('static/', 'build/')
+try_ignore(r"shutil.rmdir('%s')" % (build))
+try_ignore(r"os.makedirs('%s/associations')" % (build))
+try_ignore(r"os.makedirs('%s/components')" % (build))
+copy_tree('static/', '%s/' % (build))
+
+# def downloads(env, template, **kwargs):
+# 	pass
 
 # Build static pages
-site = make_site(
-	searchpath='templates/',
+site = config.site = make_site(
+	searchpath=templates,
 	filters=filters,
-	contexts=[('.*', funcs)],
+	contexts=[(r'.*', funcs)],
 	env_kwargs=dict(trim_blocks=True, lstrip_blocks=True),
-	outpath='build')
+	outpath=build)
 site.render()
 
 def render(template, dump, **kwargs):
-	''' Render custom page with jinja engine '''
+	''' Render custom page with jinja template engine '''
 	print('Rendering %s...' % (dump))
-	site.get_template(template).stream(**dict(funcs, **kwargs)).dump(dump)
+	site.get_template(template).stream(**dict(funcs, **kwargs)).dump(os.path.join(build, dump))
 
-# Build subpages from database
-cur = get_cursor()
-for name, in query(cur, 'select `Name` from `datasets`')['data']:
-	uri = urlize(name)
-	for typ, typ_name in config.typs.items():
-		render('_association.html', 'build/associations/%s_%s.html' % (uri, typ),
-			name=name, typ=typ, uri=uri)
+def render_rules(rules):
+	''' Given a rule dictionary, call render as specified
+	Rule format:
+		{
+			"input_template", {
+				"output_template", {
+					"context", "variables",
+				},
+			},
+			...
+		}
+	'''
+	for in_template, rule in rules.items():
+		for out_template, context in rule.items():
+			render(in_template, out_template, **context)
 
-# Build component subpages
-render('_component_all.html', 'build/components/all.html')
-for name, in query(cur, 'select `Official Symbol` from `components`')['data']:
-	render('_component.html', 'build/components/%s.html' % (name), name=name)
+# Join all rules into a single dict and call render_rules
+render_rules(
+	dict(itertools.chain.from_iterable( # Flatten list ([[(a),(b)],[(c)]] -> [(a),(b),(c)])
+		[evaluate(os.path.join(*os.path.split(r)[1:], '__init__')).items() # Evaluate the rule dict from the __init__ files in directories
+		 for r, d, f in os.walk(templates) # Recursive traversal of templates directory
+		 if not r.startswith('_') and '__init__' in f]))) # Only consider folders without preceeding _ and with __init__ file

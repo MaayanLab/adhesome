@@ -1,18 +1,17 @@
 {% set title = "Protein Interactions" %}
 {% set page = "interactions" %}
-{% extends "_base.html" %}
+{% set table = evaluate("__interactions.sql") %}
+{% extends "_base/_base.html" %}
 {% block body %}
 <div id="content">
 	<h1 class="page-header">Protein Interactions</h1>
 	<div class="clearfix">
-		{% set substitutions %} {
-			"source": "<a href='{{ base }}/components/[[ source ]].html'>[[ source ]]</a>",
-			"target": "<a href='{{ base }}/components/[[ target ]].html'>[[ target ]]</a>",
-			"pmid": "<span style='white-space: nowrap'>[% for i in pmid.split(' ') %] <a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=[[ i ]]'><img src='{{ base }}/images/ncbi.png' /></a>&nbsp;[% endfor %]</span>"
-		} {% endset %}
-		{% set cur = get_cursor() %}
-		{% set table = cur|query("select * from `interactions`")|apply(substitutions) %}
-		{% include "_table.html" %}
+		{% set table = table %}
+		{% include "_table/_body.html" %}
 	</div>
 </div>
+{% endblock %}
+{% block scripts %}
+	{% set table = "interactions" %}
+	{% include "_table/_scripts.html" %}
 {% endblock %}

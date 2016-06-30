@@ -16,6 +16,19 @@ create table `edges` (
 	`PMID` text,
 	`data_source` text);
 
+create table `predictions` (
+	`GeneSym` text,
+	`y` int,
+	`OOF_preds` int,
+	`OOF_probas` float,
+	`train_probas` float);
+
+create table `downloads` (
+	`url` text,
+	`File` text,
+	`Description` text,
+	`Size` text);
+
 create table `datasets` (
 	`Name` text primary key,
 	`prot_att` longtext,

@@ -1,7 +1,3 @@
-{% set title = "All Components" %}
-{% extends "_component.html" %}
-{% block interactions %}{% endblock %}
-{% block cytoscape %}
 {% set cur = get_cursor() %}
 {% set node_view %}
 	create temp view `nodes_all` as
@@ -26,11 +22,8 @@
 	and `Target` in (select `Official Symbol` from `nodes_all`);
 {% endset %}
 {% set res = cur|query_exec(node_view.format(name)), cur|query_exec(edge_view.format(name)) %}
-{% set nodes = (cur|query("select * from `nodes_all`")).data %}
-{% set edges = (cur|query("select * from `edges_all`")).data %}
+{
+	'nodes': {{ (cur|query("select * from `nodes_all`")).data }},
+	'edges': {{ (cur|query("select * from `edges_all`")).data }}
+}
 {% set res = cur|query_exec("drop view `nodes_all`"), cur|query_exec("drop view `edges_all`") %}
-<script>
-{% set base = base %}
-{% include "_graph.html" %}
-</script>
-{% endblock %}

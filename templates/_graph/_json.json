@@ -1,0 +1,23 @@
+[
+	{% for sym, fa, weight in graph.nodes %}
+		{
+			"data": {
+				"id": "{{ sym }}",
+				"name": "{{ sym }}",
+				"weight": {{ weight }}
+			},
+			"classes": "{% if fa=="Intrinsic Proteins" %}intrinsic{% else %}associated{% endif %}{% if sym==central %} central{% endif %}"
+		},
+	{% endfor %}
+	{% set i = count() %}
+	{% for source, target, pmid in graph.edges|unique_edges %}
+		{
+			"data": {
+				"id": {{ i|next }},
+				"source": "{{ source }}",
+				"target": "{{ target }}",
+				"pmid": "{{ pmid }}"
+			}
+		}{% if not loop.last %},{% endif %}
+	{% endfor %}
+]

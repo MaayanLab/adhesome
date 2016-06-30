@@ -1,0 +1,4 @@
+{{ table.header|join(",") }}
+{% for row in table.data %}
+{{ row|map("jsonify")|join(",") }}
+{% endfor %}

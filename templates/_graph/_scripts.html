@@ -1,0 +1,181 @@
+<script src="{{ base }}/js/cytoscape.min.js"></script>
+<script src="{{ base }}/js/jquery.qtip.min.js"></script>
+<script src="{{ base }}/js/cytoscape-qtip.js"></script>
+<script src="{{ base }}/js/cola.v3.min.js"></script>
+<script src="{{ base }}/js/cytoscape-cola.js"></script>
+<script>
+var cy;
+$(document).ready(function() {
+	$.getJSON('{{ base }}/{{ graph }}_graph.json', function(elements) {
+		var ready = false;
+		cy = cytoscape({
+			container: $('#graph'),
+			style: [
+				{
+					"selector": "core",
+					"style": {
+						"selection-box-color": "#AAD8FF",
+						"selection-box-border-color": "#8BB0D0",
+						"selection-box-opacity": "0.2"
+					}
+				},
+				{
+					"selector": "node",
+					"style": {
+						"content": "data(name)",
+						"text-valign": "center",
+						"text-halign": "center",
+						"color": "#fff",
+						"overlay-padding": "3px",
+						"z-index": "10",
+					}
+				},
+				{
+					"selector": "edge",
+					"style": {
+						"curve-style": "haystack",
+						"haystack-radius": "0.5",
+						"opacity": "0.6",
+						"line-color": "#222",
+						"width": "1",
+						"overlay-padding": "3px"
+					}
+				},
+				{
+					"selector": ".intrinsic",
+					"style": {
+						"background-color": "#081838",
+						"width": "mapData(weight, 0, 1, 80, 200)",
+						"height": "mapData(weight, 0, 1, 80, 200)",
+						"font-size": "mapData(weight, 0, 1, 14, 48)"
+					}
+				},
+				{
+					"selector": ".associated",
+					"style": {
+						"color": "#000",
+						"background-color": "#fec672",
+						"width": "mapData(weight, 0, 1, 40, 100)",
+						"height": "mapData(weight, 0, 1, 40, 100)",
+						"font-size": "mapData(weight, 0, 1, 10, 24)"
+					}
+				},
+				{
+					"selector": ".hidden",
+					"style": {
+						"display": "none"
+					}
+				},
+				{
+					"selector": ".central",
+					"style": {
+						"background-color": "#840800",
+						"width": "200",
+						"height": "200",
+						"width": "mapData(weight, 0, 1, 150, 300)",
+						"height": "mapData(weight, 0, 1, 150, 300)",
+						"font-size": "mapData(weight, 0, 1, 24, 72)",
+						"display": "element"
+					}
+				}
+			],
+			elements: elements
+		});
+
+		var layout = cy.makeLayout({
+			name: 'cola',
+			animate: true,
+			randomize: true,
+			maxSimulationTime: 1000,
+			edgeLengthVal: 1,
+			nodeSpacing: 1
+		});
+
+		cy.on('mousedown', function() {
+			layout.stop();
+		});
+
+		layout.start();
+
+		cy.nodes().forEach(function(node) {
+			var name = node.data('name');
+			node.qtip({
+				content: [
+					{
+						name: 'View node graph',
+						url: '{{ base }}/components/'+name+'.html'
+					},
+					{
+						name: 'View Gene Page on the Harmonizome',
+						url: 'http://amp.pharm.mssm.edu/Harmonizome/gene/'+name
+					},
+					{
+						name: 'View on GeneCard',
+						url: 'http://www.genecards.org/cgi-bin/carddisp.pl?gene='+name
+					}
+				].map(function(link) {
+						return '<a href="'+link.url+'">'+link.name+'</a>';
+					}).join('<br />\n'),
+				position: {
+					my: 'top center',
+					at: 'bottom center'
+				},
+				style: {
+					classes: 'qtip',
+					tip: {
+						width: 16,
+						height: 8
+					}
+				}
+			});
+		});
+
+		cy.edges().forEach(function(edge) {
+			edge.qtip({
+				content: edge.data('pmid').split(' ').map(function(pmid) {
+						return {
+								name: 'View PubMed Article ('+pmid+')',
+								url: 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids='+pmid
+							}
+					}).map(function(link) {
+						return '<a href="'+link.url+'">'+link.name+'</a>';
+					}).join('<br />\n'),
+				position: {
+					my: 'top center',
+					at: 'bottom center'
+				},
+				style: {
+					classes: 'qtip',
+					tip: {
+						width: 16,
+						height: 8
+					}
+				}
+			});
+		});
+
+		function update_stats() {
+			$('#graph-stat-components').html(cy.$('node:visible').size());
+			$('#graph-stat-interactions').html(cy.$('edge:visible').size());
+		}
+
+		update_stats();
+
+		$('#intrinsic').change(function() {
+			if(!$(this).is(':checked'))
+				cy.$('.intrinsic').addClass('hidden');
+			else
+				cy.$('.intrinsic').removeClass('hidden');
+			update_stats();
+		});
+
+		$('#associated').change(function() {
+			if(!$(this).is(':checked'))
+				cy.$('.associated').addClass('hidden');
+			else
+				cy.$('.associated').removeClass('hidden');
+			update_stats();
+		});
+	});
+});
+</script>

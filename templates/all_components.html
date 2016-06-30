@@ -1,0 +1,7 @@
+{% set title = "All Components" %}
+{% extends "components/_component.html" %}
+{% block interactions %}{% endblock %}
+{% block cytoscape %}
+	{% set graph = "all_components" %}
+	{% include "_graph/_scripts.html" %}
+{% endblock %}

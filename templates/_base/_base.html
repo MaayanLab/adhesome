@@ -55,22 +55,16 @@
 	<link rel="stylesheet" type="text/css" href="{{ base }}/main.css">
 </head>
 <body class="" id="home">
-	{% include "_header.html" %}
+	{% include "_base/_header.html" %}
 	<div id="constrain">
 		<div class="constrain">
 			<div id="content-journalnav">
-				{% include "_nav.html" %}
+				{% include "_base/_nav.html" %}
 				{% block body %}{% endblock %}
 			</div>
 		</div>
 	</div>
-	{% include "_footer.html" %}
-	<script type="text/javascript" src="{{ base }}/js/jquery.dataTables.min.js"></script>
-	<script>
-		$('.data-table').DataTable({
-		    paging: false
-		});
-	</script>
+	{% include "_base/_footer.html" %}
 	{% block scripts %}{% endblock %}
 </body>
 </html>

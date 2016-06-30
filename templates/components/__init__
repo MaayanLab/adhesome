@@ -1,0 +1,25 @@
+{% set cur = get_cursor() %}
+{% set components = (cur|query("select `Official Symbol` as name from `components`")).data %}
+{
+	"components/_component.html": {
+		{% for name in components|one_tuple %}
+			"{{ "components/%s.html"|format(name) }}": {
+				"name": "{{ name }}",
+			},
+		{% endfor %}
+	},
+	"components/_component_table.json": {
+		{% for name in components|one_tuple %}
+			"{{ "components/%s_table.json"|format(name) }}": {
+				"name": "{{ name }}",
+			},
+		{% endfor %}
+	},
+	"components/_component_graph.json": {
+		{% for name in components|one_tuple %}
+			"{{ "components/%s_graph.json"|format(name) }}": {
+				"name": "{{ name }}",
+			},
+		{% endfor %}
+	},
+}

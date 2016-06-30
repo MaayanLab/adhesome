@@ -1,0 +1,18 @@
+{% set config = get_config() %}
+{% set cur = get_cursor() %}
+{% set substitutions %} {
+	"uri": "[[ urlize(name) ]]"
+} {% endset %}
+{
+	"associations/_association.html": {
+		{% for name in (cur|query("select `Name` as name from `datasets`")|apply(substitutions)).data|one_tuple %}
+			{% for typ in config.typs %}
+				"{{ "associations/%s_%s.html"|format(name, typ) }}": {
+					"name": "{{ name }}",
+					"typ": "{{ typ }}",
+					"uri": "{{ urlize(name) }}",
+				},
+			{% endfor %}
+		{% endfor %}
+	}
+}

@@ -1,3 +1,4 @@
+{% set config = get_config() %}
 <div id="journalnav">
 	<h1 class="hidden">Site Navigation</h1>
 	<map title="main journal navigation" id="main-journal-nav" class="journal-nav">
@@ -9,7 +10,7 @@
 					{% if page == "components" %}
 						<li class="selected"><a href="{{ base }}/components.html" title="Genetic components that make up the adhesome">Components</a>
 							<ul class="subnav">
-								<li{% if name %} class="selected"{% endif %}><a href="{{ base }}/components/all.html" title="All components">Network Graph</a></li>
+								<li{% if name %} class="selected"{% endif %}><a href="{{ base }}/all_components.html" title="All components">Network Graph</a></li>
 							</ul>
 						</li>
 					{% else %}
@@ -19,9 +20,9 @@
 					<li{% if page == "associations" %} class="selected"{% endif %}><a href="{{ base }}/associations.html" title="Functional associations in the adhesome">Functional Associations</a>
 						{% if page == "associations" and name %}
 							<ul class="subnav">
-								{% for typ_ in ["prot_att", "prot_prot", "att_att"] %}
+								{% for typ_ in config.typs %}
 									<li{% if typ and typ == typ_ %} class="selected"{% endif %}>
-										<a href="{{ base }}/associations/{{ uri }}_{{ typ_ }}.html" title="{{ typ_|typ_lookup }}">{{ typ_|typ_lookup }}</a>
+										<a href="{{ base }}/associations/{{ uri }}_{{ typ_ }}.html" title="{{ config.typs[typ_] }}">{{ config.typs[typ_] }}</a>
 									</li>
 								{% endfor %}
 							</ul>

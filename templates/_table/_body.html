@@ -1,3 +1,4 @@
+{% set header = table.header %}
 <table class="data-table">
 	<thead>
 		<tr>
@@ -6,14 +7,5 @@
 			{% endfor %}
 		</tr>
 	</thead>
-	<tbody>
-		{% for row in table.data %}
-		<tr>
-			{% for data in row %}
-			<td>{{ data }}</td>
-			{% endfor %}
-		</tr>
-		{% endfor %}
-	</tbody>
 </table>
 

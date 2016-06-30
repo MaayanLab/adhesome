@@ -78,7 +78,12 @@ def unique_edges(array):
 	return [k+tuple(v) for k,v in pairs.items()]
 
 @register_filter
-def typ_lookup(typ):
-	return config.typs.get(typ)
+def jsonify(data):
+	return json.dumps(data)
+
+@register_filter
+def one_tuple(data):
+	''' Helper function for one_tuples as jinja2 doesn't support it '''
+	return (a for a, in data)
 
 register_filter(next)
