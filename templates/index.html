@@ -1,5 +1,5 @@
 {% set page = "home" %}
-{% set table = evaluate("__all_components.sql") %}
+{% set stats = evaluate("__network_stats.sql") %}
 {% extends "_base/_base.html" %}
 {% macro PUBMED(pmid, image=False) %}<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids={{ pmid }}">{% if image %}<img src="{{ base }}/images/ncbi.png" />{% else %}{{ pmid }}{% endif %}</a>{% endmacro %}
 {% block head %}
@@ -16,7 +16,7 @@
 		</ol>
 	</p>
 	<p>Our intent is to provide the research community with a resource for exploring interactions and components found in focal adhesion complexes for their further analysis towards enhanced understanding of focal adhesion complex formation, regulation and dynamics.</p>
-	<p>Currently, the network includes {# components #} and {# interactions #} interactions. This web-site provides dynamically linked web-pages for browsing and exploring focal adhesion network components as well as their known physical and functional interactions.</p>
+	<p>Currently, the network includes {{ stats.intrinsic }} bona-fide components, {{ stats.intrinsic_interactions }} interactions. With {{ stats.associated }} associated components, the network includes {{ stats.all_interactions }} interactions in all. This web-site provides dynamically linked web-pages for browsing and exploring focal adhesion network components as well as their known physical and functional interactions.</p>
 	<p>The update to this web site is a collaborative project between the <a href="http://www.geigerlab.com/">Geiger Laboratory</a> from the <a href="https://www.weizmann.ac.il/pages/">Weizmann Institute of Science</a> and the <a href="http://icahn.mssm.edu/research/labs/maayan-laboratory">Ma’ayan Laboratory</a> at the <a href="http://icahn.mssm.edu/">Icahn School of Medicine at Mount Sinai</a>. This project is part of the outreach activities of the <a href="http://lincs-dcic.org/">BD2K-LINCS</a> data coordination and integration center (DCIC).</p>
 	<div id="graph" class="expand" style="height:500px;"></div>
 </div>

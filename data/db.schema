@@ -14,7 +14,8 @@ create table `edges` (
 	`Effect` varchar(1),
 	`Type` text,
 	`PMID` text,
-	`data_source` text);
+	`data_source` text,
+	PRIMARY KEY (`Source`, `Target`, `PMID`));
 
 create table `predictions` (
 	`GeneSym` text,
@@ -38,22 +39,31 @@ create table `datasets` (
 -- Combinational Query of Edges and Components
 create view `interactions` as
 	select
-		edges.`Source` as `Source`,
-		source.`Functional Category` as `Functional Category_source`,
-		source.`FA` as `FA_source`,
-		edges.`Target` as `Target`,
-		target.`Functional Category` as `Functional Category_target`,
-		target.`FA` as `FA_target`,
-		edges.`Effect` as `Effect`,
-		edges.`Type` as `Type`,
-		edges.`PMID` as `PMID`
+		`edges`.`Source` as `Source`,
+		`source`.`Functional Category` as `Functional Category_source`,
+		`source`.`FA` as `FA_source`,
+		`edges`.`Target` as `Target`,
+		`target`.`Functional Category` as `Functional Category_target`,
+		`target`.`FA` as `FA_target`,
+		`edges`.`Effect` as `Effect`,
+		`edges`.`Type` as `Type`,
+		`edges`.`PMID` as `PMID`
 	from
-		edges,
-		components as source,
-		components as target
+		(select
+			`Source`,
+			`Target`,
+			`Effect`,
+			`Type`,
+			group_concat(`e`.`PMID`,' ') as `PMID`
+		 from `edges` as `e`
+		 group by
+			`Source`,
+			`Target`) as `edges`,
+		`components` as `source`,
+		`components` as `target`
 	where
-		edges.`Source` = source.`Official Symbol`
-	and edges.`Target` = target.`Official Symbol`;
+		`edges`.`Source` = source.`Official Symbol`
+	and `edges`.`Target` = target.`Official Symbol`;
 
 -- Neighbor counts
 create view `neighbors` as

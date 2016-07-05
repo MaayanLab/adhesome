@@ -4,7 +4,7 @@
 
 # for d in */; do
 # 	cd "$d"
-# 	gunzip *
+# 	gunzip -f *
 # 	cd ..
 # done
 

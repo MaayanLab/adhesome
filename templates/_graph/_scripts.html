@@ -102,20 +102,23 @@ $(document).ready(function() {
 			node.qtip({
 				content: [
 					{
-						name: 'View node graph',
+						src: '{{ base }}/images/graph.png',
+						tooltip: 'View Node Graph',
 						url: '{{ base }}/components/'+name+'.html'
 					},
 					{
-						name: 'View Gene Page on the Harmonizome',
+						src: '{{ base }}/images/harmonizome.png',
+						tooltip: 'View on Harmonizome',
 						url: 'http://amp.pharm.mssm.edu/Harmonizome/gene/'+name
 					},
 					{
-						name: 'View on GeneCard',
+						src: '{{ base }}/images/genecards.png',
+						tooltip: 'View on GeneCards',
 						url: 'http://www.genecards.org/cgi-bin/carddisp.pl?gene='+name
 					}
 				].map(function(link) {
-						return '<a href="'+link.url+'">'+link.name+'</a>';
-					}).join('<br />\n'),
+						return '<a href="'+link.url+'" title="'+link.tooltip+'"><img src="'+link.src+'" alt="'+link.tooltip+'" /></a>';
+					}).join('&nbsp;'),
 				position: {
 					my: 'top center',
 					at: 'bottom center'
@@ -134,12 +137,13 @@ $(document).ready(function() {
 			edge.qtip({
 				content: edge.data('pmid').split(' ').map(function(pmid) {
 						return {
-								name: 'View PubMed Article ('+pmid+')',
+								src: '{{ base }}/images/ncbi.png',
+								tooltip: 'View PubMed Article ('+pmid+')',
 								url: 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids='+pmid
 							}
 					}).map(function(link) {
-						return '<a href="'+link.url+'">'+link.name+'</a>';
-					}).join('<br />\n'),
+						return '<a href="'+link.url+'" title="'+link.tooltip+'"><img src="'+link.src+'" alt="'+link.tooltip+'" /></a>';
+					}).join('&nbsp;'),
 				position: {
 					my: 'top center',
 					at: 'bottom center'
