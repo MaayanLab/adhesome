@@ -1,2 +1,1 @@
-{% set cur = get_cursor() %}
-{{ cur|query("select * from `predictions`") }}
+{{ config.cur|query("select * from `predictions`") }}

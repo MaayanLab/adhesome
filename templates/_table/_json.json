@@ -1,1 +1,9 @@
-{"data":{{ table.data|jsonify }}}
+{
+	"columns": [
+	{% for header in table.header %}
+		{ "title": "{{ header|trim_ }}" }{% if not loop.last %},{% endif %}
+	{% endfor %}
+	],
+	"data": {{ table.data|jsonify }},
+	"paging": false
+}

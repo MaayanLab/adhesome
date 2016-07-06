@@ -1,4 +1,3 @@
-{% set config = get_config() %}
 <div id="journalnav">
 	<h1 class="hidden">Site Navigation</h1>
 	<map title="main journal navigation" id="main-journal-nav" class="journal-nav">
@@ -6,38 +5,38 @@
 			<li class="site-nav-title">
 				<h1>Site Navigation</h1>
 				<ul>
-					<li{% if page == "home" %} class="selected"{% endif %}><a href="{{ base }}/index.html" title="The main Adhesome homepage">Home</a></li>
+					<li{% if page == "home" %} class="selected"{% endif %}><a href="{{ config.base }}/index.html" title="The main Adhesome homepage">Home</a></li>
 					{% if page == "components" %}
-						<li class="selected"><a href="{{ base }}/components.html" title="Genetic components that make up the adhesome">Components</a>
+						<li class="selected"><a href="{{ config.base }}/components.html" title="Genetic components that make up the adhesome">Components</a>
 							<ul class="subnav">
-								<li{% if name %} class="selected"{% endif %}><a href="{{ base }}/all_components.html" title="All components">Network Graph</a></li>
+								<li{% if name %} class="selected"{% endif %}><a href="{{ config.base }}/all_components.html" title="All components">Network Graph</a></li>
 							</ul>
 						</li>
 					{% else %}
-						<li><a href="{{ base }}/components.html" title="Genetic components that make up the adhesome">Components</a></li>
+						<li><a href="{{ config.base }}/components.html" title="Genetic components that make up the adhesome">Components</a></li>
 					{% endif %}
-					<li{% if page == "interactions" %} class="selected"{% endif %}><a href="{{ base }}/interactions.html" title="Protein interactions in the adhesome">Protein Interactions</a></li>
-					<li{% if page == "associations" %} class="selected"{% endif %}><a href="{{ base }}/associations.html" title="Functional associations in the adhesome">Functional Associations</a>
+					<li{% if page == "interactions" %} class="selected"{% endif %}><a href="{{ config.base }}/interactions.html" title="Protein interactions in the adhesome">Protein Interactions</a></li>
+					<li{% if page == "associations" %} class="selected"{% endif %}><a href="{{ config.base }}/associations.html" title="Functional associations in the adhesome">Functional Associations</a>
 						{% if page == "associations" and name %}
 							<ul class="subnav">
 								{% for typ_ in config.typs %}
 									<li{% if typ and typ == typ_ %} class="selected"{% endif %}>
-										<a href="{{ base }}/associations/{{ uri }}_{{ typ_ }}.html" title="{{ config.typs[typ_] }}">{{ config.typs[typ_] }}</a>
+										<a href="{{ config.base }}/associations/{{ uri }}_{{ typ_ }}.html" title="{{ config.typs[typ_] }}">{{ config.typs[typ_] }}</a>
 									</li>
 								{% endfor %}
 							</ul>
 						{% endif %}
 					</li>
-					<li{% if page == "predictions" %} class="selected"{% endif %}><a href="{{ base }}/predictions.html" title="Predictions">Predictions</a></li>
-					<li{% if page == "downloads" %} class="selected"{% endif %}><a href="{{ base }}/downloads.html" title="Adhesome data downloads">Downloads</a></li>
-					<li{% if page == "contact" %} class="selected"{% endif %}><a href="{{ base }}/contact.html" title="Contact details">Contact Us</a></li>
+					<li{% if page == "predictions" %} class="selected"{% endif %}><a href="{{ config.base }}/predictions.html" title="Predictions">Predictions</a></li>
+					<li{% if page == "downloads" %} class="selected"{% endif %}><a href="{{ config.base }}/downloads.html" title="Adhesome data downloads">Downloads</a></li>
+					<li{% if page == "contact" %} class="selected"{% endif %}><a href="{{ config.base }}/contact.html" title="Contact details">Contact Us</a></li>
 				</ul>
 			</li><br />
 			<li class="spacing"><h2 class="npg-resources">External links</h2></li>
 			<li><a href="https://www.cellmigration.org/">cellmigration.org</a></li>
 			{#
 			<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
-			<li class="nav-rss"><a href="{{ base }}/cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
+			<li class="nav-rss"><a href="{{ config.base }}/cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
 			#}
 		</ul>
 	</map>

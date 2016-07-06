@@ -1,10 +1,11 @@
 <!-- Required JS Libraries -->
-<script src="{{ base }}/static/lib/js/d3.js"></script>
-<script src="{{ base }}/static/lib/js/jquery-1.11.2.min.js"></script>
-<script src="{{ base }}/static/lib/js/jquery-ui.js"></script>
-<script src="{{ base }}/static/lib/js/bootstrap.min.js"></script>
-<script src="{{ base }}/static/lib/js/underscore-min.js"></script>
+<script src="{{ config.base }}/static/lib/js/d3.js"></script>
+<script src="{{ config.base }}/static/lib/js/jquery-1.11.2.min.js"></script>
+<script src="{{ config.base }}/static/lib/js/jquery-ui.js"></script>
+<script src="{{ config.base }}/static/lib/js/bootstrap.min.js"></script>
+<script src="{{ config.base }}/static/lib/js/underscore-min.js"></script>
 <!-- Clustergrammer JS -->
-<script src='{{ base }}/static/js/clustergrammer.js'></script>
-<script src='{{ base }}/static/js/load_multiple_clustergrams.js'></script>
-<script>make_clust({{ clustergram }});</script>
+<script src='{{ config.base }}/static/js/clustergrammer.js'></script>
+<script src='{{ config.base }}/static/js/load_multiple_clustergrams.js'></script>
+<script>make_clust("{{ clustergram.uri }}");</script>
+

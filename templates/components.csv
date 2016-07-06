@@ -1,3 +1,2 @@
-{% set cur = get_cursor() %}
-{% set table = cur|query("select * from `components`") %}
+{% set table = config.cur|query("select * from `components`") %}
 {% include "_table/_csv.csv" %}

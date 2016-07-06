@@ -1,3 +1,9 @@
+'''
+Filter definitions, exposed in jinja2:
+
+{{ "test_me"|trim_ }} => test
+'''
+
 import json
 from collections import OrderedDict
 from jinja2 import Template
@@ -79,6 +85,7 @@ def unique_edges(array):
 
 @register_filter
 def jsonify(data):
+	''' Python -> JSON '''
 	return json.dumps(data)
 
 @register_filter

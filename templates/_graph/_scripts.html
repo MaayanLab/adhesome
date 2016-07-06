@@ -1,15 +1,15 @@
-<script src="{{ base }}/js/cytoscape.min.js"></script>
-<script src="{{ base }}/js/jquery.qtip.min.js"></script>
-<script src="{{ base }}/js/cytoscape-qtip.js"></script>
-<script src="{{ base }}/js/cola.v3.min.js"></script>
-<script src="{{ base }}/js/cytoscape-cola.js"></script>
+<script src="{{ config.base }}/js/cytoscape.min.js"></script>
+<script src="{{ config.base }}/js/jquery.qtip.min.js"></script>
+<script src="{{ config.base }}/js/cytoscape-qtip.js"></script>
+<script src="{{ config.base }}/js/cola.v3.min.js"></script>
+<script src="{{ config.base }}/js/cytoscape-cola.js"></script>
 <script>
 var cy;
 $(document).ready(function() {
-	$.getJSON('{{ base }}/{{ graph }}_graph.json', function(elements) {
+	$.getJSON('{{ config.base }}/{{ graph }}_graph.json', function(elements) {
 		var ready = false;
 		cy = cytoscape({
-			container: $('#graph'),
+			container: $('#{{ urlize(graph) }}_graph'),
 			style: [
 				{
 					"selector": "core",
@@ -102,17 +102,17 @@ $(document).ready(function() {
 			node.qtip({
 				content: [
 					{
-						src: '{{ base }}/images/graph.png',
+						src: '{{ config.base }}/images/graph.png',
 						tooltip: 'View Node Graph',
-						url: '{{ base }}/components/'+name+'.html'
+						url: '{{ config.base }}/components/'+name+'.html'
 					},
 					{
-						src: '{{ base }}/images/harmonizome.png',
+						src: '{{ config.base }}/images/harmonizome.png',
 						tooltip: 'View on Harmonizome',
 						url: 'http://amp.pharm.mssm.edu/Harmonizome/gene/'+name
 					},
 					{
-						src: '{{ base }}/images/genecards.png',
+						src: '{{ config.base }}/images/genecards.png',
 						tooltip: 'View on GeneCards',
 						url: 'http://www.genecards.org/cgi-bin/carddisp.pl?gene='+name
 					}
@@ -137,7 +137,7 @@ $(document).ready(function() {
 			edge.qtip({
 				content: edge.data('pmid').split(' ').map(function(pmid) {
 						return {
-								src: '{{ base }}/images/ncbi.png',
+								src: '{{ config.base }}/images/ncbi.png',
 								tooltip: 'View PubMed Article ('+pmid+')',
 								url: 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids='+pmid
 							}

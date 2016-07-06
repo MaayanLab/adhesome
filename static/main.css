@@ -91,7 +91,7 @@ iframe {
 }
 
 /* Modules */
-#graph {
+.graph {
 	min-width: 400px;
 	min-height: 400px;
 }

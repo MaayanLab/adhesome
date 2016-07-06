@@ -1,15 +1,17 @@
-{% set config = get_config() %}
 {% set page = "associations" %}
 {% set title = "%s: %s"|format(name, config.typs[typ]) %}
+{% set clustergram = {"title": "%s: %s"|format(name, config.typs[typ]), "uri": "%s_%s"|format(uri, typ)} %}
 {% extends "_base/_base.html" %}
-{% block head %}{% include "_clustergrammer/_head.html" %}{% endblock %}
+{% block head %}
+	{% include "_clustergrammer/_head.html" %}
+{% endblock %}
 {% block body %}
 <div id="content">
-	{% set clustergram = {"title": "%s: %s"|format(name, config.typs[typ])} %}
+	{% set clustergram = clustergram %}
 	{% include "_clustergrammer/_body.html" %}
 </div>
 {% endblock %}
 {% block scripts %}
-	{% set clustergram = evaluate("associations/__association.sql", name=name, typ=typ) %}
+	{% set clustergram = clustergram %}
 	{% include "_clustergrammer/_scripts.html" %}
 {% endblock %}

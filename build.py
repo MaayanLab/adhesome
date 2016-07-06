@@ -1,4 +1,11 @@
 #!/usr/local/bin/python3
+'''
+Use staticjinja to build the website from templates directory.
+
+We've extended this to handle building a number of pages from singular templates,
+ this is done via an __init__ at the root of any directory with rules, for more
+ see render_rules function.
+'''
 
 import os
 import re
@@ -10,6 +17,7 @@ from config import config
 from filters import *
 from funcs import *
 
+# Source/Build directories
 build = 'build'
 templates = 'templates'
 
@@ -21,13 +29,10 @@ def try_ignore(stmt):
 		pass
 
 # Re-create build directory
-try_ignore(r"shutil.rmdir('%s')" % (build))
+try_ignore(r"shutil.rmtree('%s')" % (build))
 try_ignore(r"os.makedirs('%s/associations')" % (build))
 try_ignore(r"os.makedirs('%s/components')" % (build))
 copy_tree('static/', '%s/' % (build))
-
-# def downloads(env, template, **kwargs):
-# 	pass
 
 # Build static pages
 site = config.site = make_site(

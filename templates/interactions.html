@@ -1,6 +1,6 @@
 {% set title = "Protein Interactions" %}
 {% set page = "interactions" %}
-{% set table = evaluate("__interactions.sql") %}
+{% set table = "interactions" %}
 {% extends "_base/_base.html" %}
 {% block body %}
 <div id="content">
@@ -12,6 +12,6 @@
 </div>
 {% endblock %}
 {% block scripts %}
-	{% set table = "interactions" %}
+	{% set table = table %}
 	{% include "_table/_scripts.html" %}
 {% endblock %}

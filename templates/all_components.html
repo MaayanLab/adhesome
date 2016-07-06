@@ -1,7 +1,5 @@
 {% set title = "All Components" %}
+{% set graph = "all_components" %}
 {% extends "components/_component.html" %}
-{% block interactions %}{% endblock %}
-{% block cytoscape %}
-	{% set graph = "all_components" %}
-	{% include "_graph/_scripts.html" %}
-{% endblock %}
+{% block table_body %}{% endblock %}
+{% block table_scripts %}{% endblock %}

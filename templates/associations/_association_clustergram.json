@@ -1,0 +1,1 @@
+{{ evaluate("associations/__association.sql", name=name, typ=typ)|jsonify }}
