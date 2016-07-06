@@ -1,11 +1,17 @@
 #!/bin/bash
 
-# ./harmonizomedownloader.py
+rm -r harmonizome
+mkdir -p harmonizome
+cp harmonizomedownloader.py harmonizome
+cd harmonizome
 
-# for d in */; do
-# 	cd "$d"
-# 	gunzip -f *
-# 	cd ..
-# done
+./harmonizomedownloader.py
 
-./process_matrix.py */gene_attribute_matrix.txt
+for d in */; do
+	cd "$d"
+	gunzip -f *
+	cd ..
+done
+
+cd ..
+./process_matrix.py harmonizome/*/gene_attribute_matrix.txt

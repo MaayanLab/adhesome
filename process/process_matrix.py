@@ -1,6 +1,11 @@
 #!/usr/local/bin/python
 # Note: python2 because clustergrammer is python2
 
+'''
+Given a gene_attribute_matrix from harmonizome's datasets, filter out the non-adhesome components
+ and generate a clustergrammer for each dataset, putting it into the database.
+'''
+
 import os
 import sys
 import json

@@ -1,5 +1,6 @@
 build/
 node_modules/
 __pycache__*
-tmp.txt
-
+process/tmp.txt
+process/harmonizome/
+process/biogrid/

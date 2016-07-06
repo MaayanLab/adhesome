@@ -1,5 +1,9 @@
 #!/usr/local/bin/python3
 
+'''
+Given the .xgmml files downloaded from BioGrid, this script converts the databases into .csv files
+'''
+
 import xml.etree.cElementTree as xml
 import pandas as pd
 
