@@ -13,6 +13,7 @@ table: {
 
 ## Components
 
+`head` (no arguments): `{% include "_table/head.html" %}`
 `body` (table = {{path}}): `{% include "_table/_body.html" %}`
 `csv` (requires arguments): `{% include "_table/_csv.csv" %}`
 `json` (requires arguments): `{% include "_table/_json.json" %}`

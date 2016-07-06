@@ -4,7 +4,7 @@
 {% extends "_base/_base.html" %}
 {% macro PUBMED(pmid, image=False) %}<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids={{ pmid }}">{% if image %}<img src="{{ config.base }}/images/ncbi.png" />{% else %}{{ pmid }}{% endif %}</a>{% endmacro %}
 {% block head %}
-<link rel="stylesheet" href="{{ config.base }}/jquery.qtip.min.css">
+	{% include "_graph/_head.html" %}
 {% endblock %}
 {% block body %}
 <div id="content">

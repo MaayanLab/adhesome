@@ -17,7 +17,7 @@ class Config:
 			}
 			self.con = sqlite3.connect('data/db.sqlite3')
 			self.cur = self.con.cursor()
-			self.base = '/dev'
+			self.base = ''
 		else:
 			self.__dict__ = self.__shared_state
 

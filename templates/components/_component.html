@@ -4,17 +4,18 @@
 {% set graph = graph|default("components/%s"|format(name)) %}
 {% extends "_base/_base.html" %}
 {% block head %}
-<link rel="stylesheet" href="{{ config.base }}/jquery.qtip.min.css">
+	{% include "_table/_head.html" %}
+	{% include "_graph/_head.html" %}
 {% endblock %}
 {% block body %}
 <div id="content">
 	<h1 class="page-header">
 		<a href="{{ config.base }}/components.html">Components</a>
 		<a href="#!">&gt;</a>
-		<a href="all.html">All Components</a>
+		<a href="{{ config.base }}/all_components.html">All Components</a>
 		{% if name %}
 			<a href="#!">&gt;</a>
-			<a href="{{ config.base }}/{{ urlize(name) }}.html">{{ name }}</a>
+			<a href="{{ config.base }}/components/{{ urlize(name) }}.html">{{ name }}</a>
 		{% endif %}
 	</h1>
 	{% set graph = graph %}

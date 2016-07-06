@@ -1,6 +1,9 @@
 {% set page = "components" %}
 {% set table = "components" %}
 {% extends "_base/_base.html" %}
+{% block head %}
+	{% include "_table/_head.html" %}
+{% endblock %}
 {% block body %}
 <div id="content">
 	<h1 class="page-header">Components</h1>
