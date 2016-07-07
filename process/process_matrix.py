@@ -25,7 +25,7 @@ cur = con.cursor()
 adhesome = [gene for gene, in cur.execute('select `Official Symbol` from `components`')]
 
 for arg in sys.argv[1:]:
-	name = os.path.split(arg)[0]
+	name = arg.split(os.path.sep)[-2]
 
 	try:
 		# Load Gene Attribute Matrix

@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$.getJSON('{{ config.base }}/{{ graph }}_graph.json', function(elements) {
 		var ready = false;
 		cy = cytoscape({
-			container: $('#{{ urlize(graph) }}_graph'),
+			container: $('#{{ graph|urlize }}_graph'),
 			style: [
 				{
 					"selector": "core",

@@ -15,7 +15,7 @@
 		<a href="{{ config.base }}/all_components.html">All Components</a>
 		{% if name %}
 			<a href="#!">&gt;</a>
-			<a href="{{ config.base }}/components/{{ urlize(name) }}.html">{{ name }}</a>
+			<a href="{{ config.base }}/components/{{ name|urlize }}.html">{{ name }}</a>
 		{% endif %}
 	</h1>
 	{% set graph = graph %}

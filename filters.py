@@ -4,11 +4,12 @@ Filter definitions, exposed in jinja2:
 {{ "test_me"|trim_ }} => test
 '''
 
+import re
 import json
 from collections import OrderedDict
 from jinja2 import Template
 from config import config
-from funcs import funcs, urlize
+from funcs import funcs
 from copy import copy
 
 filters={}
@@ -25,6 +26,11 @@ def trim_(s):
 		return s[:i]
 	else:
 		return s
+
+@register_filter
+def urlize(name):
+	''' Prepare strings for urls or as variables '''
+	return re.sub(r'[^\w]', '_', name.lower())
 
 @register_filter
 def query_exec(cur, stmt, *kargs):

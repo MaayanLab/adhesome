@@ -1,8 +1,8 @@
 <script type="text/javascript" src="{{ config.base }}/js/jquery.dataTables.min.js"></script>
 <script>
 	$.getJSON('{{ config.base }}/{{ table }}_table.json', function(conf) {
-		$('#{{ urlize(table) }}_table').DataTable(conf);
-		$('#{{ urlize(table) }}_status').html('');
+		$('#{{ table|urlize }}_table').DataTable(conf);
+		$('#{{ table|urlize }}_status').html('');
 	});
 </script>
 

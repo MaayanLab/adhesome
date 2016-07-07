@@ -2,10 +2,10 @@
 	"associations/_association.html": {
 		{% for name in (config.cur|query("select `Name` from `datasets`")).data|one_tuple %}
 			{% for typ in config.typs %}
-				"{{ "associations/%s_%s.html"|format(urlize(name), typ) }}": {
+				"{{ "associations/%s_%s.html"|format(name|urlize, typ) }}": {
 					"name": "{{ name }}",
 					"typ": "{{ typ }}",
-					"uri": "{{ urlize(name) }}",
+					"uri": "{{ name|urlize }}",
 				},
 			{% endfor %}
 		{% endfor %}
@@ -13,7 +13,7 @@
 	"associations/_association_clustergram.json": {
 		{% for name in (config.cur|query("select `Name` from `datasets`")).data|one_tuple %}
 			{% for typ in config.typs %}
-				"{{ "associations/%s_%s_clustergram.json"|format(urlize(name), typ) }}": {
+				"{{ "associations/%s_%s_clustergram.json"|format(name|urlize, typ) }}": {
 					"name": "{{ name }}",
 					"typ": "{{ typ }}"
 				},

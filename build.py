@@ -1,4 +1,5 @@
 #!/usr/local/bin/python3
+
 '''
 Use staticjinja to build the website from templates directory.
 
@@ -21,20 +22,16 @@ from funcs import *
 build = 'build'
 templates = 'templates'
 
-def try_ignore(stmt):
-	''' For statements we expect might throw exceptions and move on '''
-	try:
-		exec(stmt)
-	except:
-		pass
+# Remove existing build directory or fail silently
+try:
+	shutil.rmtree(build)
+except:
+	pass
 
-# Re-create build directory
-try_ignore(r"shutil.rmtree('%s')" % (build))
-try_ignore(r"os.makedirs('%s/associations')" % (build))
-try_ignore(r"os.makedirs('%s/components')" % (build))
+# Copy static files into build
 copy_tree('static/', '%s/' % (build))
 
-# Build static pages
+# Build standard pages
 site = config.site = make_site(
 	searchpath=templates,
 	filters=filters,
@@ -42,6 +39,8 @@ site = config.site = make_site(
 	env_kwargs=dict(trim_blocks=True, lstrip_blocks=True),
 	outpath=build)
 site.render()
+
+# Build rule based pages
 
 def render(template, dump, **kwargs):
 	''' Render custom page with jinja template engine '''
@@ -64,8 +63,7 @@ def render_rules(rules):
 		for out_template, context in rule.items():
 			render(in_template, out_template, **context)
 
-# Join all rules into a single dict and call render_rules
-render_rules(
+render_rules( # Join all rules into a single dict and call render_rules
 	dict(itertools.chain.from_iterable( # Flatten list ([[(a),(b)],[(c)]] -> [(a),(b),(c)])
 		[evaluate(os.path.join(*os.path.split(r)[1:], '__init__')).items() # Evaluate the rule dict from the __init__ files in directories
 		 for r, d, f in os.walk(templates) # Recursive traversal of templates directory
