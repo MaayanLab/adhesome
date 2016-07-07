@@ -57,6 +57,9 @@
 	<div id="constrain">
 		<div class="constrain">
 			<div id="content-journalnav">
+				{% set page = page %}
+				{% set subpage = subpage %}
+				{% set nav = evaluate("_base/__nav.py") %}
 				{% include "_base/_nav.html" %}
 				{% block body %}{% endblock %}
 			</div>

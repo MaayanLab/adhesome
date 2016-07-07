@@ -5,31 +5,19 @@
 			<li class="site-nav-title">
 				<h1>Site Navigation</h1>
 				<ul>
-					<li{% if page == "home" %} class="selected"{% endif %}><a href="{{ config.base }}/index.html" title="The main Adhesome homepage">Home</a></li>
-					{% if page == "components" %}
-						<li class="selected"><a href="{{ config.base }}/components.html" title="Genetic components that make up the adhesome">Components</a>
-							<ul class="subnav">
-								<li{% if name %} class="selected"{% endif %}><a href="{{ config.base }}/all_components.html" title="All components">Network Graph</a></li>
-							</ul>
+					{% for t, n in nav %}
+						{% set p, s, subnav = n %}
+						<li{% if page == p %} class="selected"{% endif %}><a href="{{ config.base }}/{{ s }}">{{ t }}</a>
+							{% if subnav and page == p %}
+								<ul class="subnav">
+									{% for tt, nn in subnav %}
+										{% set pp, ss = nn %}
+										<li{% if subpage == pp %} class="selected"{% endif %}><a href="{{ config.base }}/{{ ss }}">{{ tt }}</a></li>
+									{% endfor %}
+								</ul>
+							{% endif %}
 						</li>
-					{% else %}
-						<li><a href="{{ config.base }}/components.html" title="Genetic components that make up the adhesome">Components</a></li>
-					{% endif %}
-					<li{% if page == "interactions" %} class="selected"{% endif %}><a href="{{ config.base }}/interactions.html" title="Protein interactions in the adhesome">Protein Interactions</a></li>
-					<li{% if page == "associations" %} class="selected"{% endif %}><a href="{{ config.base }}/associations.html" title="Functional associations in the adhesome">Functional Associations</a>
-						{% if page == "associations" and name %}
-							<ul class="subnav">
-								{% for typ_ in config.typs %}
-									<li{% if typ and typ == typ_ %} class="selected"{% endif %}>
-										<a href="{{ config.base }}/associations/{{ uri }}_{{ typ_ }}.html" title="{{ config.typs[typ_] }}">{{ config.typs[typ_] }}</a>
-									</li>
-								{% endfor %}
-							</ul>
-						{% endif %}
-					</li>
-					<li{% if page == "predictions" %} class="selected"{% endif %}><a href="{{ config.base }}/predictions.html" title="Predictions">Predictions</a></li>
-					<li{% if page == "downloads" %} class="selected"{% endif %}><a href="{{ config.base }}/downloads.html" title="Adhesome data downloads">Downloads</a></li>
-					<li{% if page == "contact" %} class="selected"{% endif %}><a href="{{ config.base }}/contact.html" title="Contact details">Contact Us</a></li>
+					{% endfor %}
 				</ul>
 			</li><br />
 			<li class="spacing"><h2 class="npg-resources">External links</h2></li>

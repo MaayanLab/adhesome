@@ -1,0 +1,19 @@
+{% set title = title|default("Predictions: %s"|format(name)) %}
+{% set page = page|default("predictions") %}
+{% extends "_base/_base.html" %}
+{% block head %}
+	{% include "_table/_head.html" %}
+{% endblock %}
+{% block body %}
+<div id="content">
+	<h1 class="page-header">Predictions: {{ name }}</h1>
+	<div class="clearfix">
+		{% set table = table %}
+		{% include "_table/_body.html" %}
+	</div>
+</div>
+{% endblock %}
+{% block scripts %}
+	{% set table = table %}
+	{% include "_table/_scripts.html" %}
+{% endblock %}

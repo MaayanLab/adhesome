@@ -1,5 +1,6 @@
+{% set page = "components" %}
+{% set subpage = "component" %}
 {% set title = title|default("Component: %s"|format(name)) %}
-{% set page = page|default("components") %}
 {% set table = graph|default("components/%s"|format(name)) %}
 {% set graph = graph|default("components/%s"|format(name)) %}
 {% extends "_base/_base.html" %}

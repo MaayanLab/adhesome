@@ -7,7 +7,6 @@ Filter definitions, exposed in jinja2:
 import re
 import json
 from collections import OrderedDict
-from jinja2 import Template
 from config import config
 from funcs import funcs
 from copy import copy
@@ -65,7 +64,7 @@ def apply(table, subst):
 		row_dict = OrderedDict(zip(header_row, row))
 		context = dict(row_dict, **funcs)
 		for k, sub in subst.items():
-			row_dict[k] = Template(sub.replace('[', '{').replace(']', '}')).render(**context)
+			row_dict[k] = config.site._env.from_string(sub.replace('[', '{').replace(']', '}')).render(**context)
 		new_data.append([v for k,v in row_dict.items()
 						   if k in new_header_row])
 

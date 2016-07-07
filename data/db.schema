@@ -20,8 +20,8 @@ create table `edges` (
 create table `predictions` (
 	`GeneSym` text,
 	`y` int,
-	`OOF_preds` int,
-	`OOF_probas` float,
+	`preds` int,
+	`probas` float,
 	`train_probas` float);
 
 create table `downloads` (

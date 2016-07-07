@@ -11,7 +11,6 @@ We've extended this to handle building a number of pages from singular templates
 import os
 import re
 import shutil
-import itertools
 from staticjinja import make_site
 from distutils.dir_util import copy_tree
 from config import config
@@ -63,8 +62,13 @@ def render_rules(rules):
 		for out_template, context in rule.items():
 			render(in_template, out_template, **context)
 
-render_rules( # Join all rules into a single dict and call render_rules
-	dict(itertools.chain.from_iterable( # Flatten list ([[(a),(b)],[(c)]] -> [(a),(b),(c)])
-		[evaluate(os.path.join(*os.path.split(r)[1:], '__init__')).items() # Evaluate the rule dict from the __init__ files in directories
-		 for r, d, f in os.walk(templates) # Recursive traversal of templates directory
-		 if not r.startswith('_') and '__init__' in f]))) # Only consider folders without preceeding _ and with __init__ file
+rules = {}
+for r, d, f in os.walk(templates):
+	if not r.startswith('_') and '__init__' in f:
+		p = r.split(os.path.sep)[1:]
+		# Create directory in build
+		os.makedirs(os.path.join(build, *p))
+		# Evaluate the rule dict from the __init__ files in directories
+		rules.update(evaluate(os.path.join(*p, '__init__')))
+
+render_rules(rules)

@@ -17,6 +17,17 @@ This module is designed to be extended from base.
 `page`: Defines the current page uri, for nav selection
 `title`: Page title, defaults to capitalized version of uri
 
+### Nav
+
+```
+nav: {
+	"MainPage": ["page_label", "page_url.html", {
+		"subpage": "subpage_url.html"
+	}],
+	...
+}
+```
+
 ## Blocks
 
 `head`: Whatever extra you want to put in the head tag
