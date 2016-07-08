@@ -1,32 +1,21 @@
-<div id="journalnav">
-	<h1 class="hidden">Site Navigation</h1>
-	<map title="main journal navigation" id="main-journal-nav" class="journal-nav">
-		<ul class="xoxo">
-			<li class="site-nav-title">
-				<h1>Site Navigation</h1>
+<h1>Site Navigation</h1>
+<ul>
+	{% for t, n in nav %}
+		{% set p, s, subnav = n %}
+		<li{% if page == p %} class="selected"{% endif %}><a href="{{ config.base }}/{{ s }}">{{ t }}</a>
+			{% if subnav and page == p %}
 				<ul>
-					{% for t, n in nav %}
-						{% set p, s, subnav = n %}
-						<li{% if page == p %} class="selected"{% endif %}><a href="{{ config.base }}/{{ s }}">{{ t }}</a>
-							{% if subnav and page == p %}
-								<ul class="subnav">
-									{% for tt, nn in subnav %}
-										{% set pp, ss = nn %}
-										<li{% if subpage == pp %} class="selected"{% endif %}><a href="{{ config.base }}/{{ ss }}">{{ tt }}</a></li>
-									{% endfor %}
-								</ul>
-							{% endif %}
-						</li>
+					{% for tt, nn in subnav %}
+						{% set pp, ss = nn %}
+						<li{% if subpage == pp %} class="selected"{% endif %}><a href="{{ config.base }}/{{ ss }}">{{ tt }}</a></li>
 					{% endfor %}
 				</ul>
-			</li><br />
-			<li class="spacing"><h2 class="npg-resources">External links</h2></li>
-			<li><a href="https://www.cellmigration.org/">cellmigration.org</a></li>
-			{#
-			<li class="nav-ealert nav-twitter"><a href="http://twitter.com/Cell_Migration" class="reg-rec" title="Twitter">Twitter</a></li>
-			<li class="nav-rss"><a href="{{ config.base }}/cmg_update/rss.rdf" class="rss" title="RSS">RSS</a></li>
-			#}
-		</ul>
-	</map>
-</div>
+			{% endif %}
+		</li>
+	{% endfor %}
+</ul>
+<h2>External links</h2>
+<ul>
+	<li><a href="https://www.cellmigration.org/">cellmigration.org</a></li>
+</ul>
 

@@ -1,25 +1,11 @@
 {% set title = title|default(page|capitalize) %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!--
-## Site Configuration
-			## @siteName	CMG
-						## @scope		Site
-			## @adaption	JDG@NPG 2007
--->
-<!-- used in ${common}/npg_includes/separator.shtml -->
-<!-- used in ${common}/npg_includes/clearfloats.shtml -->
-<!-- used in ${common}/npg_includes/global.backtotop.shtml -->
-<!-- SET THE BASE FOLDERS FOR THE SITE -->
 <head>
 	<title>{{ title }}</title>
-	<!-- metadata and links -->
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="home" href="{{ config.base }}/index.html" title="home" />
-	<!-- provide correct meta robots information - all pages except TOC pages (AOP, Issue, Focus (web and other), Supplements) use default "noarchive" type -->
-	<meta name="robots" content="noarchive" />
-	<!-- This doesn't really belong here, but I need it somewhere that's included everywhere -->
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript">
 	google.load("jquery", "1");
@@ -28,44 +14,44 @@
 	jQuery.noConflict();
 	var $jq = $ = jQuery;
 	</script>
-	<!-- end metadata and links -->
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
 	{% block head %}{% endblock %}
-	<!-- local style overrides -->
-	<style type="text/css">
-	#content .featurebox .featurebox { margin: 0; }
-	#content .featurebox .featurebox p { margin-bottom: 0; }
-	#content .featurebox .padder a.button { margin: 0; }
-	</style>
-	<style type="text/css" media="screen, projection"><!--/*--><![CDATA[/*><!--*/
-	@import "{{ config.base }}/cmg_update/npg_style/layout.css";
-	@import "{{ config.base }}/cmg_update/npg_style/site.css";
-	@import "{{ config.base }}/cmg_update/npg_style/google.css";
-	@import "{{ config.base }}/cmg_update/npg_style/header_footer_smallfonts.css";
-	@import "{{ config.base }}/cmg_update/npg_style/restrict_width/930px.css";/* do not edit this stylesheet */
-	/*]]>*/--></style>
-	<!-- IE specific scripts - min/max fix -->
-	<!--[if lte IE 6]>
-	<script type="text/javascript" src="{{ config.base }}/cmg_update/npg_scripts/lte-ie-6.js"></script>
-	<![endif]-->
-	<!-- end IE specific scripts -->
+	<link rel="stylesheet" href="{{ config.base }}/static/lib/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="{{ config.base }}/css/main.css">
 </head>
-<body class="" id="home">
-	{% include "_base/_header.html" %}
-	<div id="constrain">
-		<div class="constrain">
-			<div id="content-journalnav">
-				{% set page = page %}
-				{% set subpage = subpage %}
-				{% set nav = evaluate("_base/__nav.py") %}
-				{% include "_base/_nav.html" %}
-				{% block body %}{% endblock %}
+<body class="flex-col">
+	<div id="header" class="flex-col">
+		<div class="container flex-expand flex-row flex-align-center">
+			<a href="{{ config.base }}/index.html">The Adhesome: <span style="color:#fec672;">A Focal Adhesion Network</span></a>
+		</div>
+	</div>
+	<div class="container flex-expand flex-row">
+		<div id="nav">
+			{% set page = page %}
+			{% set subpage = subpage %}
+			{% set nav = evaluate("_base/__nav.py") %}
+			{% include "_base/_nav.html" %}
+		</div>
+		<div id="content" class="flex-expand flex-col">
+			{% block body %}{% endblock %}
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<div class="container">
+			<div class="col-sm-6">
+				<h4>Affiliations</h4>
+				<ul>
+					<li><a href="http://www.geigerlab.com/">Geiger Laboratory</a></li>
+					<li><a href="https://www.weizmann.ac.il/pages/">Weizmann Institute of Science</a></li>
+					<li><a href="http://icahn.mssm.edu/research/labs/maayan-laboratory">Ma’ayan Laboratory</a></li>
+					<li><a href="http://icahn.mssm.edu/">Icahn School of Medicine at Mount Sinai</a></li>
+					<li><a href="http://lincs-dcic.org/">BD2K-LINCS</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<h4>Share</h4>
 			</div>
 		</div>
 	</div>
-	{% include "_base/_footer.html" %}
 	{% block scripts %}{% endblock %}
 </body>
 </html>

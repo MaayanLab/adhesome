@@ -7,8 +7,7 @@
 	{% include "_graph/_head.html" %}
 {% endblock %}
 {% block body %}
-<div id="content">
-	<h1 class="page-header">Home</h1>
+	<h1>Home</h1>
 	<p>Welcome to the updated Adhesome web-site.</p>
 	<p>The Adhesome network is literature based protein-protein interaction network that was developed from the biomedical literature. The network is made of known interactions and cellular components composing the focal adhesion complex in mammalian cells. This site provides a reference and supporting materials to the analysis articles:
 		<ol>
@@ -22,7 +21,6 @@
 	{% set graph = graph %}
 	{% set style = "height:500px;" %}
 	{% include "_graph/_body.html" %}
-</div>
 {% endblock %}
 {% block scripts %}
 	{% set graph = graph %}

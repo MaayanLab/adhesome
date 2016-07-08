@@ -9,8 +9,7 @@
 	{% include "_graph/_head.html" %}
 {% endblock %}
 {% block body %}
-<div id="content">
-	<h1 class="page-header">
+	<h1>
 		<a href="{{ config.base }}/components.html">Components</a>
 		<a href="#!">&gt;</a>
 		<a href="{{ config.base }}/all_components.html">All Components</a>
@@ -21,7 +20,7 @@
 	</h1>
 	{% set graph = graph %}
 	{% include "_graph/_body.html" %}
-	<div class="wrap-row">
+	<div class="flex-expand flex-col">
 		<div>
 			<input type="checkbox" id="intrinsic" checked="checked" />
 			<label for="intrinsic"><span style="background-color: #081838;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
@@ -29,7 +28,7 @@
 			<input type="checkbox" id="associated" checked="checked" />
 			<label for="associated"><span style="background-color: #fec672;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
 		</div>
-		<div class="expand">&nbsp;</div>
+		<div class="flex-expand">&nbsp;</div>
 		<span>
 			<span class="b">Network Stats</span><br />
 			<span id="graph-stat-components">0</span> Components<br />
@@ -39,12 +38,11 @@
 	{% set table = table %}
 	{% block table_body %}
 	<br />
-	<div class="clearfix">
+	<div class="flex-expand">
 		{% set table = table %}
 		{% include "_table/_body.html" %}
 	</div>
 	{% endblock %}
-</div>
 {% endblock %}
 
 {% block scripts %}
