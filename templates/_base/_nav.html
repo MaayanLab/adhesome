@@ -7,7 +7,7 @@
 				<ul>
 					{% for tt, nn in subnav %}
 						{% set pp, ss = nn %}
-						<li{% if subpage == pp %} class="selected"{% endif %}><a href="{{ config.base }}/{{ ss }}">{{ tt }}</a></li>
+						<li{% if subpage and subpage == pp %} class="selected"{% endif %}><a href="{{ config.base }}/{{ ss }}">{{ tt }}</a></li>
 					{% endfor %}
 				</ul>
 			{% endif %}
