@@ -149,6 +149,7 @@ body {
 }
 
 #footer {
+	margin-top: 10px;
 	background-color: #081838;
 }
 
@@ -163,7 +164,7 @@ body {
 
 iframe {
 	border-style: none;
-	overflow: visible;
+	overflow: auto;
 }
 
 .dataTables_info {

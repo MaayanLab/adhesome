@@ -1,4 +1,4 @@
-{% set title = title|default("Predictions: %s"|format(name)) %}
+{% set title = title|default("Predictions: %s"|format(subpage|capitalize)) %}
 {% set page = page|default("predictions") %}
 {% set subpage = subpage %}
 {% extends "_base/_base.html" %}

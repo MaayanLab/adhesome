@@ -45,6 +45,18 @@ def query(cur, stmt, *kargs):
 		'data': table.fetchall()
 	}
 
+def squareToCurly(S):
+	subs = [
+		(r'([^\\])\[\[', r'\1{{',),
+		(r'([^\\])\]\]', r'\1}}',),
+		(r'([^\\])\[', r'\1{',),
+		(r'([^\\])\]', r'\1}',),
+		(r'\\(\[|\])', r'\1',),
+	]
+	for r,s in subs:
+		S = re.sub(r, s, S)
+	return S
+
 @register_filter
 def apply(table, subst):
 	''' This filter lets us substitute column entries in our tables via template substitution
@@ -64,7 +76,7 @@ def apply(table, subst):
 		row_dict = OrderedDict(zip(header_row, row))
 		context = dict(row_dict, **funcs)
 		for k, sub in subst.items():
-			row_dict[k] = config.site._env.from_string(sub.replace('[', '{').replace(']', '}')).render(**context)
+			row_dict[k] = config.site._env.from_string(squareToCurly(sub)).render(**context)
 		new_data.append([v for k,v in row_dict.items()
 						   if k in new_header_row])
 
