@@ -29,16 +29,23 @@ for arg in sys.argv[1:]:
 
 	try:
 		# Load Gene Attribute Matrix
-		gene_attribute_matrix = pd.read_table(arg, header=[0,1,2], index_col=[0,1,2])
+		gene_attribute_matrix = pd.read_table(arg, header=[0,1], index_col=[0,1])
 		# Drop un-needed indexes/headers
-		gene_attribute_matrix.index = gene_attribute_matrix.index.droplevel([1,2])
-		gene_attribute_matrix.columns = gene_attribute_matrix.columns.droplevel([1,2])
-		# gene_attribute_matrix.columns.name='\t' # Rename header column from #
+		gene_attribute_matrix.index = gene_attribute_matrix.index.droplevel(1)
+		gene_attribute_matrix.columns = gene_attribute_matrix.columns.droplevel(1)
+		# Put column and index names in the right place
+		gene_attribute_matrix.index.name = gene_attribute_matrix.index[0]
+		gene_attribute_matrix.drop(gene_attribute_matrix.index[0], axis=0, inplace=True)
+		gene_attribute_matrix.columns.name = gene_attribute_matrix.columns[0]
+		gene_attribute_matrix.drop(gene_attribute_matrix.columns[0], axis=1, inplace=True)
 		# Select Genes in Adhesome
 		gene_attribute_matrix = gene_attribute_matrix[gene_attribute_matrix.index.get_level_values(0).isin(adhesome)]
 		# Format index/headers for clustergrammer
-		gene_attribute_matrix.index = gene_attribute_matrix.index.map(lambda s: 'Gene: %s' % (s))
-		gene_attribute_matrix.columns = gene_attribute_matrix.columns.map(lambda s: 'Cell Line: %s' % (s))
+		gene_attribute_matrix.index = gene_attribute_matrix.index.map(lambda s: '%s: %s' % (gene_attribute_matrix.index.name, s))
+		gene_attribute_matrix.columns = gene_attribute_matrix.columns.map(lambda s: '%s: %s' % (gene_attribute_matrix.columns.name, s))
+		# Remove names for clustergrammer
+		gene_attribute_matrix.index.name = ""
+		gene_attribute_matrix.columns.name = ""
 		# Write to file
 		# fp = StringIO()
 		# gene_attribute_matrix.to_csv(fp, sep='\t')

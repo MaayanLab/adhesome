@@ -1,2 +1,3 @@
 {% set graph = evaluate("components/__component_graph.sql", name=name) %}
+{% set central = name %}
 {% include "_graph/_json.json" %}
