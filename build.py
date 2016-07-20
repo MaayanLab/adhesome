@@ -1,5 +1,3 @@
-#!/usr/local/bin/python3
-
 '''
 Use staticjinja to build the website from templates directory.
 

@@ -1,15 +1,8 @@
 {% set title = "Predictions" %}
 {% set page = "predictions" %}
-{% set table = "predictions" %}
 {% extends "_base/_base.html" %}
-{% block head %}
-	{% include "_table/_head.html" %}
-{% endblock %}
 {% block body %}
 	<h1>Predictions</h1>
-	<p>Description of process</p>
-{% endblock %}
-{% block scripts %}
-	{% set table = table %}
-	{% include "_table/_scripts.html" %}
+	<p>Leveraging a number of datasets from the Harmonizome with a xgboost classifier, we're able to predict existing Adhesome components to some level of accuracy.</p>
+	<p>This strategy may help reveal other genes that might be integral parts the adhesome.</p>
 {% endblock %}

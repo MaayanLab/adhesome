@@ -1,2 +1,0 @@
-{% set table = evaluate("__predictions.sql") %}
-{% include "_table/_json.json" %}

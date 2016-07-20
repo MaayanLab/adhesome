@@ -1,1 +1,2 @@
-{# TODO #}
+{% set table = evaluate('predictions/__intrinsic.sql') %}
+{% include "_table/_json.json" %}
