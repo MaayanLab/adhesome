@@ -15,26 +15,22 @@ from config import config
 from filters import *
 from funcs import *
 
-# Source/Build directories
-build = 'build'
-templates = 'templates'
-
 # Remove existing build directory or fail silently
 try:
-	shutil.rmtree(build)
+	shutil.rmtree(config.build)
 except:
 	pass
 
 # Copy static files into build
-copy_tree('static/', '%s/' % (build))
+copy_tree('static/', '%s/' % (config.build))
 
 # Build standard pages
 site = config.site = make_site(
-	searchpath=templates,
+	searchpath=config.templates,
 	filters=filters,
 	contexts=[(r'.*', funcs)],
 	env_kwargs=dict(trim_blocks=True, lstrip_blocks=True),
-	outpath=build)
+	outpath=config.build)
 site.render()
 
 # Build rule based pages
@@ -42,7 +38,7 @@ site.render()
 def render(template, dump, **kwargs):
 	''' Render custom page with jinja template engine '''
 	print('Rendering %s...' % (dump))
-	site.get_template(template).stream(**dict(funcs, **kwargs)).dump(os.path.join(build, dump))
+	site.get_template(template).stream(**dict(funcs, **kwargs)).dump(os.path.join(config.build, dump))
 
 def render_rules(rules):
 	''' Given a rule dictionary, call render as specified
@@ -61,11 +57,11 @@ def render_rules(rules):
 			render(in_template, out_template, **context)
 
 rules = {}
-for r, d, f in os.walk(templates):
+for r, d, f in os.walk(config.templates):
 	if not r.startswith('_') and '__init__' in f:
 		p = r.split(os.path.sep)[1:]
 		# Create directory in build
-		os.makedirs(os.path.join(build, *p))
+		os.makedirs(os.path.join(config.build, *p))
 		# Evaluate the rule dict from the __init__ files in directories
 		rules.update(evaluate(os.path.join(*p, '__init__')))
 

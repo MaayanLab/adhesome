@@ -1,8 +1,31 @@
 {% set title = "Predictions" %}
 {% set page = "predictions" %}
 {% extends "_base/_base.html" %}
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ config.base }}/css/jupyter-notebook.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <!-- MathJax configuration -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true,
+          processEnvironments: true
+      },
+      // Center justify equations in code and markdown cells. Elsewhere
+      // we use CSS to left justify single line equations in code cells.
+      displayAlign: 'center',
+      "HTML-CSS": {
+          styles: {'.MathJax_Display': {"margin": 0}},
+          linebreaks: { automatic: true }
+      }
+  });
+	</script>
+{% endblock %}
 {% block body %}
 	<h1>Predictions</h1>
-	<p>Leveraging a number of datasets from the Harmonizome with a xgboost classifier, we're able to predict existing Adhesome components to some level of accuracy.</p>
-	<p>This strategy may help reveal other genes that might be integral parts the adhesome.</p>
+  <div class="container" id="notebook-container">
+		{{ build_notebook("https://raw.githubusercontent.com/MaayanLab/adhesome-prediction/master/Predict_Adhesome.ipynb") }}
+	</div>
 {% endblock %}

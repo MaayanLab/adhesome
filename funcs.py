@@ -4,8 +4,10 @@ Function definitions, exposed in jinja2:
 {{ urlize("test/me") }} => test_me
 '''
 
+import os
 from itertools import count
 from config import config
+from subprocess import Popen, PIPE
 
 funcs={'config': config}
 def register_func(func):
@@ -17,5 +19,12 @@ def register_func(func):
 def evaluate(template, **kwargs):
 	''' Process a jinja template and take the result as valid python '''
 	return eval(config.site.get_template(template).render(**dict(funcs, **kwargs)))
+
+@register_func
+def build_notebook(url):
+	return Popen([config.jupyter_nbconvert, '--to', 'html' ,'--template', 'basic', '--stdin', '--stdout'],
+				stdin=Popen([config.curl, url],
+							stdout=PIPE).stdout,
+				stdout=PIPE).communicate()[0].decode()
 
 register_func(count)

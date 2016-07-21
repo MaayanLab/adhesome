@@ -18,6 +18,8 @@
 			<a href="{{ config.base }}/components/{{ name|urlize }}.html">{{ name }}</a>
 		{% endif %}
 	</h1>
+	<p>Select a node to view its neighborhood or to view it on another database.</p>
+	<p>Select an edge to view its source article(s).</p>
 	{% set graph = graph %}
 	{% include "_graph/_body.html" %}
 	<div class="flex-expand flex-row">
