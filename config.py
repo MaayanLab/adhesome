@@ -18,7 +18,7 @@ class Config:
 			))
 			self.con = sqlite3.connect('data/db.sqlite3')
 			self.cur = self.con.cursor()
-			self.base = '/dev'
+			self.base = ''
 			self.build = 'build'
 			self.templates = 'templates'
 			self.jupyter_nbconvert = "/Users/maayanlab/.pyenv/shims/jupyter-nbconvert"
