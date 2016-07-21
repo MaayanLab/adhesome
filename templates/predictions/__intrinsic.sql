@@ -1,4 +1,16 @@
+{% set predictions_query %}
+	select
+		`GeneSym`,
+		printf("%0.3f", `Out of Fold Probability`) as `Out of Fold Probability`,
+		printf("%0.3f", `Probability`) as `Probability`,
+		`GeneSym` as `Links`
+	from `predictions`
+	where
+		`Known` = 0
+	and `Out of Fold Prediction` = 1
+	and `Model` = "intrinsic";
+{% endset %}
 {% set substitutions %} {
-	"genesym": "<a href='{{ config.base }}/components/[[ genesym ]].html'>[[ genesym ]]</a>"
+	"links": "<span style='white-space: nowrap;'><a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ genesym ]]'><img src='{{ config.base }}/images/harmonizome.png' alt='View on Harmonizome'></a>&nbsp;<a href='http://www.genecards.org/cgi-bin/carddisp.pl?gene=[[ genesym ]]'><img src='{{ config.base }}/images/genecards.png' alt='View on GeneCards'></a>&nbsp;<a href='http://www.ncbi.nlm.nih.gov/gene/[[ gene_id ]]'><img src='{{ config.base }}/images/ncbi.png' alt='View on NCBI'></a></span>"
 } {% endset %}
-{{ config.cur|query("select * from `predictions_out` where GeneSym in (select `Official Symbol` from `components` where `FA`='Intrinsic Proteins')")|apply(substitutions) }}
+{{ config.cur|query(predictions_query)|apply(substitutions) }}

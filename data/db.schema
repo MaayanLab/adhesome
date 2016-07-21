@@ -20,9 +20,10 @@ create table `edges` (
 create table `predictions` (
 	`GeneSym` text,
 	`Known` int,
-	`Prediction` int,
-	`Prediction Probability` float,
-	`Training fold Probability` float);
+	`Out of Fold Prediction` int,
+	`Out of Fold Probability` float,
+	`Probability` float,
+	`Model` text);
 
 create table `downloads` (
 	`url` text,
@@ -91,12 +92,3 @@ create view `neighbors` as
 			`edges`.`Target`) as c2
 	where
 		c1.`Official Symbol`=c2.`Official Symbol`;
-
-create view `predictions_out` as
-	select
-		`GeneSym`,
-		`Known`,
-		printf("%d", `Prediction`) as `Prediction`,
-		printf("%0.3f", `Prediction Probability`) as `Prediction Probability`,
-		printf("%0.3f", `Training fold Probability`) as `Training fold Probability`
-	from `predictions`;

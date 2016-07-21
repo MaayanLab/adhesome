@@ -7,7 +7,7 @@
 {% endblock %}
 {% block body %}
 	<h1>{{ name }}</h1>
-	<p>Click on a Component's Gene Symbol to view its interactions.</p>
+	{% block description %}{% endblock %}
 	<div class="flex-expand">
 		{% set table = table %}
 		{% include "_table/_body.html" %}
