@@ -22,7 +22,7 @@ create table `predictions` (
 	`Known` int,
 	`Out of Fold Prediction` int,
 	`Out of Fold Probability` float,
-	`Probability` float,
+	`In Fold Probability` float,
 	`Model` text);
 
 create table `downloads` (

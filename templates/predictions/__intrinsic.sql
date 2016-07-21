@@ -1,8 +1,7 @@
 {% set predictions_query %}
 	select
 		`GeneSym`,
-		printf("%0.3f", `Out of Fold Probability`) as `Out of Fold Probability`,
-		printf("%0.3f", `Probability`) as `Probability`,
+		printf("%0.3f", `Out of Fold Probability`) as `Probability`,
 		`GeneSym` as `Links`
 	from `predictions`
 	where
