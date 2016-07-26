@@ -1,2 +1,1 @@
-{% set graph = evaluate("__all_components.sql") %}
-{% include "_graph/_json.json" %}
+{{ include("_graph/_json.json", graph=evaluate("__all_components.sql")) }}

@@ -14,9 +14,9 @@ clustergrammer: {
 
 ## Components
 
-`head` (no arguments): `{% include "_clustergrammer/_head.html" %}`
-`body` (requires arguments): `{% include "_clustergrammer/_body.html" %}`
-`scripts` (requires arguments): `{% include "_clustergrammer/_scripts.html" %}`
+`head`: `{{ include("_clustergrammer/_head.html") }}`
+`body`: `{{ include("_clustergrammer/_body.html", clustergrammer=clustergrammer) }}`
+`scripts`: `{{ include("_clustergrammer/_scripts.html", clustergrammer=clustergrammer) }}`
 
 ## Extra requirements
 

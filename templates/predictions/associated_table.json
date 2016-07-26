@@ -1,3 +1,1 @@
-{% set table = evaluate('predictions/__associated.sql') %}
-{% set order = "[[ 1, \"desc\" ]]" %}
-{% include "_table/_json.json" %}
+{{ include("_table/_json.json", table=evaluate('predictions/__associated.sql'), order="[[ 1, \"desc\" ]]") }}

@@ -16,9 +16,14 @@ def register_func(func):
 	return func
 
 @register_func
+def include(template, **kwargs):
+	''' Custom include which supports passing named arguments '''
+	return config.site.get_template(template).render(**dict(funcs, **kwargs))
+
+@register_func
 def evaluate(template, **kwargs):
 	''' Process a jinja template and take the result as valid python '''
-	return eval(config.site.get_template(template).render(**dict(funcs, **kwargs)))
+	return eval(include(template, **kwargs))
 
 @register_func
 def build_notebook(url):

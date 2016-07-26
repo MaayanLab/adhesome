@@ -4,13 +4,11 @@
 {% set clustergram = {"title": "%s: %s"|format(name, config.typs[typ]), "uri": "%s_%s"|format(uri, typ)} %}
 {% extends "_base/_base.html" %}
 {% block head %}
-	{% include "_clustergrammer/_head.html" %}
+	{{ include("_clustergrammer/_head.html") }}
 {% endblock %}
 {% block body %}
-	{% set clustergram = clustergram %}
-	{% include "_clustergrammer/_body.html" %}
+	{{ include("_clustergrammer/_body.html", clustergram=clustergram) }}
 {% endblock %}
 {% block scripts %}
-	{% set clustergram = clustergram %}
-	{% include "_clustergrammer/_scripts.html" %}
+	{{ include("_clustergrammer/_scripts.html", clustergram=clustergram) }}
 {% endblock %}

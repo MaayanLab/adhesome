@@ -3,16 +3,14 @@
 {% set table = "downloads" %}
 {% extends "_base/_base.html" %}
 {% block head %}
-	{% include "_table/_head.html" %}
+	{{ include("_table/_head.html") }}
 {% endblock %}
 {% block body %}
 	<h1>Downloads</h1>
 	<div class="flex-expand flex-col">
-		{% set table = table %}
-		{% include "_table/_body.html" %}
+		{{ include("_table/_body.html", table=table) }}
 	</div>
 {% endblock %}
 {% block scripts %}
-	{% set table = table %}
-	{% include "_table/_scripts.html" %}
+	{{ include("_table/_scripts.html", table=table) }}
 {% endblock %}

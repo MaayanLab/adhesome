@@ -5,8 +5,8 @@
 {% set graph = graph|default("components/%s"|format(name)) %}
 {% extends "_base/_base.html" %}
 {% block head %}
-	{% include "_table/_head.html" %}
-	{% include "_graph/_head.html" %}
+	{{ include("_table/_head.html") }}
+	{{ include("_graph/_head.html") }}
 {% endblock %}
 {% block body %}
 	<h1>
@@ -20,8 +20,7 @@
 	</h1>
 	<p>Select a node to view its neighborhood or to view it on another database.</p>
 	<p>Select an edge to view its source article(s).</p>
-	{% set graph = graph %}
-	{% include "_graph/_body.html" %}
+	{{ include("_graph/_body.html", graph=graph) }}
 	<div class="flex-expand flex-row">
 		<div>
 			<input type="checkbox" id="intrinsic" checked="checked" />
@@ -40,8 +39,7 @@
 	{% block table_body %}
 	<br />
 	<div class="flex-expand">
-		{% set table = table %}
-		{% include "_table/_body.html" %}
+		{{ include("_table/_body.html", table=table) }}
 	</div>
 	{% endblock %}
 {% endblock %}
@@ -49,10 +47,7 @@
 {% block scripts %}
 	{% set table = table %}
 	{% block table_scripts %}
-		{% set table = table %}
-		{% include "_table/_scripts.html" %}
+		{{ include("_table/_scripts.html", table=table) }}
 	{% endblock %}
-	{% set central = name %}
-	{% set graph = graph %}
-	{% include "_graph/_scripts.html" %}
+	{{ include("_graph/_scripts.html", central=name, graph=graph) }}
 {% endblock %}

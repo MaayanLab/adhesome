@@ -1,3 +1,1 @@
-{% set graph = evaluate("components/__component_graph.sql", name=name) %}
-{% set central = name %}
-{% include "_graph/_json.json" %}
+{{ include("_graph/_json.json", graph=evaluate("components/__component_graph.sql", name=name), central=name) }}

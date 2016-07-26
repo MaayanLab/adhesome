@@ -3,17 +3,15 @@
 {% set table = "interactions" %}
 {% extends "_base/_base.html" %}
 {% block head %}
-	{% include "_table/_head.html" %}
+	{{ include("_table/_head.html") }}
 {% endblock %}
 {% block body %}
 	<h1>Protein Interactions</h1>
 	<p>Click on a Component's Gene Symbol to view its interactions.</p>
 	<div class="flex-expand">
-		{% set table = table %}
-		{% include "_table/_body.html" %}
+		{{ include("_table/_body.html", table=table) }}
 	</div>
 {% endblock %}
 {% block scripts %}
-	{% set table = table %}
-	{% include "_table/_scripts.html" %}
+	{{ include("_table/_scripts.html", table=table) }}
 {% endblock %}

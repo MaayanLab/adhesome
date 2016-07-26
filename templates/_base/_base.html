@@ -26,10 +26,7 @@
 	</div>
 	<div class="container flex-expand flex-row">
 		<div id="nav">
-			{% set nav = evaluate("_base/__nav.py", subpage=subpage, uri=uri) %}
-			{% set page = page %}
-			{% set subpage = subpage %}
-			{% include "_base/_nav.html" %}
+			{{ include("_base/_nav.html", nav=evaluate("_base/__nav.py", subpage=subpage, uri=uri), page=page, subpage=subpage) }}
 		</div>
 		<div id="content" class="flex-expand flex-col">
 			{% block body %}{% endblock %}

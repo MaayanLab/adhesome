@@ -1,2 +1,1 @@
-{% set table = config.cur|query("select * from `components`") %}
-{% include "_table/_csv.csv" %}
+{{ include("_table/_csv.csv", table=config.cur|query("select * from `components`")) }}

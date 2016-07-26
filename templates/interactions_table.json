@@ -1,2 +1,1 @@
-{% set table = evaluate("__interactions.sql") %}
-{% include "_table/_json.json" %}
+{{ include("_table/_json.json", table = evaluate("__interactions.sql")) }}
