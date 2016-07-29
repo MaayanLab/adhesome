@@ -1,24 +1,31 @@
 {% set page = "introduction" %}
 {% set stats = evaluate("__network_stats.sql") %}
-{% set graph = "all_components" %}
+{% set graph = "interactions/all" %}
 {% extends "_base/_base.html" %}
-{% macro PUBMED(pmid, image=False) %}<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids={{ pmid }}">{% if image %}<img src="{{ config.base }}/images/ncbi.png" />{% else %}{{ pmid }}{% endif %}</a>{% endmacro %}
+{% macro PUBMED(pmid) %}<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids={{ pmid }}" target=_blank>{{ pmid }}</a>{% endmacro %}
 {% block head %}
 	{{ include("_graph/_head.html") }}
 {% endblock %}
 {% block body %}
 	<h1>Introduction</h1>
-	<p>Welcome to the updated Adhesome web-site.</p>
-	<p>The Adhesome network is literature based protein-protein interaction network that was developed from the biomedical literature. The network is made of known interactions and cellular components composing the focal adhesion complex in mammalian cells. This site provides a reference and supporting materials to the analysis articles:
+	<p>Welcome to the updated Adhesome website.</p>
+	<p>The Adhesome network is a literature-based protein-protein interaction network that was developed from the biomedical literature. The network is made of known interactions and cellular components constituting the focal adhesion complex in mammalian cells. This site provides reference and supporting materials to the analysis articles:
 		<ol>
 			<li>“Functional atlas of the integrin adhesome” by Zaidel-Bar R, Itzkovitz S, Ma'ayan A, Iyengar R, Geiger B. Nat Cell Biol. 2007 Aug;9(8):858-67 PubMed ID: {{ PUBMED(17671451) }}.</li>
 			<li>“The integrin adhesome: from genes and proteins to human disease” by Winograd-Katz SE, Fässler R, Geiger B, Legate KR. Nat Rev Mol Cell Biol. 2014 Apr;15(4):273-88. PubMed ID: {{ PUBMED(24651544) }}.</li>
 		</ol>
 	</p>
-	<p>Our intent is to provide the research community with a resource for exploring interactions and components found in focal adhesion complexes for their further analysis towards enhanced understanding of focal adhesion complex formation, regulation and dynamics.</p>
-	<p>Currently, the network includes {{ stats.intrinsic }} bona-fide components, {{ stats.intrinsic_interactions }} interactions. With {{ stats.associated }} associated components, the network includes {{ stats.all_interactions }} interactions in all. This web-site provides dynamically linked web-pages for browsing and exploring focal adhesion network components as well as their known physical and functional interactions.</p>
-	<p>The update to this web site is a collaborative project between the <a href="http://www.geigerlab.com/">Geiger Laboratory</a> from the <a href="https://www.weizmann.ac.il/pages/">Weizmann Institute of Science</a> and the <a href="http://icahn.mssm.edu/research/labs/maayan-laboratory">Ma’ayan Laboratory</a> at the <a href="http://icahn.mssm.edu/">Icahn School of Medicine at Mount Sinai</a>. This project is part of the outreach activities of the <a href="http://lincs-dcic.org/">BD2K-LINCS</a> data coordination and integration center (DCIC).</p>
+	<p>Our intent is to provide the research community with a resource for exploring interactions and components found in focal adhesion complexes for their further analysis towards enhanced understanding of focal adhesion complex formation, regulation, and dynamics.</p>
+	<p>Currently, the network includes {{ stats.intrinsic|int_format }} bona fide components and {{ stats.intrinsic_interactions|int_format }} interactions. With {{ stats.associated|int_format }} associated components, the network includes {{ stats.all_interactions|int_format }} interactions in all. This website provides dynamically linked web pages for browsing and exploring focal adhesion network components as well as their known physical and functional interactions.</p>
+	<p>The update to this website is a collaborative project between the <a href="http://www.geigerlab.com/" target=_blank>Geiger Laboratory</a> from the <a href="https://www.weizmann.ac.il/pages/" target=_blank>Weizmann Institute of Science</a> and the <a href="http://icahn.mssm.edu/research/labs/maayan-laboratory" target=_blank>Ma’ayan Laboratory</a> at the <a href="http://icahn.mssm.edu/" target=_blank>Icahn School of Medicine at Mount Sinai</a>. This project is part of the outreach activities of the <a href="http://lincs-dcic.org/" target=_blank>BD2K-LINCS</a> Data Coordination and Integration Center (DCIC).</p>
 	{{ include("_graph/_body.html", graph=graph, style="height:500px;") }}
+	<div class="flex-expand flex-row">
+		<div>
+			<label><span style="background-color: #081838;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
+			<br />
+			<label><span style="background-color: #fec672;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Protiens</label>
+		</div>
+	</div>
 {% endblock %}
 {% block scripts %}
 	{{ include("_graph/_scripts.html", graph=graph) }}

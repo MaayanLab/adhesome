@@ -25,8 +25,8 @@
 {% endblock %}
 {% block body %}
 	<h1>Predictions</h1>
-	<p>The Adhesome is a set of proteins that form a complex network of interactions that together form the cellular processes of cell adhesion, migration and cytoskeletal organization [<a href="http://www.nature.com/ncb/journal/v9/n8/abs/ncb0807-858.html">1</a>][<a href="http://www.adhesome.org/">2</a>]. We use machine learning to predict whether a gene is part of the Adhesome based on omics features.</p>
-	<p>The IPython notebook that performs the predictions is below (and <a href="https://github.com/MaayanLab/adhesome-prediction">on github</a>).</p>
+	<p>The Adhesome is a set of proteins that form a complex network of interactions that together form the cellular processes of cell adhesion, migration and cytoskeletal organization [<a href="http://www.nature.com/ncb/journal/v9/n8/abs/ncb0807-858.html" target=_blank>1</a>][<a href="http://www.adhesome.org/" target=_blank>2</a>]. We use machine learning to predict whether a gene is part of the Adhesome based on omics features.</p>
+	<p>The IPython notebook that performs the predictions is below (and <a href="https://github.com/MaayanLab/adhesome-prediction" target=_blank>on github</a>).</p>
 	<p>We've calculated the results of this process by considering <a href="{{ config.base }}/predictions/intrinsic.html">strictly intrinsic adhesome components</a> and <a href="{{ config.base }}/predictions/associated.html">all adhesome and associated components</a>.</p>
   <div class="container" id="notebook-container">
 		{{ build_notebook("https://raw.githubusercontent.com/MaayanLab/adhesome-prediction/master/Predict_Adhesome.ipynb") }}

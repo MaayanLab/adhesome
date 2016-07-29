@@ -10,6 +10,6 @@
 	and `Model` = "intrinsic";
 {% endset %}
 {% set substitutions %} {
-	"links": "<span style='white-space: nowrap;'><a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ genesym ]]'><img src='{{ config.base }}/images/harmonizome.png' alt='View on Harmonizome'></a>&nbsp;<a href='http://www.genecards.org/cgi-bin/carddisp.pl?gene=[[ genesym ]]'><img src='{{ config.base }}/images/genecards.png' alt='View on GeneCards'></a>&nbsp;<a href='http://www.ncbi.nlm.nih.gov/gene/[[ genesym ]]'><img src='{{ config.base }}/images/ncbi.png' alt='View on NCBI'></a></span>"
+	"links": "<span style='white-space: nowrap;'><a href='http://amp.pharm.mssm.edu/Harmonizome/gene/[[ genesym ]]' target=_blank><img src='{{ config.base }}/images/harmonizome.png' alt='View on Harmonizome'></a>&nbsp;<a href='http://www.genecards.org/cgi-bin/carddisp.pl?gene=[[ genesym ]]' target=_blank><img src='{{ config.base }}/images/genecards.png' alt='View on GeneCards'></a>&nbsp;<a href='http://www.ncbi.nlm.nih.gov/gene/[[ genesym ]]' target=_blank><img src='{{ config.base }}/images/ncbi.png' alt='View on NCBI'></a></span>"
 } {% endset %}
 {{ config.cur|query(predictions_query)|apply(substitutions) }}

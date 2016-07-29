@@ -61,7 +61,10 @@ for r, d, f in os.walk(config.templates):
 	if not r.startswith('_') and '__init__' in f:
 		p = r.split(os.path.sep)[1:]
 		# Create directory in build
-		os.makedirs(os.path.join(config.build, *p))
+		try:
+			os.makedirs(os.path.join(config.build, *p))
+		except:
+			pass
 		# Evaluate the rule dict from the __init__ files in directories
 		rules.update(evaluate(os.path.join(*p, '__init__')))
 

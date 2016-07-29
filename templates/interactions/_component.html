@@ -1,8 +1,8 @@
-{% set page = "components" %}
+{% set page = "interactions" %}
 {% set subpage = "component" %}
-{% set title = title|default("Component: %s"|format(name)) %}
-{% set table = graph|default("components/%s"|format(name)) %}
-{% set graph = graph|default("components/%s"|format(name)) %}
+{% set title = title|default(name) %}
+{% set table = graph|default("interactions/%s"|format(name)) %}
+{% set graph = graph|default("interactions/%s"|format(name)) %}
 {% extends "_base/_base.html" %}
 {% block head %}
 	{{ include("_table/_head.html") }}
@@ -10,12 +10,12 @@
 {% endblock %}
 {% block body %}
 	<h1>
-		<a href="{{ config.base }}/components.html">Components</a>
+		<a href="{{ config.base }}/interactions.html">Protein Interactions</a>
 		<a href="#!">&gt;</a>
-		<a href="{{ config.base }}/all_components.html">All Components</a>
+		<a href="{{ config.base }}/interactions/all.html">All Components</a>
 		{% if name %}
 			<a href="#!">&gt;</a>
-			<a href="{{ config.base }}/components/{{ name|urlize }}.html">{{ name }}</a>
+			<a href="{{ config.base }}/interactions/{{ name|urlize }}.html">{{ name }}</a>
 		{% endif %}
 	</h1>
 	<p>Select a node to view its neighborhood or to view it on another database.</p>

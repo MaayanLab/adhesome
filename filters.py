@@ -6,6 +6,7 @@ Filter definitions, exposed in jinja2:
 
 import re
 import json
+import locale; locale.setlocale(locale.LC_ALL, 'en_US')
 from collections import OrderedDict
 from config import config
 from funcs import funcs
@@ -32,6 +33,10 @@ def urlize(name):
 	return re.sub(r'[^\w]', '_', name.lower())
 
 @register_filter
+def int_format(i):
+	return locale.format("%d", i, grouping=True)
+
+@register_filter
 def query_exec(cur, stmt, *kargs):
 	''' Query the database '''
 	return cur.execute(stmt, kargs)
@@ -51,7 +56,7 @@ def squareToCurly(S):
 		(r'([^\\])\]\]', r'\1}}',),
 		(r'([^\\])\[', r'\1{',),
 		(r'([^\\])\]', r'\1}',),
-		(r'\\(\[|\])', r'\1',),
+		(r'\\(\[|\]|\\)', r'\1',),
 	]
 	for r,s in subs:
 		S = re.sub(r, s, S)

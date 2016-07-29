@@ -12,8 +12,8 @@ class Config:
 	def __init__(self):
 		if Config.__shared_state is None:
 			self.typs = OrderedDict((
-				("prot_att", "Protein-Attribute Table"),
 				("prot_prot", "Protein-Protein Similarity"),
+				("prot_att", "Protein-Attribute Table"),
 				("att_att", "Attribute-Attribute Similarity"),
 			))
 			self.con = sqlite3.connect('data/db.sqlite3')
