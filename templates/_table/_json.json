@@ -6,6 +6,7 @@
 	],
 	"data": {{ table.data|jsonify }},
 	"paging": false,
+	"bInfo": false,
 	"autoWidth": false{% if extra %},
 	{{ extra }}{% endif %}
 }

@@ -1,1 +1,1 @@
-{{ include("_table/_json.json", table=evaluate("__downloads.sql"), extra='"columnDefs": [{ "className": "dt-body-right", "targets": [2]}]') }}
+{{ include("_table/_json.json", table=evaluate("__downloads.sql"), extra='"bFilter": false, "columnDefs": [{ "className": "dt-body-right", "targets": [2]}]') }}
