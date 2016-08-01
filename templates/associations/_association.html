@@ -1,7 +1,7 @@
 {% set page = "associations" %}
 {% set subpage = typ %}
 {% set title = "%s: %s"|format(name, config.typs[typ]) %}
-{% set clustergram = {"title": "%s: %s"|format(name, config.typs[typ]), "uri": "%s_%s"|format(uri, typ)} %}
+{% set clustergram = {"title": "%s: %s"|format(name, config.typs[typ]), "uri": "%s_%s"|format(uri, typ), "description": description} %}
 {% extends "_base/_base.html" %}
 {% block head %}
 	{{ include("_clustergrammer/_head.html") }}

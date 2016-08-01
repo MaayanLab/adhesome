@@ -8,7 +8,7 @@ Templates for creating a DataTable.
 table: {
 	"header": ['Your', 'Headers', 'Here'],
 	"data": [(1,2,3),(4,5,6)],
-	"order": "[[ 1, \"desc\" ]]"
+	"extra": "\"order\": [[ 1, \"desc\" ]]"
 }
 ```
 

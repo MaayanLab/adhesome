@@ -1,4 +1,4 @@
 {% set substitutions %} {
-	"dataset": "<a href='{{ config.base }}/associations/[[ dataset|urlize ]]_prot_prot.html'>[[ dataset ]]</a>"
+	"name": "<a href='{{ config.base }}/associations/[[ name|urlize ]]_prot_prot.html'>[[ name ]]</a>"
 } {% endset %}
-{{ config.cur|query("select `Name` as `Dataset` from `datasets`")|apply(substitutions) }}
+{{ config.cur|query("select `Name`, `Description` from `datasets`")|apply(substitutions) }}

@@ -1,9 +1,11 @@
 <div id="wrap" class="flex-expand">
 	<h1 id='clustergram_title'>{{ clustergram.title }}</h1>
+	<div class='row viz_description' id='clustergram_desc'>
+		<p>{{ clustergram.description }}</p>
+	</div>
 	<div class="row">
 	  <div id='{{ clustergram.uri }}_clustergram' class='clustergrammer_container'>
 		  <div class='wait_message'>Please wait ...</div>
 	  </div>
 	</div>
-	<div class='row viz_description' id='clustergram_desc'>{{ clustergram.description }}</div>
 </div>

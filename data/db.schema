@@ -33,6 +33,7 @@ create table `downloads` (
 
 create table `datasets` (
 	`Name` text primary key,
+	`Description` text,
 	`prot_att` longtext,
 	`prot_prot` longtext,
 	`att_att` longetext);

@@ -1,1 +1,1 @@
-{{ include("_table/_json.json", table = evaluate("__interactions.sql")) }}
+{{ include("_table/_json.json", table = evaluate("__interactions.sql"), extra='"columnDefs": [ { "orderable": false, "targets": [8] } ]') }}

@@ -6,6 +6,6 @@
 	],
 	"data": {{ table.data|jsonify }},
 	"paging": false,
-	"autoWidth": false{% if order %},
-	"order": {{ order }}{% endif %}
+	"autoWidth": false{% if extra %},
+	{{ extra }}{% endif %}
 }

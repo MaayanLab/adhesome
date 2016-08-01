@@ -1,1 +1,1 @@
-{{ include("_table/_json.json", table=evaluate('predictions/__intrinsic.sql'), order="[[ 1, \"desc\" ]]") }}
+{{ include("_table/_json.json", table=evaluate('predictions/__intrinsic.sql'), extra='"order": [[ 1, "desc" ]], "columnDefs": [ { "orderable": false, "targets": [2] } ]') }}
