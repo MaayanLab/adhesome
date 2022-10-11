@@ -23,6 +23,8 @@ class Config:
 			self.templates = 'templates'
 			self.jupyter_nbconvert = 'jupyter-nbconvert'
 			self.curl = "curl"
+			self.maayanlab_base = 'https://maayanlab.cloud'
+			self.harmonizome_base = self.maayanlab_base + '/Harmonizome'
 		else:
 			self.__dict__ = self.__shared_state
 

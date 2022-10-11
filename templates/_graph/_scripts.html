@@ -110,13 +110,13 @@ $(document).ready(function() {
 						src: '{{ config.base }}/images/harmonizome.png',
 						tooltip: 'View on Harmonizome',
 						blank: true,
-						url: 'http://amp.pharm.mssm.edu/Harmonizome/gene/'+name
+						url: '{{ config.harmonizome_base }}/gene/'+name
 					},
 					{
 						src: '{{ config.base }}/images/genecards.png',
 						tooltip: 'View on GeneCards',
 						blank: true,
-						url: 'http://www.genecards.org/cgi-bin/carddisp.pl?gene='+name
+						url: 'https://www.genecards.org/cgi-bin/carddisp.pl?gene='+name
 					}
 				].map(function(link) {
 						return '<a href="'+link.url+'" title="'+link.tooltip+'"'+(link.blank ? ' target=_blank' : '')+'><img src="'+link.src+'" alt="'+link.tooltip+'" /></a>';
@@ -142,7 +142,7 @@ $(document).ready(function() {
 								src: '{{ config.base }}/images/ncbi.png',
 								tooltip: 'View PubMed Article ('+pmid+')',
 								blank: true,
-								url: 'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids='+pmid
+								url: 'https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids='+pmid
 							}
 					}).map(function(link) {
 						return '<a href="'+link.url+'" title="'+link.tooltip+'"'+(link.blank ? ' target=_blank' : '')+'><img src="'+link.src+'" alt="'+link.tooltip+'" /></a>';
