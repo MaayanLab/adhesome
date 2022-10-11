@@ -21,7 +21,7 @@ class Config:
 			self.base = ''
 			self.build = 'build'
 			self.templates = 'templates'
-			self.jupyter_nbconvert = "/Users/maayanlab/.pyenv/shims/jupyter-nbconvert"
+			self.jupyter_nbconvert = 'jupyter-nbconvert'
 			self.curl = "curl"
 		else:
 			self.__dict__ = self.__shared_state
