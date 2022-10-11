@@ -22,3 +22,10 @@ git lfs install --skip-smudge
 # actually publish build directory to gh-pages branch
 npx gh-pages -d build
 ```
+
+## Publish with Docker
+
+```bash
+docker build -t maayanlab/adhesome:1.0.0 .
+docker push maayanlab/adhesome:1.0.0
+```
