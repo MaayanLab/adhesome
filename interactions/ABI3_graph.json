@@ -1,0 +1,55 @@
+[
+		{
+			"data": {
+				"id": "ABI3",
+				"name": "ABI3",
+				"weight": 0.00872093023255814
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "ENAH",
+				"name": "ENAH",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PAK1",
+				"name": "PAK1",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SOS1",
+				"name": "SOS1",
+				"weight": 0.29651162790697677
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ABI3",
+				"target": "PAK1",
+				"pmid": "11956071"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ABI3",
+				"target": "ENAH",
+				"pmid": "17101133"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ABI3",
+				"target": "SOS1",
+				"pmid": "11956071"
+			}
+		}]

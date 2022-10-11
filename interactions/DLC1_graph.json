@@ -1,0 +1,55 @@
+[
+		{
+			"data": {
+				"id": "AKT1",
+				"name": "AKT1",
+				"weight": 0.15988372093023256
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "CORO2A",
+				"name": "CORO2A",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "DLC1",
+				"name": "DLC1",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "RASA1",
+				"name": "RASA1",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "DLC1",
+				"target": "RASA1",
+				"pmid": "19151751"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CORO2A",
+				"target": "DLC1",
+				"pmid": "24412244"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "AKT1",
+				"target": "DLC1",
+				"pmid": "16338927"
+			}
+		}]

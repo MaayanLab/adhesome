@@ -1,0 +1,76 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CBL",
+				"name": "CBL",
+				"weight": 0.747093023255814
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "OSTF1",
+				"name": "OSTF1",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "OSTF1",
+				"target": "SRC",
+				"pmid": "15135048"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CBL",
+				"target": "SRC",
+				"pmid": "8635998"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CBL",
+				"target": "OSTF1",
+				"pmid": "15135048"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ACTB",
+				"target": "SRC",
+				"pmid": "19903481"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ACTB",
+				"target": "CBL",
+				"pmid": "19380743"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ACTB",
+				"target": "OSTF1",
+				"pmid": "15135048"
+			}
+		}]

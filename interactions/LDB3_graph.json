@@ -1,0 +1,47 @@
+[
+		{
+			"data": {
+				"id": "LDB3",
+				"name": "LDB3",
+				"weight": 0.005813953488372093
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PRKCA",
+				"target": "RHOA",
+				"pmid": "11284700"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "LDB3",
+				"target": "RHOA",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "LDB3",
+				"target": "PRKCA",
+				"pmid": "10391924"
+			}
+		}]

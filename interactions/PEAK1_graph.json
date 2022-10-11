@@ -1,0 +1,40 @@
+[
+		{
+			"data": {
+				"id": "CRK",
+				"name": "CRK",
+				"weight": 0.4331395348837209
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "NCK2",
+				"name": "NCK2",
+				"weight": 0.09593023255813954
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PEAK1",
+				"name": "PEAK1",
+				"weight": 0.005813953488372093
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CRK",
+				"target": "PEAK1",
+				"pmid": "19380743"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "NCK2",
+				"target": "PEAK1",
+				"pmid": "26186194"
+			}
+		}]

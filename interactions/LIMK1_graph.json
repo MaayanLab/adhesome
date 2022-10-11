@@ -1,0 +1,128 @@
+[
+		{
+			"data": {
+				"id": "CFL1",
+				"name": "CFL1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LIMK1",
+				"name": "LIMK1",
+				"weight": 0.06976744186046512
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "PAK1",
+				"name": "PAK1",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PRKACA",
+				"name": "PRKACA",
+				"weight": 0.09883720930232558
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ROCK1",
+				"name": "ROCK1",
+				"weight": 0.09593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SSH1",
+				"name": "SSH1",
+				"weight": 0.02616279069767442
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CFL1",
+				"target": "LIMK1",
+				"pmid": "9655398"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "LIMK1",
+				"target": "PAK1",
+				"pmid": "10559936"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "LIMK1",
+				"target": "ROCK1",
+				"pmid": "10652353"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PAK1",
+				"target": "PRKACA",
+				"pmid": "10980699"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CFL1",
+				"target": "SSH1",
+				"pmid": "11832213"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "PAK1",
+				"target": "PXN",
+				"pmid": "11096073"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "LIMK1",
+				"target": "SSH1",
+				"pmid": "15660133"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "CFL1",
+				"target": "ROCK1",
+				"pmid": "10436159"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "LIMK1",
+				"target": "PRKACA",
+				"pmid": "19424295"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "LIMK1",
+				"target": "PXN",
+				"pmid": "15023529"
+			}
+		}]

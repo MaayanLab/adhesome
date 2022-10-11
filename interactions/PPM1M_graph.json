@@ -1,0 +1,47 @@
+[
+		{
+			"data": {
+				"id": "ARHGEF6",
+				"name": "ARHGEF6",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PAK1",
+				"name": "PAK1",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PPM1M",
+				"name": "PPM1M",
+				"weight": 0.005813953488372093
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PAK1",
+				"target": "PPM1M",
+				"pmid": "11864573"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ARHGEF6",
+				"target": "PPM1M",
+				"pmid": "11864573"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ARHGEF6",
+				"target": "PAK1",
+				"pmid": "9659915"
+			}
+		}]

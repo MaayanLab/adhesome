@@ -1,0 +1,135 @@
+[
+		{
+			"data": {
+				"id": "ADAM12",
+				"name": "ADAM12",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "GRB2",
+				"name": "GRB2",
+				"weight": 1.0
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PIK3CA",
+				"name": "PIK3CA",
+				"weight": 0.18604651162790697
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SDC4",
+				"name": "SDC4",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ADAM12",
+				"target": "SRC",
+				"pmid": "11127814"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ADAM12",
+				"target": "PIK3CA",
+				"pmid": "11313349"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ADAM12",
+				"target": "SDC4",
+				"pmid": "12509413"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "GRB2",
+				"target": "PIK3CA",
+				"pmid": "7759531"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ITGB1",
+				"target": "SRC",
+				"pmid": "11723131"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ADAM12",
+				"target": "GRB2",
+				"pmid": "11127814"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "PIK3CA",
+				"target": "SRC",
+				"pmid": "17275257"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ADAM12",
+				"target": "ITGA5",
+				"pmid": "15242759"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "GRB2",
+				"target": "SRC",
+				"pmid": "9016807"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "ADAM12",
+				"target": "ITGB1",
+				"pmid": "15242759"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "ITGA5",
+				"target": "ITGB1",
+				"pmid": "16099422"
+			}
+		}]

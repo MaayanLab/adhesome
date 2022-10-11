@@ -1,0 +1,69 @@
+[
+		{
+			"data": {
+				"id": "CD151",
+				"name": "CD151",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGA3",
+				"name": "ITGA3",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA6",
+				"name": "ITGA6",
+				"weight": 0.03488372093023256
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CD151",
+				"target": "ITGB1",
+				"pmid": "12175627"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CD151",
+				"target": "ITGA3",
+				"pmid": "10734060"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGA3",
+				"target": "ITGB1",
+				"pmid": "16878156"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGA6",
+				"target": "ITGB1",
+				"pmid": "8143784"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CD151",
+				"target": "ITGA6",
+				"pmid": "10811835"
+			}
+		}]

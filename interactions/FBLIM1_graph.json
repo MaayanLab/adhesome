@@ -1,0 +1,70 @@
+[
+		{
+			"data": {
+				"id": "FBLIM1",
+				"name": "FBLIM1",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "FERMT2",
+				"name": "FERMT2",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "FLNA",
+				"name": "FLNA",
+				"weight": 0.11627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "VASP",
+				"name": "VASP",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "FBLIM1",
+				"target": "FLNA",
+				"pmid": "12679033"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "FBLIM1",
+				"target": "VASP",
+				"pmid": "16531412"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "FBLIM1",
+				"target": "FERMT2",
+				"pmid": "12679033"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "FBLIM1",
+				"target": "PXN",
+				"pmid": "21311561"
+			}
+		}]

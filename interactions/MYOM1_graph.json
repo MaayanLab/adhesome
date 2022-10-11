@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "MYH9",
+				"name": "MYH9",
+				"weight": 0.04941860465116279
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "MYOM1",
+				"name": "MYOM1",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "MYH9",
+				"target": "MYOM1",
+				"pmid": "7588733"
+			}
+		}]

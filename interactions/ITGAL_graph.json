@@ -1,0 +1,47 @@
+[
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAL",
+				"name": "ITGAL",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGB2",
+				"name": "ITGB2",
+				"weight": 0.0872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CSK",
+				"target": "ITGAL",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CSK",
+				"target": "ITGB2",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGAL",
+				"target": "ITGB2",
+				"pmid": "9442085"
+			}
+		}]

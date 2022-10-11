@@ -1,0 +1,224 @@
+[
+		{
+			"data": {
+				"id": "CASP8",
+				"name": "CASP8",
+				"weight": 0.0377906976744186
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "EZR",
+				"name": "EZR",
+				"weight": 0.0755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "FYN",
+				"name": "FYN",
+				"weight": 0.29941860465116277
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ILK",
+				"name": "ILK",
+				"weight": 0.1686046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "MAPK1",
+				"name": "MAPK1",
+				"weight": 0.125
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MAPK8",
+				"name": "MAPK8",
+				"weight": 0.10755813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MSN",
+				"name": "MSN",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTEN",
+				"name": "PTEN",
+				"weight": 0.06686046511627906
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTPN6",
+				"name": "PTPN6",
+				"weight": 0.1511627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SORBS1",
+				"name": "SORBS1",
+				"weight": 0.08139534883720931
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "VIM",
+				"name": "VIM",
+				"weight": 0.055232558139534885
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CASP8",
+				"target": "PTEN",
+				"pmid": "15717329"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CASP8",
+				"target": "EZR",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CASP8",
+				"target": "MSN",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "CASP8",
+				"target": "MAPK8",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "MAPK8",
+				"target": "MSN",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CASP8",
+				"target": "SORBS1",
+				"pmid": "12765336"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "EZR",
+				"target": "MSN",
+				"pmid": "7579708"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "CASP8",
+				"target": "MAPK1",
+				"pmid": "17290218"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "CASP8",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "CASP8",
+				"target": "PTPN6",
+				"pmid": "18086677"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "MSN",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "MAPK8",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "CASP8",
+				"target": "VIM",
+				"pmid": "16169070"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "EZR",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "EZR",
+				"target": "MAPK8",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "CASP8",
+				"target": "ILK",
+				"pmid": "16936772"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "CASP8",
+				"target": "FYN",
+				"pmid": "10435619"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "MAPK1",
+				"target": "MAPK8",
+				"pmid": "15778365"
+			}
+		}]

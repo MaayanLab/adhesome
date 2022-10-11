@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "ITGB4",
+				"name": "ITGB4",
+				"weight": 0.0755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PVR",
+				"name": "PVR",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ITGB4",
+				"target": "PVR",
+				"pmid": "21880726"
+			}
+		}]

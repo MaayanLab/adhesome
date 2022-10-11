@@ -1,0 +1,215 @@
+[
+		{
+			"data": {
+				"id": "BCAR1",
+				"name": "BCAR1",
+				"weight": 0.3808139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CAV1",
+				"name": "CAV1",
+				"weight": 0.16279069767441862
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "FYN",
+				"name": "FYN",
+				"weight": 0.29941860465116277
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "GIT1",
+				"name": "GIT1",
+				"weight": 0.11918604651162791
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "INSR",
+				"name": "INSR",
+				"weight": 0.313953488372093
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "IRS1",
+				"name": "IRS1",
+				"weight": 0.20348837209302326
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PPFIA1",
+				"name": "PPFIA1",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTPRA",
+				"name": "PTPRA",
+				"weight": 0.06686046511627906
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTPRF",
+				"name": "PTPRF",
+				"weight": 0.04941860465116279
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "TRIO",
+				"name": "TRIO",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CAV1",
+				"target": "INSR",
+				"pmid": "9756945"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PTPRF",
+				"target": "TRIO",
+				"pmid": "8643598"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "BCAR1",
+				"target": "FYN",
+				"pmid": "9188452"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "BCAR1",
+				"target": "PTPRA",
+				"pmid": "16814111"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "PPFIA1",
+				"target": "PTPRF",
+				"pmid": "8524829"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "FYN",
+				"target": "PTPRA",
+				"pmid": "12682088"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "BCAR1",
+				"target": "PTPRF",
+				"pmid": "10822386"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "FYN",
+				"target": "PTPRF",
+				"pmid": "12496362"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "INSR",
+				"target": "PTPRF",
+				"pmid": "11158333"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "INSR",
+				"target": "IRS1",
+				"pmid": "11606564"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "GIT1",
+				"target": "PPFIA1",
+				"pmid": "12629171"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "GIT1",
+				"target": "PTPRF",
+				"pmid": "12629171"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "CAV1",
+				"target": "FYN",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "IRS1",
+				"target": "PTPRF",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "CAV1",
+				"target": "PTPRF",
+				"pmid": "12176037"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "PTPRA",
+				"target": "PTPRF",
+				"pmid": "10777529"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "IRS1",
+				"target": "PTPRA",
+				"pmid": "10660596"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "CAV1",
+				"target": "IRS1",
+				"pmid": "15003536"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "FYN",
+				"target": "IRS1",
+				"pmid": "8631859"
+			}
+		}]

@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "AGAP2",
+				"name": "AGAP2",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "INSR",
+				"name": "INSR",
+				"weight": 0.313953488372093
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "NF2",
+				"name": "NF2",
+				"weight": 0.05232558139534884
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PLCG1",
+				"name": "PLCG1",
+				"weight": 0.2616279069767442
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "AGAP2",
+				"target": "INSR",
+				"pmid": "21720388"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "INSR",
+				"target": "PLCG1",
+				"pmid": "14568990"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "AGAP2",
+				"target": "NF2",
+				"pmid": "17891137"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "AGAP2",
+				"target": "PLCG1",
+				"pmid": "11823862"
+			}
+		}]

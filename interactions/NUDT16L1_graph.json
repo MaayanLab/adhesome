@@ -1,0 +1,76 @@
+[
+		{
+			"data": {
+				"id": "NUDT16L1",
+				"name": "NUDT16L1",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SDC4",
+				"name": "SDC4",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TGFB1I1",
+				"name": "TGFB1I1",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "NUDT16L1",
+				"target": "TGFB1I1",
+				"pmid": "11805099"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "NUDT16L1",
+				"target": "SDC4",
+				"pmid": "10633082"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "NUDT16L1",
+				"target": "PXN",
+				"pmid": "11805099"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PXN",
+				"target": "TGFB1I1",
+				"pmid": "11463817"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "SDC4",
+				"target": "TGFB1I1",
+				"pmid": "11805099"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "PXN",
+				"target": "SDC4",
+				"pmid": "11805099"
+			}
+		}]

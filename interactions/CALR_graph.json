@@ -1,0 +1,100 @@
+[
+		{
+			"data": {
+				"id": "CALR",
+				"name": "CALR",
+				"weight": 0.02616279069767442
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "HSPB1",
+				"name": "HSPB1",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ITGA3",
+				"name": "ITGA3",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAV",
+				"name": "ITGAV",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "KCNH2",
+				"name": "KCNH2",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "LRP1",
+				"name": "LRP1",
+				"weight": 0.040697674418604654
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CALR",
+				"target": "ITGA5",
+				"pmid": "7559457"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CALR",
+				"target": "LRP1",
+				"pmid": "12821648"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CALR",
+				"target": "KCNH2",
+				"pmid": "22242185"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "CALR",
+				"target": "HSPB1",
+				"pmid": "25277244"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CALR",
+				"target": "ITGAV",
+				"pmid": "12196561"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CALR",
+				"target": "ITGA3",
+				"pmid": "8006073"
+			}
+		}]

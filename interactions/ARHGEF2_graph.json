@@ -1,0 +1,170 @@
+[
+		{
+			"data": {
+				"id": "AKT1",
+				"name": "AKT1",
+				"weight": 0.15988372093023256
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ARHGEF2",
+				"name": "ARHGEF2",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "MAPK1",
+				"name": "MAPK1",
+				"weight": 0.125
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PAK1",
+				"name": "PAK1",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PLCG1",
+				"name": "PLCG1",
+				"weight": 0.2616279069767442
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PAK1",
+				"target": "PLCG1",
+				"pmid": "12085993"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "AKT1",
+				"target": "RAC1",
+				"pmid": "10617634"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "AKT1",
+				"target": "PAK1",
+				"pmid": "14585966"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PLCG1",
+				"target": "RHOA",
+				"pmid": "12071848"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "PAK1",
+				"target": "RAC1",
+				"pmid": "9989831"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "MAPK1",
+				"target": "PAK1",
+				"pmid": "15542607"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ARHGEF2",
+				"target": "PAK1",
+				"pmid": "14970201"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "RAC1",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "PLCG1",
+				"target": "RAC1",
+				"pmid": "19264842"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "PAK1",
+				"target": "RHOA",
+				"pmid": "18541910"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "ARHGEF2",
+				"target": "PLCG1",
+				"pmid": "19805522"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "AKT1",
+				"target": "PLCG1",
+				"pmid": "16525023"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "ARHGEF2",
+				"target": "MAPK1",
+				"pmid": "18211802"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ARHGEF2",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "ARHGEF2",
+				"target": "RAC1",
+				"pmid": "11595749"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "AKT1",
+				"target": "ARHGEF2",
+				"pmid": "21513698"
+			}
+		}]

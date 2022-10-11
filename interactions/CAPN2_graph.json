@@ -1,0 +1,77 @@
+[
+		{
+			"data": {
+				"id": "CAPN2",
+				"name": "CAPN2",
+				"weight": 0.014534883720930232
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "MAPK1",
+				"name": "MAPK1",
+				"weight": 0.125
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTPN1",
+				"name": "PTPN1",
+				"weight": 0.22674418604651161
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "TLN1",
+				"name": "TLN1",
+				"weight": 0.125
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TNS1",
+				"name": "TNS1",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CAPN2",
+				"target": "MAPK1",
+				"pmid": "14993287"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CAPN2",
+				"target": "PTPN1",
+				"pmid": "9407132"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CAPN2",
+				"target": "TNS1",
+				"pmid": "11023826"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "MAPK1",
+				"target": "PTPN1",
+				"pmid": "12082107"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CAPN2",
+				"target": "TLN1",
+				"pmid": "14993287"
+			}
+		}]

@@ -1,0 +1,92 @@
+[
+		{
+			"data": {
+				"id": "ENG",
+				"name": "ENG",
+				"weight": 0.014534883720930232
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "MMP14",
+				"name": "MMP14",
+				"weight": 0.020348837209302327
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "TRIP6",
+				"name": "TRIP6",
+				"weight": 0.046511627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ZYX",
+				"name": "ZYX",
+				"weight": 0.06686046511627906
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ENG",
+				"target": "TRIP6",
+				"pmid": "15148318"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ENG",
+				"target": "ZYX",
+				"pmid": "15084601"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGA5",
+				"target": "ITGB1",
+				"pmid": "16099422"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ENG",
+				"target": "ITGA5",
+				"pmid": "22940691"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ENG",
+				"target": "MMP14",
+				"pmid": "22296769"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ENG",
+				"target": "ITGB1",
+				"pmid": "22940691"
+			}
+		}]

@@ -1,0 +1,69 @@
+[
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TSPAN1",
+				"name": "TSPAN1",
+				"weight": 0.00872093023255814
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PRKCA",
+				"target": "TSPAN1",
+				"pmid": "11325968"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGA5",
+				"target": "TSPAN1",
+				"pmid": "10427099"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGB1",
+				"target": "PRKCA",
+				"pmid": "11700305"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGB1",
+				"target": "TSPAN1",
+				"pmid": "10427099"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ITGA5",
+				"target": "ITGB1",
+				"pmid": "16099422"
+			}
+		}]

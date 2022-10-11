@@ -1,0 +1,142 @@
+[
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GRLF1",
+				"name": "GRLF1",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "RASA1",
+				"name": "RASA1",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "THY1",
+				"name": "THY1",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CSK",
+				"target": "SRC",
+				"pmid": "7687537"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "RASA1",
+				"target": "SRC",
+				"pmid": "1717825"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "SRC",
+				"target": "THY1",
+				"pmid": "17027000"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "RAC1",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CSK",
+				"target": "GRLF1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CSK",
+				"target": "RASA1",
+				"pmid": "7544435"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "GRLF1",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "GRLF1",
+				"target": "THY1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "GRLF1",
+				"target": "RAC1",
+				"pmid": "10873807"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "RHOA",
+				"target": "SRC",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "GRLF1",
+				"target": "RASA1",
+				"pmid": "10713673"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "GRLF1",
+				"target": "SRC",
+				"pmid": "7542246"
+			}
+		}]

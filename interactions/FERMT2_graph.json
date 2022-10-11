@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "FBLIM1",
+				"name": "FBLIM1",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "FERMT2",
+				"name": "FERMT2",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB5",
+				"name": "ITGB5",
+				"weight": 0.06395348837209303
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "FBLIM1",
+				"target": "FERMT2",
+				"pmid": "12679033"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "FERMT2",
+				"target": "ITGB5",
+				"pmid": "25448675"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "FERMT2",
+				"target": "ITGB1",
+				"pmid": "25808491"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGB1",
+				"target": "ITGB5",
+				"pmid": "11462216"
+			}
+		}]

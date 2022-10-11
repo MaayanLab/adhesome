@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "CORO2A",
+				"name": "CORO2A",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "DLC1",
+				"name": "DLC1",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CORO2A",
+				"target": "DLC1",
+				"pmid": "24412244"
+			}
+		}]

@@ -1,0 +1,391 @@
+[
+		{
+			"data": {
+				"id": "ARHGAP24",
+				"name": "ARHGAP24",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CFL1",
+				"name": "CFL1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "EZR",
+				"name": "EZR",
+				"weight": 0.0755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "FLNA",
+				"name": "FLNA",
+				"weight": 0.11627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GAB1",
+				"name": "GAB1",
+				"weight": 0.19767441860465115
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "IRS1",
+				"name": "IRS1",
+				"weight": 0.20348837209302326
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "LIMK1",
+				"name": "LIMK1",
+				"weight": 0.06976744186046512
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MAPK1",
+				"name": "MAPK1",
+				"weight": 0.125
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MARCKS",
+				"name": "MARCKS",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MSN",
+				"name": "MSN",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PIP5K1C",
+				"name": "PIP5K1C",
+				"weight": 0.03197674418604651
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTEN",
+				"name": "PTEN",
+				"weight": 0.06686046511627906
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RDX",
+				"name": "RDX",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ROCK1",
+				"name": "ROCK1",
+				"weight": 0.09593023255813954
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "SLC9A1",
+				"name": "SLC9A1",
+				"weight": 0.02616279069767442
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "VIM",
+				"name": "VIM",
+				"weight": 0.055232558139534885
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CFL1",
+				"target": "LIMK1",
+				"pmid": "9655398"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "RHOA",
+				"target": "ROCK1",
+				"pmid": "8798490"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "FLNA",
+				"target": "ROCK1",
+				"pmid": "12589795"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PTEN",
+				"target": "ROCK1",
+				"pmid": "15793569"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "IRS1",
+				"target": "PTK2",
+				"pmid": "10082579"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "LIMK1",
+				"target": "ROCK1",
+				"pmid": "10652353"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "PIP5K1C",
+				"target": "RHOA",
+				"pmid": "14681219"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ROCK1",
+				"target": "VIM",
+				"pmid": "9565595"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "PTEN",
+				"target": "PTK2",
+				"pmid": "9616126"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "EZR",
+				"target": "MSN",
+				"pmid": "7579708"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "GAB1",
+				"target": "MAPK1",
+				"pmid": "10593929"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "ARHGAP24",
+				"target": "FLNA",
+				"pmid": "16862148"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "GAB1",
+				"target": "ROCK1",
+				"pmid": "12748184"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "CFL1",
+				"target": "ROCK1",
+				"pmid": "10436159"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "MSN",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "ROCK1",
+				"target": "SLC9A1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "PIP5K1C",
+				"target": "ROCK1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "EZR",
+				"target": "SLC9A1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "EZR",
+				"target": "PTK2",
+				"pmid": "11468295"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "MAPK1",
+				"target": "ROCK1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "ARHGAP24",
+				"target": "ROCK1",
+				"pmid": "16862148"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "RDX",
+				"target": "SLC9A1",
+				"pmid": "11163215"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "EZR",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "MSN",
+				"target": "SLC9A1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "MAPK1",
+				"target": "MARCKS",
+				"pmid": "9867858"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "EZR",
+				"target": "RDX",
+				"pmid": "9501018"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "IRS1",
+				"target": "MAPK1",
+				"pmid": "16131083"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "IRS1",
+				"target": "ROCK1",
+				"pmid": "11739394"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "MARCKS",
+				"target": "ROCK1",
+				"pmid": "15708490"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "EZR",
+				"target": "ROCK1",
+				"pmid": "19255442"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "FLNA",
+				"target": "RHOA",
+				"pmid": "10051605"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "PTK2",
+				"target": "ROCK1",
+				"pmid": "16760434"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "RDX",
+				"target": "ROCK1",
+				"pmid": "9456324"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "MSN",
+				"target": "ROCK1",
+				"pmid": "9516463"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "MAPK1",
+				"target": "SLC9A1",
+				"pmid": "15253667"
+			}
+		}]

@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>LRP1</title>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="home" href="/adhesome/index.html" title="home" />
+	<script src="/adhesome/js/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	jQuery.noConflict();
+	var $jq = $ = jQuery;
+	</script>
+	<link rel="stylesheet" type="text/css" href="/adhesome/css/jquery.dataTables.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/adhesome/css/jquery.qtip.min.css">
+
+	<link rel="stylesheet" href="/adhesome/static/lib/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/adhesome/css/main.css">
+</head>
+<body class="flex-col">
+	<div id="header" class="flex-col">
+		<div class="container flex-expand flex-row flex-align-center">
+			<a href="/adhesome/index.html">The Adhesome: <span style="color:#fec672;">A Focal Adhesion Network</span></a>
+		</div>
+	</div>
+	<div class="container flex-expand flex-row">
+		<div id="nav">
+			<h1>Site Navigation</h1>
+<ul>
+		<li><a href="/adhesome/index.html">Introduction</a>
+		</li>
+		<li><a href="/adhesome/components.html">Components</a>
+		</li>
+		<li class="selected"><a href="/adhesome/interactions.html">Interactions</a>
+				<ul>
+						<li class="selected"><a href="/adhesome/interactions/all.html">Network Graph</a></li>
+				</ul>
+		</li>
+		<li><a href="/adhesome/associations.html">Associations</a>
+		</li>
+		<li><a href="/adhesome/predictions.html">Predictions</a>
+		</li>
+		<li><a href="/adhesome/downloads.html">Downloads</a>
+		</li>
+</ul>
+<h2>External links</h2>
+<ul>
+	<li><a href="https://www.cellmigration.org/">cellmigration.org</a></li>
+</ul>
+
+		</div>
+		<div id="content" class="flex-expand flex-col">
+	<h1>
+		<a href="/adhesome/interactions.html">Protein Interactions</a>
+		<a href="#!">&gt;</a>
+		<a href="/adhesome/interactions/all.html">All Components</a>
+			<a href="#!">&gt;</a>
+			<a href="/adhesome/interactions/lrp1.html">LRP1</a>
+	</h1>
+	<p>Select a node to view its neighborhood or to view it on another database.</p>
+	<p>Select an edge to view its source article(s).</p>
+	<div id="interactions_lrp1_graph" class="graph flex-expand"></div>
+
+	<div class="flex-expand flex-row">
+		<div>
+			<input type="checkbox" id="intrinsic" checked="checked" />
+			<label for="intrinsic"><span style="background-color: #081838;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Intrinsic Proteins</label>
+			<br />
+			<input type="checkbox" id="associated" checked="checked" />
+			<label for="associated"><span style="background-color: #fec672;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Associated Proteins</label>
+		</div>
+		<div class="flex-expand">&nbsp;</div>
+		<span>
+			<span id="graph-stat-components">0</span> Components<br />
+			<span id="graph-stat-interactions">0</span> Interactions
+		</span>
+	</div>
+	<br />
+	<div class="flex-expand">
+		<table id="interactions_lrp1_table" class="data-table"></table>
+<p id="interactions_lrp1_status" class="table-status">Loading...</p>
+
+	</div>
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<div class="container">
+			<div class="col-sm-4">
+				<h4>Affiliations</h4>
+				<ul>
+					<li><a href="https://www.geigerlab.com/">Geiger Laboratory</a></li>
+					<li><a href="https://www.weizmann.ac.il/pages/">Weizmann Institute of Science</a></li>
+					<li><a href="https://labs.icahn.mssm.edu/maayanlab/">Ma’ayan Laboratory of Computational Systems Biology</a></li>
+					<li><a href="https://icahn.mssm.edu/">Icahn School of Medicine at Mount Sinai</a></li>
+					<li><a href="https://lincs-dcic.org/">BD2K-LINCS</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h4>Contact</h4>
+				<ul>
+					<li>avi.maayan{at}mssm.edu</li>
+					<li>benny.geiger{at}weizmann.ac.il</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h4>Share</h4>
+                <div class="addthis_sharing_toolbox"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-578d4405c80c9380"></script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6277639-8']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+		<script type="text/javascript" src="/adhesome/js/jquery.dataTables.min.js"></script>
+<script>
+	$.getJSON('/adhesome/interactions/LRP1_table.json', function(conf) {
+		$('#interactions_lrp1_table').DataTable(conf);
+		$('#interactions_lrp1_status').html('');
+	});
+</script>
+
+	<script src="/adhesome/js/cytoscape.min.js"></script>
+<script src="/adhesome/js/jquery.qtip.min.js"></script>
+<script src="/adhesome/js/cytoscape-qtip.js"></script>
+<script src="/adhesome/js/cola.v3.min.js"></script>
+<script src="/adhesome/js/cytoscape-cola.js"></script>
+<script>
+var cy;
+$(document).ready(function() {
+	$.getJSON('/adhesome/interactions/LRP1_graph.json', function(elements) {
+		var ready = false;
+		cy = cytoscape({
+			container: $('#interactions_lrp1_graph'),
+			style: [
+				{
+					"selector": "core",
+					"style": {
+						"selection-box-color": "#AAD8FF",
+						"selection-box-border-color": "#8BB0D0",
+						"selection-box-opacity": "0.2"
+					}
+				},
+				{
+					"selector": "node",
+					"style": {
+						"content": "data(name)",
+						"text-valign": "center",
+						"text-halign": "center",
+						"color": "#fff",
+						"overlay-padding": "3px",
+						"z-index": "10",
+					}
+				},
+				{
+					"selector": "edge",
+					"style": {
+						"curve-style": "haystack",
+						"haystack-radius": "0.5",
+						"opacity": "0.6",
+						"line-color": "#222",
+						"width": "1",
+						"overlay-padding": "3px"
+					}
+				},
+				{
+					"selector": ".intrinsic",
+					"style": {
+						"background-color": "#081838",
+						"width": "mapData(weight, 0, 1, 80, 200)",
+						"height": "mapData(weight, 0, 1, 80, 200)",
+						"font-size": "mapData(weight, 0, 1, 14, 48)"
+					}
+				},
+				{
+					"selector": ".associated",
+					"style": {
+						"color": "#000",
+						"background-color": "#fec672",
+						"width": "mapData(weight, 0, 1, 40, 100)",
+						"height": "mapData(weight, 0, 1, 40, 100)",
+						"font-size": "mapData(weight, 0, 1, 10, 24)"
+					}
+				},
+				{
+					"selector": ".hidden",
+					"style": {
+						"display": "none"
+					}
+				},
+				{
+					"selector": ".central",
+					"style": {
+						"background-color": "#840800",
+						"width": "200",
+						"height": "200",
+						"width": "mapData(weight, 0, 1, 150, 300)",
+						"height": "mapData(weight, 0, 1, 150, 300)",
+						"font-size": "mapData(weight, 0, 1, 24, 72)",
+						"display": "element"
+					}
+				}
+			],
+			elements: elements
+		});
+
+		var layout = cy.makeLayout({
+			name: 'cola',
+			animate: true,
+			randomize: true,
+			maxSimulationTime: 1000,
+			edgeLengthVal: 1,
+			nodeSpacing: 1
+		});
+
+		cy.on('mousedown', function() {
+			layout.stop();
+		});
+
+		layout.start();
+
+		cy.nodes().forEach(function(node) {
+			var name = node.data('name');
+			node.qtip({
+				content: [
+					{
+						src: '/adhesome/images/graph.png',
+						tooltip: 'View Node Graph',
+						url: '/adhesome/interactions/'+name+'.html'
+					},
+					{
+						src: '/adhesome/images/harmonizome.png',
+						tooltip: 'View on Harmonizome',
+						blank: true,
+						url: 'https://maayanlab.cloud/Harmonizome/gene/'+name
+					},
+					{
+						src: '/adhesome/images/genecards.png',
+						tooltip: 'View on GeneCards',
+						blank: true,
+						url: 'https://www.genecards.org/cgi-bin/carddisp.pl?gene='+name
+					}
+				].map(function(link) {
+						return '<a href="'+link.url+'" title="'+link.tooltip+'"'+(link.blank ? ' target=_blank' : '')+'><img src="'+link.src+'" alt="'+link.tooltip+'" /></a>';
+					}).join('&nbsp;'),
+				position: {
+					my: 'top center',
+					at: 'bottom center'
+				},
+				style: {
+					classes: 'qtip',
+					tip: {
+						width: 16,
+						height: 8
+					}
+				}
+			});
+		});
+
+		cy.edges().forEach(function(edge) {
+			edge.qtip({
+				content: edge.data('pmid').split(' ').map(function(pmid) {
+						return {
+								src: '/adhesome/images/ncbi.png',
+								tooltip: 'View PubMed Article ('+pmid+')',
+								blank: true,
+								url: 'https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids='+pmid
+							}
+					}).map(function(link) {
+						return '<a href="'+link.url+'" title="'+link.tooltip+'"'+(link.blank ? ' target=_blank' : '')+'><img src="'+link.src+'" alt="'+link.tooltip+'" /></a>';
+					}).join('&nbsp;'),
+				position: {
+					my: 'top center',
+					at: 'bottom center'
+				},
+				style: {
+					classes: 'qtip',
+					tip: {
+						width: 16,
+						height: 8
+					}
+				}
+			});
+		});
+
+		function update_stats() {
+			$('#graph-stat-components').html(cy.$('node:visible').size());
+			$('#graph-stat-interactions').html(cy.$('edge:visible').size());
+		}
+
+		update_stats();
+
+		$('#intrinsic').change(function() {
+			if(!$(this).is(':checked'))
+				cy.$('.intrinsic').addClass('hidden');
+			else
+				cy.$('.intrinsic').removeClass('hidden');
+			update_stats();
+		});
+
+		$('#associated').change(function() {
+			if(!$(this).is(':checked'))
+				cy.$('.associated').addClass('hidden');
+			else
+				cy.$('.associated').removeClass('hidden');
+			update_stats();
+		});
+	});
+});
+</script>
+</body>
+</html>

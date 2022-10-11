@@ -1,0 +1,76 @@
+[
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA2",
+				"name": "ITGA2",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA8",
+				"name": "ITGA8",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CSK",
+				"target": "ITGA2",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGA8",
+				"target": "ITGB1",
+				"pmid": "7768999"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CSK",
+				"target": "ITGA8",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGA2",
+				"target": "ITGA8",
+				"pmid": "11546798"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ITGA2",
+				"target": "ITGB1",
+				"pmid": "21947080"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CSK",
+				"target": "ITGB1",
+				"pmid": "10592173"
+			}
+		}]

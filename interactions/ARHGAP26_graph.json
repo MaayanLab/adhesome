@@ -1,0 +1,113 @@
+[
+		{
+			"data": {
+				"id": "ARHGAP26",
+				"name": "ARHGAP26",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "INSR",
+				"name": "INSR",
+				"weight": 0.313953488372093
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTEN",
+				"name": "PTEN",
+				"weight": 0.06686046511627906
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2B",
+				"name": "PTK2B",
+				"weight": 0.2558139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "INSR",
+				"target": "PTK2",
+				"pmid": "9507031"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ARHGAP26",
+				"target": "PTK2B",
+				"pmid": "9645946"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "PTK2",
+				"target": "PTK2B",
+				"pmid": "16760434"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ARHGAP26",
+				"target": "RHOA",
+				"pmid": "8649427"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ARHGAP26",
+				"target": "PTK2",
+				"pmid": "9858476"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "PTEN",
+				"target": "PTK2",
+				"pmid": "9616126"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ARHGAP26",
+				"target": "PTEN",
+				"pmid": "15717329"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PTEN",
+				"target": "PTK2B",
+				"pmid": "15717329"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ARHGAP26",
+				"target": "INSR",
+				"pmid": "7836419"
+			}
+		}]

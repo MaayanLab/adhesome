@@ -1,0 +1,505 @@
+[
+		{
+			"data": {
+				"id": "ABL1",
+				"name": "ABL1",
+				"weight": 0.33430232558139533
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CYTH2",
+				"name": "CYTH2",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "FHL2",
+				"name": "FHL2",
+				"weight": 0.03488372093023256
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GNB2L1",
+				"name": "GNB2L1",
+				"weight": 0.07848837209302326
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ILK",
+				"name": "ILK",
+				"weight": 0.1686046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAD",
+				"name": "ITGAD",
+				"weight": 0.005813953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAL",
+				"name": "ITGAL",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAM",
+				"name": "ITGAM",
+				"weight": 0.02616279069767442
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAX",
+				"name": "ITGAX",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB2",
+				"name": "ITGB2",
+				"weight": 0.0872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "LYN",
+				"name": "LYN",
+				"weight": 0.17732558139534885
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PLAUR",
+				"name": "PLAUR",
+				"weight": 0.03197674418604651
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2B",
+				"name": "PTK2B",
+				"weight": 0.2558139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RDX",
+				"name": "RDX",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SYK",
+				"name": "SYK",
+				"weight": 0.25872093023255816
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "TLN1",
+				"name": "TLN1",
+				"weight": 0.125
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "VAV1",
+				"name": "VAV1",
+				"weight": 0.18895348837209303
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PTK2",
+				"target": "SYK",
+				"pmid": "9342235"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PTK2",
+				"target": "PTK2B",
+				"pmid": "16760434"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "LYN",
+				"target": "SYK",
+				"pmid": "7831290"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "LYN",
+				"target": "PTK2",
+				"pmid": "11389892"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "PRKCA",
+				"target": "TLN1",
+				"pmid": "3080999"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "FHL2",
+				"target": "PTK2",
+				"pmid": "15161045"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "SYK",
+				"target": "VAV1",
+				"pmid": "8986718"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PRKCA",
+				"target": "SYK",
+				"pmid": "15583006"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "CSK",
+				"target": "PTK2",
+				"pmid": "7529872"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "LYN",
+				"target": "PTK2B",
+				"pmid": "11311138"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "CSK",
+				"target": "LYN",
+				"pmid": "8794770"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "PTK2B",
+				"target": "SYK",
+				"pmid": "10747947"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "PTK2",
+				"target": "TLN1",
+				"pmid": "7622520"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ABL1",
+				"target": "PTK2B",
+				"pmid": "14654952"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "GNB2L1",
+				"target": "PRKCA",
+				"pmid": "8302854"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "LYN",
+				"target": "PRKCA",
+				"pmid": "16713446"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "PTK2B",
+				"target": "VAV1",
+				"pmid": "10867021"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "CSK",
+				"target": "ITGAM",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "PTK2B",
+				"target": "TLN1",
+				"pmid": "9442086"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "ITGB2",
+				"target": "RDX",
+				"pmid": "17321526"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "LYN",
+				"target": "PLAUR",
+				"pmid": "9417082"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "ITGB2",
+				"target": "VAV1",
+				"pmid": "19234221"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "CSK",
+				"target": "ITGAL",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "CSK",
+				"target": "ITGAX",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "ITGAM",
+				"target": "PLAUR",
+				"pmid": "10744708"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "ITGAX",
+				"target": "ITGB2",
+				"pmid": "20033057"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "ITGAD",
+				"target": "ITGB2",
+				"pmid": "8777714"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "ABL1",
+				"target": "VAV1",
+				"pmid": "11790798"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "ITGAM",
+				"target": "ITGB2",
+				"pmid": "18644795"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "PRKCA",
+				"target": "PTK2",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "ABL1",
+				"target": "SYK",
+				"pmid": "7797565"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "CSK",
+				"target": "ITGAD",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "FHL2",
+				"target": "ITGB2",
+				"pmid": "10906324"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "CSK",
+				"target": "ITGB2",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "ITGB2",
+				"target": "TLN1",
+				"pmid": "12606711"
+			}
+		},		{
+			"data": {
+				"id": 35,
+				"source": "ITGAM",
+				"target": "VAV1",
+				"pmid": "19747912"
+			}
+		},		{
+			"data": {
+				"id": 36,
+				"source": "CYTH2",
+				"target": "ITGB2",
+				"pmid": "8706128"
+			}
+		},		{
+			"data": {
+				"id": 37,
+				"source": "ABL1",
+				"target": "PRKCA",
+				"pmid": "10713049"
+			}
+		},		{
+			"data": {
+				"id": 38,
+				"source": "ITGAL",
+				"target": "ITGB2",
+				"pmid": "9442085"
+			}
+		},		{
+			"data": {
+				"id": 39,
+				"source": "ITGB2",
+				"target": "PTK2B",
+				"pmid": "10961871"
+			}
+		},		{
+			"data": {
+				"id": 40,
+				"source": "ABL1",
+				"target": "ITGB2",
+				"pmid": "19234221"
+			}
+		},		{
+			"data": {
+				"id": 41,
+				"source": "ITGB2",
+				"target": "SYK",
+				"pmid": "12885943"
+			}
+		},		{
+			"data": {
+				"id": 42,
+				"source": "ITGB2",
+				"target": "PLAUR",
+				"pmid": "18644795"
+			}
+		},		{
+			"data": {
+				"id": 43,
+				"source": "GNB2L1",
+				"target": "ITGB2",
+				"pmid": "9442085"
+			}
+		},		{
+			"data": {
+				"id": 44,
+				"source": "CYTH2",
+				"target": "PRKCA",
+				"pmid": "10531036"
+			}
+		},		{
+			"data": {
+				"id": 45,
+				"source": "ITGB2",
+				"target": "PTK2",
+				"pmid": "8649427"
+			}
+		},		{
+			"data": {
+				"id": 46,
+				"source": "ITGB2",
+				"target": "PRKCA",
+				"pmid": "11700305"
+			}
+		},		{
+			"data": {
+				"id": 47,
+				"source": "ILK",
+				"target": "ITGB2",
+				"pmid": "9736715"
+			}
+		},		{
+			"data": {
+				"id": 48,
+				"source": "ITGB2",
+				"target": "LYN",
+				"pmid": "14593208"
+			}
+		}]

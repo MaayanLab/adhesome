@@ -1,0 +1,150 @@
+[
+		{
+			"data": {
+				"id": "FABP3",
+				"name": "FABP3",
+				"weight": 0.020348837209302327
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "ITGA1",
+				"name": "ITGA1",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA10",
+				"name": "ITGA10",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA11",
+				"name": "ITGA11",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA2",
+				"name": "ITGA2",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB4",
+				"name": "ITGB4",
+				"weight": 0.0755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ITGA5",
+				"target": "ITGB1",
+				"pmid": "16099422"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGA10",
+				"target": "ITGB1",
+				"pmid": "9685391"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGA2",
+				"target": "ITGB1",
+				"pmid": "21947080"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGA1",
+				"target": "ITGB1",
+				"pmid": "8846021"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "FABP3",
+				"target": "ITGB1",
+				"pmid": "20802519"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "FABP3",
+				"target": "ITGA1",
+				"pmid": "20802519"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "FABP3",
+				"target": "ITGB4",
+				"pmid": "20802519"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "FABP3",
+				"target": "ITGA2",
+				"pmid": "20802519"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ITGA11",
+				"target": "ITGB1",
+				"pmid": "10486209"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "FABP3",
+				"target": "ITGA10",
+				"pmid": "20802519"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "FABP3",
+				"target": "ITGA11",
+				"pmid": "20802519"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "FABP3",
+				"target": "ITGA5",
+				"pmid": "20802519"
+			}
+		}]

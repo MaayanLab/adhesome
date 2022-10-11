@@ -1,0 +1,106 @@
+[
+		{
+			"data": {
+				"id": "FYN",
+				"name": "FYN",
+				"weight": 0.29941860465116277
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "INPPL1",
+				"name": "INPPL1",
+				"weight": 0.08139534883720931
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SHC1",
+				"name": "SHC1",
+				"weight": 0.5901162790697675
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "STARD13",
+				"name": "STARD13",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TUBA1B",
+				"name": "TUBA1B",
+				"weight": 0.014534883720930232
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "FYN",
+				"target": "PXN",
+				"pmid": "7617039"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "FYN",
+				"target": "SHC1",
+				"pmid": "9741627"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "SHC1",
+				"target": "TUBA1B",
+				"pmid": "19380743"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "STARD13",
+				"target": "TUBA1B",
+				"pmid": "14697242"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "INPPL1",
+				"target": "TUBA1B",
+				"pmid": "19380743"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "INPPL1",
+				"target": "SHC1",
+				"pmid": "17219406"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "FYN",
+				"target": "TUBA1B",
+				"pmid": "11826099"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PXN",
+				"target": "TUBA1B",
+				"pmid": "10840040"
+			}
+		}]

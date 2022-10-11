@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "CIB1",
+				"name": "CIB1",
+				"weight": 0.00872093023255814
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "ITGA2",
+				"name": "ITGA2",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB3",
+				"name": "ITGB3",
+				"weight": 0.14534883720930233
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CIB1",
+				"target": "ITGA2",
+				"pmid": "16582881"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGB3",
+				"target": "PTK2",
+				"pmid": "11927607"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CIB1",
+				"target": "PTK2",
+				"pmid": "12881299"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "CIB1",
+				"target": "ITGB3",
+				"pmid": "9030514"
+			}
+		}]

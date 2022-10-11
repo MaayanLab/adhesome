@@ -1,0 +1,128 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "DNM2",
+				"name": "DNM2",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ENAH",
+				"name": "ENAH",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PALLD",
+				"name": "PALLD",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PFN1",
+				"name": "PFN1",
+				"weight": 0.046511627906976744
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "PIK3CA",
+				"name": "PIK3CA",
+				"weight": 0.18604651162790697
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "VASP",
+				"name": "VASP",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ACTB",
+				"target": "VASP",
+				"pmid": "1318192"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PALLD",
+				"target": "PFN1",
+				"pmid": "16367745"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "PFN1",
+				"target": "VASP",
+				"pmid": "7737110"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ACTB",
+				"target": "PFN1",
+				"pmid": "563468"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ENAH",
+				"target": "PFN1",
+				"pmid": "8861907"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "PALLD",
+				"target": "VASP",
+				"pmid": "14983521"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "DNM2",
+				"target": "PFN1",
+				"pmid": "16319076"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PFN1",
+				"target": "PIK3CA",
+				"pmid": "9801792"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ENAH",
+				"target": "VASP",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "ACTB",
+				"target": "DNM2",
+				"pmid": "19116150"
+			}
+		}]

@@ -1,0 +1,113 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CAPN1",
+				"name": "CAPN1",
+				"weight": 0.08139534883720931
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MAPK1",
+				"name": "MAPK1",
+				"weight": 0.125
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MARCKS",
+				"name": "MARCKS",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ROCK1",
+				"name": "ROCK1",
+				"weight": 0.09593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CAPN1",
+				"target": "MAPK1",
+				"pmid": "14993287"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "MARCKS",
+				"target": "PRKCA",
+				"pmid": "15239673"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CAPN1",
+				"target": "PRKCA",
+				"pmid": "11950589"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "CAPN1",
+				"target": "MARCKS",
+				"pmid": "15239673"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ACTB",
+				"target": "PRKCA",
+				"pmid": "15590896"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ACTB",
+				"target": "MARCKS",
+				"pmid": "1560845"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "MAPK1",
+				"target": "ROCK1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "MAPK1",
+				"target": "MARCKS",
+				"pmid": "9867858"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "MARCKS",
+				"target": "ROCK1",
+				"pmid": "15708490"
+			}
+		}]

@@ -1,0 +1,47 @@
+[
+		{
+			"data": {
+				"id": "NDEL1",
+				"name": "NDEL1",
+				"weight": 0.005813953488372093
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "VCL",
+				"name": "VCL",
+				"weight": 0.1308139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PXN",
+				"target": "VCL",
+				"pmid": "7525621"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "NDEL1",
+				"target": "VCL",
+				"pmid": "19492042"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "NDEL1",
+				"target": "PXN",
+				"pmid": "19492042"
+			}
+		}]

@@ -1,0 +1,69 @@
+[
+		{
+			"data": {
+				"id": "HSPA2",
+				"name": "HSPA2",
+				"weight": 0.00872093023255814
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "MAPK8",
+				"name": "MAPK8",
+				"weight": 0.10755813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "MAPK8",
+				"target": "PXN",
+				"pmid": "12853963"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "HSPA2",
+				"target": "PTK2",
+				"pmid": "12611892"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "PTK2",
+				"target": "PXN",
+				"pmid": "7537852"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "HSPA2",
+				"target": "PXN",
+				"pmid": "14718530"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "HSPA2",
+				"target": "MAPK8",
+				"pmid": "10592173"
+			}
+		}]

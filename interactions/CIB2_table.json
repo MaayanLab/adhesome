@@ -1,0 +1,8 @@
+{
+	"columns": [
+		{ "title": "Source" },		{ "title": "Functional Category" },		{ "title": "FA" },		{ "title": "Target" },		{ "title": "Functional Category" },		{ "title": "FA" },		{ "title": "Effect" },		{ "title": "Type" },		{ "title": "PMID" }	],
+	"data": [],
+	"paging": false,
+	"bInfo": false,
+	"autoWidth": false,
+	"columnDefs": [ { "orderable": false, "targets": [8] }, { "className": "dt-body-center", "targets": [6] } ]}

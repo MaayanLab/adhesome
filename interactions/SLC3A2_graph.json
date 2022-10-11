@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SLC3A2",
+				"name": "SLC3A2",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ITGB1",
+				"target": "SLC3A2",
+				"pmid": "11507094"
+			}
+		}]

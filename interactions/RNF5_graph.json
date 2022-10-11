@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RNF5",
+				"name": "RNF5",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PXN",
+				"target": "RNF5",
+				"pmid": "12861019"
+			}
+		}]

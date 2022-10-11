@@ -1,0 +1,575 @@
+[
+		{
+			"data": {
+				"id": "BCAR1",
+				"name": "BCAR1",
+				"weight": 0.3808139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CASP8",
+				"name": "CASP8",
+				"weight": 0.0377906976744186
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "CBL",
+				"name": "CBL",
+				"weight": 0.747093023255814
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "CRK",
+				"name": "CRK",
+				"weight": 0.4331395348837209
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CRKL",
+				"name": "CRKL",
+				"weight": 0.2819767441860465
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "EZR",
+				"name": "EZR",
+				"weight": 0.0755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "HRAS",
+				"name": "HRAS",
+				"weight": 0.11918604651162791
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "HSPA2",
+				"name": "HSPA2",
+				"weight": 0.00872093023255814
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "IRS1",
+				"name": "IRS1",
+				"weight": 0.20348837209302326
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MAPK1",
+				"name": "MAPK1",
+				"weight": 0.125
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MAPK8",
+				"name": "MAPK8",
+				"weight": 0.10755813953488372
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "MAPK8IP3",
+				"name": "MAPK8IP3",
+				"weight": 0.03197674418604651
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MSN",
+				"name": "MSN",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PDPK1",
+				"name": "PDPK1",
+				"weight": 0.07848837209302326
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PPP2CA",
+				"name": "PPP2CA",
+				"weight": 0.08139534883720931
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SHC1",
+				"name": "SHC1",
+				"weight": 0.5901162790697675
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "STAT3",
+				"name": "STAT3",
+				"weight": 0.11627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CRK",
+				"target": "MAPK8",
+				"pmid": "11432831"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "MAPK8",
+				"target": "MAPK8IP3",
+				"pmid": "10629060"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CRKL",
+				"target": "SHC1",
+				"pmid": "9344843"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PPP2CA",
+				"target": "PXN",
+				"pmid": "12198769"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "MAPK8",
+				"target": "PXN",
+				"pmid": "12853963"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CRK",
+				"target": "RAC1",
+				"pmid": "12874273"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "BCAR1",
+				"target": "MAPK8IP3",
+				"pmid": "16141199"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "CBL",
+				"target": "SHC1",
+				"pmid": "8621719"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "CBL",
+				"target": "CRK",
+				"pmid": "8524328"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "CRK",
+				"target": "PXN",
+				"pmid": "7537852"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "MAPK8",
+				"target": "STAT3",
+				"pmid": "10521505"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "BCAR1",
+				"target": "CRKL",
+				"pmid": "8810278"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "CRKL",
+				"target": "PXN",
+				"pmid": "7493940"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "HSPA2",
+				"target": "PXN",
+				"pmid": "14718530"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "CBL",
+				"target": "CRKL",
+				"pmid": "9162067"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "BCAR1",
+				"target": "CRK",
+				"pmid": "8070403"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "IRS1",
+				"target": "SHC1",
+				"pmid": "9202037"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "MAPK1",
+				"target": "PXN",
+				"pmid": "10753946"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "IRS1",
+				"target": "MAPK8",
+				"pmid": "10722755"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "RAC1",
+				"target": "STAT3",
+				"pmid": "11021801"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "CRK",
+				"target": "SHC1",
+				"pmid": "8662907"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "BCAR1",
+				"target": "PPP2CA",
+				"pmid": "11593413"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "HSPA2",
+				"target": "MAPK8",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "CASP8",
+				"target": "EZR",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "MAPK1",
+				"target": "STAT3",
+				"pmid": "15979846"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "CASP8",
+				"target": "MSN",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "CBL",
+				"target": "MAPK8",
+				"pmid": "16982329"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "RAC1",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "CBL",
+				"target": "IRS1",
+				"pmid": "10854852"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "CASP8",
+				"target": "MAPK8",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "CRKL",
+				"target": "MAPK8",
+				"pmid": "16982329"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "CRK",
+				"target": "STAT3",
+				"pmid": "24013128"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "BCAR1",
+				"target": "MAPK8",
+				"pmid": "11432831"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "MAPK8",
+				"target": "PDPK1",
+				"pmid": "10357815"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "MAPK8",
+				"target": "MSN",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 35,
+				"source": "BCAR1",
+				"target": "PXN",
+				"pmid": "9418872"
+			}
+		},		{
+			"data": {
+				"id": 36,
+				"source": "EZR",
+				"target": "MSN",
+				"pmid": "7579708"
+			}
+		},		{
+			"data": {
+				"id": 37,
+				"source": "CASP8",
+				"target": "MAPK1",
+				"pmid": "17290218"
+			}
+		},		{
+			"data": {
+				"id": 38,
+				"source": "CASP8",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 39,
+				"source": "MAPK1",
+				"target": "PPP2CA",
+				"pmid": "12840032"
+			}
+		},		{
+			"data": {
+				"id": 40,
+				"source": "CBL",
+				"target": "PXN",
+				"pmid": "8641358"
+			}
+		},		{
+			"data": {
+				"id": 41,
+				"source": "MSN",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 42,
+				"source": "MAPK8",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 43,
+				"source": "EZR",
+				"target": "RHOA",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 44,
+				"source": "MAPK8",
+				"target": "PPP2CA",
+				"pmid": "21958460"
+			}
+		},		{
+			"data": {
+				"id": 45,
+				"source": "MAPK8",
+				"target": "RAC1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 46,
+				"source": "EZR",
+				"target": "MAPK8",
+				"pmid": "15659383"
+			}
+		},		{
+			"data": {
+				"id": 47,
+				"source": "MAPK1",
+				"target": "SHC1",
+				"pmid": "10996427"
+			}
+		},		{
+			"data": {
+				"id": 48,
+				"source": "HRAS",
+				"target": "MAPK8",
+				"pmid": "8137421"
+			}
+		},		{
+			"data": {
+				"id": 49,
+				"source": "PDPK1",
+				"target": "PXN",
+				"pmid": "14585963"
+			}
+		},		{
+			"data": {
+				"id": 50,
+				"source": "MSN",
+				"target": "RAC1",
+				"pmid": "12467587"
+			}
+		},		{
+			"data": {
+				"id": 51,
+				"source": "IRS1",
+				"target": "MAPK1",
+				"pmid": "16131083"
+			}
+		},		{
+			"data": {
+				"id": 52,
+				"source": "IRS1",
+				"target": "PDPK1",
+				"pmid": "15802620"
+			}
+		},		{
+			"data": {
+				"id": 53,
+				"source": "CRK",
+				"target": "CRKL",
+				"pmid": "9614078"
+			}
+		},		{
+			"data": {
+				"id": 54,
+				"source": "CBL",
+				"target": "HRAS",
+				"pmid": "18048363"
+			}
+		},		{
+			"data": {
+				"id": 55,
+				"source": "MAPK1",
+				"target": "MAPK8",
+				"pmid": "15778365"
+			}
+		},		{
+			"data": {
+				"id": 56,
+				"source": "MAPK8",
+				"target": "SHC1",
+				"pmid": "15688026"
+			}
+		},		{
+			"data": {
+				"id": 57,
+				"source": "BCAR1",
+				"target": "CBL",
+				"pmid": "8683103"
+			}
+		},		{
+			"data": {
+				"id": 58,
+				"source": "CRK",
+				"target": "IRS1",
+				"pmid": "8621590"
+			}
+		}]

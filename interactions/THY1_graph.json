@@ -1,0 +1,293 @@
+[
+		{
+			"data": {
+				"id": "ARHGAP5",
+				"name": "ARHGAP5",
+				"weight": 0.040697674418604654
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "FYN",
+				"name": "FYN",
+				"weight": 0.29941860465116277
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "GRLF1",
+				"name": "GRLF1",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAM",
+				"name": "ITGAM",
+				"weight": 0.02616279069767442
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAV",
+				"name": "ITGAV",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB3",
+				"name": "ITGB3",
+				"weight": 0.14534883720930233
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "THY1",
+				"name": "THY1",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PTK2",
+				"target": "THY1",
+				"pmid": "17027000"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGA5",
+				"target": "THY1",
+				"pmid": "15897908"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGB1",
+				"target": "PTK2",
+				"pmid": "8878413"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PTK2",
+				"target": "SRC",
+				"pmid": "7529876"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "FYN",
+				"target": "PTK2",
+				"pmid": "11278857"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ITGB1",
+				"target": "SRC",
+				"pmid": "11723131"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ITGB1",
+				"target": "THY1",
+				"pmid": "11470407"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "SRC",
+				"target": "THY1",
+				"pmid": "17027000"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "FYN",
+				"target": "THY1",
+				"pmid": "1351058"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "ITGA5",
+				"target": "PTK2",
+				"pmid": "11927607"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "FYN",
+				"target": "ITGB1",
+				"pmid": "11684709"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "ITGA5",
+				"target": "ITGB1",
+				"pmid": "16099422"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "ITGB3",
+				"target": "PTK2",
+				"pmid": "11927607"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ITGB3",
+				"target": "SRC",
+				"pmid": "17353363"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "ARHGAP5",
+				"target": "SRC",
+				"pmid": "7542246"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "FYN",
+				"target": "SRC",
+				"pmid": "9169421"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "ITGAV",
+				"target": "ITGB3",
+				"pmid": "16099422"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "GRLF1",
+				"target": "THY1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "ARHGAP5",
+				"target": "THY1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "GRLF1",
+				"target": "SRC",
+				"pmid": "7542246"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "ITGAV",
+				"target": "PTK2",
+				"pmid": "11927607"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "FYN",
+				"target": "ITGB3",
+				"pmid": "11940607"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "ITGA5",
+				"target": "ITGB3",
+				"pmid": "1694173"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "ARHGAP5",
+				"target": "ITGB1",
+				"pmid": "8537347"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "ITGAV",
+				"target": "ITGB1",
+				"pmid": "2138612"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "ITGAM",
+				"target": "THY1",
+				"pmid": "15004192"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "ITGB3",
+				"target": "THY1",
+				"pmid": "15897908"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "ARHGAP5",
+				"target": "ITGA5",
+				"pmid": "8537347"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "ITGAV",
+				"target": "THY1",
+				"pmid": "15897908"
+			}
+		}]

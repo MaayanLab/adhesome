@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "GNB2L1",
+				"name": "GNB2L1",
+				"weight": 0.07848837209302326
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "MAPK1",
+				"name": "MAPK1",
+				"weight": 0.125
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PDE4D",
+				"name": "PDE4D",
+				"weight": 0.02616279069767442
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PRKACA",
+				"name": "PRKACA",
+				"weight": 0.09883720930232558
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PDE4D",
+				"target": "PRKACA",
+				"pmid": "9639573"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "MAPK1",
+				"target": "PDE4D",
+				"pmid": "10828059"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "MAPK1",
+				"target": "PRKACA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "GNB2L1",
+				"target": "PDE4D",
+				"pmid": "10329691"
+			}
+		}]

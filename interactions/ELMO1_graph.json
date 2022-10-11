@@ -1,0 +1,76 @@
+[
+		{
+			"data": {
+				"id": "CRK",
+				"name": "CRK",
+				"weight": 0.4331395348837209
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "DOCK1",
+				"name": "DOCK1",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ELMO1",
+				"name": "ELMO1",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CRK",
+				"target": "RAC1",
+				"pmid": "12874273"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "DOCK1",
+				"target": "ELMO1",
+				"pmid": "12134158"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ELMO1",
+				"target": "RAC1",
+				"pmid": "14638695"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "CRK",
+				"target": "ELMO1",
+				"pmid": "15700267"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CRK",
+				"target": "DOCK1",
+				"pmid": "9808620"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "DOCK1",
+				"target": "RAC1",
+				"pmid": "12134158"
+			}
+		}]

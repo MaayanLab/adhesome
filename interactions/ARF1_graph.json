@@ -1,0 +1,136 @@
+[
+		{
+			"data": {
+				"id": "ARF1",
+				"name": "ARF1",
+				"weight": 0.03488372093023256
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "ASAP2",
+				"name": "ASAP2",
+				"weight": 0.05232558139534884
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CYTH2",
+				"name": "CYTH2",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "DDEF1",
+				"name": "DDEF1",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GIT1",
+				"name": "GIT1",
+				"weight": 0.11918604651162791
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "INSR",
+				"name": "INSR",
+				"weight": 0.313953488372093
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PLD1",
+				"name": "PLD1",
+				"weight": 0.05813953488372093
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ARF1",
+				"target": "GIT1",
+				"pmid": "10896954"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "GIT1",
+				"target": "PXN",
+				"pmid": "11448998"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "DDEF1",
+				"target": "PXN",
+				"pmid": "12149250"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ARF1",
+				"target": "DDEF1",
+				"pmid": "11773070"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ARF1",
+				"target": "PLD1",
+				"pmid": "16054594"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ARF1",
+				"target": "PXN",
+				"pmid": "9864369"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ARF1",
+				"target": "CYTH2",
+				"pmid": "14654833"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ASAP2",
+				"target": "PXN",
+				"pmid": "10749932"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ARF1",
+				"target": "INSR",
+				"pmid": "9197239"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "ARF1",
+				"target": "ASAP2",
+				"pmid": "10022920"
+			}
+		}]

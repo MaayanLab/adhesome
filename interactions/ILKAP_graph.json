@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "ILK",
+				"name": "ILK",
+				"weight": 0.1686046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ILKAP",
+				"name": "ILKAP",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ILK",
+				"target": "ILKAP",
+				"pmid": "11331582"
+			}
+		}]

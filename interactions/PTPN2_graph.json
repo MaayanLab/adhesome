@@ -1,0 +1,135 @@
+[
+		{
+			"data": {
+				"id": "INSR",
+				"name": "INSR",
+				"weight": 0.313953488372093
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ITGA1",
+				"name": "ITGA1",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTPN2",
+				"name": "PTPN2",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "SHC1",
+				"name": "SHC1",
+				"weight": 0.5901162790697675
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "STAT3",
+				"name": "STAT3",
+				"weight": 0.11627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PTPN2",
+				"target": "STAT3",
+				"pmid": "12359225"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PTPN2",
+				"target": "SHC1",
+				"pmid": "9488479"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "SHC1",
+				"target": "SRC",
+				"pmid": "1409579"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "SRC",
+				"target": "STAT3",
+				"pmid": "8657134"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "PTPN2",
+				"target": "SRC",
+				"pmid": "15696169"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ITGA5",
+				"target": "PTPN2",
+				"pmid": "15592458"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "INSR",
+				"target": "SHC1",
+				"pmid": "7685165"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ITGA1",
+				"target": "PTPN2",
+				"pmid": "15592458"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "INSR",
+				"target": "STAT3",
+				"pmid": "16382134"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "INSR",
+				"target": "PTPN2",
+				"pmid": "15192089"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "INSR",
+				"target": "SRC",
+				"pmid": "15337529"
+			}
+		}]

@@ -1,0 +1,172 @@
+[
+		{
+			"data": {
+				"id": "ACTN1",
+				"name": "ACTN1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "EZR",
+				"name": "EZR",
+				"weight": 0.0755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB5",
+				"name": "ITGB5",
+				"weight": 0.06395348837209303
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LASP1",
+				"name": "LASP1",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PALLD",
+				"name": "PALLD",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PFN1",
+				"name": "PFN1",
+				"weight": 0.046511627906976744
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SORBS2",
+				"name": "SORBS2",
+				"weight": 0.05813953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "VASP",
+				"name": "VASP",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "LASP1",
+				"target": "PALLD",
+				"pmid": "16492705"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTN1",
+				"target": "PALLD",
+				"pmid": "15147863"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "PALLD",
+				"target": "SORBS2",
+				"pmid": "16125169"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "LASP1",
+				"target": "VASP",
+				"pmid": "15465019"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ACTN1",
+				"target": "SORBS2",
+				"pmid": "16125169"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "PALLD",
+				"target": "PFN1",
+				"pmid": "16367745"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "PFN1",
+				"target": "VASP",
+				"pmid": "7737110"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PALLD",
+				"target": "VASP",
+				"pmid": "14983521"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "EZR",
+				"target": "PALLD",
+				"pmid": "11598191"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "PALLD",
+				"target": "SRC",
+				"pmid": "17537434"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "ITGB5",
+				"target": "SRC",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "ACTN1",
+				"target": "SRC",
+				"pmid": "16291744"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "ITGB5",
+				"target": "PALLD",
+				"pmid": "16355270"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "EZR",
+				"target": "SRC",
+				"pmid": "15623525"
+			}
+		}]

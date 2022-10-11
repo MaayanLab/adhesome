@@ -1,0 +1,8 @@
+{
+	"columns": [
+		{ "title": "File" },		{ "title": "Description" },		{ "title": "Size" }	],
+	"data": [["<a href='components.csv' target=_blank>components.csv</a>", "All the individual components in the adhesome", "22 KB"], ["<a href='interactions.csv' target=_blank>interactions.csv</a>", "Protein-protein interactions and their related sources", "209 KB"], ["<a href='predictions.csv' target=_blank>predictions.csv</a>", "Predictions obtained from our classifier on Harmonizome datasets", "696 KB"], ["<a href='https://raw.githubusercontent.com/MaayanLab/adhesome-prediction/master/Predict_Adhesome.ipynb' target=_blank>Predict_Adhesome.ipynb</a>", "Predict Adhesome IPython Notebook", "90 KB"]],
+	"paging": false,
+	"bInfo": false,
+	"autoWidth": false,
+	"bFilter": false, "columnDefs": [{ "className": "dt-body-right", "targets": [2]}]}

@@ -1,0 +1,40 @@
+[
+		{
+			"data": {
+				"id": "ANKRD28",
+				"name": "ANKRD28",
+				"weight": 0.005813953488372093
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "DOCK1",
+				"name": "DOCK1",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SDCBP",
+				"name": "SDCBP",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ANKRD28",
+				"target": "SDCBP",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ANKRD28",
+				"target": "DOCK1",
+				"pmid": "19118547"
+			}
+		}]

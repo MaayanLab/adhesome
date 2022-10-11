@@ -1,0 +1,113 @@
+[
+		{
+			"data": {
+				"id": "ACTN1",
+				"name": "ACTN1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ENAH",
+				"name": "ENAH",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TES",
+				"name": "TES",
+				"weight": 0.029069767441860465
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "TLN1",
+				"name": "TLN1",
+				"weight": 0.125
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "VASP",
+				"name": "VASP",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ZYX",
+				"name": "ZYX",
+				"weight": 0.06686046511627906
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "TES",
+				"target": "VASP",
+				"pmid": "12571287"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTN1",
+				"target": "ZYX",
+				"pmid": "10224105"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "VASP",
+				"target": "ZYX",
+				"pmid": "10613911"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "TES",
+				"target": "ZYX",
+				"pmid": "12571287"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ACTN1",
+				"target": "TES",
+				"pmid": "12695497"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ENAH",
+				"target": "ZYX",
+				"pmid": "10801818"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "TES",
+				"target": "TLN1",
+				"pmid": "12571287"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ENAH",
+				"target": "VASP",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ENAH",
+				"target": "TES",
+				"pmid": "21278383"
+			}
+		}]

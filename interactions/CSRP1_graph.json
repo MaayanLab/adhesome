@@ -1,0 +1,76 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ACTN1",
+				"name": "ACTN1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CSRP1",
+				"name": "CSRP1",
+				"weight": 0.014534883720930232
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "ZYX",
+				"name": "ZYX",
+				"weight": 0.06686046511627906
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ACTB",
+				"target": "CSRP1",
+				"pmid": "16336664"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTN1",
+				"target": "ZYX",
+				"pmid": "10224105"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ACTN1",
+				"target": "CSRP1",
+				"pmid": "9314536"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ACTB",
+				"target": "ACTN1",
+				"pmid": "5667356"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CSRP1",
+				"target": "ZYX",
+				"pmid": "9560318"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ACTB",
+				"target": "ZYX",
+				"pmid": "10592173"
+			}
+		}]

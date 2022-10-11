@@ -1,0 +1,113 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "EZR",
+				"name": "EZR",
+				"weight": 0.0755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB2",
+				"name": "ITGB2",
+				"weight": 0.0872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RDX",
+				"name": "RDX",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ROCK1",
+				"name": "ROCK1",
+				"weight": 0.09593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SLC9A1",
+				"name": "SLC9A1",
+				"weight": 0.02616279069767442
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ITGB2",
+				"target": "RDX",
+				"pmid": "17321526"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTB",
+				"target": "RDX",
+				"pmid": "10816569"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ROCK1",
+				"target": "SLC9A1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "EZR",
+				"target": "SLC9A1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "RDX",
+				"target": "SLC9A1",
+				"pmid": "11163215"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ACTB",
+				"target": "EZR",
+				"pmid": "7876308"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "EZR",
+				"target": "RDX",
+				"pmid": "9501018"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "EZR",
+				"target": "ROCK1",
+				"pmid": "19255442"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "RDX",
+				"target": "ROCK1",
+				"pmid": "9456324"
+			}
+		}]

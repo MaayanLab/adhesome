@@ -1,0 +1,113 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARPC2",
+				"name": "ARPC2",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "CFL1",
+				"name": "CFL1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CORO1B",
+				"name": "CORO1B",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LIMK1",
+				"name": "LIMK1",
+				"weight": 0.06976744186046512
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SSH1",
+				"name": "SSH1",
+				"weight": 0.02616279069767442
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CFL1",
+				"target": "LIMK1",
+				"pmid": "9655398"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTB",
+				"target": "CFL1",
+				"pmid": "8913641"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ACTB",
+				"target": "ARPC2",
+				"pmid": "9600938"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "CFL1",
+				"target": "SSH1",
+				"pmid": "11832213"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ARPC2",
+				"target": "CORO1B",
+				"pmid": "17350576"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "LIMK1",
+				"target": "SSH1",
+				"pmid": "15660133"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "CORO1B",
+				"target": "SSH1",
+				"pmid": "17350576"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ACTB",
+				"target": "SSH1",
+				"pmid": "11832213"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ARPC2",
+				"target": "SSH1",
+				"pmid": "17350576"
+			}
+		}]

@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "STARD13",
+				"name": "STARD13",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "TUBA1B",
+				"name": "TUBA1B",
+				"weight": 0.014534883720930232
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "STARD13",
+				"target": "TUBA1B",
+				"pmid": "14697242"
+			}
+		}]

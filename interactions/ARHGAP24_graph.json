@@ -1,0 +1,98 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARHGAP24",
+				"name": "ARHGAP24",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "FLNA",
+				"name": "FLNA",
+				"weight": 0.11627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ROCK1",
+				"name": "ROCK1",
+				"weight": 0.09593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "FLNA",
+				"target": "ROCK1",
+				"pmid": "12589795"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ARHGAP24",
+				"target": "RAC1",
+				"pmid": "15611138"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ACTB",
+				"target": "FLNA",
+				"pmid": "325564"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ACTB",
+				"target": "ARHGAP24",
+				"pmid": "15611138"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "FLNA",
+				"target": "RAC1",
+				"pmid": "11146652"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ARHGAP24",
+				"target": "FLNA",
+				"pmid": "16862148"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ACTB",
+				"target": "RAC1",
+				"pmid": "11027608"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ARHGAP24",
+				"target": "ROCK1",
+				"pmid": "16862148"
+			}
+		}]

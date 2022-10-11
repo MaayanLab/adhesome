@@ -1,0 +1,55 @@
+[
+		{
+			"data": {
+				"id": "CTTN",
+				"name": "CTTN",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "MYH9",
+				"name": "MYH9",
+				"weight": 0.04941860465116279
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SVIL",
+				"name": "SVIL",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "TGFB1I1",
+				"name": "TGFB1I1",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CTTN",
+				"target": "SVIL",
+				"pmid": "19109420"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "MYH9",
+				"target": "SVIL",
+				"pmid": "17925381"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "SVIL",
+				"target": "TGFB1I1",
+				"pmid": "11792840"
+			}
+		}]

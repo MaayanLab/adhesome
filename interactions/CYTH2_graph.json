@@ -1,0 +1,84 @@
+[
+		{
+			"data": {
+				"id": "ARF1",
+				"name": "ARF1",
+				"weight": 0.03488372093023256
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "CYTH2",
+				"name": "CYTH2",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "GRB2",
+				"name": "GRB2",
+				"weight": 1.0
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB2",
+				"name": "ITGB2",
+				"weight": 0.0872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ARF1",
+				"target": "CYTH2",
+				"pmid": "14654833"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CYTH2",
+				"target": "ITGB2",
+				"pmid": "8706128"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CYTH2",
+				"target": "GRB2",
+				"pmid": "17474147"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "GRB2",
+				"target": "PRKCA",
+				"pmid": "12881490"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CYTH2",
+				"target": "PRKCA",
+				"pmid": "10531036"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ITGB2",
+				"target": "PRKCA",
+				"pmid": "11700305"
+			}
+		}]

@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "NRP1",
+				"name": "NRP1",
+				"weight": 0.01744186046511628
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "NRP2",
+				"name": "NRP2",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "NRP1",
+				"target": "NRP2",
+				"pmid": "9856463"
+			}
+		}]

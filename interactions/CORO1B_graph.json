@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "ARPC2",
+				"name": "ARPC2",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "CORO1B",
+				"name": "CORO1B",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SSH1",
+				"name": "SSH1",
+				"weight": 0.02616279069767442
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ARPC2",
+				"target": "CORO1B",
+				"pmid": "17350576"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CORO1B",
+				"target": "SSH1",
+				"pmid": "17350576"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CORO1B",
+				"target": "PRKCA",
+				"pmid": "17350576"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ARPC2",
+				"target": "SSH1",
+				"pmid": "17350576"
+			}
+		}]

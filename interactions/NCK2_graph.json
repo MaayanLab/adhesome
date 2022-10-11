@@ -1,0 +1,676 @@
+[
+		{
+			"data": {
+				"id": "ABI1",
+				"name": "ABI1",
+				"weight": 0.10465116279069768
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ABI2",
+				"name": "ABI2",
+				"weight": 0.02616279069767442
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ABL1",
+				"name": "ABL1",
+				"weight": 0.33430232558139533
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARHGEF6",
+				"name": "ARHGEF6",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARHGEF7",
+				"name": "ARHGEF7",
+				"weight": 0.13953488372093023
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ASAP2",
+				"name": "ASAP2",
+				"weight": 0.05232558139534884
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "BCAR1",
+				"name": "BCAR1",
+				"weight": 0.3808139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CBL",
+				"name": "CBL",
+				"weight": 0.747093023255814
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "DNM2",
+				"name": "DNM2",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "DOCK1",
+				"name": "DOCK1",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GIT1",
+				"name": "GIT1",
+				"weight": 0.11918604651162791
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GIT2",
+				"name": "GIT2",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ILK",
+				"name": "ILK",
+				"weight": 0.1686046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "IRS1",
+				"name": "IRS1",
+				"weight": 0.20348837209302326
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "LIMS1",
+				"name": "LIMS1",
+				"weight": 0.05813953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "NCK2",
+				"name": "NCK2",
+				"weight": 0.09593023255813954
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PAK1",
+				"name": "PAK1",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PEAK1",
+				"name": "PEAK1",
+				"weight": 0.005813953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RHOU",
+				"name": "RHOU",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SORBS1",
+				"name": "SORBS1",
+				"weight": 0.08139534883720931
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SOS1",
+				"name": "SOS1",
+				"weight": 0.29651162790697677
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "TRIP6",
+				"name": "TRIP6",
+				"weight": 0.046511627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CBL",
+				"target": "SORBS1",
+				"pmid": "12765336"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ABL1",
+				"target": "CBL",
+				"pmid": "7925293"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "BCAR1",
+				"target": "PTK2",
+				"pmid": "11514617"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ARHGEF6",
+				"target": "GIT1",
+				"pmid": "16373173"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "DNM2",
+				"target": "NCK2",
+				"pmid": "10206341"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "GIT1",
+				"target": "PAK1",
+				"pmid": "12006652"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ABI1",
+				"target": "SOS1",
+				"pmid": "11003655"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "NCK2",
+				"target": "PTK2",
+				"pmid": "11950595"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "NCK2",
+				"target": "PAK1",
+				"pmid": "11557983"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "DNM2",
+				"target": "PTK2",
+				"pmid": "7597091"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "ABI1",
+				"target": "PAK1",
+				"pmid": "11956071"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "ILK",
+				"target": "LIMS1",
+				"pmid": "10022929"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "CBL",
+				"target": "DNM2",
+				"pmid": "15872089"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ABI1",
+				"target": "NCK2",
+				"pmid": "11557983"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "DOCK1",
+				"target": "NCK2",
+				"pmid": "11240126"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "ABI1",
+				"target": "PTK2",
+				"pmid": "12771190"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "ARHGEF6",
+				"target": "PTK2",
+				"pmid": "17093062"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "LIMS1",
+				"target": "NCK2",
+				"pmid": "12794636"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "IRS1",
+				"target": "NCK2",
+				"pmid": "9843575"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "ABL1",
+				"target": "BCAR1",
+				"pmid": "7780740"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "ABL1",
+				"target": "PAK1",
+				"pmid": "11121037"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "IRS1",
+				"target": "PTK2",
+				"pmid": "10082579"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "NCK2",
+				"target": "SORBS1",
+				"pmid": "11557983"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "GIT1",
+				"target": "PTK2",
+				"pmid": "10938112"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "ARHGEF6",
+				"target": "PAK1",
+				"pmid": "9659915"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "ABI1",
+				"target": "ARHGEF6",
+				"pmid": "16940963"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "PTK2",
+				"target": "SORBS1",
+				"pmid": "9461600"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "ABL1",
+				"target": "SORBS1",
+				"pmid": "11374898"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "ABI1",
+				"target": "ABL1",
+				"pmid": "12591740"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "BCAR1",
+				"target": "TRIP6",
+				"pmid": "11782456"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "SORBS1",
+				"target": "SOS1",
+				"pmid": "9894838"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "NCK2",
+				"target": "SOS1",
+				"pmid": "10026169"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "ARHGEF6",
+				"target": "CBL",
+				"pmid": "12935897"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "PAK1",
+				"target": "RHOU",
+				"pmid": "15556869"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "PTK2",
+				"target": "TRIP6",
+				"pmid": "14688263"
+			}
+		},		{
+			"data": {
+				"id": 35,
+				"source": "BCAR1",
+				"target": "DOCK1",
+				"pmid": "12615911"
+			}
+		},		{
+			"data": {
+				"id": 36,
+				"source": "GIT2",
+				"target": "PAK1",
+				"pmid": "16628223"
+			}
+		},		{
+			"data": {
+				"id": 37,
+				"source": "ABI1",
+				"target": "CBL",
+				"pmid": "17395426"
+			}
+		},		{
+			"data": {
+				"id": 38,
+				"source": "PTK2",
+				"target": "RHOU",
+				"pmid": "18086875"
+			}
+		},		{
+			"data": {
+				"id": 39,
+				"source": "ARHGEF7",
+				"target": "GIT2",
+				"pmid": "11157752"
+			}
+		},		{
+			"data": {
+				"id": 40,
+				"source": "ILK",
+				"target": "NCK2",
+				"pmid": "10022929"
+			}
+		},		{
+			"data": {
+				"id": 41,
+				"source": "CBL",
+				"target": "IRS1",
+				"pmid": "10854852"
+			}
+		},		{
+			"data": {
+				"id": 42,
+				"source": "NCK2",
+				"target": "RHOU",
+				"pmid": "16752908"
+			}
+		},		{
+			"data": {
+				"id": 43,
+				"source": "ARHGEF6",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 44,
+				"source": "ARHGEF7",
+				"target": "PAK1",
+				"pmid": "20936779"
+			}
+		},		{
+			"data": {
+				"id": 45,
+				"source": "ABL1",
+				"target": "SOS1",
+				"pmid": "8112292"
+			}
+		},		{
+			"data": {
+				"id": 46,
+				"source": "ARHGEF7",
+				"target": "CBL",
+				"pmid": "14505571"
+			}
+		},		{
+			"data": {
+				"id": 47,
+				"source": "ABI2",
+				"target": "ABL1",
+				"pmid": "7590236"
+			}
+		},		{
+			"data": {
+				"id": 48,
+				"source": "ABL1",
+				"target": "DNM2",
+				"pmid": "17474147"
+			}
+		},		{
+			"data": {
+				"id": 49,
+				"source": "ARHGEF7",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 50,
+				"source": "CBL",
+				"target": "SOS1",
+				"pmid": "10025673"
+			}
+		},		{
+			"data": {
+				"id": 51,
+				"source": "ABL1",
+				"target": "NCK2",
+				"pmid": "10026169"
+			}
+		},		{
+			"data": {
+				"id": 52,
+				"source": "ILK",
+				"target": "PAK1",
+				"pmid": "17420447"
+			}
+		},		{
+			"data": {
+				"id": 53,
+				"source": "ABI2",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 54,
+				"source": "BCAR1",
+				"target": "NCK2",
+				"pmid": "20637038"
+			}
+		},		{
+			"data": {
+				"id": 55,
+				"source": "ARHGEF7",
+				"target": "GIT1",
+				"pmid": "12695502"
+			}
+		},		{
+			"data": {
+				"id": 56,
+				"source": "CBL",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 57,
+				"source": "NCK2",
+				"target": "TRIP6",
+				"pmid": "16189514"
+			}
+		},		{
+			"data": {
+				"id": 58,
+				"source": "ARHGEF6",
+				"target": "ARHGEF7",
+				"pmid": "15306850"
+			}
+		},		{
+			"data": {
+				"id": 59,
+				"source": "ASAP2",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 60,
+				"source": "GIT1",
+				"target": "GIT2",
+				"pmid": "12473661"
+			}
+		},		{
+			"data": {
+				"id": 61,
+				"source": "DOCK1",
+				"target": "PTK2",
+				"pmid": "12615911"
+			}
+		},		{
+			"data": {
+				"id": 62,
+				"source": "NCK2",
+				"target": "PEAK1",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 63,
+				"source": "DNM2",
+				"target": "SORBS1",
+				"pmid": "19116150"
+			}
+		},		{
+			"data": {
+				"id": 64,
+				"source": "GIT2",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 65,
+				"source": "GIT1",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 66,
+				"source": "LIMS1",
+				"target": "TRIP6",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 67,
+				"source": "PAK1",
+				"target": "PTK2",
+				"pmid": "11278553"
+			}
+		},		{
+			"data": {
+				"id": 68,
+				"source": "CBL",
+				"target": "PTK2",
+				"pmid": "17675501"
+			}
+		},		{
+			"data": {
+				"id": 69,
+				"source": "BCAR1",
+				"target": "CBL",
+				"pmid": "8683103"
+			}
+		}]

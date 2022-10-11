@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "ILK",
+				"name": "ILK",
+				"weight": 0.1686046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LIMS2",
+				"name": "LIMS2",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ILK",
+				"target": "LIMS2",
+				"pmid": "12167643"
+			}
+		}]

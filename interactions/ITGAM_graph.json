@@ -1,0 +1,106 @@
+[
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGAM",
+				"name": "ITGAM",
+				"weight": 0.02616279069767442
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGB2",
+				"name": "ITGB2",
+				"weight": 0.0872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PLAUR",
+				"name": "PLAUR",
+				"weight": 0.03197674418604651
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "THY1",
+				"name": "THY1",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "VAV1",
+				"name": "VAV1",
+				"weight": 0.18895348837209303
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CSK",
+				"target": "ITGAM",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGB2",
+				"target": "VAV1",
+				"pmid": "19234221"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGAM",
+				"target": "PLAUR",
+				"pmid": "10744708"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGAM",
+				"target": "ITGB2",
+				"pmid": "18644795"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CSK",
+				"target": "ITGB2",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ITGAM",
+				"target": "VAV1",
+				"pmid": "19747912"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ITGB2",
+				"target": "PLAUR",
+				"pmid": "18644795"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ITGAM",
+				"target": "THY1",
+				"pmid": "15004192"
+			}
+		}]

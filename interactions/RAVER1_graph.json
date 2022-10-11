@@ -1,0 +1,47 @@
+[
+		{
+			"data": {
+				"id": "ACTN1",
+				"name": "ACTN1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAVER1",
+				"name": "RAVER1",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "VCL",
+				"name": "VCL",
+				"weight": 0.1308139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ACTN1",
+				"target": "VCL",
+				"pmid": "15988023"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTN1",
+				"target": "RAVER1",
+				"pmid": "11724819"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "RAVER1",
+				"target": "VCL",
+				"pmid": "11724819"
+			}
+		}]

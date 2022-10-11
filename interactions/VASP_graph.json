@@ -1,0 +1,447 @@
+[
+		{
+			"data": {
+				"id": "ABI1",
+				"name": "ABI1",
+				"weight": 0.10465116279069768
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ENAH",
+				"name": "ENAH",
+				"weight": 0.0377906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "FBLIM1",
+				"name": "FBLIM1",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GRB2",
+				"name": "GRB2",
+				"weight": 1.0
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LASP1",
+				"name": "LASP1",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LPP",
+				"name": "LPP",
+				"weight": 0.01744186046511628
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PAK1",
+				"name": "PAK1",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PALLD",
+				"name": "PALLD",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PFN1",
+				"name": "PFN1",
+				"weight": 0.046511627906976744
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PPP2CA",
+				"name": "PPP2CA",
+				"weight": 0.08139534883720931
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PRKACA",
+				"name": "PRKACA",
+				"weight": 0.09883720930232558
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TES",
+				"name": "TES",
+				"weight": 0.029069767441860465
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TRIP6",
+				"name": "TRIP6",
+				"weight": 0.046511627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "VASP",
+				"name": "VASP",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "VCL",
+				"name": "VCL",
+				"weight": 0.1308139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ZYX",
+				"name": "ZYX",
+				"weight": 0.06686046511627906
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "LASP1",
+				"target": "PALLD",
+				"pmid": "16492705"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PRKACA",
+				"target": "VASP",
+				"pmid": "8182057"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "PRKCA",
+				"target": "VASP",
+				"pmid": "14706852"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "TES",
+				"target": "VASP",
+				"pmid": "12571287"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "LASP1",
+				"target": "VASP",
+				"pmid": "15465019"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ABI1",
+				"target": "PAK1",
+				"pmid": "11956071"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "PPP2CA",
+				"target": "PRKCA",
+				"pmid": "9675027"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ACTB",
+				"target": "VCL",
+				"pmid": "6802502"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "PPP2CA",
+				"target": "VASP",
+				"pmid": "7656973"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "ACTB",
+				"target": "LASP1",
+				"pmid": "12432067"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "FBLIM1",
+				"target": "VASP",
+				"pmid": "16531412"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "GRB2",
+				"target": "PAK1",
+				"pmid": "12522133"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "LASP1",
+				"target": "LPP",
+				"pmid": "15465019"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ACTB",
+				"target": "VASP",
+				"pmid": "1318192"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "PALLD",
+				"target": "PFN1",
+				"pmid": "16367745"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "PFN1",
+				"target": "VASP",
+				"pmid": "7737110"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "VASP",
+				"target": "VCL",
+				"pmid": "8980130"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "ACTB",
+				"target": "PAK1",
+				"pmid": "9298982"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "LPP",
+				"target": "VASP",
+				"pmid": "12441356"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "ACTB",
+				"target": "PFN1",
+				"pmid": "563468"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "VASP",
+				"target": "ZYX",
+				"pmid": "10613911"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "ENAH",
+				"target": "PFN1",
+				"pmid": "8861907"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "PALLD",
+				"target": "VASP",
+				"pmid": "14983521"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "TES",
+				"target": "ZYX",
+				"pmid": "12571287"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "LASP1",
+				"target": "PRKACA",
+				"pmid": "15465019"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "TRIP6",
+				"target": "VASP",
+				"pmid": "7644520"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "ACTB",
+				"target": "PRKCA",
+				"pmid": "15590896"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "ENAH",
+				"target": "ZYX",
+				"pmid": "10801818"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "LASP1",
+				"target": "ZYX",
+				"pmid": "15004028"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "PRKCA",
+				"target": "VCL",
+				"pmid": "11741957"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "ABI1",
+				"target": "ENAH",
+				"pmid": "12672821"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "PAK1",
+				"target": "PRKACA",
+				"pmid": "10980699"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "GRB2",
+				"target": "VASP",
+				"pmid": "19380743"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "PAK1",
+				"target": "VASP",
+				"pmid": "16490784"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "ENAH",
+				"target": "VASP",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 35,
+				"source": "ACTB",
+				"target": "GRB2",
+				"pmid": "19380743"
+			}
+		},		{
+			"data": {
+				"id": 36,
+				"source": "TRIP6",
+				"target": "VCL",
+				"pmid": "16189514"
+			}
+		},		{
+			"data": {
+				"id": 37,
+				"source": "PAK1",
+				"target": "PPP2CA",
+				"pmid": "9873003"
+			}
+		},		{
+			"data": {
+				"id": 38,
+				"source": "ABI1",
+				"target": "VASP",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 39,
+				"source": "ENAH",
+				"target": "TES",
+				"pmid": "21278383"
+			}
+		},		{
+			"data": {
+				"id": 40,
+				"source": "ACTB",
+				"target": "ZYX",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 41,
+				"source": "ABI1",
+				"target": "GRB2",
+				"pmid": "20598684"
+			}
+		},		{
+			"data": {
+				"id": 42,
+				"source": "GRB2",
+				"target": "PRKCA",
+				"pmid": "12881490"
+			}
+		}]

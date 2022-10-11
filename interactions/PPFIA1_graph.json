@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "GIT1",
+				"name": "GIT1",
+				"weight": 0.11918604651162791
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PPFIA1",
+				"name": "PPFIA1",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "PPP2CA",
+				"name": "PPP2CA",
+				"weight": 0.08139534883720931
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTPRF",
+				"name": "PTPRF",
+				"weight": 0.04941860465116279
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PPFIA1",
+				"target": "PTPRF",
+				"pmid": "8524829"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "GIT1",
+				"target": "PPFIA1",
+				"pmid": "12629171"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "GIT1",
+				"target": "PTPRF",
+				"pmid": "12629171"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PPFIA1",
+				"target": "PPP2CA",
+				"pmid": "19156129"
+			}
+		}]

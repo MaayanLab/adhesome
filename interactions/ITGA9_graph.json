@@ -1,0 +1,98 @@
+[
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA9",
+				"name": "ITGA9",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB7",
+				"name": "ITGB7",
+				"weight": 0.055232558139534885
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CSK",
+				"target": "PXN",
+				"pmid": "7529872"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGB1",
+				"target": "PXN",
+				"pmid": "10804218"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CSK",
+				"target": "ITGA9",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGA9",
+				"target": "ITGB1",
+				"pmid": "8245132"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CSK",
+				"target": "ITGB7",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CSK",
+				"target": "ITGB1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ITGA9",
+				"target": "ITGB7",
+				"pmid": "21060781"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ITGA9",
+				"target": "PXN",
+				"pmid": "11598204"
+			}
+		}]

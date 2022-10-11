@@ -1,0 +1,113 @@
+[
+		{
+			"data": {
+				"id": "ARPC2",
+				"name": "ARPC2",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "HRAS",
+				"name": "HRAS",
+				"weight": 0.11918604651162791
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TIAM1",
+				"name": "TIAM1",
+				"weight": 0.040697674418604654
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "HRAS",
+				"target": "TIAM1",
+				"pmid": "16203995"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PRKCA",
+				"target": "TIAM1",
+				"pmid": "10734127"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "SRC",
+				"target": "TIAM1",
+				"pmid": "12810717"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "RAC1",
+				"target": "TIAM1",
+				"pmid": "7753201"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "PRKCA",
+				"target": "SRC",
+				"pmid": "2996780"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ARPC2",
+				"target": "TIAM1",
+				"pmid": "16599904"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "PRKCA",
+				"target": "RAC1",
+				"pmid": "11284700"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "HRAS",
+				"target": "SRC",
+				"pmid": "12695509"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "HRAS",
+				"target": "PRKCA",
+				"pmid": "10592173"
+			}
+		}]

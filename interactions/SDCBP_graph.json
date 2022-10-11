@@ -1,0 +1,70 @@
+[
+		{
+			"data": {
+				"id": "ANKRD28",
+				"name": "ANKRD28",
+				"weight": 0.005813953488372093
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "NF2",
+				"name": "NF2",
+				"weight": 0.05232558139534884
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SDC4",
+				"name": "SDC4",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SDCBP",
+				"name": "SDCBP",
+				"weight": 0.020348837209302327
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "SDC4",
+				"target": "SDCBP",
+				"pmid": "9391086"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "NF2",
+				"target": "SDCBP",
+				"pmid": "11432873"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ANKRD28",
+				"target": "SDCBP",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "SDCBP",
+				"target": "SRC",
+				"pmid": "18832467"
+			}
+		}]

@@ -1,0 +1,271 @@
+[
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA4",
+				"name": "ITGA4",
+				"weight": 0.061046511627906974
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB7",
+				"name": "ITGB7",
+				"weight": 0.055232558139534885
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LPXN",
+				"name": "LPXN",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LYN",
+				"name": "LYN",
+				"weight": 0.17732558139534885
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PRKACA",
+				"name": "PRKACA",
+				"weight": 0.09883720930232558
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TGFB1I1",
+				"name": "TGFB1I1",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CSK",
+				"target": "PXN",
+				"pmid": "7529872"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "LYN",
+				"target": "PTK2",
+				"pmid": "11389892"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGB1",
+				"target": "PXN",
+				"pmid": "10804218"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGB1",
+				"target": "PTK2",
+				"pmid": "8878413"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "PTK2",
+				"target": "TGFB1I1",
+				"pmid": "9858471"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CSK",
+				"target": "PTK2",
+				"pmid": "7529872"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "CSK",
+				"target": "PRKACA",
+				"pmid": "9224730"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PTK2",
+				"target": "PXN",
+				"pmid": "7537852"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "CSK",
+				"target": "LYN",
+				"pmid": "8794770"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "CSK",
+				"target": "TGFB1I1",
+				"pmid": "9858471"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "ITGB1",
+				"target": "PRKACA",
+				"pmid": "12050191"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "ITGB1",
+				"target": "LYN",
+				"pmid": "20159608"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "PXN",
+				"target": "TGFB1I1",
+				"pmid": "11463817"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ITGA4",
+				"target": "ITGB1",
+				"pmid": "8428973"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "LPXN",
+				"target": "PTK2",
+				"pmid": "21900206"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "ITGB7",
+				"target": "PTK2",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "ITGA4",
+				"target": "LYN",
+				"pmid": "20159608"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "CSK",
+				"target": "ITGB7",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "CSK",
+				"target": "ITGA4",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "ITGA4",
+				"target": "PXN",
+				"pmid": "11533025"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "ITGA4",
+				"target": "ITGB7",
+				"pmid": "1542691"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "CSK",
+				"target": "ITGB1",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "ITGA4",
+				"target": "PTK2",
+				"pmid": "11919182"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "ITGA4",
+				"target": "PRKACA",
+				"pmid": "11533025"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "ITGA4",
+				"target": "LPXN",
+				"pmid": "10604475"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "ITGA4",
+				"target": "TGFB1I1",
+				"pmid": "10604475"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "LPXN",
+				"target": "LYN",
+				"pmid": "17640867"
+			}
+		}]

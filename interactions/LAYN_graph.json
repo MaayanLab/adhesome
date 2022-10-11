@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "LAYN",
+				"name": "LAYN",
+				"weight": 0.005813953488372093
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "TLN1",
+				"name": "TLN1",
+				"weight": 0.125
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "LAYN",
+				"target": "TLN1",
+				"pmid": "9786953"
+			}
+		}]

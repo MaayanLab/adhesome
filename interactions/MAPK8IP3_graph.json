@@ -1,0 +1,98 @@
+[
+		{
+			"data": {
+				"id": "BCAR1",
+				"name": "BCAR1",
+				"weight": 0.3808139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "MAPK8",
+				"name": "MAPK8",
+				"weight": 0.10755813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "MAPK8IP3",
+				"name": "MAPK8IP3",
+				"weight": 0.03197674418604651
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "BCAR1",
+				"target": "PTK2",
+				"pmid": "11514617"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "MAPK8",
+				"target": "MAPK8IP3",
+				"pmid": "10629060"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "PTK2",
+				"target": "SRC",
+				"pmid": "7529876"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "BCAR1",
+				"target": "MAPK8IP3",
+				"pmid": "16141199"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "BCAR1",
+				"target": "SRC",
+				"pmid": "12972425"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "MAPK8IP3",
+				"target": "SRC",
+				"pmid": "12226752"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "MAPK8IP3",
+				"target": "PTK2",
+				"pmid": "16141199"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "BCAR1",
+				"target": "MAPK8",
+				"pmid": "11432831"
+			}
+		}]

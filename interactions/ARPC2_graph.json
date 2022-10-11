@@ -1,0 +1,128 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARPC2",
+				"name": "ARPC2",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "CORO1B",
+				"name": "CORO1B",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CTTN",
+				"name": "CTTN",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SSH1",
+				"name": "SSH1",
+				"weight": 0.02616279069767442
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "TIAM1",
+				"name": "TIAM1",
+				"weight": 0.040697674418604654
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "VCL",
+				"name": "VCL",
+				"weight": 0.1308139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ARPC2",
+				"target": "CTTN",
+				"pmid": "11018051"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTB",
+				"target": "ARPC2",
+				"pmid": "9600938"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ACTB",
+				"target": "VCL",
+				"pmid": "6802502"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ACTB",
+				"target": "CTTN",
+				"pmid": "7680654"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ARPC2",
+				"target": "VCL",
+				"pmid": "12473693"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ARPC2",
+				"target": "TIAM1",
+				"pmid": "16599904"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ARPC2",
+				"target": "CORO1B",
+				"pmid": "17350576"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "CORO1B",
+				"target": "SSH1",
+				"pmid": "17350576"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ACTB",
+				"target": "SSH1",
+				"pmid": "11832213"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "ARPC2",
+				"target": "SSH1",
+				"pmid": "17350576"
+			}
+		}]

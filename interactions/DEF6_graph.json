@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "DEF6",
+				"name": "DEF6",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGA7",
+				"name": "ITGA7",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "RAC1",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "DEF6",
+				"target": "RAC1",
+				"pmid": "15023524"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "DEF6",
+				"target": "RHOA",
+				"pmid": "15023524"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "DEF6",
+				"target": "ITGA7",
+				"pmid": "17403664"
+			}
+		}]

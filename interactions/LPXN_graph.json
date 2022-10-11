@@ -1,0 +1,250 @@
+[
+		{
+			"data": {
+				"id": "GIT1",
+				"name": "GIT1",
+				"weight": 0.11918604651162791
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA4",
+				"name": "ITGA4",
+				"weight": 0.061046511627906974
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LIMS1",
+				"name": "LIMS1",
+				"weight": 0.05813953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LPXN",
+				"name": "LPXN",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "LYN",
+				"name": "LYN",
+				"weight": 0.17732558139534885
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2B",
+				"name": "PTK2B",
+				"weight": 0.2558139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTPN12",
+				"name": "PTPN12",
+				"weight": 0.13372093023255813
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "VCL",
+				"name": "VCL",
+				"weight": 0.1308139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "GIT1",
+				"target": "LPXN",
+				"pmid": "12674328"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PTK2B",
+				"target": "PTPN12",
+				"pmid": "11337490"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "LPXN",
+				"target": "SRC",
+				"pmid": "16914530"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PTK2",
+				"target": "PTK2B",
+				"pmid": "16760434"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "LYN",
+				"target": "PTK2",
+				"pmid": "11389892"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "GIT1",
+				"target": "SRC",
+				"pmid": "14523024"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "PTK2",
+				"target": "SRC",
+				"pmid": "7529876"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "LPXN",
+				"target": "PTPN12",
+				"pmid": "15786712"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "PTK2B",
+				"target": "SRC",
+				"pmid": "9556630"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "LYN",
+				"target": "PTK2B",
+				"pmid": "11311138"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "GIT1",
+				"target": "PTK2",
+				"pmid": "10938112"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "LPXN",
+				"target": "PTK2B",
+				"pmid": "9565592"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "LIMS1",
+				"target": "LPXN",
+				"pmid": "16189514"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "LPXN",
+				"target": "PTK2",
+				"pmid": "21900206"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "LYN",
+				"target": "SRC",
+				"pmid": "18070987"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "ITGA4",
+				"target": "LYN",
+				"pmid": "20159608"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "LPXN",
+				"target": "VCL",
+				"pmid": "21516116"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "GIT1",
+				"target": "PTK2B",
+				"pmid": "12629171"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "ITGA4",
+				"target": "PTK2",
+				"pmid": "11919182"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "ITGA4",
+				"target": "LPXN",
+				"pmid": "10604475"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "LPXN",
+				"target": "LYN",
+				"pmid": "17640867"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "PTK2",
+				"target": "VCL",
+				"pmid": "10545505"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "SRC",
+				"target": "VCL",
+				"pmid": "15229287"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "PTK2",
+				"target": "PTPN12",
+				"pmid": "10400703"
+			}
+		}]

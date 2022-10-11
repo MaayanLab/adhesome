@@ -1,0 +1,69 @@
+[
+		{
+			"data": {
+				"id": "AKT1",
+				"name": "AKT1",
+				"weight": 0.15988372093023256
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "KTN1",
+				"name": "KTN1",
+				"weight": 0.014534883720930232
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "AKT1",
+				"target": "RAC1",
+				"pmid": "10617634"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "KTN1",
+				"target": "RHOA",
+				"pmid": "8769096"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "KTN1",
+				"target": "RAC1",
+				"pmid": "8769096"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "RAC1",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "AKT1",
+				"target": "KTN1",
+				"pmid": "11162552"
+			}
+		}]

@@ -1,0 +1,121 @@
+[
+		{
+			"data": {
+				"id": "ASAP2",
+				"name": "ASAP2",
+				"weight": 0.05232558139534884
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA1",
+				"name": "ITGA1",
+				"weight": 0.023255813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA2",
+				"name": "ITGA2",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGA5",
+				"name": "ITGA5",
+				"weight": 0.10174418604651163
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTEN",
+				"name": "PTEN",
+				"weight": 0.06686046511627906
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SHARPIN",
+				"name": "SHARPIN",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ITGA5",
+				"target": "SHARPIN",
+				"pmid": "21947080"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGA5",
+				"target": "ITGB1",
+				"pmid": "16099422"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGA2",
+				"target": "SHARPIN",
+				"pmid": "21947080"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGA2",
+				"target": "ITGB1",
+				"pmid": "21947080"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ITGA1",
+				"target": "ITGB1",
+				"pmid": "8846021"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ITGA1",
+				"target": "SHARPIN",
+				"pmid": "21947080"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ASAP2",
+				"target": "SHARPIN",
+				"pmid": "21829440"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ITGB1",
+				"target": "SHARPIN",
+				"pmid": "21947080"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "PTEN",
+				"target": "SHARPIN",
+				"pmid": "20458142"
+			}
+		}]

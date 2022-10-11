@@ -1,0 +1,77 @@
+[
+		{
+			"data": {
+				"id": "CTTN",
+				"name": "CTTN",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GRB7",
+				"name": "GRB7",
+				"weight": 0.02616279069767442
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "HAX1",
+				"name": "HAX1",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "LASP1",
+				"name": "LASP1",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SHC1",
+				"name": "SHC1",
+				"weight": 0.5901162790697675
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "HAX1",
+				"target": "SHC1",
+				"pmid": "19380743"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "HAX1",
+				"target": "LASP1",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CTTN",
+				"target": "HAX1",
+				"pmid": "15159385"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "GRB7",
+				"target": "HAX1",
+				"pmid": "20665473"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "GRB7",
+				"target": "SHC1",
+				"pmid": "8940081"
+			}
+		}]

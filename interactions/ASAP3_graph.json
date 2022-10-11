@@ -1,0 +1,25 @@
+[
+		{
+			"data": {
+				"id": "ASAP3",
+				"name": "ASAP3",
+				"weight": 0.0029069767441860465
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "CRK",
+				"name": "CRK",
+				"weight": 0.4331395348837209
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ASAP3",
+				"target": "CRK",
+				"pmid": "19380743"
+			}
+		}]

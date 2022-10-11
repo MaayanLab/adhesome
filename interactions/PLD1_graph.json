@@ -1,0 +1,393 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ACTN1",
+				"name": "ACTN1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARF1",
+				"name": "ARF1",
+				"weight": 0.03488372093023256
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "CAV1",
+				"name": "CAV1",
+				"weight": 0.16279069767441862
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CFL1",
+				"name": "CFL1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "DNM2",
+				"name": "DNM2",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PIP5K1C",
+				"name": "PIP5K1C",
+				"weight": 0.03197674418604651
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "PLCG1",
+				"name": "PLCG1",
+				"weight": 0.2616279069767442
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PLD1",
+				"name": "PLD1",
+				"weight": 0.05813953488372093
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": "PRKCA",
+				"name": "PRKCA",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "RHOA",
+				"name": "RHOA",
+				"weight": 0.19767441860465115
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "PLCG1",
+				"target": "PRKCA",
+				"pmid": "2820980"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTB",
+				"target": "PLD1",
+				"pmid": "11373276"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ACTB",
+				"target": "CFL1",
+				"pmid": "8913641"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PLD1",
+				"target": "RHOA",
+				"pmid": "12593858"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "CAV1",
+				"target": "DNM2",
+				"pmid": "15811383"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "CAV1",
+				"target": "SRC",
+				"pmid": "8910575"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ACTN1",
+				"target": "PLD1",
+				"pmid": "10801846"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PLD1",
+				"target": "RAC1",
+				"pmid": "11950936"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "PRKCA",
+				"target": "SRC",
+				"pmid": "2996780"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "PIP5K1C",
+				"target": "PLD1",
+				"pmid": "11032811"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "PRKCA",
+				"target": "RHOA",
+				"pmid": "11284700"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "PIP5K1C",
+				"target": "SRC",
+				"pmid": "15623515"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "PLCG1",
+				"target": "RHOA",
+				"pmid": "12071848"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ACTB",
+				"target": "PRKCA",
+				"pmid": "15590896"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "PIP5K1C",
+				"target": "RHOA",
+				"pmid": "14681219"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "ACTB",
+				"target": "ACTN1",
+				"pmid": "5667356"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "PLCG1",
+				"target": "SRC",
+				"pmid": "7682059"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "DNM2",
+				"target": "PLCG1",
+				"pmid": "8013457"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "PLD1",
+				"target": "PRKCA",
+				"pmid": "1559964"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "DNM2",
+				"target": "PLD1",
+				"pmid": "16622417"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "ARF1",
+				"target": "PLD1",
+				"pmid": "16054594"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "PRKCA",
+				"target": "RAC1",
+				"pmid": "11284700"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "PIP5K1C",
+				"target": "RAC1",
+				"pmid": "12874273"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "RAC1",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "ACTB",
+				"target": "SRC",
+				"pmid": "19903481"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "PLCG1",
+				"target": "RAC1",
+				"pmid": "19264842"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "ACTB",
+				"target": "RHOA",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "CFL1",
+				"target": "SRC",
+				"pmid": "19802004"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "PLCG1",
+				"target": "PLD1",
+				"pmid": "19323535"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "CAV1",
+				"target": "RAC1",
+				"pmid": "17658519"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "CAV1",
+				"target": "RHOA",
+				"pmid": "20460433"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "CFL1",
+				"target": "PLD1",
+				"pmid": "17853892"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "ACTB",
+				"target": "DNM2",
+				"pmid": "19116150"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "ACTN1",
+				"target": "SRC",
+				"pmid": "16291744"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "PLD1",
+				"target": "SRC",
+				"pmid": "12697812"
+			}
+		},		{
+			"data": {
+				"id": 35,
+				"source": "ACTB",
+				"target": "CAV1",
+				"pmid": "15293782"
+			}
+		},		{
+			"data": {
+				"id": 36,
+				"source": "ACTB",
+				"target": "RAC1",
+				"pmid": "11027608"
+			}
+		},		{
+			"data": {
+				"id": 37,
+				"source": "DNM2",
+				"target": "SRC",
+				"pmid": "15834155"
+			}
+		},		{
+			"data": {
+				"id": 38,
+				"source": "RHOA",
+				"target": "SRC",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 39,
+				"source": "ACTB",
+				"target": "PLCG1",
+				"pmid": "9270879"
+			}
+		},		{
+			"data": {
+				"id": 40,
+				"source": "CAV1",
+				"target": "PLD1",
+				"pmid": "10090765"
+			}
+		}]

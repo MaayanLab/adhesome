@@ -1,0 +1,431 @@
+[
+		{
+			"data": {
+				"id": "CRKL",
+				"name": "CRKL",
+				"weight": 0.2819767441860465
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "FYN",
+				"name": "FYN",
+				"weight": 0.29941860465116277
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "GIT1",
+				"name": "GIT1",
+				"weight": 0.11918604651162791
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GIT2",
+				"name": "GIT2",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "HSPB1",
+				"name": "HSPB1",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ITGA4",
+				"name": "ITGA4",
+				"weight": 0.061046511627906974
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "NUDT16L1",
+				"name": "NUDT16L1",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2",
+				"name": "PTK2",
+				"weight": 0.5755813953488372
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTK2B",
+				"name": "PTK2B",
+				"weight": 0.2558139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PTPN12",
+				"name": "PTPN12",
+				"weight": 0.13372093023255813
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SDC4",
+				"name": "SDC4",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SVIL",
+				"name": "SVIL",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "TGFB1I1",
+				"name": "TGFB1I1",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "VCL",
+				"name": "VCL",
+				"weight": 0.1308139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "NUDT16L1",
+				"target": "TGFB1I1",
+				"pmid": "11805099"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PTK2B",
+				"target": "TGFB1I1",
+				"pmid": "11311131"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "NUDT16L1",
+				"target": "SDC4",
+				"pmid": "10633082"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "PTK2B",
+				"target": "PTPN12",
+				"pmid": "11337490"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "FYN",
+				"target": "SDC4",
+				"pmid": "9952400"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "PTK2B",
+				"target": "PXN",
+				"pmid": "11820787"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "CSK",
+				"target": "PXN",
+				"pmid": "7529872"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "PTK2",
+				"target": "PTK2B",
+				"pmid": "16760434"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "CSK",
+				"target": "PTPN12",
+				"pmid": "9287362"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "PTPN12",
+				"target": "PXN",
+				"pmid": "9497381"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "CSK",
+				"target": "FYN",
+				"pmid": "8262983"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "FYN",
+				"target": "PTK2",
+				"pmid": "11278857"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "NUDT16L1",
+				"target": "PXN",
+				"pmid": "11805099"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "PTK2",
+				"target": "TGFB1I1",
+				"pmid": "9858471"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "FYN",
+				"target": "PTK2B",
+				"pmid": "9104812"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "FYN",
+				"target": "PXN",
+				"pmid": "7617039"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "GIT1",
+				"target": "PXN",
+				"pmid": "11448998"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "CRKL",
+				"target": "PXN",
+				"pmid": "7493940"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "CSK",
+				"target": "PTK2",
+				"pmid": "7529872"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "FYN",
+				"target": "TGFB1I1",
+				"pmid": "10838081"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "PTK2",
+				"target": "PXN",
+				"pmid": "7537852"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "GIT1",
+				"target": "TGFB1I1",
+				"pmid": "12153727"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "GIT1",
+				"target": "PTK2",
+				"pmid": "10938112"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "PXN",
+				"target": "VCL",
+				"pmid": "7525621"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "PTPN12",
+				"target": "TGFB1I1",
+				"pmid": "10092676"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "HSPB1",
+				"target": "TGFB1I1",
+				"pmid": "11546764"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "CSK",
+				"target": "TGFB1I1",
+				"pmid": "9858471"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "TGFB1I1",
+				"target": "VCL",
+				"pmid": "9858471"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "PXN",
+				"target": "TGFB1I1",
+				"pmid": "11463817"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "CSK",
+				"target": "ITGA4",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "ITGA4",
+				"target": "PXN",
+				"pmid": "11533025"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "GIT1",
+				"target": "PTK2B",
+				"pmid": "12629171"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "GIT1",
+				"target": "GIT2",
+				"pmid": "12473661"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "GIT2",
+				"target": "PXN",
+				"pmid": "11304546"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "ITGA4",
+				"target": "PTK2",
+				"pmid": "11919182"
+			}
+		},		{
+			"data": {
+				"id": 35,
+				"source": "SDC4",
+				"target": "TGFB1I1",
+				"pmid": "11805099"
+			}
+		},		{
+			"data": {
+				"id": 36,
+				"source": "CRKL",
+				"target": "TGFB1I1",
+				"pmid": "9858471"
+			}
+		},		{
+			"data": {
+				"id": 37,
+				"source": "ITGA4",
+				"target": "TGFB1I1",
+				"pmid": "10604475"
+			}
+		},		{
+			"data": {
+				"id": 38,
+				"source": "PTK2",
+				"target": "VCL",
+				"pmid": "10545505"
+			}
+		},		{
+			"data": {
+				"id": 39,
+				"source": "PXN",
+				"target": "SDC4",
+				"pmid": "11805099"
+			}
+		},		{
+			"data": {
+				"id": 40,
+				"source": "GIT2",
+				"target": "TGFB1I1",
+				"pmid": "10330411"
+			}
+		},		{
+			"data": {
+				"id": 41,
+				"source": "PTK2",
+				"target": "PTPN12",
+				"pmid": "10400703"
+			}
+		},		{
+			"data": {
+				"id": 42,
+				"source": "SVIL",
+				"target": "TGFB1I1",
+				"pmid": "11792840"
+			}
+		}]

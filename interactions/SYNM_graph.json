@@ -1,0 +1,47 @@
+[
+		{
+			"data": {
+				"id": "CBL",
+				"name": "CBL",
+				"weight": 0.747093023255814
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "GRB2",
+				"name": "GRB2",
+				"weight": 1.0
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SYNM",
+				"name": "SYNM",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CBL",
+				"target": "GRB2",
+				"pmid": "9590251"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CBL",
+				"target": "SYNM",
+				"pmid": "15872089"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "GRB2",
+				"target": "SYNM",
+				"pmid": "8552632"
+			}
+		}]

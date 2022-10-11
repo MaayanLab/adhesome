@@ -1,0 +1,402 @@
+[
+		{
+			"data": {
+				"id": "AKT1",
+				"name": "AKT1",
+				"weight": 0.15988372093023256
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ARHGEF12",
+				"name": "ARHGEF12",
+				"weight": 0.023255813953488372
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "ARHGEF6",
+				"name": "ARHGEF6",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARHGEF7",
+				"name": "ARHGEF7",
+				"weight": 0.13953488372093023
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "CBL",
+				"name": "CBL",
+				"weight": 0.747093023255814
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "GIT1",
+				"name": "GIT1",
+				"weight": 0.11918604651162791
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "GIT2",
+				"name": "GIT2",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "HSPB1",
+				"name": "HSPB1",
+				"weight": 0.029069767441860465
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "NCK2",
+				"name": "NCK2",
+				"weight": 0.09593023255813954
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PAK1",
+				"name": "PAK1",
+				"weight": 0.311046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PARVB",
+				"name": "PARVB",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PPM1F",
+				"name": "PPM1F",
+				"weight": 0.00872093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PXN",
+				"name": "PXN",
+				"weight": 0.45348837209302323
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "SHC1",
+				"name": "SHC1",
+				"weight": 0.5901162790697675
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ARHGEF6",
+				"target": "GIT1",
+				"pmid": "16373173"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "GIT1",
+				"target": "PAK1",
+				"pmid": "12006652"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ARHGEF6",
+				"target": "RAC1",
+				"pmid": "16492808"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "AKT1",
+				"target": "RAC1",
+				"pmid": "10617634"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "NCK2",
+				"target": "PAK1",
+				"pmid": "11557983"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "AKT1",
+				"target": "PAK1",
+				"pmid": "14585966"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "CBL",
+				"target": "SHC1",
+				"pmid": "8621719"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "GIT1",
+				"target": "PXN",
+				"pmid": "11448998"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "ARHGEF6",
+				"target": "PARVB",
+				"pmid": "12499396"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "ARHGEF6",
+				"target": "PAK1",
+				"pmid": "9659915"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "PAK1",
+				"target": "RAC1",
+				"pmid": "9989831"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "ARHGEF6",
+				"target": "CBL",
+				"pmid": "12935897"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "GIT2",
+				"target": "PAK1",
+				"pmid": "16628223"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ARHGEF7",
+				"target": "PARVB",
+				"pmid": "24035453"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "AKT1",
+				"target": "HSPB1",
+				"pmid": "11042204"
+			}
+		},		{
+			"data": {
+				"id": 15,
+				"source": "ARHGEF7",
+				"target": "HSPB1",
+				"pmid": "25277244"
+			}
+		},		{
+			"data": {
+				"id": 16,
+				"source": "ARHGEF12",
+				"target": "ARHGEF6",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 17,
+				"source": "ARHGEF7",
+				"target": "GIT2",
+				"pmid": "11157752"
+			}
+		},		{
+			"data": {
+				"id": 18,
+				"source": "ARHGEF7",
+				"target": "SHC1",
+				"pmid": "18385518"
+			}
+		},		{
+			"data": {
+				"id": 19,
+				"source": "ARHGEF6",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 20,
+				"source": "ARHGEF7",
+				"target": "PAK1",
+				"pmid": "20936779"
+			}
+		},		{
+			"data": {
+				"id": 21,
+				"source": "ARHGEF7",
+				"target": "PPM1F",
+				"pmid": "11864573"
+			}
+		},		{
+			"data": {
+				"id": 22,
+				"source": "ARHGEF7",
+				"target": "CBL",
+				"pmid": "14505571"
+			}
+		},		{
+			"data": {
+				"id": 23,
+				"source": "ARHGEF12",
+				"target": "ARHGEF7",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 24,
+				"source": "ARHGEF7",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 25,
+				"source": "PAK1",
+				"target": "PXN",
+				"pmid": "11096073"
+			}
+		},		{
+			"data": {
+				"id": 26,
+				"source": "CBL",
+				"target": "PXN",
+				"pmid": "8641358"
+			}
+		},		{
+			"data": {
+				"id": 27,
+				"source": "PAK1",
+				"target": "PPM1F",
+				"pmid": "20016286"
+			}
+		},		{
+			"data": {
+				"id": 28,
+				"source": "AKT1",
+				"target": "ARHGEF7",
+				"pmid": "15306850"
+			}
+		},		{
+			"data": {
+				"id": 29,
+				"source": "AKT1",
+				"target": "ARHGEF6",
+				"pmid": "15306850"
+			}
+		},		{
+			"data": {
+				"id": 30,
+				"source": "ARHGEF7",
+				"target": "GIT1",
+				"pmid": "12695502"
+			}
+		},		{
+			"data": {
+				"id": 31,
+				"source": "CBL",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 32,
+				"source": "ARHGEF6",
+				"target": "ARHGEF7",
+				"pmid": "15306850"
+			}
+		},		{
+			"data": {
+				"id": 33,
+				"source": "ARHGEF7",
+				"target": "PXN",
+				"pmid": "12153727"
+			}
+		},		{
+			"data": {
+				"id": 34,
+				"source": "GIT1",
+				"target": "GIT2",
+				"pmid": "12473661"
+			}
+		},		{
+			"data": {
+				"id": 35,
+				"source": "ARHGEF7",
+				"target": "RAC1",
+				"pmid": "16492808"
+			}
+		},		{
+			"data": {
+				"id": 36,
+				"source": "GIT2",
+				"target": "PXN",
+				"pmid": "11304546"
+			}
+		},		{
+			"data": {
+				"id": 37,
+				"source": "GIT2",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 38,
+				"source": "GIT1",
+				"target": "NCK2",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 39,
+				"source": "PAK1",
+				"target": "SHC1",
+				"pmid": "15688026"
+			}
+		}]

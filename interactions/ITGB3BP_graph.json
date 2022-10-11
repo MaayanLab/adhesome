@@ -1,0 +1,62 @@
+[
+		{
+			"data": {
+				"id": "ITGB1",
+				"name": "ITGB1",
+				"weight": 0.37209302325581395
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB3",
+				"name": "ITGB3",
+				"weight": 0.14534883720930233
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ITGB3BP",
+				"name": "ITGB3BP",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "ITGB5",
+				"name": "ITGB5",
+				"weight": 0.06395348837209303
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ITGB1",
+				"target": "ITGB3BP",
+				"pmid": "7593198"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ITGB3BP",
+				"target": "ITGB5",
+				"pmid": "10579726"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ITGB3",
+				"target": "ITGB3BP",
+				"pmid": "7593198"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ITGB1",
+				"target": "ITGB5",
+				"pmid": "11462216"
+			}
+		}]

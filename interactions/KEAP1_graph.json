@@ -1,0 +1,40 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "KEAP1",
+				"name": "KEAP1",
+				"weight": 0.005813953488372093
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "STAT3",
+				"name": "STAT3",
+				"weight": 0.11627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ACTB",
+				"target": "KEAP1",
+				"pmid": "14764898"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "KEAP1",
+				"target": "STAT3",
+				"pmid": "24013128"
+			}
+		}]

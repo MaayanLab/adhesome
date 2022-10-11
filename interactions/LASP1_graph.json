@@ -1,0 +1,179 @@
+[
+		{
+			"data": {
+				"id": "ABL1",
+				"name": "ABL1",
+				"weight": 0.33430232558139533
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "HAX1",
+				"name": "HAX1",
+				"weight": 0.011627906976744186
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LASP1",
+				"name": "LASP1",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": "LPP",
+				"name": "LPP",
+				"weight": 0.01744186046511628
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PALLD",
+				"name": "PALLD",
+				"weight": 0.03197674418604651
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PRKACA",
+				"name": "PRKACA",
+				"weight": 0.09883720930232558
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "VASP",
+				"name": "VASP",
+				"weight": 0.09011627906976744
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ZYX",
+				"name": "ZYX",
+				"weight": 0.06686046511627906
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "LASP1",
+				"target": "PALLD",
+				"pmid": "16492705"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "PRKACA",
+				"target": "VASP",
+				"pmid": "8182057"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "LASP1",
+				"target": "VASP",
+				"pmid": "15465019"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ACTB",
+				"target": "LASP1",
+				"pmid": "12432067"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ABL1",
+				"target": "ACTB",
+				"pmid": "8294516"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "LASP1",
+				"target": "LPP",
+				"pmid": "15465019"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ACTB",
+				"target": "VASP",
+				"pmid": "1318192"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "LPP",
+				"target": "VASP",
+				"pmid": "12441356"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "VASP",
+				"target": "ZYX",
+				"pmid": "10613911"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "PALLD",
+				"target": "VASP",
+				"pmid": "14983521"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "ABL1",
+				"target": "LASP1",
+				"pmid": "15138294"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "LASP1",
+				"target": "PRKACA",
+				"pmid": "15465019"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "LASP1",
+				"target": "ZYX",
+				"pmid": "15004028"
+			}
+		},		{
+			"data": {
+				"id": 13,
+				"source": "ACTB",
+				"target": "ZYX",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 14,
+				"source": "HAX1",
+				"target": "LASP1",
+				"pmid": "26186194"
+			}
+		}]

@@ -1,0 +1,142 @@
+[
+		{
+			"data": {
+				"id": "BCAR1",
+				"name": "BCAR1",
+				"weight": 0.3808139534883721
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CRK",
+				"name": "CRK",
+				"weight": 0.4331395348837209
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CSK",
+				"name": "CSK",
+				"weight": 0.19476744186046513
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "CTTN",
+				"name": "CTTN",
+				"weight": 0.10465116279069768
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SORBS3",
+				"name": "SORBS3",
+				"weight": 0.029069767441860465
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SRC",
+				"name": "SRC",
+				"weight": 0.622093023255814
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "SRCIN1",
+				"name": "SRCIN1",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "CSK",
+				"target": "SRC",
+				"pmid": "7687537"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CTTN",
+				"target": "SRC",
+				"pmid": "9748248"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "CRK",
+				"target": "CTTN",
+				"pmid": "15263018"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "BCAR1",
+				"target": "SRC",
+				"pmid": "12972425"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "BCAR1",
+				"target": "CRK",
+				"pmid": "8070403"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "BCAR1",
+				"target": "SRCIN1",
+				"pmid": "14657239"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "CTTN",
+				"target": "SRCIN1",
+				"pmid": "19146815"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "SORBS3",
+				"target": "SRCIN1",
+				"pmid": "18662323"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "CRK",
+				"target": "SRC",
+				"pmid": "10962563"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "CRK",
+				"target": "SRCIN1",
+				"pmid": "14657239"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "SRC",
+				"target": "SRCIN1",
+				"pmid": "17525734"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "CSK",
+				"target": "SRCIN1",
+				"pmid": "17525734"
+			}
+		}]

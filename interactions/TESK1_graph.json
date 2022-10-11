@@ -1,0 +1,55 @@
+[
+		{
+			"data": {
+				"id": "CFL1",
+				"name": "CFL1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PARVA",
+				"name": "PARVA",
+				"weight": 0.06395348837209303
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "RAC1",
+				"name": "RAC1",
+				"weight": 0.34593023255813954
+			},
+			"classes": "associated"
+		},
+		{
+			"data": {
+				"id": "TESK1",
+				"name": "TESK1",
+				"weight": 0.01744186046511628
+			},
+			"classes": "associated central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "RAC1",
+				"target": "TESK1",
+				"pmid": "15169836"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "CFL1",
+				"target": "TESK1",
+				"pmid": "11294912"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "PARVA",
+				"target": "TESK1",
+				"pmid": "15817463"
+			}
+		}]

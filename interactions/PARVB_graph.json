@@ -1,0 +1,157 @@
+[
+		{
+			"data": {
+				"id": "ACTB",
+				"name": "ACTB",
+				"weight": 0.2063953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ACTN1",
+				"name": "ACTN1",
+				"weight": 0.09302325581395349
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARHGEF6",
+				"name": "ARHGEF6",
+				"weight": 0.06976744186046512
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ARHGEF7",
+				"name": "ARHGEF7",
+				"weight": 0.13953488372093023
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "ILK",
+				"name": "ILK",
+				"weight": 0.1686046511627907
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "LIMS1",
+				"name": "LIMS1",
+				"weight": 0.05813953488372093
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PARVA",
+				"name": "PARVA",
+				"weight": 0.06395348837209303
+			},
+			"classes": "intrinsic"
+		},
+		{
+			"data": {
+				"id": "PARVB",
+				"name": "PARVB",
+				"weight": 0.0436046511627907
+			},
+			"classes": "intrinsic central"
+		},
+		{
+			"data": {
+				"id": 0,
+				"source": "ACTB",
+				"target": "PARVA",
+				"pmid": "11134073"
+			}
+		},		{
+			"data": {
+				"id": 1,
+				"source": "ACTN1",
+				"target": "PARVB",
+				"pmid": "15159419"
+			}
+		},		{
+			"data": {
+				"id": 2,
+				"source": "ILK",
+				"target": "LIMS1",
+				"pmid": "10022929"
+			}
+		},		{
+			"data": {
+				"id": 3,
+				"source": "ARHGEF6",
+				"target": "PARVB",
+				"pmid": "12499396"
+			}
+		},		{
+			"data": {
+				"id": 4,
+				"source": "ILK",
+				"target": "PARVA",
+				"pmid": "11694518"
+			}
+		},		{
+			"data": {
+				"id": 5,
+				"source": "ILK",
+				"target": "PARVB",
+				"pmid": "11402068"
+			}
+		},		{
+			"data": {
+				"id": 6,
+				"source": "ACTB",
+				"target": "ACTN1",
+				"pmid": "5667356"
+			}
+		},		{
+			"data": {
+				"id": 7,
+				"source": "ARHGEF7",
+				"target": "PARVB",
+				"pmid": "24035453"
+			}
+		},		{
+			"data": {
+				"id": 8,
+				"source": "LIMS1",
+				"target": "PARVB",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 9,
+				"source": "PARVA",
+				"target": "PARVB",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 10,
+				"source": "LIMS1",
+				"target": "PARVA",
+				"pmid": "26186194"
+			}
+		},		{
+			"data": {
+				"id": 11,
+				"source": "ACTB",
+				"target": "PARVB",
+				"pmid": "10592173"
+			}
+		},		{
+			"data": {
+				"id": 12,
+				"source": "ARHGEF6",
+				"target": "ARHGEF7",
+				"pmid": "15306850"
+			}
+		}]
