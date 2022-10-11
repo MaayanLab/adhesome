@@ -1,0 +1,4 @@
+jupyter-nbconvert
+pandas
+requests
+staticjinja==0.3.5
