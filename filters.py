@@ -70,7 +70,7 @@ def apply(table, subst):
 
 	header = table['header']
 	new_header = [h for h in header
-				  if subst.get(urlize(h), None) is not ""]
+				  if subst.get(urlize(h), None) != ""]
 
 	header_row = list(map(urlize, header))
 	new_header_row = list(map(urlize, new_header))
